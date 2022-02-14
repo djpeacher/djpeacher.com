@@ -1,7 +1,7 @@
 name: Build
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 jobs:
   build:
@@ -11,9 +11,11 @@ jobs:
       - uses: actions/setup-python@v2
       - name: Install staticjinja
         run: pip install staticjinja
-      - name: Build site
+      - name: Switch & Pull
+        run: git checkout site && git pull main --no-commit
+      - name: Build Site
         run: staticjinja build
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Github Action: Built Site"
+          commit_message: 'Github Action: Built Site'
           branch: site
