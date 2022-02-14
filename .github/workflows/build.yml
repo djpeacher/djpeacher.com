@@ -9,13 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
-      - name: Install staticjinja
-        run: pip install staticjinja
-      - name: Switch & Pull
-        run: git checkout site && git pull main --no-commit
-      - name: Build Site
-        run: staticjinja build
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - run: pip install staticjinja
+      - run: staticjinja build --outpath build
+      - uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
-          commit_message: 'Github Action: Built Site'
-          branch: site
+          branch: gh-pages
+          folder: build
