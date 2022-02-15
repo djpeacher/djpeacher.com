@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jonathan Peacher</title>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+  <link rel="stylesheet" href="css/twa.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="/">Jonathan Peacher</a>
+      <i class="twa twa-waving-hand-medium-light-skin-tone"></i>
+    </h1>
+    <p>Software Engineer • Coffee Enthusiast • Occasional DM • Cat Dad</p>
+  </header>
+  <main>
+<script>
+    function cb(response) {
+        const element = document.getElementById(`${response?.namespace}/${response?.key}`)
+        if (element)
+            element.innerText = response.value;
+    }
+</script>
+<script async src="https://api.countapi.xyz/info/www.djpeacher.com/index_visits?callback=cb"></script>
+<script async src="https://api.countapi.xyz/info/www.djpeacher.com/resume_visits?callback=cb"></script>
+<script async src="https://api.countapi.xyz/info/www.djpeacher.com/resume_visits?callback=cb"></script>
+<table class="stats">
+    <thead>
+        <tr>
+            <th colspan="2"><a href="https://www.djpeacher.com">www.djpeacher.com</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>index_visits</td>
+            <td id="www.djpeacher.com/index_visits"></td>
+        </tr>
+        <tr>
+            <td>resume_visits</td>
+            <td id="www.djpeacher.com/resume_visits"></td>
+        </tr>
+        <tr>
+            <td>stats_visits</td>
+            <td id="www.djpeacher.com/resume_visits"></td>
+        </tr>
+        <tr class="clear">
+            <td colspan="2"></td>
+        </tr>
+    </tbody>
+</table>
+
+<script async src="https://api.countapi.xyz/hit/www.djpeacher.com/stats_visits"></script>
+
+</main>
+  <footer>
+    <nav>
+      <a href="https://twitter.com/_djpeacher" target="_blank">Twitter</a>
+      <a href="https://github.com/djpeacher" target="_blank">GitHub</a>
+      <a href="/resume">Resume</a>
+    </nav>
+    <p>
+      Made with <i class="twa twa-red-heart"></i> by
+      <a href="https://twitter.com/_djpeacher" target="_blank">Jonathan</a>
+    </p>
+  </footer>
+</body>
+
+</html>
