@@ -1,5 +1,5 @@
 watch:
-	staticjinja watch --outpath build
+	staticjinja watch --outpath build --static="images"
 
 build:
-	staticjinja build --outpath build
+	staticjinja build --outpath build --static="images"
