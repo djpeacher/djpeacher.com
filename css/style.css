@@ -15,10 +15,10 @@ header > h1 > a:hover {
 }
 
 /* underline on hover */
-p > a {
+:not(nav) > a {
   text-decoration: none;
 }
-p > a:hover {
+:not(nav) > a:hover {
   text-decoration: underline;
 }
 
