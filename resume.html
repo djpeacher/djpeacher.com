@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <script>
+    // empty callback for countapi.
+    function hit(response) { }
+  </script>
 </head>
 
 <body>
@@ -155,7 +159,7 @@
 <p>Attended <a href="https://2019.djangocon.us" target="_blank">DjangoCon 2019</a></p>
 
 
-<script async src="https://api.countapi.xyz/hit/www.djpeacher.com/resume_visits"></script>
+<script async src="https://api.countapi.xyz/hit/www.djpeacher.com/resume_visits?callback=hit"></script>
 
 </main>
   <footer>
