@@ -1,3 +1,55 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #809fff;
+  }
+}
+
+/* clear styles for link in header h1 */
+header > h1 > a,
+header > h1 > a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+header > h1 > a:hover {
+  text-decoration: underline;
+}
+
+small {
+  color: var(--text-light);
+}
+
+/* underline on hover */
+:not(nav) > a {
+  text-decoration: none;
+}
+:not(nav) > a:hover {
+  text-decoration: underline;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.stats th {
+  text-align: center;
+}
+
+.stats thead {
+  margin-top: 1rem;
+}
+
+.stats .clear > td {
+  border: none;
+}
+
+.stats .clear {
+  background: none !important;
+}
+
 /*
 Preamble from https://ellekasai.github.io/twemoji-awesome/,
 licensed under MIT: https://ellekasai.mit-license.org/
