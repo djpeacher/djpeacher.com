@@ -8,7 +8,7 @@ params:
   subtitle: Software Engineer • Coffee Enthusiast • Occasional DM • Cat Dad
   updateHeader: false
 menu:
-  footer:
+  footerTop:
     - name: Twitter
       url: https://twitter.com/_djpeacher
       weight: 1
