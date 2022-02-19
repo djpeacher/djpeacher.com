@@ -6,9 +6,11 @@ copyright: "Made with <i class='twa twa-red-heart'></i> by <a href='https://twit
 params:
   title: Jonathan Peacher <i class="twa twa-waving-hand-medium-light-skin-tone"></i>
   subtitle: Software Engineer • Coffee Enthusiast • Occasional DM • Cat Dad
-  updateHeader: false
 menu:
-  footerTop:
+  main:
+    - name: Home
+      pageref: /
+      weight: 1
     - name: Twitter
       url: https://twitter.com/_djpeacher
       weight: 1
@@ -16,5 +18,5 @@ menu:
       url: https://github.com/djpeacher
       weight: 2
     - name: Resume
-      url: /resume/
+      pageref: /resume
       weight: 3
