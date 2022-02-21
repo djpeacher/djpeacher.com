@@ -1,19 +1,3 @@
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent: #809fff;
-  }
-}
-
-/* clear styles for link in header h1 */
-header > h1 > a,
-header > h1 > a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-header > h1 > a:hover {
-  text-decoration: underline;
-}
-
 small {
   color: var(--text-light);
 }
@@ -24,10 +8,6 @@ small {
 }
 :not(nav) > a:hover {
   text-decoration: underline;
-}
-
-li {
-  margin: 0.5rem 0;
 }
 
 .t-center {
