@@ -3,7 +3,6 @@ title: 'Immune Part 1: Meet Your Immune System'
 description: Book notes from Immune by Philipp Dettmer.
 date: 2022-02-23
 tags: ['book', 'notes']
-draft: true
 ---
 
 {{< notice >}}

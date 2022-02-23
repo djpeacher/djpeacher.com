@@ -2,7 +2,6 @@
 title: Now
 description: What am I up to right now?
 lastmod: 2022-02-23
-draft: true
 ---
 
 This is a [now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.
