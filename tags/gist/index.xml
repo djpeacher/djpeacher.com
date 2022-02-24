@@ -1,5 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>gist on Jonathan Peacher</title><link>http://www.djpeacher.com/tags/gist/</link><description>Recent content in gist on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Made with &lt;i class='twa twa-red-heart'>&lt;/i> by &lt;a href='https://twitter.com/_djpeacher' target='_blank'>Jonathan Peacher&lt;/a></copyright><lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/tags/gist/index.xml" rel="self" type="application/rss+xml"/><item><title>New Computer Who Dis?</title><link>http://www.djpeacher.com/posts/new-computer-who-dis/</link><pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/new-computer-who-dis/</guid><description>Install Command Line Tools
-xcode-select --install Oh My Zsh
-sh -c &amp;quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;quot; Homebrew
-/bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;quot; pyenv node (need to consider a package manager) Applications
-Visual Studio Code Docker 1Password Things 3 iStat Menus 6 Magnet Bandwidth+ Progress</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>gist on Jonathan Peacher</title><link>http://www.djpeacher.com/tags/gist/</link><description>Recent content in gist on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Made with &lt;i class='twa twa-red-heart'>&lt;/i> by &lt;a href='https://twitter.com/_djpeacher' target='_blank'>Jonathan Peacher&lt;/a></copyright><lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/tags/gist/index.xml" rel="self" type="application/rss+xml"/><item><title>New Computer Who Dis?</title><link>http://www.djpeacher.com/posts/new-computer-who-dis/</link><pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/new-computer-who-dis/</guid><description>&lt;h2 id="install">Install&lt;/h2>
+&lt;p>&lt;strong>Command Line Tools&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>xcode-select --install
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Oh My Zsh&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>sh -c &amp;quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;quot;
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Homebrew&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>/bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;quot;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;a href="https://github.com/pyenv/pyenv/wiki">pyenv&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://formulae.brew.sh/formula/node#default">node&lt;/a> (need to consider a package manager)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Applications&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://code.visualstudio.com/download">Visual Studio Code&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.docker.com/get-docker/">Docker&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://apps.apple.com/us/app/1password-7-password-manager/id1333542190?mt=12">1Password&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://apps.apple.com/us/app/things-3/id904280696?mt=12">Things 3&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://bjango.com/mac/istatmenus/">iStat Menus 6&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://apps.apple.com/us/app/magnet/id441258766?mt=12">Magnet&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://apps.apple.com/us/app/bandwidth/id490461369?mt=12">Bandwidth+&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://apps.apple.com/us/app/progress-bar/id1441939775?mt=12">Progress&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,9 +1,501 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Made with &lt;i class='twa twa-red-heart'>&lt;/i> by &lt;a href='https://twitter.com/_djpeacher' target='_blank'>Jonathan Peacher&lt;/a></copyright><lastBuildDate>Wed, 23 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Immune Part 1: Meet Your Immune System</title><link>http://www.djpeacher.com/posts/immune-part-1/</link><pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/immune-part-1/</guid><description>If you’d like to read the whole thing yourself and support the author, you can buy the book (not affiliated): https://sites.prh.com/immune What is the Immune System? 3.5 billion years ago, cells figured out how to gather resources by leeching off of other cells. 541 million years ago, multicellular life formed and developed systems to defend against intruders. While we can’t directly analyze ancient immune systems, we can study it via the tree of life.</description></item><item><title>Now</title><link>http://www.djpeacher.com/now/</link><pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/now/</guid><description>This is a now page, and if you have your own site, you should make one, too.
-Life I live in Austin, TX with my fiancée and our 4 cats (Cisco, Sammy, Milo, &amp;amp; Remy)! My fiancée and I have been together for 6 years and we are finally getting married this December!
-We&amp;rsquo;ve been trying to work out more and we&amp;rsquo;ve made some progress. This year so far we have logged 24 workouts!</description></item><item><title>What Am I?</title><link>http://www.djpeacher.com/posts/what-am-i/</link><pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/what-am-i/</guid><description>I am someone who generally writes code using web-based technologies. What am I? This question has bugged me for years and I think I&amp;rsquo;ve finally come to a conclusion.
-If you like spoilers, look at my home page or the conclusion below. If not, here is my breakdown. Keep in mind that there exists many more titles than I mention below, but I am just trying to focus on my field.</description></item><item><title>New Computer Who Dis?</title><link>http://www.djpeacher.com/posts/new-computer-who-dis/</link><pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/new-computer-who-dis/</guid><description>Install Command Line Tools
-xcode-select --install Oh My Zsh
-sh -c &amp;quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;quot; Homebrew
-/bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;quot; pyenv node (need to consider a package manager) Applications
-Visual Studio Code Docker 1Password Things 3 iStat Menus 6 Magnet Bandwidth+ Progress</description></item><item><title>About</title><link>http://www.djpeacher.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/about/</guid><description>My name is Jonathan Peacher and I'm a Software Engineer. This is my little corner of the internet where you can find out what I'm doing now, view my code, read my posts, review my resume, and get in contact! This site is hosted on GitHub and built by Hugo with the simple-hugo theme I made using Simple.css. Stats for nerds</description></item><item><title>Contact Me</title><link>http://www.djpeacher.com/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/contact/</guid><description> email me@djpeacher.com twitter @_djpeacher github @djpeacher</description></item><item><title>Resume</title><link>http://www.djpeacher.com/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/resume/</guid><description>summary { font-weight: normal; } Experience Software Engineer
-Texas Advanced Computing Center, Jan 2018 - Present Developed web applications utilized by over 9000 K12 admins, teachers, and students. Streamlined many aspects of managing our registration platform, allowing staff members to focus on empowering K12 CS educators instead of wrestling with systems. Built a cyber range portal from scratch that allows hundreds of students to participate in cybersecurity exercises in a safe environment.</description></item><item><title>Stats</title><link>http://www.djpeacher.com/stats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/stats/</guid><description>function cb(response) { const element = document.getElementById(`${response?.namespace}/${response?.key}`) if (element) element.innerText = response.value; } www.djpeacher.com index_visits 2022-02-15 [paused] resume_visits 2022-02-15 [paused] stats_visits 2022-02-15 [paused] not-wordle-just-github.djpeacher.com index_visits 2022-02-15 grids_generated 2022-01-30 rpg-dice-roller-api.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Made with &lt;i class='twa twa-red-heart'>&lt;/i> by &lt;a href='https://twitter.com/_djpeacher' target='_blank'>Jonathan Peacher&lt;/a></copyright><lastBuildDate>Wed, 23 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Immune Part 1: Meet Your Immune System</title><link>http://www.djpeacher.com/posts/immune-part-1/</link><pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/immune-part-1/</guid><description>&lt;div class="notice">
+If you’d like to read the whole thing yourself and support the author, you can buy the book (not affiliated): &lt;a href="https://sites.prh.com/immune">https://sites.prh.com/immune&lt;/a>
+&lt;/div>
+&lt;h2 id="what-is-the-immune-system">What is the Immune System?&lt;/h2>
+&lt;p>3.5 billion years ago, cells figured out how to gather resources by leeching off of other cells. 541 million years ago,
+multicellular life formed and developed systems to defend against intruders. While we can’t directly analyze ancient
+immune systems, we can study it via the tree of life. The farther separated two creatures are on the tree and still
+share the same trait, the older the trait must generally be.&lt;/p>
+&lt;p>Modern animals are the height of the immune system development which at its core is a tool to distinguish the &lt;strong>other&lt;/strong>
+from the &lt;strong>self&lt;/strong>. While distinguishing the other from the self is the &lt;em>core&lt;/em>, it is not the &lt;em>goal&lt;/em>. Its overall goal is
+to achieve &lt;em>homeostasis&lt;/em>, what we call health.&lt;/p>
+&lt;p>Ultimately the battle to stay healthy is futile and will be lost in the end, but our immune system fights to keep us
+going a little bit longer. Our immune system can also go wrong and be corrupted. When tricked, it can help spread
+diseases, protect cancer cells, cause allergies, and even get confused and deceive the body itself is the enemy. When
+too enthusiastic, it can cause unpleasant systems while it’s doing its job and can even cause death.&lt;/p>
+&lt;h2 id="what-is-there-to-defend">What Is There to Defend?&lt;/h2>
+&lt;p>Immune cells are tasked with protecting the ~40 trillion cells in your body. Most threats are stopped by the skin, but
+intruders can still enter via your mucus membranes: windpipe, lungs, eyelids, mouth, nose, stomach, intestines,
+reproductive traces, and bladder.&lt;/p>
+&lt;h2 id="what-are-your-cells">What Are Your Cells?&lt;/h2>
+&lt;p>Cells are the smallest units of life that we can clearly identify. Generally, something is alive if it separates itself
+from the universe around it, has a metabolism (intakes outside resources and expels inside garbage), responds to
+stimuli, grows, and can make more of itself. Cells are not conscious, have free will, or feelings. They are essentially
+biological robots. Cells have various “organs” inside them called organelles. These organs are surrounded by millions of
+molecules. Half of which are water molecules and other half consists of 1k-10k different kinds of proteins.&lt;/p>
+&lt;p>Proteins are the most fundamental organic building blocks and can be used for basically everything, from sending
+signals, constructing simple wall/structures to complex micromachines. Proteins are made from chains of amino acids
+(organic building blocks that come in 20 different varieties). A typical protein has 50-2000 amino acids (30k is largest
+known). There are billions of billions of possible proteins, but only 1-million to 1-billion useful ones. Your cells
+know which proteins to make thanks to the instructions on your DNA.&lt;/p>
+&lt;p>About 1% of your DNA is made up of building manuals for proteins. The rest is responsible for regulating which proteins
+are built when and how and how many of them at which time. Instructions on DNA are converted into proteins in a two-step
+process: 1. Special proteins read DNA and covers it into messenger molecules call mRNA (the language DNA uses to
+communicate orders). 2. The mRNA is then taken from the nucleus to the proteus production center called the ribosome.
+Here, mRNA is read and translated into amino acids that are put together in the order they arrived.&lt;/p>
+&lt;p>In the world of proteins, shape is everything. Their shapes determine what they can and can’t do. A proteins shape is
+determined by the amino acids it has and their sequence. As a protein is built, the chain folds together into a specific
+shape. Proteins work by interacting with each other in very complex ways. They move and interact by wiggling really
+fast. Because of their scale they behave very different compared to a human scale and can in theory move up to 5m/s if
+they were not surrounded by other molecules. This motion is called Brownian motion and is why water is so important for
+cells and leads to biological pathways.&lt;/p>
+&lt;p>Biological pathways is a fancy word to describe a series of interactions between individual things that lead to a change
+in a cell. A proteins specific shape enable them to fit together or interact with other proteins in specific ways.
+Sequences of these interactions, called pathways, cause cells to do things. An individual cell is pretty dump, but many
+cells working are pretty smart. The phenomenon occurs in many places in nature and is called emergence. It is the
+observation that the whole has properties and abilities that the parts do not have.&lt;/p>
+&lt;h2 id="the-empires-and-kingdoms-of-the-immune-system">The Empires and Kingdoms of the Immune System&lt;/h2>
+&lt;p>Your Immune System consists of two major realms: Innate and Adaptive Immunity.&lt;/p>
+&lt;p>Your Innate Immune System is ready to fight after birth, and can identify if an enemy is not self, but other. It does
+the down-and-dirty hand-to-hand combat, but it also determines what broad category your enemies fall in and how
+dangerous they are. And finally it has the power to activate your second line of defense:&lt;/p>
+&lt;p>Your Adaptive Immune System, which needs a few years before it is ready to deploy efficiently. It is specific and can
+draw from an incredibly large library to fight every possible individual enemy that nature can throw at it, with
+powerful super weapons. But while it is powerful, one of its most important jobs is to make the Innate Immune System
+even stronger.&lt;/p></description></item><item><title>Now</title><link>http://www.djpeacher.com/now/</link><pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/now/</guid><description>&lt;p>This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com/about">you should make one&lt;/a>, too.&lt;/p>
+&lt;h2 id="life-hahahugoshortcode-s0-hbhb">Life &lt;i class="twa twa-sun">&lt;/i>&lt;/h2>
+&lt;p>I live in Austin, TX with my fiancée and our 4 cats (Cisco, Sammy, Milo, &amp;amp; Remy)! My fiancée and I have been together for 6 years and we are finally getting married this December! &lt;i class="twa twa-ring">&lt;/i>&lt;/p>
+&lt;p>We&amp;rsquo;ve been trying to work out more and we&amp;rsquo;ve made some progress. This year so far we have logged 24 workouts! &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/p>
+&lt;p>In other news, my sister gave birth to a healthy baby boy, and I am now an uncle! I can&amp;rsquo;t wait for us to be the cool aunt and uncle when he grows up! &lt;i class="twa twa-baby-light-skin-tone">&lt;/i>&lt;/p>
+&lt;h2 id="work-hahahugoshortcode-s4-hbhb">Work &lt;i class="twa twa-briefcase">&lt;/i>&lt;/h2>
+&lt;p>I work for the University of Texas at Austin as a Software Engineer for the &lt;a href="https://www.tacc.utexas.edu/epic">Expanding Pathways in Computing&lt;/a> (EPIC) unit. My primary focus here is the development of &lt;a href="https://utakeit.tacc.utexas.edu">UTakeIt&lt;/a> and the &lt;a href="https://cyberrange.tacc.utexas.edu">EPIC Cyber Range&lt;/a>. &lt;i class="twa twa-man-technologist-light-skin-tone">&lt;/i>&lt;/p>
+&lt;p>We&amp;rsquo;ve been working from home since the pandemic started, but have recently started transitioning back to the office. &lt;i class="twa twa-face-with-medical-mask">&lt;/i>&lt;/p>
+&lt;h2 id="learning-hahahugoshortcode-s7-hbhb">Learning &lt;i class="twa twa-brain">&lt;/i>&lt;/h2>
+&lt;p>I&amp;rsquo;m currently working through all the &lt;a href="https://codewithmosh.com">Code With Mosh&lt;/a> courses I find interesting. I find Mosh&amp;rsquo;s courses to be extremely thorough and well produced. Some of these courses aren&amp;rsquo;t anything new to me, but I figured it never hurts to refresh your memory and maybe fill in some gaps.&lt;/p>
+&lt;ul>
+&lt;li>Mastering React&lt;/li>
+&lt;li>The Ultimate React Native Series&lt;/li>
+&lt;li>The Ultimate Redux Course&lt;/li>
+&lt;li>The Ultimate Design Pattern Series&lt;/li>
+&lt;li>The Ultimate Data Structures &amp;amp; Algorithms Bundle&lt;/li>
+&lt;li>The Ultimate HTML5 &amp;amp; CSS3 Series&lt;/li>
+&lt;li>&lt;del>Complete SQL Mastery&lt;/del>&lt;/li>
+&lt;li>&lt;del>Complete Python Mastery&lt;/del>&lt;/li>
+&lt;li>&lt;del>The Complete Node.js Course&lt;/del>&lt;/li>
+&lt;li>&lt;del>The Ultimate Docker Course&lt;/del>&lt;/li>
+&lt;li>&lt;del>The Ultimate Git Course&lt;/del>&lt;/li>
+&lt;li>&lt;del>The Ultimate Django Series&lt;/del>&lt;/li>
+&lt;li>&lt;del>The Ultimate JavaScript Mastery Series&lt;/del>&lt;/li>
+&lt;/ul>
+&lt;h2 id="creating-hahahugoshortcode-s8-hbhb">Creating &lt;i class="twa twa-hammer">&lt;/i>&lt;/h2>
+&lt;p>Right now I am tinkering with how this looks and how I am going to use it. For looks, I&amp;rsquo;m adapting &lt;a href="https://simplecss.org">Simple.css&lt;/a> into a &lt;a href="https://gohugo.io">Hugo&lt;/a> theme which you can view the source of on &lt;a href="https://github.com/djpeacher/simple-hugo">GitHub&lt;/a>. As for how I&amp;rsquo;m going to use this site, that is still developing, but I want to write more so I added &lt;a href="http://www.djpeacher.com/posts">/posts&lt;/a> to help me with that.&lt;/p>
+&lt;h2 id="reading-hahahugoshortcode-s9-hbhb">Reading &lt;i class="twa twa-open-book">&lt;/i>&lt;/h2>
+&lt;p>I&amp;rsquo;m having a little trouble finding the time to read, but when I do, I&amp;rsquo;m currently making my way through these books:&lt;/p>
+&lt;ul>
+&lt;li>Immune by Philipp Dettmer&lt;/li>
+&lt;li>Dune by Frank Herbert&lt;/li>
+&lt;li>The Forest of Doom by Ian Livingstone&lt;/li>
+&lt;/ul>
+&lt;h2 id="listening-hahahugoshortcode-s10-hbhb">Listening &lt;i class="twa twa-ear-light-skin-tone">&lt;/i>&lt;/h2>
+&lt;p>I love listening to podcasts! I have listed to &lt;strong>66 days&lt;/strong> worth of podcasts since 2016 and I have saved &lt;strong>6 days&lt;/strong> of my time by using the skip, variable speed, and trim silence features according to the app I use. These are the podcasts I&amp;rsquo;m currently listening to:&lt;/p>
+&lt;ul>
+&lt;li>Cortex&lt;/li>
+&lt;li>The Unmade Podcast&lt;/li>
+&lt;li>The Adventure Zone&lt;/li>
+&lt;li>Triforce!&lt;/li>
+&lt;li>The Daily&lt;/li>
+&lt;/ul>
+&lt;h2 id="watching-hahahugoshortcode-s11-hbhb">Watching &lt;i class="twa twa-eyes">&lt;/i>&lt;/h2>
+&lt;ul>
+&lt;li>Survivor&lt;/li>
+&lt;li>Euphoria&lt;/li>
+&lt;li>Attack on Titan: The Final Season&lt;/li>
+&lt;li>The Walking Dead (again)&lt;/li>
+&lt;/ul>
+&lt;h2 id="playing-hahahugoshortcode-s12-hbhb">Playing &lt;i class="twa twa-video-game">&lt;/i>&lt;/h2>
+&lt;ul>
+&lt;li>Halo Infinite&lt;/li>
+&lt;li>Far Cry 6&lt;/li>
+&lt;/ul></description></item><item><title>What Am I?</title><link>http://www.djpeacher.com/posts/what-am-i/</link><pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/what-am-i/</guid><description>&lt;p>I am someone who generally writes code using web-based technologies. What am I? This question has bugged me for years and I think I&amp;rsquo;ve finally come to a conclusion.&lt;/p>
+&lt;p>If you like spoilers, look at my &lt;a href="http://www.djpeacher.com/">home page&lt;/a> or the &lt;a href="#okay-so-what-am-i">conclusion&lt;/a> below. If not, here is my breakdown. Keep in mind that there exists many more titles than I mention below, but I am just trying to focus on my field. This is also just based on what I&amp;rsquo;ve been exposed to and I am happy to be proven wrong.&lt;/p>
+&lt;p>So what am I? Let&amp;rsquo;s start at the beginning&amp;hellip;&lt;/p>
+&lt;h2 id="programmercoder">Programmer/Coder&lt;/h2>
+&lt;p>I am 100% a programmer and a coder. Those two words essentially mean the same thing. I write programs with code.&lt;/p>
+&lt;p>While I think all other titles fall under this category, I do not consider it a job title. It&amp;rsquo;s just too generic to represent an occupation.&lt;/p>
+&lt;h2 id="software-engineer-vs-software-developer">Software Engineer vs. Software Developer&lt;/h2>
+&lt;p>Going a level deeper, we find Software Engineers and Software Developers. As far as I can tell, both of these mean the same thing, and the word &amp;ldquo;Software&amp;rdquo; is optional. These titles represent anyone who designs and creates systems to solve problems.&lt;/p>
+&lt;p>So I am a [Software] Engineer/Developer?&lt;/p>
+&lt;h2 id="web-vs-mobile-vs-desktop">Web vs. Mobile vs. Desktop&lt;/h2>
+&lt;p>Well, we can go another layer deeper and specialize in web, mobile, or desktop applications which produces these lovely titles:&lt;/p>
+&lt;ul>
+&lt;li>Web [Software] Engineer/Developer&lt;/li>
+&lt;li>Mobile [Software] Engineer/Developer&lt;/li>
+&lt;li>Desktop [Software] Engineer/Developer&lt;/li>
+&lt;/ul>
+&lt;p>They all do the same thing, just in their respective specialization.&lt;/p>
+&lt;p>So am I any of these? Well yes, I primarily specialize in the web, but with tools like React Native, Expo, and Electron, those lines are beginning to blur.&lt;/p>
+&lt;h2 id="full-stack-vs-backend-vs-frontend">Full-Stack vs. Backend vs. Frontend&lt;/h2>
+&lt;p>Unfortunately, we can go yet another layer deeper and specialize in the frontend, backend, or even both layers of an application, thus producing even more titles:&lt;/p>
+&lt;ul>
+&lt;li>Full-Stack [Web/Software] Engineer/Developer&lt;/li>
+&lt;li>Backend [Web/Software] Engineer/Developer&lt;/li>
+&lt;li>Frontend/UI [Web/Software] Engineer/Developer&lt;/li>
+&lt;/ul>
+&lt;p>These terms primarily get used in web environments (which is why I wrote &amp;ldquo;Web/Software&amp;rdquo;), but they could also apply to mobile and desktop.&lt;/p>
+&lt;p>This one is easy for me. I work across the entire stack, so I must be a Full-Stack [Web/Software] Engineer/Developer?&lt;/p>
+&lt;h2 id="okay-so-what-am-i">Okay, so what am I?&lt;/h2>
+&lt;p>I am someone who designs and creates systems to solve problems on the web across both the frontend and backend. And thanks to cross-platform technologies, it has never been easier for me to take my web development skills and port them over to mobile and desktop environments. Based on this description, the best titles for me are:&lt;/p>
+&lt;ul>
+&lt;li>Engineer&lt;/li>
+&lt;li>Developer&lt;/li>
+&lt;li>Software Engineer&lt;/li>
+&lt;li>Software Developer&lt;/li>
+&lt;/ul>
+&lt;p>All these titles encompass what I currently do and where my capabilities lie. I work across the stack, primarily in web environments, but depending on the technologies I could port those skills over to mobile and desktop. That said, I could see some ambiguity if I just used Engineer or Developer. So we are down to two:&lt;/p>
+&lt;ul>
+&lt;li>Software Engineer&lt;/li>
+&lt;li>Software Developer&lt;/li>
+&lt;/ul>
+&lt;p>At this point, it just comes down to personal preference, so just because it sounds cooler&amp;hellip;&lt;/p>
+&lt;p>I am a &lt;strong>Software Engineer&lt;/strong>!&lt;/p>
+&lt;p>Here is a title breakdown:&lt;/p>
+&lt;pre tabindex="0">&lt;code>- Programmer/Coder
++ [Software] Engineer/Developer
+- Web [Software] Engineer/Developer
++ Full-Stack [Web/Software] Engineer/Developer
++ Backend [Web/Software] Engineer/Developer
++ Frontend/UI [Web/Software] Engineer/Developer
+- Mobile [Software] Engineer/Developer
+- Desktop [Software] Engineer/Developer
+&lt;/code>&lt;/pre>&lt;h2 id="further-reading">Further Reading&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=2GonoPx9DgU">The Difference Between A Software Engineer And A Software Developer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=ys7V9JSTE5A">What does &amp;ldquo;Senior&amp;rdquo; Software Engineer mean?&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>New Computer Who Dis?</title><link>http://www.djpeacher.com/posts/new-computer-who-dis/</link><pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/new-computer-who-dis/</guid><description>&lt;h2 id="install">Install&lt;/h2>
+&lt;p>&lt;strong>Command Line Tools&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>xcode-select --install
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Oh My Zsh&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>sh -c &amp;quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;quot;
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Homebrew&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>/bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;quot;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;a href="https://github.com/pyenv/pyenv/wiki">pyenv&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://formulae.brew.sh/formula/node#default">node&lt;/a> (need to consider a package manager)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Applications&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://code.visualstudio.com/download">Visual Studio Code&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.docker.com/get-docker/">Docker&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://apps.apple.com/us/app/1password-7-password-manager/id1333542190?mt=12">1Password&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://apps.apple.com/us/app/things-3/id904280696?mt=12">Things 3&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://bjango.com/mac/istatmenus/">iStat Menus 6&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://apps.apple.com/us/app/magnet/id441258766?mt=12">Magnet&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://apps.apple.com/us/app/bandwidth/id490461369?mt=12">Bandwidth+&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://apps.apple.com/us/app/progress-bar/id1441939775?mt=12">Progress&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>About</title><link>http://www.djpeacher.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/about/</guid><description>
+&lt;p>
+My name is Jonathan Peacher and I'm a Software Engineer. This is my little corner of the internet where you can
+find out what I'm doing &lt;a href="http://www.djpeacher.com/now">now&lt;/a>, view my &lt;a href="http://www.djpeacher.com/">code&lt;/a>, read my &lt;a href="http://www.djpeacher.com/posts">posts&lt;/a>,
+review my &lt;a href="http://www.djpeacher.com/resume">resume&lt;/a>, and get in &lt;a href="contact">contact&lt;/a>!
+&lt;/p>
+&lt;p>
+This site is hosted on &lt;a href="https://github.com/djpeacher/djpeacher.com" target="_blank">GitHub&lt;/a> and built by
+&lt;a href="https://gohugo.io/" target="_blank">Hugo&lt;/a> with the &lt;a href="https://github.com/djpeacher/simple-hugo"
+target="_blank">simple-hugo&lt;/a> theme I made using &lt;a href="https://simplecss.org/"
+target="_blank">Simple.css&lt;/a>.
+&lt;/p>
+&lt;p>&lt;a href='http://www.djpeacher.com/stats'>Stats for nerds&lt;/a>&lt;/p></description></item><item><title>Contact Me</title><link>http://www.djpeacher.com/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/contact/</guid><description>&lt;table>
+&lt;tr>
+&lt;td>email&lt;/td>
+&lt;td>&lt;a href="mailto:me@djpeacher.com">me@djpeacher.com&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>twitter&lt;/td>
+&lt;td>&lt;a href="https://twitter.com/_djpeacher" target="_blank">@_djpeacher&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>github&lt;/td>
+&lt;td>&lt;a href="https://github.com/djpeacher" target="_blank">@djpeacher&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/table></description></item><item><title>Resume</title><link>http://www.djpeacher.com/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/resume/</guid><description>&lt;style>
+summary {
+font-weight: normal;
+}
+&lt;/style>
+&lt;h2>Experience&lt;/h2>
+&lt;p>
+&lt;b class="medium">Software Engineer&lt;/b>&lt;br />&lt;i>Texas Advanced Computing Center&lt;/i>, Jan 2018 - Present
+&lt;/p>
+&lt;p class="meta">
+Developed web applications utilized by over 9000 K12 admins, teachers, and students. Streamlined many
+aspects of managing our registration platform, allowing staff members to focus on empowering K12 CS educators
+instead of wrestling with systems. Built a cyber range portal from scratch that allows hundreds of students to
+participate in cybersecurity exercises in a safe environment.
+&lt;/p>
+&lt;details>
+&lt;summary>
+&lt;u>Lead Software Engineer&lt;/u> of &lt;a href="https://utakeit.tacc.utexas.edu" target="_blank">UTakeIt&lt;/a>, a
+professional development registration and management system for K12 CS educators.
+&lt;/summary>
+&lt;ul>
+&lt;li>Stack: Python, Django, Bootstrap, Celery, Docker, Apache, MySQL, Jenkins&lt;/li>
+&lt;li>
+Containerized Django application using Docker and continuously
+integrated and deployed using Jenkins.
+&lt;/li>
+&lt;li>
+Intuitive e-commerce system that allows users to purchase one or many
+registrations and optional add-ons with a credit card, check, coupon, or
+purchase order and has been used to process hundreds of thousands of
+dollars. Hooks into the university’s payment processor for credit card
+transactions. Also used to collect preliminary data from registrants.
+&lt;/li>
+&lt;li>
+Powerful management system that allows staff members to effectively
+track and manage 6,000+ users and their 10,000+ registrations across
+375+ events, courses, and curricula.
+&lt;/li>
+&lt;li>
+Management system has the ability to manage many aspects of the site
+including product listings, reviews, user activity, outgoing emails,
+reports, financial records, Canvas integrations, announcements,
+certificates, coupons, and many more. Celery is used to handle emails
+and generating reports.
+&lt;/li>
+&lt;li>
+All dynamic interactions are handled with REST APIs and JavaScript which
+is bundled by Webpack.
+&lt;/li>
+&lt;li>Users are authenticated with university EIDs using Shibboleth.&lt;/li>
+&lt;/ul>
+&lt;/details>
+&lt;details>
+&lt;summary>
+&lt;u>Lead Software Engineer&lt;/u> of &lt;a href="https://cyberrange.tacc.utexas.edu" target="_blank">EPIC Cyber
+Range&lt;/a>, an on-demand virtual machine education tool for K12 cybersecurity classrooms.
+&lt;/summary>
+&lt;ul>
+&lt;li>
+Stack: Django, React, Material UI, Docker, Nginx, PostgreSQL, Jenkins
+&lt;/li>
+&lt;li>
+Containerized Django/React application using Docker and continuously integrated and deployed using Jenkins.
+&lt;/li>
+&lt;li>
+OpenStack virtual environments facilitate cybersecurity education and has been utilized by 800+ students
+and teachers across dozens of organizations. These environments are hosted on the Hikari supercomputer
+at the Texas Advanced Computing Center and managed via the web application using OpenStack API calls and
+tracked with Django models.
+&lt;/li>
+&lt;li>
+Users are organized in a hierarchy of organizations, classrooms, exercises, and teams and are all
+protected with object-level permissions based on user roles and ownership.
+&lt;/li>
+&lt;li>
+User interface is rendered with React and Material UI, routed with React Router, and interfaces with the
+Django REST Framework using SWR.
+&lt;/li>
+&lt;li>
+Users are authenticated with Google using django-allauth.
+&lt;/li>
+&lt;/ul>
+&lt;/details>
+&lt;details>
+&lt;summary>
+&lt;u>Maintainer&lt;/u> of &lt;a href="https://texasccrsmdesignation.org" target="_blank">TEA CCRSM&lt;/a>, an application
+platform for Texas school to apply for a College and Career Readiness designation.
+&lt;/summary>
+&lt;ul>
+&lt;li>Stack: PHP, Laravel, MySQL&lt;/li>
+&lt;/ul>
+&lt;/details>
+&lt;details>
+&lt;summary>
+&lt;u>Builder &amp; Tech Support&lt;/u> of &lt;a href="https://utakeit.tacc.utexas.edu/weteach_cs-summit-2021/"
+target="_blank">WeTeach_CS Summit 2021&lt;/a>, a professional development event for K12 CS educators that was
+held virtually for over 300 attendees and exhibitors.
+&lt;/summary>
+&lt;ul>
+&lt;li>
+&lt;a href="https://gather.town/app/4xY6fwuKV34IHx86/WeTeach_CS%20Summit%202021" target="_blank">&lt;u>Virtual
+World&lt;/u>&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;/details>
+&lt;br>
+&lt;hr>
+&lt;h2>Education&lt;/h2>
+&lt;p>
+&lt;b class="medium">Bachelor of Science and Arts in Computer Science&lt;/b>&lt;br />&lt;i>The University of Texas at
+Austin&lt;/i>, 2018
+&lt;/p>
+&lt;br>
+&lt;hr>
+&lt;h2>Projects&lt;/h2>
+&lt;p>
+&lt;i class="twa twa-game-die">&lt;/i> &lt;a href="https://dice-room.djpeacher.com" target="_blank">dice-room&lt;/a>,
+an app to roll RPG dice online with friends.
+&lt;/p>
+&lt;p>
+&lt;i class="twa twa-green-square">&lt;/i> &lt;a href="https://not-wordle-just-github.djpeacher.com/"
+target="_blank">not-wordle-just-github&lt;/a>,
+a utility to generate a github wordle grid.
+&lt;/p>
+&lt;p>
+&lt;i class="twa twa-game-die">&lt;/i> &lt;a href="https://rpgdr.djpeacher.com/" target="_blank">rpg-dice-roller-api&lt;/a>,
+an API wrapper for rpg-dice-roller.
+&lt;/p>
+&lt;p>
+&lt;i class="twa twa-calendar">&lt;/i> &lt;a href="https://year-in-pixels.djpeacher.com/" target="_blank">year-in-pixels&lt;/a>,
+a tool to track your year with pixels.
+&lt;/p>
+&lt;p>
+&lt;i class="twa twa-locked">&lt;/i> &lt;a href="https://password-protected-links-ygcbs.ondigitalocean.app/lock"
+target="_blank">password-protected-links&lt;/a>,
+a utility to add passwords to URLs.
+&lt;/p>
+&lt;br>
+&lt;hr>
+&lt;h2>Courses&lt;/h2>
+&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-complete-python-mastery.pdf' target="_blank">Complete Python
+Mastery&lt;/a>&lt;/p>
+&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-complete-sql-mastery.pdf' target="_blank">Complete SQL Mastery&lt;/a>&lt;/p>
+&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-complete-node-js-course.pdf' target="_blank">The Complete Node.js
+Course&lt;/a>&lt;/p>
+&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-django-series-part-1.pdf' target="_blank">The Ultimate
+Django Series - Part 1&lt;/a>&lt;/p>
+&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-django-series-part-2.pdf' target="_blank">The Ultimate
+Django Series - Part 2&lt;/a>&lt;/p>
+&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-django-series-part-3.pdf' target="_blank">The Ultimate
+Django Series - Part 3&lt;/a>&lt;/p>
+&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-docker-course.pdf' target="_blank">The Ultimate Docker
+Course&lt;/a>&lt;/p>
+&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-git-course.pdf' target="_blank">The Ultimate Git
+Course&lt;/a>&lt;/p>
+&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-and-css3-series-part-1.pdf' target="_blank">The
+Ultimate HTML5 &amp; CSS3 Series: Part 1&lt;/a>&lt;/p>
+&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-javascript-mastery-series-part-1.pdf' target="_blank">The
+Ultimate JavaScript Mastery Series - Part 1&lt;/a>&lt;/p>
+&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-javascript-mastery-series-part-2.pdf' target="_blank">The
+Ultimate JavaScript Mastery Series - Part 2&lt;/a>&lt;/p>
+&lt;h2>Conferences&lt;/h2>
+&lt;p>Streamed &lt;a href="https://2021.djangocon.us" target="_blank">DjangoCon 2021&lt;/a>&lt;/p>
+&lt;p>Attended &lt;a href="https://2019.djangocon.us" target="_blank">DjangoCon 2019&lt;/a>&lt;/p></description></item><item><title>Stats</title><link>http://www.djpeacher.com/stats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/stats/</guid><description>&lt;script>
+function cb(response) {
+const element = document.getElementById(`${response?.namespace}/${response?.key}`)
+if (element)
+element.innerText = response.value;
+}
+&lt;/script>
+&lt;script async src="https://api.countapi.xyz/info/www.djpeacher.com/index_visits?callback=cb">&lt;/script>
+&lt;script async src="https://api.countapi.xyz/info/www.djpeacher.com/resume_visits?callback=cb">&lt;/script>
+&lt;script async src="https://api.countapi.xyz/info/www.djpeacher.com/stats_visits?callback=cb">&lt;/script>
+&lt;script async
+src="https://api.countapi.xyz/info/not-wordle-just-github.djpeacher.com/index_visits?callback=cb">&lt;/script>
+&lt;script async
+src="https://api.countapi.xyz/info/not-wordle-just-github.djpeacher.com/grids_generated?callback=cb">&lt;/script>
+&lt;script async src="https://api.countapi.xyz/info/rpg-dice-roller-api.djpeacher.com/index_visits?callback=cb">&lt;/script>
+&lt;script async
+src="https://api.countapi.xyz/info/rpg-dice-roller-api.djpeacher.com/rolls_simulated?callback=cb">&lt;/script>
+&lt;script async src="https://api.countapi.xyz/info/year-in-pixels.djpeacher.com/index_visits?callback=cb">&lt;/script>
+&lt;script async src="https://api.countapi.xyz/info/year-in-pixels.djpeacher.com/pixels_updated?callback=cb">&lt;/script>
+&lt;script async
+src="https://api.countapi.xyz/info/password-protected-links.djpeacher.com/index_visits?callback=cb">&lt;/script>
+&lt;script async
+src="https://api.countapi.xyz/info/password-protected-links.djpeacher.com/links_locked?callback=cb">&lt;/script>
+&lt;script async
+src="https://api.countapi.xyz/info/password-protected-links.djpeacher.com/links_unlocked?callback=cb">&lt;/script>
+&lt;table class="stats">
+&lt;thead>
+&lt;tr>
+&lt;th colspan="2">&lt;a href="https://www.djpeacher.com">www.djpeacher.com&lt;/a>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>index_visits &lt;small>2022-02-15 [paused]&lt;/small>&lt;/td>
+&lt;td id="www.djpeacher.com/index_visits">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>resume_visits &lt;small>2022-02-15 [paused]&lt;/small>&lt;/td>
+&lt;td id="www.djpeacher.com/resume_visits">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>stats_visits &lt;small>2022-02-15 [paused]&lt;/small>&lt;/td>
+&lt;td id="www.djpeacher.com/stats_visits">&lt;/td>
+&lt;/tr>
+&lt;tr class="clear">
+&lt;td colspan="2">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;thead>
+&lt;tr>
+&lt;th colspan="2">&lt;a href="https://not-wordle-just-github.djpeacher.com"
+target="_blank">not-wordle-just-github.djpeacher.com&lt;/a>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>index_visits &lt;small>2022-02-15&lt;/small>&lt;/td>
+&lt;td id="not-wordle-just-github.djpeacher.com/index_visits">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>grids_generated &lt;small>2022-01-30&lt;/small>&lt;/td>
+&lt;td id="not-wordle-just-github.djpeacher.com/grids_generated">&lt;/td>
+&lt;/tr>
+&lt;tr class="clear">
+&lt;td colspan="2">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;thead>
+&lt;tr>
+&lt;th colspan="2">&lt;a href="https://rpg-dice-roller-api.djpeacher.com"
+target="_blank">rpg-dice-roller-api.djpeacher.com&lt;/a>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>index_visits &lt;small>2022-02-15&lt;/small>&lt;/td>
+&lt;td id="rpg-dice-roller-api.djpeacher.com/index_visits">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rolls_simulated &lt;small>2022-02-15&lt;/small>&lt;/td>
+&lt;td id="rpg-dice-roller-api.djpeacher.com/rolls_simulated">&lt;/td>
+&lt;/tr>
+&lt;tr class="clear">
+&lt;td colspan="2">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;thead>
+&lt;tr>
+&lt;th colspan="2">&lt;a href="https://year-in-pixels.djpeacher.com"
+target="_blank">year-in-pixels.djpeacher.com&lt;/a>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>index_visits &lt;small>2022-02-15&lt;/small>&lt;/td>
+&lt;td id="year-in-pixels.djpeacher.com/index_visits">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>pixels_updated &lt;small>2022-02-15&lt;/small>&lt;/td>
+&lt;td id="year-in-pixels.djpeacher.com/pixels_updated">&lt;/td>
+&lt;/tr>
+&lt;tr class="clear">
+&lt;td colspan="2">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;thead>
+&lt;tr>
+&lt;th colspan="2">&lt;a href="https://password-protected-links.djpeacher.com"
+target="_blank">password-protected-links.djpeacher.com&lt;/a>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>index_visits &lt;small>2022-02-15&lt;/small>&lt;/td>
+&lt;td id="password-protected-links.djpeacher.com/index_visits">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>links_locked &lt;small>2022-02-15&lt;/small>&lt;/td>
+&lt;td id="password-protected-links.djpeacher.com/links_locked">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>links_unlocked &lt;small>2022-02-15&lt;/small>&lt;/td>
+&lt;td id="password-protected-links.djpeacher.com/links_unlocked">&lt;/td>
+&lt;/tr>
+&lt;tr class="clear">
+&lt;td colspan="2">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>

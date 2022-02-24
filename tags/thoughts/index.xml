@@ -1,2 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>thoughts on Jonathan Peacher</title><link>http://www.djpeacher.com/tags/thoughts/</link><description>Recent content in thoughts on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Made with &lt;i class='twa twa-red-heart'>&lt;/i> by &lt;a href='https://twitter.com/_djpeacher' target='_blank'>Jonathan Peacher&lt;/a></copyright><lastBuildDate>Tue, 22 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/tags/thoughts/index.xml" rel="self" type="application/rss+xml"/><item><title>What Am I?</title><link>http://www.djpeacher.com/posts/what-am-i/</link><pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/what-am-i/</guid><description>I am someone who generally writes code using web-based technologies. What am I? This question has bugged me for years and I think I&amp;rsquo;ve finally come to a conclusion.
-If you like spoilers, look at my home page or the conclusion below. If not, here is my breakdown. Keep in mind that there exists many more titles than I mention below, but I am just trying to focus on my field.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>thoughts on Jonathan Peacher</title><link>http://www.djpeacher.com/tags/thoughts/</link><description>Recent content in thoughts on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Made with &lt;i class='twa twa-red-heart'>&lt;/i> by &lt;a href='https://twitter.com/_djpeacher' target='_blank'>Jonathan Peacher&lt;/a></copyright><lastBuildDate>Tue, 22 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/tags/thoughts/index.xml" rel="self" type="application/rss+xml"/><item><title>What Am I?</title><link>http://www.djpeacher.com/posts/what-am-i/</link><pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/what-am-i/</guid><description>&lt;p>I am someone who generally writes code using web-based technologies. What am I? This question has bugged me for years and I think I&amp;rsquo;ve finally come to a conclusion.&lt;/p>
+&lt;p>If you like spoilers, look at my &lt;a href="http://www.djpeacher.com/">home page&lt;/a> or the &lt;a href="#okay-so-what-am-i">conclusion&lt;/a> below. If not, here is my breakdown. Keep in mind that there exists many more titles than I mention below, but I am just trying to focus on my field. This is also just based on what I&amp;rsquo;ve been exposed to and I am happy to be proven wrong.&lt;/p>
+&lt;p>So what am I? Let&amp;rsquo;s start at the beginning&amp;hellip;&lt;/p>
+&lt;h2 id="programmercoder">Programmer/Coder&lt;/h2>
+&lt;p>I am 100% a programmer and a coder. Those two words essentially mean the same thing. I write programs with code.&lt;/p>
+&lt;p>While I think all other titles fall under this category, I do not consider it a job title. It&amp;rsquo;s just too generic to represent an occupation.&lt;/p>
+&lt;h2 id="software-engineer-vs-software-developer">Software Engineer vs. Software Developer&lt;/h2>
+&lt;p>Going a level deeper, we find Software Engineers and Software Developers. As far as I can tell, both of these mean the same thing, and the word &amp;ldquo;Software&amp;rdquo; is optional. These titles represent anyone who designs and creates systems to solve problems.&lt;/p>
+&lt;p>So I am a [Software] Engineer/Developer?&lt;/p>
+&lt;h2 id="web-vs-mobile-vs-desktop">Web vs. Mobile vs. Desktop&lt;/h2>
+&lt;p>Well, we can go another layer deeper and specialize in web, mobile, or desktop applications which produces these lovely titles:&lt;/p>
+&lt;ul>
+&lt;li>Web [Software] Engineer/Developer&lt;/li>
+&lt;li>Mobile [Software] Engineer/Developer&lt;/li>
+&lt;li>Desktop [Software] Engineer/Developer&lt;/li>
+&lt;/ul>
+&lt;p>They all do the same thing, just in their respective specialization.&lt;/p>
+&lt;p>So am I any of these? Well yes, I primarily specialize in the web, but with tools like React Native, Expo, and Electron, those lines are beginning to blur.&lt;/p>
+&lt;h2 id="full-stack-vs-backend-vs-frontend">Full-Stack vs. Backend vs. Frontend&lt;/h2>
+&lt;p>Unfortunately, we can go yet another layer deeper and specialize in the frontend, backend, or even both layers of an application, thus producing even more titles:&lt;/p>
+&lt;ul>
+&lt;li>Full-Stack [Web/Software] Engineer/Developer&lt;/li>
+&lt;li>Backend [Web/Software] Engineer/Developer&lt;/li>
+&lt;li>Frontend/UI [Web/Software] Engineer/Developer&lt;/li>
+&lt;/ul>
+&lt;p>These terms primarily get used in web environments (which is why I wrote &amp;ldquo;Web/Software&amp;rdquo;), but they could also apply to mobile and desktop.&lt;/p>
+&lt;p>This one is easy for me. I work across the entire stack, so I must be a Full-Stack [Web/Software] Engineer/Developer?&lt;/p>
+&lt;h2 id="okay-so-what-am-i">Okay, so what am I?&lt;/h2>
+&lt;p>I am someone who designs and creates systems to solve problems on the web across both the frontend and backend. And thanks to cross-platform technologies, it has never been easier for me to take my web development skills and port them over to mobile and desktop environments. Based on this description, the best titles for me are:&lt;/p>
+&lt;ul>
+&lt;li>Engineer&lt;/li>
+&lt;li>Developer&lt;/li>
+&lt;li>Software Engineer&lt;/li>
+&lt;li>Software Developer&lt;/li>
+&lt;/ul>
+&lt;p>All these titles encompass what I currently do and where my capabilities lie. I work across the stack, primarily in web environments, but depending on the technologies I could port those skills over to mobile and desktop. That said, I could see some ambiguity if I just used Engineer or Developer. So we are down to two:&lt;/p>
+&lt;ul>
+&lt;li>Software Engineer&lt;/li>
+&lt;li>Software Developer&lt;/li>
+&lt;/ul>
+&lt;p>At this point, it just comes down to personal preference, so just because it sounds cooler&amp;hellip;&lt;/p>
+&lt;p>I am a &lt;strong>Software Engineer&lt;/strong>!&lt;/p>
+&lt;p>Here is a title breakdown:&lt;/p>
+&lt;pre tabindex="0">&lt;code>- Programmer/Coder
++ [Software] Engineer/Developer
+- Web [Software] Engineer/Developer
++ Full-Stack [Web/Software] Engineer/Developer
++ Backend [Web/Software] Engineer/Developer
++ Frontend/UI [Web/Software] Engineer/Developer
+- Mobile [Software] Engineer/Developer
+- Desktop [Software] Engineer/Developer
+&lt;/code>&lt;/pre>&lt;h2 id="further-reading">Further Reading&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=2GonoPx9DgU">The Difference Between A Software Engineer And A Software Developer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=ys7V9JSTE5A">What does &amp;ldquo;Senior&amp;rdquo; Software Engineer mean?&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
