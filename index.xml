@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Made with &lt;i class='twa twa-red-heart'>&lt;/i> by &lt;a href='https://twitter.com/_djpeacher' target='_blank'>Jonathan Peacher&lt;/a></copyright><lastBuildDate>Wed, 23 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Immune Part 1: Meet Your Immune System</title><link>http://www.djpeacher.com/posts/immune-part-1/</link><pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/immune-part-1/</guid><description>&lt;div class="notice">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Wed, 23 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Immune Part 1: Meet Your Immune System</title><link>http://www.djpeacher.com/posts/immune-part-1/</link><pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/immune-part-1/</guid><description>&lt;div class="notice">
 If you’d like to read the whole thing yourself and support the author, you can buy the book (not affiliated): &lt;a href="https://sites.prh.com/immune">https://sites.prh.com/immune&lt;/a>
 &lt;/div>
 &lt;h2 id="what-is-the-immune-system">What is the Immune System?&lt;/h2>
@@ -194,7 +194,37 @@ This site is hosted on &lt;a href="https://github.com/djpeacher/djpeacher.com" t
 target="_blank">simple-hugo&lt;/a> theme I made using &lt;a href="https://simplecss.org/"
 target="_blank">Simple.css&lt;/a>.
 &lt;/p>
-&lt;p>&lt;a href='http://www.djpeacher.com/stats'>Stats for nerds&lt;/a>&lt;/p></description></item><item><title>Contact Me</title><link>http://www.djpeacher.com/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/contact/</guid><description>&lt;table>
+&lt;p>&lt;a href='http://www.djpeacher.com/stats'>Stats for nerds&lt;/a>&lt;/p></description></item><item><title>Code</title><link>http://www.djpeacher.com/code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/code/</guid><description>
+&lt;p class="notice t-center">
+&lt;i class="twa twa-lg twa-paintbrush">&lt;/i>&lt;br />
+&lt;a href="https://github.com/djpeacher/simple-hugo" target="_blank">&lt;b>simple-hugo&lt;/b>&lt;/a>
+&lt;br />A Hugo theme using Simple.css!
+&lt;/p>
+&lt;p class="notice t-center">
+&lt;i class="twa twa-lg twa-game-die">&lt;/i>&lt;br />
+&lt;a href="https://dice-room.djpeacher.com/" target="_blank">&lt;b>dice-room&lt;/b>&lt;/a>
+&lt;br />Roll dice online with friends!
+&lt;/p>
+&lt;p class="notice t-center">
+&lt;i class="twa twa-lg twa-green-square">&lt;/i>&lt;br />
+&lt;a href="https://not-wordle-just-github.djpeacher.com/" target="_blank">&lt;b>not-wordle-just-github&lt;/b>&lt;/a>
+&lt;br />Generate a Wordle grid, but of your GitHub contributions!
+&lt;/p>
+&lt;p class="notice t-center">
+&lt;i class="twa twa-lg twa-game-die">&lt;/i>&lt;br />
+&lt;a href="https://rpg-dice-roller-api.djpeacher.com/" target="_blank">&lt;b>rpg-dice-roller-api&lt;/b>&lt;/a>
+&lt;br />API wrapper for rpg-dice-roller!
+&lt;/p>
+&lt;p class="notice t-center">
+&lt;i class="twa twa-lg twa-calendar">&lt;/i>&lt;br />
+&lt;a href="https://year-in-pixels.djpeacher.com/" target="_blank">&lt;b>year-in-pixels&lt;/b>&lt;/a>
+&lt;br />Track whatever you want in a year with pixels!
+&lt;/p>
+&lt;p class="notice t-center">
+&lt;i class="twa twa-lg twa-locked">&lt;/i>&lt;br />
+&lt;a href="https://password-protected-links.djpeacher.com/" target="_blank">&lt;b>password-protected-links&lt;/b>&lt;/a>
+&lt;br />Lock any link with a password!
+&lt;/p></description></item><item><title>Contact Me</title><link>http://www.djpeacher.com/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/contact/</guid><description>&lt;table>
 &lt;tr>
 &lt;td>email&lt;/td>
 &lt;td>&lt;a href="mailto:me@djpeacher.com">me@djpeacher.com&lt;/a>&lt;/td>
