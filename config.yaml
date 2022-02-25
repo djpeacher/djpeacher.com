@@ -9,7 +9,7 @@ params:
   subtitle: Software Engineer • Coffee Enthusiast • Occasional DM • Cat Dad
   replyEmail: me@djpeacher.com
   dark:
-    accent: #809fff
+    accent: '#809fff'
 menu:
   main:
     - name: Home
