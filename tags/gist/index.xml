@@ -2,9 +2,9 @@
 &lt;p>&lt;strong>Command Line Tools&lt;/strong>&lt;/p>
 &lt;pre tabindex="0">&lt;code>xcode-select --install
 &lt;/code>&lt;/pre>&lt;p>&lt;strong>Oh My Zsh&lt;/strong>&lt;/p>
-&lt;pre tabindex="0">&lt;code>sh -c &amp;quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;quot;
+&lt;pre tabindex="0">&lt;code>sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;
 &lt;/code>&lt;/pre>&lt;p>&lt;strong>Homebrew&lt;/strong>&lt;/p>
-&lt;pre tabindex="0">&lt;code>/bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;quot;
+&lt;pre tabindex="0">&lt;code>/bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34;
 &lt;/code>&lt;/pre>&lt;ul>
 &lt;li>&lt;a href="https://github.com/pyenv/pyenv/wiki">pyenv&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://formulae.brew.sh/formula/node#default">node&lt;/a> (need to consider a package manager)&lt;/li>
