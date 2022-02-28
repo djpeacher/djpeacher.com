@@ -1,4 +1,137 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Wed, 23 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Immune Part 1: Meet Your Immune System</title><link>http://www.djpeacher.com/posts/immune-part-1/</link><pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/immune-part-1/</guid><description>&lt;div class="notice">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Mon, 28 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Python Version Manager 101 (pyenv)</title><link>http://www.djpeacher.com/posts/pyenv/</link><pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/pyenv/</guid><description>&lt;p>When you boot up a new machine, it will usually come preinstalled with a version of Python. You can verify this by running the following:&lt;/p>
+&lt;pre tabindex="0">&lt;code># This shows the version installed.
+$ python -V
+Python 2.7.18
+# This shows the location of the installation.
+$ which python
+/usr/bin/python
+&lt;/code>&lt;/pre>&lt;p>That&amp;rsquo;s great, but &lt;strong>do not use &amp;ldquo;System Python.&amp;rdquo;&lt;/strong> It came with your operating system because it is a dependency that should not be tampered with. Doing so could harm your system or the very least, cause you a lot of grief down the road.&lt;/p>
+&lt;p>You could work around this by manually installing other versions of Python, but that is hard to manage and can get messy fast, especially if you have multiple projects depending on &lt;strong>different&lt;/strong> versions of Python.&lt;/p>
+&lt;p>Instead of dealing with all that, you might want to invest of few minutes setting up a &lt;strong>Python Version Manager&lt;/strong>, in this case, &lt;code>pyenv&lt;/code>, that will let you easily switch between multiple versions of Python.&lt;/p>
+&lt;p>If that sounds good to you, continue reading to learn how to install and use &lt;code>pyenv&lt;/code>.&lt;/p>
+&lt;h2 id="installation">Installation&lt;/h2>
+&lt;p>I&amp;rsquo;m not going to get super specific on the installation of &lt;code>pyenv&lt;/code> because it depends on the machine you are working with. These instructions are what got me set up on my specific machine (M1 Mac using Zsh), so your mileage may vary. Here are the official instructions if these don&amp;rsquo;t work for you.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://brew.sh">homebrew&lt;/a>, the missing package manager for macOS.&lt;/li>
+&lt;li>&lt;a href="https://github.com/pyenv/pyenv#installation">pyenv&lt;/a>, the python version manager.&lt;/li>
+&lt;li>&lt;a href="https://github.com/pyenv/pyenv-virtualenv#installation">pyenv-virtualenv&lt;/a>, a virtualenv plugin for &lt;code>pyenv&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="dependencies">Dependencies&lt;/h3>
+&lt;p>Before you can install &lt;code>pyenv&lt;/code>, you need to install all its dependencies.&lt;/p>
+&lt;pre tabindex="0">&lt;code># Install Xcode Command Line Tools
+xcode-select --install
+# Install Homebrew
+/bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34;
+echo &amp;#39;export PATH=/opt/homebrew/bin:$PATH&amp;#39; &amp;gt;&amp;gt; ~/.zshrc
+# Install Python build dependencies
+brew install openssl readline sqlite3 xz zlib
+&lt;/code>&lt;/pre>&lt;h3 id="install-pyenv">Install &lt;code>pyenv&lt;/code>&lt;/h3>
+&lt;p>Now we can install &lt;code>pyenv&lt;/code> using &lt;code>brew&lt;/code> and configure your terminal to let &lt;code>pyenv&lt;/code> dictate which version of Python you are using.&lt;/p>
+&lt;pre tabindex="0">&lt;code># Install pyenv
+brew install pyenv pyenv-virtualenv
+# Configure shell environment
+echo &amp;#39;eval &amp;#34;$(pyenv init --path)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc
+echo &amp;#39;eval &amp;#34;$(pyenv virtualenv-init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc
+echo &amp;#39;if which pyenv-virtualenv-init &amp;gt; /dev/null; then eval &amp;#34;$(pyenv virtualenv-init -)&amp;#34;; fi&amp;#39; &amp;gt;&amp;gt; ~/.zprofile
+&lt;/code>&lt;/pre>&lt;p>You know you&amp;rsquo;ve set everything up correctly if you see the following:&lt;/p>
+&lt;pre tabindex="0">&lt;code># You&amp;#39;ve installed pyenv!
+$ pyenv --version
+pyenv 2.2.4
+# pyenv put itself between your system and terminal!
+# Notice that the installation path is different now.
+$ which python
+/Users/&amp;lt;user&amp;gt;/.pyenv/shims/python
+&lt;/code>&lt;/pre>&lt;h2 id="usage">Usage&lt;/h2>
+&lt;p>With &lt;code>pyenv&lt;/code> installed, we can do some powerful stuff!&lt;/p>
+&lt;ul>
+&lt;li>Install pretty much whatever version of Python we want.&lt;/li>
+&lt;li>Create virtualenvs that act like separate Python installations.&lt;/li>
+&lt;li>Set the global, local, and shell versions of Python we want to use.&lt;/li>
+&lt;/ul>
+&lt;h3 id="how-it-works">How It Works&lt;/h3>
+&lt;p>By default, &lt;code>pyenv&lt;/code> will use &amp;ldquo;System Python,&amp;rdquo; which as I mentioned we shouldn&amp;rsquo;t use, so we need to install other versions. When you install a new version of Python using &lt;code>pyenv&lt;/code>, it stores them in its root directory (&lt;code>~/.pyenv&lt;/code>).&lt;/p>
+&lt;p>After we install the versions of Python we want, we need to tell &lt;code>pyenv&lt;/code> where and when we want to use each version by using the &lt;code>global&lt;/code>, &lt;code>local&lt;/code>, and &lt;code>shell&lt;/code> commands.&lt;/p>
+&lt;ul>
+&lt;li>When we use the &lt;code>global&lt;/code> command, we are setting the global Python version. &lt;code>pyenv&lt;/code> records this information in this file &lt;code>~/.pyenv/version&lt;/code>.&lt;/li>
+&lt;li>When we use the &lt;code>local&lt;/code> command, we are setting the local application-specific Python version. This will apply to all its subdirectories as well! &lt;code>pyenv&lt;/code> records this information by creating a file in the current directory called &lt;code>.python-version&lt;/code>.&lt;/li>
+&lt;li>When we use the &lt;code>shell&lt;/code> command, we are setting the shell-specific Python version. &lt;code>pyenv&lt;/code> records this information by setting the &lt;code>$PYENV_VERSION&lt;/code> environment variable.&lt;/li>
+&lt;/ul>
+&lt;h4 id="so-how-does-pyenv-decide-which-version-to-use">So how does &lt;code>pyenv&lt;/code> decide which version to use?&lt;/h4>
+&lt;p>As we move between directories &lt;code>pyenv&lt;/code> searches for the files and environment variable we set above and processes them in the following order:&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>$PYENV_VERSION&lt;/code>. This version will be used if set.&lt;/li>
+&lt;li>&lt;code>.python-version&lt;/code>. This version will be used if this file exists.&lt;/li>
+&lt;li>&lt;code>~/.pyenv/version&lt;/code>. This version will be used if this file exists.&lt;/li>
+&lt;li>If none of these exist, it will use &amp;ldquo;System Python&amp;rdquo;.&lt;/li>
+&lt;/ol>
+&lt;h4 id="what-about-virtualenvs">What about virtualenvs?&lt;/h4>
+&lt;p>Working with virtualenvs is extremely simple. All we have to do is use the &lt;code>virtualenv&lt;/code> command and specify the version of Python we want to use. &lt;code>pyenv&lt;/code> then creates the virtualenv it&amp;rsquo;s root directory which we can use with the &lt;code>global&lt;/code>, &lt;code>local&lt;/code>, and &lt;code>shell&lt;/code> commands, just like the full Python installations!&lt;/p>
+&lt;p>And if you configured your shell correctly, you don&amp;rsquo;t even have to run any &lt;code>activate&lt;/code> or &lt;code>deactivate&lt;/code> commands, &lt;code>pyenv&lt;/code> will handle that when you enter and leave directories.&lt;/p>
+&lt;h3 id="command-overview">Command Overview&lt;/h3>
+&lt;p>Now that you have a basic understanding of how &lt;code>pyenv&lt;/code> works, here is an overview of its available commands.&lt;/p>
+&lt;h4 id="install">&lt;code>install&lt;/code>&lt;/h4>
+&lt;p>Install a Python version using python-build. &lt;code>pyenv&lt;/code> builds each installation from source, so it could be a few seconds for this command to complete.&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ pyenv install 3.10.2
+&lt;/code>&lt;/pre>&lt;h4 id="uninstall">&lt;code>uninstall&lt;/code>&lt;/h4>
+&lt;p>Uninstall a specific Python version.&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ pyenv uninstall 3.10.2
+&lt;/code>&lt;/pre>&lt;h4 id="versions">&lt;code>versions&lt;/code>&lt;/h4>
+&lt;p>List all Python versions available to pyenv.&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ pyenv versions
+system
+* 3.10.2 (set by /Users/&amp;lt;user&amp;gt;/.pyenv/version)
+&lt;/code>&lt;/pre>&lt;p>Notice that there is a &lt;code>*&lt;/code> indicating what is the active version of Python and it tells you how &lt;code>pyenv&lt;/code> decided to use that version.&lt;/p>
+&lt;h4 id="global">&lt;code>global&lt;/code>&lt;/h4>
+&lt;p>Set or show the global Python version.&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ pyenv global
+system
+$ pyenv global 3.10.2
+$ pyenv global
+3.10.2
+$ python -V
+Python 3.10.2
+&lt;/code>&lt;/pre>&lt;p>This will update the &lt;code>/Users/&amp;lt;user&amp;gt;/.pyenv/version&lt;/code> file.&lt;/p>
+&lt;h4 id="local">&lt;code>local&lt;/code>&lt;/h4>
+&lt;p>Set or show the local application-specific Python version.&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ pyenv local
+pyenv: no local version configured for this directory
+$ pyenv local 3.10.2
+$ pyenv local
+3.10.2
+$ python -V
+Python 3.10.2
+&lt;/code>&lt;/pre>&lt;p>This will create or update the &lt;code>.python-version&lt;/code> file in the current directory.&lt;/p>
+&lt;h4 id="shell">&lt;code>shell&lt;/code>&lt;/h4>
+&lt;p>Set or show the shell-specific Python version.&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ pyenv shell
+pyenv: no shell-specific version configured
+$ pyenv shell 3.10.2
+$ pyenv shell
+3.10.2
+$ python -V
+Python 3.10.2
+&lt;/code>&lt;/pre>&lt;p>This will set the &lt;code>$PYENV_VERSION&lt;/code> environment variable.&lt;/p>
+&lt;h4 id="virtualenv">&lt;code>virtualenv&lt;/code>&lt;/h4>
+&lt;p>Creates a Python virtualenv in the &lt;code>pyenv&lt;/code> root directory.&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ pyenv virtualenv [version] &amp;lt;name&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>If no version number is given, the current active version will be used. You can name the virtualenv whatever you want, but it is best practice to name it the same as the relevant project.&lt;/p>
+&lt;h4 id="virtualenv-delete">&lt;code>virtualenv-delete&lt;/code>&lt;/h4>
+&lt;p>Uninstall a specific Python virtualenv.&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ pyenv virtualenv-delete &amp;lt;name&amp;gt;
+&lt;/code>&lt;/pre>&lt;h4 id="virtualenvs">&lt;code>virtualenvs&lt;/code>&lt;/h4>
+&lt;p>List all Python virtualenvs.&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ pyenv virtualenv project
+$ pyenv virtualenvs
+3.10.2/envs/project (created from /Users/&amp;lt;user&amp;gt;/.pyenv/versions/3.10.2)
+project (created from /Users/&amp;lt;user&amp;gt;/.pyenv/versions/3.10.2)
+&lt;/code>&lt;/pre>&lt;p>You will see two entries per virutalenv (&lt;code>pyenv versions&lt;/code> does the same thing). In this example, &lt;code>3.10.2/envs/project&lt;/code> is the actual virtualenv and &lt;code>project&lt;/code> is a shorthand simlink to that folder.&lt;/p>
+&lt;p>Once a vitualenv is created, we can use it along with the &lt;code>global&lt;/code>, &lt;code>local&lt;/code>, and &lt;code>shell&lt;/code> commands!&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ pyenv local project
+$ pyenv local
+project
+&lt;/code>&lt;/pre>&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>I hope by reading this post you see how useful having a version manager like &lt;code>pyenv&lt;/code> can be and were able to get up and running quickly. I know I sure have!&lt;/p>
+&lt;p>If you have any feedback, click the button below. I&amp;rsquo;d love to hear from you!&lt;/p></description></item><item><title>Immune Part 1: Meet Your Immune System</title><link>http://www.djpeacher.com/posts/immune-part-1/</link><pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/immune-part-1/</guid><description>&lt;div class="notice">
 If you’d like to read the whole thing yourself and support the author, you can buy the book (not affiliated): &lt;a href="https://sites.prh.com/immune">https://sites.prh.com/immune&lt;/a>
 &lt;/div>
 &lt;h2 id="what-is-the-immune-system">What is the Immune System?&lt;/h2>
