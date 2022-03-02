@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Mon, 28 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Python Version Manager 101 (pyenv)</title><link>http://www.djpeacher.com/posts/pyenv/</link><pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/pyenv/</guid><description>&lt;p>When you boot up a new machine, it will usually come preinstalled with a version of Python. You can verify this by running the following:&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Mon, 28 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Now</title><link>http://www.djpeacher.com/now/</link><pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/now/</guid><description>&lt;p>This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com/about">you should make one&lt;/a>, too.&lt;/p>
+&lt;h2 id="life-hahahugoshortcode-s0-hbhb">Life &lt;i class="twa twa-sun">&lt;/i>&lt;/h2>
+&lt;p>I live in Austin, TX with my fiancée and our 4 cats (Cisco, Sammy, Milo, &amp;amp; Remy)! My fiancée and I have been together for 6 years and we are finally getting married this December! &lt;i class="twa twa-ring">&lt;/i>&lt;/p>
+&lt;p>We&amp;rsquo;ve been trying to work out more and we&amp;rsquo;ve made some progress. This year so far we have logged 24 workouts! &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/p>
+&lt;p>In other news, my sister gave birth to a healthy baby boy, and I am now an uncle! I can&amp;rsquo;t wait for us to be the cool aunt and uncle when he grows up! &lt;i class="twa twa-baby-light-skin-tone">&lt;/i>&lt;/p>
+&lt;h2 id="work-hahahugoshortcode-s4-hbhb">Work &lt;i class="twa twa-briefcase">&lt;/i>&lt;/h2>
+&lt;p>I work for the University of Texas at Austin as a Software Engineer for the &lt;a href="https://www.tacc.utexas.edu/epic">Expanding Pathways in Computing&lt;/a> (EPIC) unit. My primary focus here is the development of &lt;a href="https://utakeit.tacc.utexas.edu">UTakeIt&lt;/a> and the &lt;a href="https://cyberrange.tacc.utexas.edu">EPIC Cyber Range&lt;/a>. &lt;i class="twa twa-man-technologist-light-skin-tone">&lt;/i>&lt;/p>
+&lt;p>We&amp;rsquo;ve been working from home since the pandemic started, but have recently started transitioning back to the office. &lt;i class="twa twa-face-with-medical-mask">&lt;/i>&lt;/p>
+&lt;h2 id="learning-hahahugoshortcode-s7-hbhb">Learning &lt;i class="twa twa-brain">&lt;/i>&lt;/h2>
+&lt;p>I&amp;rsquo;m currently working through all the &lt;a href="https://codewithmosh.com">Code With Mosh&lt;/a> courses I find interesting. I find Mosh&amp;rsquo;s courses to be extremely thorough and well produced. Some of these courses aren&amp;rsquo;t anything new to me, but I figured it never hurts to refresh your memory and maybe fill in some gaps.&lt;/p>
+&lt;ul>
+&lt;li>Mastering React&lt;/li>
+&lt;li>The Ultimate React Native Series&lt;/li>
+&lt;li>The Ultimate Redux Course&lt;/li>
+&lt;li>The Ultimate Design Pattern Series&lt;/li>
+&lt;li>The Ultimate Data Structures &amp;amp; Algorithms Bundle&lt;/li>
+&lt;li>&lt;del>The Ultimate HTML5 &amp;amp; CSS3 Series&lt;/del>&lt;/li>
+&lt;li>&lt;del>Complete SQL Mastery&lt;/del>&lt;/li>
+&lt;li>&lt;del>Complete Python Mastery&lt;/del>&lt;/li>
+&lt;li>&lt;del>The Complete Node.js Course&lt;/del>&lt;/li>
+&lt;li>&lt;del>The Ultimate Docker Course&lt;/del>&lt;/li>
+&lt;li>&lt;del>The Ultimate Git Course&lt;/del>&lt;/li>
+&lt;li>&lt;del>The Ultimate Django Series&lt;/del>&lt;/li>
+&lt;li>&lt;del>The Ultimate JavaScript Mastery Series&lt;/del>&lt;/li>
+&lt;/ul>
+&lt;h2 id="creating-hahahugoshortcode-s8-hbhb">Creating &lt;i class="twa twa-hammer">&lt;/i>&lt;/h2>
+&lt;p>Right now I am tinkering with how this looks and how I am going to use it. For looks, I&amp;rsquo;m adapting &lt;a href="https://simplecss.org">Simple.css&lt;/a> into a &lt;a href="https://gohugo.io">Hugo&lt;/a> theme which you can view the source of on &lt;a href="https://github.com/djpeacher/simple-hugo">GitHub&lt;/a>. As for how I&amp;rsquo;m going to use this site, that is still developing, but I want to write more so I added &lt;a href="http://www.djpeacher.com/posts">/posts&lt;/a> to help me with that.&lt;/p>
+&lt;h2 id="reading-hahahugoshortcode-s9-hbhb">Reading &lt;i class="twa twa-open-book">&lt;/i>&lt;/h2>
+&lt;p>I&amp;rsquo;m having a little trouble finding the time to read, but when I do, I&amp;rsquo;m currently making my way through these books:&lt;/p>
+&lt;ul>
+&lt;li>Immune by Philipp Dettmer&lt;/li>
+&lt;li>Dune by Frank Herbert&lt;/li>
+&lt;li>The Forest of Doom by Ian Livingstone&lt;/li>
+&lt;/ul>
+&lt;h2 id="listening-hahahugoshortcode-s10-hbhb">Listening &lt;i class="twa twa-ear-light-skin-tone">&lt;/i>&lt;/h2>
+&lt;p>I love listening to podcasts! I have listed to &lt;strong>66 days&lt;/strong> worth of podcasts since 2016 and I have saved &lt;strong>6 days&lt;/strong> of my time by using the skip, variable speed, and trim silence features according to the app I use. These are the podcasts I&amp;rsquo;m currently listening to:&lt;/p>
+&lt;ul>
+&lt;li>Cortex&lt;/li>
+&lt;li>The Unmade Podcast&lt;/li>
+&lt;li>The Adventure Zone&lt;/li>
+&lt;li>Triforce!&lt;/li>
+&lt;li>The Daily&lt;/li>
+&lt;/ul>
+&lt;h2 id="watching-hahahugoshortcode-s11-hbhb">Watching &lt;i class="twa twa-eyes">&lt;/i>&lt;/h2>
+&lt;ul>
+&lt;li>Survivor&lt;/li>
+&lt;li>Euphoria&lt;/li>
+&lt;li>Attack on Titan: The Final Season&lt;/li>
+&lt;li>The Walking Dead (again)&lt;/li>
+&lt;/ul>
+&lt;h2 id="playing-hahahugoshortcode-s12-hbhb">Playing &lt;i class="twa twa-video-game">&lt;/i>&lt;/h2>
+&lt;ul>
+&lt;li>Halo Infinite&lt;/li>
+&lt;li>Far Cry 6&lt;/li>
+&lt;/ul></description></item><item><title>Python Version Manager 101 (pyenv)</title><link>http://www.djpeacher.com/posts/pyenv/</link><pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/pyenv/</guid><description>&lt;p>When you boot up a new machine, it will usually come preinstalled with a version of Python. You can verify this by running the following:&lt;/p>
 &lt;pre tabindex="0">&lt;code># This shows the version installed.
 $ python -V
 Python 2.7.18
@@ -185,61 +239,7 @@ dangerous they are. And finally it has the power to activate your second line of
 &lt;p>Your Adaptive Immune System, which needs a few years before it is ready to deploy efficiently. It is specific and can
 draw from an incredibly large library to fight every possible individual enemy that nature can throw at it, with
 powerful super weapons. But while it is powerful, one of its most important jobs is to make the Innate Immune System
-even stronger.&lt;/p></description></item><item><title>Now</title><link>http://www.djpeacher.com/now/</link><pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/now/</guid><description>&lt;p>This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com/about">you should make one&lt;/a>, too.&lt;/p>
-&lt;h2 id="life-hahahugoshortcode-s0-hbhb">Life &lt;i class="twa twa-sun">&lt;/i>&lt;/h2>
-&lt;p>I live in Austin, TX with my fiancée and our 4 cats (Cisco, Sammy, Milo, &amp;amp; Remy)! My fiancée and I have been together for 6 years and we are finally getting married this December! &lt;i class="twa twa-ring">&lt;/i>&lt;/p>
-&lt;p>We&amp;rsquo;ve been trying to work out more and we&amp;rsquo;ve made some progress. This year so far we have logged 24 workouts! &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/p>
-&lt;p>In other news, my sister gave birth to a healthy baby boy, and I am now an uncle! I can&amp;rsquo;t wait for us to be the cool aunt and uncle when he grows up! &lt;i class="twa twa-baby-light-skin-tone">&lt;/i>&lt;/p>
-&lt;h2 id="work-hahahugoshortcode-s4-hbhb">Work &lt;i class="twa twa-briefcase">&lt;/i>&lt;/h2>
-&lt;p>I work for the University of Texas at Austin as a Software Engineer for the &lt;a href="https://www.tacc.utexas.edu/epic">Expanding Pathways in Computing&lt;/a> (EPIC) unit. My primary focus here is the development of &lt;a href="https://utakeit.tacc.utexas.edu">UTakeIt&lt;/a> and the &lt;a href="https://cyberrange.tacc.utexas.edu">EPIC Cyber Range&lt;/a>. &lt;i class="twa twa-man-technologist-light-skin-tone">&lt;/i>&lt;/p>
-&lt;p>We&amp;rsquo;ve been working from home since the pandemic started, but have recently started transitioning back to the office. &lt;i class="twa twa-face-with-medical-mask">&lt;/i>&lt;/p>
-&lt;h2 id="learning-hahahugoshortcode-s7-hbhb">Learning &lt;i class="twa twa-brain">&lt;/i>&lt;/h2>
-&lt;p>I&amp;rsquo;m currently working through all the &lt;a href="https://codewithmosh.com">Code With Mosh&lt;/a> courses I find interesting. I find Mosh&amp;rsquo;s courses to be extremely thorough and well produced. Some of these courses aren&amp;rsquo;t anything new to me, but I figured it never hurts to refresh your memory and maybe fill in some gaps.&lt;/p>
-&lt;ul>
-&lt;li>Mastering React&lt;/li>
-&lt;li>The Ultimate React Native Series&lt;/li>
-&lt;li>The Ultimate Redux Course&lt;/li>
-&lt;li>The Ultimate Design Pattern Series&lt;/li>
-&lt;li>The Ultimate Data Structures &amp;amp; Algorithms Bundle&lt;/li>
-&lt;li>The Ultimate HTML5 &amp;amp; CSS3 Series&lt;/li>
-&lt;li>&lt;del>Complete SQL Mastery&lt;/del>&lt;/li>
-&lt;li>&lt;del>Complete Python Mastery&lt;/del>&lt;/li>
-&lt;li>&lt;del>The Complete Node.js Course&lt;/del>&lt;/li>
-&lt;li>&lt;del>The Ultimate Docker Course&lt;/del>&lt;/li>
-&lt;li>&lt;del>The Ultimate Git Course&lt;/del>&lt;/li>
-&lt;li>&lt;del>The Ultimate Django Series&lt;/del>&lt;/li>
-&lt;li>&lt;del>The Ultimate JavaScript Mastery Series&lt;/del>&lt;/li>
-&lt;/ul>
-&lt;h2 id="creating-hahahugoshortcode-s8-hbhb">Creating &lt;i class="twa twa-hammer">&lt;/i>&lt;/h2>
-&lt;p>Right now I am tinkering with how this looks and how I am going to use it. For looks, I&amp;rsquo;m adapting &lt;a href="https://simplecss.org">Simple.css&lt;/a> into a &lt;a href="https://gohugo.io">Hugo&lt;/a> theme which you can view the source of on &lt;a href="https://github.com/djpeacher/simple-hugo">GitHub&lt;/a>. As for how I&amp;rsquo;m going to use this site, that is still developing, but I want to write more so I added &lt;a href="http://www.djpeacher.com/posts">/posts&lt;/a> to help me with that.&lt;/p>
-&lt;h2 id="reading-hahahugoshortcode-s9-hbhb">Reading &lt;i class="twa twa-open-book">&lt;/i>&lt;/h2>
-&lt;p>I&amp;rsquo;m having a little trouble finding the time to read, but when I do, I&amp;rsquo;m currently making my way through these books:&lt;/p>
-&lt;ul>
-&lt;li>Immune by Philipp Dettmer&lt;/li>
-&lt;li>Dune by Frank Herbert&lt;/li>
-&lt;li>The Forest of Doom by Ian Livingstone&lt;/li>
-&lt;/ul>
-&lt;h2 id="listening-hahahugoshortcode-s10-hbhb">Listening &lt;i class="twa twa-ear-light-skin-tone">&lt;/i>&lt;/h2>
-&lt;p>I love listening to podcasts! I have listed to &lt;strong>66 days&lt;/strong> worth of podcasts since 2016 and I have saved &lt;strong>6 days&lt;/strong> of my time by using the skip, variable speed, and trim silence features according to the app I use. These are the podcasts I&amp;rsquo;m currently listening to:&lt;/p>
-&lt;ul>
-&lt;li>Cortex&lt;/li>
-&lt;li>The Unmade Podcast&lt;/li>
-&lt;li>The Adventure Zone&lt;/li>
-&lt;li>Triforce!&lt;/li>
-&lt;li>The Daily&lt;/li>
-&lt;/ul>
-&lt;h2 id="watching-hahahugoshortcode-s11-hbhb">Watching &lt;i class="twa twa-eyes">&lt;/i>&lt;/h2>
-&lt;ul>
-&lt;li>Survivor&lt;/li>
-&lt;li>Euphoria&lt;/li>
-&lt;li>Attack on Titan: The Final Season&lt;/li>
-&lt;li>The Walking Dead (again)&lt;/li>
-&lt;/ul>
-&lt;h2 id="playing-hahahugoshortcode-s12-hbhb">Playing &lt;i class="twa twa-video-game">&lt;/i>&lt;/h2>
-&lt;ul>
-&lt;li>Halo Infinite&lt;/li>
-&lt;li>Far Cry 6&lt;/li>
-&lt;/ul></description></item><item><title>What Am I?</title><link>http://www.djpeacher.com/posts/what-am-i/</link><pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/what-am-i/</guid><description>&lt;p>I am someone who generally writes code using web-based technologies. What am I? This question has bugged me for years and I think I&amp;rsquo;ve finally come to a conclusion.&lt;/p>
+even stronger.&lt;/p></description></item><item><title>What Am I?</title><link>http://www.djpeacher.com/posts/what-am-i/</link><pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/what-am-i/</guid><description>&lt;p>I am someone who generally writes code using web-based technologies. What am I? This question has bugged me for years and I think I&amp;rsquo;ve finally come to a conclusion.&lt;/p>
 &lt;p>If you like spoilers, look at my &lt;a href="http://www.djpeacher.com/">home page&lt;/a> or the &lt;a href="#okay-so-what-am-i">conclusion&lt;/a> below. If not, here is my breakdown. Keep in mind that there exists many more titles than I mention below, but I am just trying to focus on my field. This is also just based on what I&amp;rsquo;ve been exposed to and I am happy to be proven wrong.&lt;/p>
 &lt;p>So what am I? Let&amp;rsquo;s start at the beginning&amp;hellip;&lt;/p>
 &lt;h2 id="programmercoder">Programmer/Coder&lt;/h2>
@@ -531,6 +531,12 @@ Ultimate HTML5 &amp; CSS3 Series: Part 1&lt;/a>&lt;/p>
 Ultimate JavaScript Mastery Series - Part 1&lt;/a>&lt;/p>
 &lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-javascript-mastery-series-part-2.pdf' target="_blank">The
 Ultimate JavaScript Mastery Series - Part 2&lt;/a>&lt;/p>
+&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-css3-series-part-1.pdf' target="_blank">The
+The Ultimate HTML5 &amp; CSS3 Series: Part 1&lt;/a>&lt;/p>
+&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-css3-series-part-2.pdf' target="_blank">The
+The Ultimate HTML5 &amp; CSS3 Series: Part 2&lt;/a>&lt;/p>
+&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-css3-series-part-3.pdf' target="_blank">The
+The Ultimate HTML5 &amp; CSS3 Series: Part 3&lt;/a>&lt;/p>
 &lt;h2>Conferences&lt;/h2>
 &lt;p>Streamed &lt;a href="https://2021.djangocon.us" target="_blank">DjangoCon 2021&lt;/a>&lt;/p>
 &lt;p>Attended &lt;a href="https://2019.djangocon.us" target="_blank">DjangoCon 2019&lt;/a>&lt;/p></description></item><item><title>Stats</title><link>http://www.djpeacher.com/stats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/stats/</guid><description>&lt;script>
