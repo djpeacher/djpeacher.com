@@ -1,7 +1,7 @@
 ---
 title: Now
 description: What am I up to right now?
-lastmod: 2022-02-23
+lastmod: 2022-03-02
 ---
 
 This is a [now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.
@@ -29,7 +29,7 @@ I'm currently working through all the [Code With Mosh](https://codewithmosh.com)
 - The Ultimate Redux Course
 - The Ultimate Design Pattern Series
 - The Ultimate Data Structures & Algorithms Bundle
-- The Ultimate HTML5 & CSS3 Series
+- ~~The Ultimate HTML5 & CSS3 Series~~
 - ~~Complete SQL Mastery~~
 - ~~Complete Python Mastery~~
 - ~~The Complete Node.js Course~~
