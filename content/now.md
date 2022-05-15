@@ -1,7 +1,7 @@
 ---
 title: Now
 description: What am I up to right now?
-lastmod: 2022-03-02
+lastmod: 2022-05-14
 ---
 
 This is a [now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.
@@ -10,15 +10,11 @@ This is a [now page](https://nownownow.com/about), and if you have your own site
 
 I live in Austin, TX with my fiancée and our 4 cats (Cisco, Sammy, Milo, & Remy)! My fiancée and I have been together for 6 years and we are finally getting married this December! {{< twa ring >}}
 
-We've been trying to work out more and we've made some progress. This year so far we have logged 24 workouts! {{< twa flexed-biceps-light-skin-tone >}}
-
 In other news, my sister gave birth to a healthy baby boy, and I am now an uncle! I can't wait for us to be the cool aunt and uncle when he grows up! {{< twa baby-light-skin-tone >}}
 
 ## Work {{< twa briefcase >}}
 
-I work for the University of Texas at Austin as a Software Engineer for the [Expanding Pathways in Computing](https://www.tacc.utexas.edu/epic) (EPIC) unit. My primary focus here is the development of [UTakeIt](https://utakeit.tacc.utexas.edu) and the [EPIC Cyber Range](https://cyberrange.tacc.utexas.edu). {{< twa man-technologist-light-skin-tone >}}
-
-We've been working from home since the pandemic started, but have recently started transitioning back to the office. {{< twa face-with-medical-mask >}}
+I recently accepted an offer with [The Texas Tribune](https://www.texastribune.org) as a Full-Stack Engineer! I'm very excited to join the team and contribute to the development of their CMS and related tools to keep Texans informed! {{< twa man-technologist-light-skin-tone >}}
 
 ## Learning {{< twa brain >}}
 
@@ -52,7 +48,7 @@ I'm having a little trouble finding the time to read, but when I do, I'm current
 
 ## Listening {{< twa ear-light-skin-tone >}}
 
-I love listening to podcasts! I have listed to **66 days** worth of podcasts since 2016 and I have saved **6 days** of my time by using the skip, variable speed, and trim silence features according to the app I use. These are the podcasts I'm currently listening to:
+I love listening to podcasts! I have listed to **69 days** worth of podcasts since 2016 and I have saved **6.5 days** of my time by using the skip, variable speed, and trim silence features according to the app I use. These are the podcasts I'm currently listening to:
 
 - Cortex
 - The Unmade Podcast
@@ -62,9 +58,14 @@ I love listening to podcasts! I have listed to **66 days** worth of podcasts sin
 
 ## Watching {{< twa eyes >}}
 
+- Halo
+- Picard
+- The Purge
 - Survivor
-- Euphoria
-- Attack on Titan: The Final Season
+- ~~Euphoria~~
+- ~~Attack on Titan: The Final Season (Part 1)~~
+- ~~Attack on Titan: The Final Season (Part 2)~~
+- Attack on Titan: The Final Season (Part 3)
 - The Walking Dead (again)
 
 ## Playing {{< twa video-game >}}
