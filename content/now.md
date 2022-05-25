@@ -1,7 +1,7 @@
 ---
 title: Now
 description: What am I up to right now?
-lastmod: 2022-05-14
+lastmod: 2022-05-25
 ---
 
 This is a [now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.
@@ -25,6 +25,7 @@ I'm currently working through all the [Code With Mosh](https://codewithmosh.com)
 - The Ultimate Redux Course
 - The Ultimate Design Pattern Series
 - The Ultimate Data Structures & Algorithms Bundle
+- The Ultimate TypeScript Course
 - ~~The Ultimate HTML5 & CSS3 Series~~
 - ~~Complete SQL Mastery~~
 - ~~Complete Python Mastery~~
@@ -58,15 +59,12 @@ I love listening to podcasts! I have listed to **69 days** worth of podcasts sin
 
 ## Watching {{< twa eyes >}}
 
-- Halo
 - Picard
-- The Purge
-- Survivor
-- ~~Euphoria~~
-- ~~Attack on Titan: The Final Season (Part 1)~~
-- ~~Attack on Titan: The Final Season (Part 2)~~
-- Attack on Titan: The Final Season (Part 3)
+- Better Call Saul
+- Grey's Anatomy
 - The Walking Dead (again)
+- Attack on Titan: The Final Season
+- Survivor ~1~ 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ~16~ ~17~ 18 19 20 ~21~ ~22~ 23 24 ~25~ 26 ~27~ 28 ~29~ 30 31 ~32~ 33 ~34~ 35 36 ~37~ 38 39 40 ~41~ ~42~
 
 ## Playing {{< twa video-game >}}
 
