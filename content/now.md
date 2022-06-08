@@ -1,7 +1,7 @@
 ---
 title: Now
 description: What am I up to right now?
-lastmod: 2022-05-25
+lastmod: 2022-06-08
 ---
 
 This is a [now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.
@@ -65,6 +65,8 @@ I love listening to podcasts! I have listed to **69 days** worth of podcasts sin
 - The Walking Dead (again)
 - Attack on Titan: The Final Season
 - Survivor ~~1~~ 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ~~16~~ ~~17~~ 18 19 20 ~~21~~ ~~22~~ 23 24 ~~25~~ 26 ~~27~~ 28 ~~29~~ 30 31 ~~32~~ 33 ~~34~~ 35 36 ~~37~~ 38 39 40 ~~41~~ ~~42~~
+- Obi-Wan Kenobi
+- The Book of Boba Fett
 
 ## Playing {{< twa video-game >}}
 
