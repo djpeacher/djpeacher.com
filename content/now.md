@@ -1,7 +1,7 @@
 ---
 title: Now
 description: What am I up to right now?
-lastmod: 2022-06-08
+lastmod: 2022-07-21
 ---
 
 This is a [now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.
@@ -46,14 +46,17 @@ I'm having a little trouble finding the time to read, but when I do, I'm current
 - Immune by Philipp Dettmer
 - Dune by Frank Herbert
 - The Forest of Doom by Ian Livingstone
+- Candlekeep Mysteries by Wizards of the Coast
+- Return of the Lazy Dungeon Master by Sly Flourish
 
 ## Listening {{< twa ear-light-skin-tone >}}
 
-I love listening to podcasts! I have listed to **69 days** worth of podcasts since 2016 and I have saved **6.5 days** of my time by using the skip, variable speed, and trim silence features according to the app I use. These are the podcasts I'm currently listening to:
+I love listening to podcasts! I have listed to **70 days** worth of podcasts since 2016 and I have saved **6.75 days** of my time by using the skip, variable speed, and trim silence features according to the app I use. These are the podcasts I'm currently listening to:
 
 - Cortex
 - The Unmade Podcast
 - The Adventure Zone
+- Cast Party
 - Triforce!
 - The Daily
 
@@ -64,6 +67,14 @@ I love listening to podcasts! I have listed to **69 days** worth of podcasts sin
 - Grey's Anatomy
 - The Walking Dead (again)
 - Attack on Titan: The Final Season
+- Stranger Things
+- The Boys
+- Glee
+- Supernatural
+- Russion Doll
+- Money Heist
+- Umbrella Acadamy
+- Ms. Marvel
 - Survivor ~~1~~ 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ~~16~~ ~~17~~ 18 19 20 ~~21~~ ~~22~~ 23 24 ~~25~~ 26 ~~27~~ 28 ~~29~~ 30 31 ~~32~~ 33 ~~34~~ 35 36 ~~37~~ 38 39 40 ~~41~~ ~~42~~
 - Obi-Wan Kenobi
 - The Book of Boba Fett
@@ -71,4 +82,4 @@ I love listening to podcasts! I have listed to **69 days** worth of podcasts sin
 ## Playing {{< twa video-game >}}
 
 - Halo Infinite
-- Far Cry 6
+- Dungeons & Dragons
