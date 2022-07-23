@@ -1,7 +1,7 @@
 ---
 title: Now
 description: What am I up to right now?
-lastmod: 2022-07-21
+lastmod: 2022-07-23
 ---
 
 This is a [now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.
@@ -82,4 +82,5 @@ I love listening to podcasts! I have listed to **70 days** worth of podcasts sin
 ## Playing {{< twa video-game >}}
 
 - Halo Infinite
+- Stray
 - Dungeons & Dragons
