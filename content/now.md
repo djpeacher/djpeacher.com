@@ -1,7 +1,7 @@
 ---
 title: Now
 description: What am I up to right now?
-lastmod: 2022-07-23
+lastmod: 2022-08-01
 ---
 
 This is a [now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.
@@ -47,7 +47,6 @@ I'm having a little trouble finding the time to read, but when I do, I'm current
 - Dune by Frank Herbert
 - The Forest of Doom by Ian Livingstone
 - Candlekeep Mysteries by Wizards of the Coast
-- Return of the Lazy Dungeon Master by Sly Flourish
 
 ## Listening {{< twa ear-light-skin-tone >}}
 
@@ -75,9 +74,7 @@ I love listening to podcasts! I have listed to **70 days** worth of podcasts sin
 - Money Heist
 - Umbrella Acadamy
 - Ms. Marvel
-- Survivor ~~1~~ 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ~~16~~ ~~17~~ 18 19 20 ~~21~~ ~~22~~ 23 24 ~~25~~ 26 ~~27~~ 28 ~~29~~ 30 31 ~~32~~ 33 ~~34~~ 35 36 ~~37~~ 38 39 40 ~~41~~ ~~42~~
-- Obi-Wan Kenobi
-- The Book of Boba Fett
+- Survivor ~~1~~ 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ~~16~~ ~~17~~ 18 19 20 ~~21~~ ~~22~~ 23 24 ~~25~~ 26 ~~27~~ 28 ~~29~~ ~~30~~ 31 ~~32~~ 33 ~~34~~ 35 36 ~~37~~ 38 39 40 ~~41~~ ~~42~~
 
 ## Playing {{< twa video-game >}}
 
