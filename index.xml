@@ -399,7 +399,8 @@ This site is hosted on &lt;a href="https://github.com/djpeacher/djpeacher.com" t
 &lt;a href="https://gohugo.io/" target="_blank">Hugo&lt;/a> with the &lt;a href="https://github.com/djpeacher/simple-hugo"
 target="_blank">simple-hugo&lt;/a> theme I made using &lt;a href="https://simplecss.org/"
 target="_blank">Simple.css&lt;/a>.
-&lt;/p></description></item><item><title>Code</title><link>http://www.djpeacher.com/code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/code/</guid><description>
+&lt;/p></description></item><item><title>Block</title><link>http://www.djpeacher.com/block/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/block/</guid><description>
+&lt;button class="replyButton" onclick="fathom.blockTrackingForMe();">Block Tracking&lt;/button></description></item><item><title>Code</title><link>http://www.djpeacher.com/code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/code/</guid><description>
 &lt;p class="notice t-center">
 &lt;i class="twa twa-lg twa-paintbrush">&lt;/i>&lt;br />
 &lt;a href="https://github.com/djpeacher/simple-hugo" target="_blank">&lt;b>simple-hugo&lt;/b>&lt;/a>
