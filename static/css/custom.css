@@ -2,14 +2,6 @@ small {
   color: var(--text-light);
 }
 
-/* underline on hover */
-:not(nav) > a {
-  text-decoration: none;
-}
-:not(nav) > a:hover {
-  text-decoration: underline;
-}
-
 .t-center {
   text-align: center;
 }
