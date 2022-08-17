@@ -2,30 +2,6 @@ small {
   color: var(--text-light);
 }
 
-/* underline on hover */
-:not(nav) > a {
-  text-decoration: none;
-}
-:not(nav) > a:hover {
-  text-decoration: underline;
-}
-
 .t-center {
   text-align: center;
-}
-
-.stats th {
-  text-align: center;
-}
-
-.stats thead {
-  margin-top: 1rem;
-}
-
-.stats .clear > td {
-  border: none;
-}
-
-.stats .clear {
-  background: none !important;
 }

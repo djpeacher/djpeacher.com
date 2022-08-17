@@ -388,6 +388,59 @@ even stronger.&lt;/p></description></item><item><title>What Am I?</title><link>h
 &lt;li>&lt;a href="https://apps.apple.com/us/app/magnet/id441258766?mt=12">Magnet&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://apps.apple.com/us/app/bandwidth/id490461369?mt=12">Bandwidth+&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://apps.apple.com/us/app/progress-bar/id1441939775?mt=12">Progress&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>SWR 101 - React Hooks for Data Fetching</title><link>http://www.djpeacher.com/posts/swr-101/</link><pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/swr-101/</guid><description>&lt;p>&lt;a href="https://swr.vercel.app">SWR&lt;/a> is a fast, lightweight, and reusable data fetching package for React that uses the &lt;a href="https://tools.ietf.org/html/rfc5861">&lt;code>stale-while-revalidate&lt;/code>&lt;/a> caching strategy. By using this package, you can simplify and enhance your project&amp;rsquo;s data fetching logic.&lt;/p>
+&lt;p>Normally, data is fetched in a top level component using &lt;code>useEffect&lt;/code> and passed down to its children using props. Additionally, logic must be added to handle errors and revalidation. This can lead to complicated and messy codebases, especially when data is needed throughout a large component tree. Enter, SWR.&lt;/p>
+&lt;pre tabindex="0">&lt;code>npm install swr
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>import useSWR from &amp;#39;swr&amp;#39;;
+const fetcher = (url) =&amp;gt; fetch(url).then((r) =&amp;gt; r.json());
+function App() {
+return (
+&amp;lt;div&amp;gt;
+&amp;lt;Welcome /&amp;gt;
+&amp;lt;Avatar /&amp;gt;
+&amp;lt;/div&amp;gt;
+);
+}
+function Welcome() {
+const { data, error } = useSWR(&amp;#39;/api/user&amp;#39;, fetcher);
+if (error) return &amp;lt;div&amp;gt;error&amp;lt;/div&amp;gt;;
+if (!data) return &amp;lt;div&amp;gt;loading&amp;lt;/div&amp;gt;;
+return &amp;lt;div&amp;gt;Welcome {data.name}!&amp;lt;/div&amp;gt;;
+}
+function Avatar() {
+const { data, error } = useSWR(&amp;#39;/api/user&amp;#39;, fetcher);
+if (error) return &amp;lt;div&amp;gt;error&amp;lt;/div&amp;gt;;
+if (!data) return &amp;lt;div&amp;gt;loading&amp;lt;/div&amp;gt;;
+return &amp;lt;img src={data.avatar} alt={data.name} /&amp;gt;;
+}
+&lt;/code>&lt;/pre>&lt;p>In the example above, the &lt;a href="https://swr.vercel.app/docs/options">&lt;code>useSWR(key, fetcher, options)&lt;/code>&lt;/a> hook returns &lt;code>data&lt;/code> from cache (initially undefined), then sends a fetch request using &lt;code>fetcher&lt;/code> (a custom fetch function that can use any library you want), and finally updates &lt;code>data&lt;/code> and the cache from the response.&lt;/p>
+&lt;p>The amazing thing here is that data is independent of the component tree (parents don&amp;rsquo;t need to know anything or pass props) and because &lt;code>useSWR&lt;/code> uses a &lt;code>key&lt;/code> to fetch data, it avoids duplicate requests by sharing the cached data across all components (only 1 request is made). Not to mention that it handles errors and revalidation out of the box!&lt;/p>
+&lt;p>We can even make reusable hooks to make common fetch requests even easier to perform!&lt;/p>
+&lt;pre tabindex="0">&lt;code>function useUser() {
+const { data, error } = useSWR(`/api/user/`, fetcher);
+return {
+user: data,
+isLoading: !error &amp;amp;&amp;amp; !data,
+isError: error,
+};
+}
+&lt;/code>&lt;/pre>&lt;p>&lt;a href="https://swr.vercel.app">SWR&lt;/a> is a powerful package that simplifies and streamlines your data fetching logic. I&amp;rsquo;ve only touched on the core aspects of the package. For further reading, check out the links below.&lt;/p>
+&lt;h2 id="further-reading">Further Reading&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/options">Options&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/global-configuration">Global Configuration&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/error-handling">Error Handling&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/revalidation">Revalidation&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/revalidation#revalidate-on-focus">onFocus&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/revalidation#revalidate-on-interval">onInterval&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/revalidation#revalidate-on-reconnect">onReconnect&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/conditional-fetching">Conditional Data Fetching&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/mutation">Mutation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/pagination">Pagination&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/examples/basic">Examples&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>About</title><link>http://www.djpeacher.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/about/</guid><description>
 &lt;p>
 My name is Jonathan Peacher and I'm a Software Engineer. This is my little corner of the internet where you can
@@ -615,132 +668,4 @@ The Ultimate HTML5 &amp; CSS3 Series: Part 2&lt;/a>&lt;/p>
 The Ultimate HTML5 &amp; CSS3 Series: Part 3&lt;/a>&lt;/p>
 &lt;h2>Conferences&lt;/h2>
 &lt;p>Streamed &lt;a href="https://2021.djangocon.us" target="_blank">DjangoCon 2021&lt;/a>&lt;/p>
-&lt;p>Attended &lt;a href="https://2019.djangocon.us" target="_blank">DjangoCon 2019&lt;/a>&lt;/p></description></item><item><title>Stats</title><link>http://www.djpeacher.com/stats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/stats/</guid><description>&lt;script>
-function cb(response) {
-const element = document.getElementById(`${response?.namespace}/${response?.key}`)
-if (element)
-element.innerText = response.value;
-}
-&lt;/script>
-&lt;script async src="https://api.countapi.xyz/info/www.djpeacher.com/index_visits?callback=cb">&lt;/script>
-&lt;script async src="https://api.countapi.xyz/info/www.djpeacher.com/resume_visits?callback=cb">&lt;/script>
-&lt;script async src="https://api.countapi.xyz/info/www.djpeacher.com/stats_visits?callback=cb">&lt;/script>
-&lt;script async
-src="https://api.countapi.xyz/info/not-wordle-just-github.djpeacher.com/index_visits?callback=cb">&lt;/script>
-&lt;script async
-src="https://api.countapi.xyz/info/not-wordle-just-github.djpeacher.com/grids_generated?callback=cb">&lt;/script>
-&lt;script async src="https://api.countapi.xyz/info/rpg-dice-roller-api.djpeacher.com/index_visits?callback=cb">&lt;/script>
-&lt;script async
-src="https://api.countapi.xyz/info/rpg-dice-roller-api.djpeacher.com/rolls_simulated?callback=cb">&lt;/script>
-&lt;script async src="https://api.countapi.xyz/info/year-in-pixels.djpeacher.com/index_visits?callback=cb">&lt;/script>
-&lt;script async src="https://api.countapi.xyz/info/year-in-pixels.djpeacher.com/pixels_updated?callback=cb">&lt;/script>
-&lt;script async
-src="https://api.countapi.xyz/info/password-protected-links.djpeacher.com/index_visits?callback=cb">&lt;/script>
-&lt;script async
-src="https://api.countapi.xyz/info/password-protected-links.djpeacher.com/links_locked?callback=cb">&lt;/script>
-&lt;script async
-src="https://api.countapi.xyz/info/password-protected-links.djpeacher.com/links_unlocked?callback=cb">&lt;/script>
-&lt;table class="stats">
-&lt;thead>
-&lt;tr>
-&lt;th colspan="2">&lt;a href="https://www.djpeacher.com">www.djpeacher.com&lt;/a>&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>index_visits &lt;small>2022-02-15 [paused]&lt;/small>&lt;/td>
-&lt;td id="www.djpeacher.com/index_visits">&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>resume_visits &lt;small>2022-02-15 [paused]&lt;/small>&lt;/td>
-&lt;td id="www.djpeacher.com/resume_visits">&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>stats_visits &lt;small>2022-02-15 [paused]&lt;/small>&lt;/td>
-&lt;td id="www.djpeacher.com/stats_visits">&lt;/td>
-&lt;/tr>
-&lt;tr class="clear">
-&lt;td colspan="2">&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;thead>
-&lt;tr>
-&lt;th colspan="2">&lt;a href="https://not-wordle-just-github.djpeacher.com"
-target="_blank">not-wordle-just-github.djpeacher.com&lt;/a>&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>index_visits &lt;small>2022-02-15&lt;/small>&lt;/td>
-&lt;td id="not-wordle-just-github.djpeacher.com/index_visits">&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>grids_generated &lt;small>2022-01-30&lt;/small>&lt;/td>
-&lt;td id="not-wordle-just-github.djpeacher.com/grids_generated">&lt;/td>
-&lt;/tr>
-&lt;tr class="clear">
-&lt;td colspan="2">&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;thead>
-&lt;tr>
-&lt;th colspan="2">&lt;a href="https://rpg-dice-roller-api.djpeacher.com"
-target="_blank">rpg-dice-roller-api.djpeacher.com&lt;/a>&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>index_visits &lt;small>2022-02-15&lt;/small>&lt;/td>
-&lt;td id="rpg-dice-roller-api.djpeacher.com/index_visits">&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>rolls_simulated &lt;small>2022-02-15&lt;/small>&lt;/td>
-&lt;td id="rpg-dice-roller-api.djpeacher.com/rolls_simulated">&lt;/td>
-&lt;/tr>
-&lt;tr class="clear">
-&lt;td colspan="2">&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;thead>
-&lt;tr>
-&lt;th colspan="2">&lt;a href="https://year-in-pixels.djpeacher.com"
-target="_blank">year-in-pixels.djpeacher.com&lt;/a>&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>index_visits &lt;small>2022-02-15&lt;/small>&lt;/td>
-&lt;td id="year-in-pixels.djpeacher.com/index_visits">&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>pixels_updated &lt;small>2022-02-15&lt;/small>&lt;/td>
-&lt;td id="year-in-pixels.djpeacher.com/pixels_updated">&lt;/td>
-&lt;/tr>
-&lt;tr class="clear">
-&lt;td colspan="2">&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;thead>
-&lt;tr>
-&lt;th colspan="2">&lt;a href="https://password-protected-links.djpeacher.com"
-target="_blank">password-protected-links.djpeacher.com&lt;/a>&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>index_visits &lt;small>2022-02-15&lt;/small>&lt;/td>
-&lt;td id="password-protected-links.djpeacher.com/index_visits">&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>links_locked &lt;small>2022-02-15&lt;/small>&lt;/td>
-&lt;td id="password-protected-links.djpeacher.com/links_locked">&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>links_unlocked &lt;small>2022-02-15&lt;/small>&lt;/td>
-&lt;td id="password-protected-links.djpeacher.com/links_unlocked">&lt;/td>
-&lt;/tr>
-&lt;tr class="clear">
-&lt;td colspan="2">&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table></description></item></channel></rss>
+&lt;p>Attended &lt;a href="https://2019.djangocon.us" target="_blank">DjangoCon 2019&lt;/a>&lt;/p></description></item></channel></rss>

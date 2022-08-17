@@ -322,4 +322,57 @@ even stronger.&lt;/p></description></item><item><title>What Am I?</title><link>h
 &lt;li>&lt;a href="https://apps.apple.com/us/app/magnet/id441258766?mt=12">Magnet&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://apps.apple.com/us/app/bandwidth/id490461369?mt=12">Bandwidth+&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://apps.apple.com/us/app/progress-bar/id1441939775?mt=12">Progress&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>SWR 101 - React Hooks for Data Fetching</title><link>http://www.djpeacher.com/posts/swr-101/</link><pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/swr-101/</guid><description>&lt;p>&lt;a href="https://swr.vercel.app">SWR&lt;/a> is a fast, lightweight, and reusable data fetching package for React that uses the &lt;a href="https://tools.ietf.org/html/rfc5861">&lt;code>stale-while-revalidate&lt;/code>&lt;/a> caching strategy. By using this package, you can simplify and enhance your project&amp;rsquo;s data fetching logic.&lt;/p>
+&lt;p>Normally, data is fetched in a top level component using &lt;code>useEffect&lt;/code> and passed down to its children using props. Additionally, logic must be added to handle errors and revalidation. This can lead to complicated and messy codebases, especially when data is needed throughout a large component tree. Enter, SWR.&lt;/p>
+&lt;pre tabindex="0">&lt;code>npm install swr
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>import useSWR from &amp;#39;swr&amp;#39;;
+const fetcher = (url) =&amp;gt; fetch(url).then((r) =&amp;gt; r.json());
+function App() {
+return (
+&amp;lt;div&amp;gt;
+&amp;lt;Welcome /&amp;gt;
+&amp;lt;Avatar /&amp;gt;
+&amp;lt;/div&amp;gt;
+);
+}
+function Welcome() {
+const { data, error } = useSWR(&amp;#39;/api/user&amp;#39;, fetcher);
+if (error) return &amp;lt;div&amp;gt;error&amp;lt;/div&amp;gt;;
+if (!data) return &amp;lt;div&amp;gt;loading&amp;lt;/div&amp;gt;;
+return &amp;lt;div&amp;gt;Welcome {data.name}!&amp;lt;/div&amp;gt;;
+}
+function Avatar() {
+const { data, error } = useSWR(&amp;#39;/api/user&amp;#39;, fetcher);
+if (error) return &amp;lt;div&amp;gt;error&amp;lt;/div&amp;gt;;
+if (!data) return &amp;lt;div&amp;gt;loading&amp;lt;/div&amp;gt;;
+return &amp;lt;img src={data.avatar} alt={data.name} /&amp;gt;;
+}
+&lt;/code>&lt;/pre>&lt;p>In the example above, the &lt;a href="https://swr.vercel.app/docs/options">&lt;code>useSWR(key, fetcher, options)&lt;/code>&lt;/a> hook returns &lt;code>data&lt;/code> from cache (initially undefined), then sends a fetch request using &lt;code>fetcher&lt;/code> (a custom fetch function that can use any library you want), and finally updates &lt;code>data&lt;/code> and the cache from the response.&lt;/p>
+&lt;p>The amazing thing here is that data is independent of the component tree (parents don&amp;rsquo;t need to know anything or pass props) and because &lt;code>useSWR&lt;/code> uses a &lt;code>key&lt;/code> to fetch data, it avoids duplicate requests by sharing the cached data across all components (only 1 request is made). Not to mention that it handles errors and revalidation out of the box!&lt;/p>
+&lt;p>We can even make reusable hooks to make common fetch requests even easier to perform!&lt;/p>
+&lt;pre tabindex="0">&lt;code>function useUser() {
+const { data, error } = useSWR(`/api/user/`, fetcher);
+return {
+user: data,
+isLoading: !error &amp;amp;&amp;amp; !data,
+isError: error,
+};
+}
+&lt;/code>&lt;/pre>&lt;p>&lt;a href="https://swr.vercel.app">SWR&lt;/a> is a powerful package that simplifies and streamlines your data fetching logic. I&amp;rsquo;ve only touched on the core aspects of the package. For further reading, check out the links below.&lt;/p>
+&lt;h2 id="further-reading">Further Reading&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/options">Options&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/global-configuration">Global Configuration&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/error-handling">Error Handling&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/revalidation">Revalidation&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/revalidation#revalidate-on-focus">onFocus&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/revalidation#revalidate-on-interval">onInterval&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/revalidation#revalidate-on-reconnect">onReconnect&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/conditional-fetching">Conditional Data Fetching&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/mutation">Mutation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/docs/pagination">Pagination&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/examples/basic">Examples&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>
