@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Wed, 03 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Be a Lazy Dungeon Master</title><link>http://www.djpeacher.com/posts/how-to-be-a-lazy-dungeon-master/</link><pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/how-to-be-a-lazy-dungeon-master/</guid><description>&lt;h2 id="the-lazy-dungeon-masters-checklist">The Lazy Dungeon Master&amp;rsquo;s Checklist&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Thu, 18 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Quick Hugo Deploy with GitHub Actions</title><link>http://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</link><pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</guid><description>&lt;p>Once you have your &lt;a href="https://gohugo.io">Hugo&lt;/a> project setup, all you need to do is push the following GitHub Action to deploy! &lt;i class="twa twa-rocket">&lt;/i>&lt;/p>
+&lt;pre tabindex="0">&lt;code>name: Build
+on:
+push:
+branches: [main]
+workflow_dispatch:
+jobs:
+build:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v2
+with:
+submodules: true
+fetch-depth: 0
+- uses: peaceiris/actions-hugo@v2
+- run: hugo --minify
+- uses: JamesIves/github-pages-deploy-action@v4
+with:
+branch: gh-pages
+folder: public
+&lt;/code>&lt;/pre>
+&lt;figure>&lt;figcaption>.github/workflows/build.yml&lt;/figcaption>&lt;/figure>
+&lt;p>This action does three things each time you push to &lt;code>main&lt;/code>:&lt;/p>
+&lt;ol>
+&lt;li>Pulls your repository, including all submodules.&lt;/li>
+&lt;li>Builds your site with the Hugo CLI.&lt;/li>
+&lt;li>Deploys the build to GitHub Pages via the &lt;code>gh-pages&lt;/code> branch.&lt;/li>
+&lt;/ol>
+&lt;p>That&amp;rsquo;s it. After a few moments, your site should now be live at:&lt;/p>
+&lt;pre tabindex="0">&lt;code>https://&amp;lt;username&amp;gt;.github.io/&amp;lt;repository&amp;gt;/
+&lt;/code>&lt;/pre>&lt;p>If you want a custom domain for this site, you can &lt;a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages">configure a custom domain&lt;/a> with GitHub Pages.&lt;/p></description></item><item><title>How to Be a Lazy Dungeon Master</title><link>http://www.djpeacher.com/posts/how-to-be-a-lazy-dungeon-master/</link><pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/how-to-be-a-lazy-dungeon-master/</guid><description>&lt;h2 id="the-lazy-dungeon-masters-checklist">The Lazy Dungeon Master&amp;rsquo;s Checklist&lt;/h2>
 &lt;p>The steps it takes to prepare a typical game session can be boiled down into a simple checklist:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="#review-the-characters">Review the characters&lt;/a>&lt;/li>
