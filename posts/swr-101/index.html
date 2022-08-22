@@ -3,8 +3,7 @@ Normally, data is fetched in a top level component using useEffect and passed do
 <a href=/about/>About</a>
 <a href=/now/>Now</a>
 <a href=/code/>Code</a>
-<a href=/contact/>Contact</a>
-<a href=/posts/index.xml>RSS</a></nav><h1>SWR 101 - React Hooks for Data Fetching</h1><time datetime=210910>210910</time></header><main><p><a href=https://swr.vercel.app>SWR</a> is a fast, lightweight, and reusable data fetching package for React that uses the <a href=https://tools.ietf.org/html/rfc5861><code>stale-while-revalidate</code></a> caching strategy. By using this package, you can simplify and enhance your project&rsquo;s data fetching logic.</p><p>Normally, data is fetched in a top level component using <code>useEffect</code> and passed down to its children using props. Additionally, logic must be added to handle errors and revalidation. This can lead to complicated and messy codebases, especially when data is needed throughout a large component tree. Enter, SWR.</p><pre tabindex=0><code>npm install swr
+<a href=/contact/>Contact</a></nav><h1>SWR 101 - React Hooks for Data Fetching</h1><time datetime=210910>210910</time></header><main><p><a href=https://swr.vercel.app>SWR</a> is a fast, lightweight, and reusable data fetching package for React that uses the <a href=https://tools.ietf.org/html/rfc5861><code>stale-while-revalidate</code></a> caching strategy. By using this package, you can simplify and enhance your project&rsquo;s data fetching logic.</p><p>Normally, data is fetched in a top level component using <code>useEffect</code> and passed down to its children using props. Additionally, logic must be added to handle errors and revalidation. This can lead to complicated and messy codebases, especially when data is needed throughout a large component tree. Enter, SWR.</p><pre tabindex=0><code>npm install swr
 </code></pre><pre tabindex=0><code>import useSWR from &#39;swr&#39;;
 
 const fetcher = (url) =&gt; fetch(url).then((r) =&gt; r.json());
