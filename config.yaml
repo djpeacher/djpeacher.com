@@ -30,6 +30,3 @@ menu:
     - name: Contact
       pageref: /contact
       weight: 5
-    - name: RSS
-      url: /posts/index.xml
-      weight: 5
