@@ -27,6 +27,6 @@ menu:
     - name: Code
       pageref: /code
       weight: 4
-    - name: Contact
-      pageref: /contact
+    - name: Twitter
+      url: https://twitter.com/_djpeacher
       weight: 5
