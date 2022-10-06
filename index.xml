@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Thu, 18 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Quick Hugo Deploy with GitHub Actions</title><link>http://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</link><pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</guid><description>&lt;p>Once you have your &lt;a href="https://gohugo.io">Hugo&lt;/a> project setup, all you need to do is push the following GitHub Action to deploy! &lt;i class="twa twa-rocket">&lt;/i>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Thu, 18 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Now</title><link>http://www.djpeacher.com/now/</link><pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/now/</guid><description>&lt;p>This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com/about">you should make one&lt;/a>, too.&lt;/p>
+&lt;h2 id="life-hahahugoshortcode-s0-hbhb">Life &lt;i class="twa twa-sun">&lt;/i>&lt;/h2>
+&lt;p>I live in Austin, TX with my fiancée and our 4 cats (Cisco, Sammy, Milo, &amp;amp; Remy)! My fiancée and I have been together for 6 years and we are finally getting married this December! &lt;i class="twa twa-ring">&lt;/i>&lt;/p>
+&lt;p>In other news, my sister gave birth to a healthy baby boy, and I am now an uncle! I can&amp;rsquo;t wait for us to be the cool aunt and uncle when he grows up! &lt;i class="twa twa-baby-light-skin-tone">&lt;/i>&lt;/p>
+&lt;h2 id="work-hahahugoshortcode-s3-hbhb">Work &lt;i class="twa twa-briefcase">&lt;/i>&lt;/h2>
+&lt;p>I recently accepted an offer with &lt;a href="https://www.texastribune.org">The Texas Tribune&lt;/a> as a Full-Stack Engineer! I&amp;rsquo;m very excited to join the team and contribute to the development of their CMS and related tools to keep Texans informed! &lt;i class="twa twa-man-technologist-light-skin-tone">&lt;/i>&lt;/p>
+&lt;h2 id="learning-hahahugoshortcode-s5-hbhb">Learning &lt;i class="twa twa-brain">&lt;/i>&lt;/h2>
+&lt;p>Very excited to be attending &lt;a href="https://2022.djangocon.us">DjangoCon US 2022&lt;/a> with October! I really enjoyed attending for the first time back in 2019, and virtually in 2021, so I am looking forward to returning!&lt;/p>
+&lt;h2 id="reading-hahahugoshortcode-s6-hbhb">Reading &lt;i class="twa twa-open-book">&lt;/i>&lt;/h2>
+&lt;p>I&amp;rsquo;m having a little trouble finding the time to read, but when I do, I&amp;rsquo;m currently making my way through these books:&lt;/p>
+&lt;ul>
+&lt;li>Immune by Philipp Dettmer&lt;/li>
+&lt;li>Building a Second Brain by Tiago Forte&lt;/li>
+&lt;li>Candlekeep Mysteries by Wizards of the Coast&lt;/li>
+&lt;/ul>
+&lt;h2 id="listening-hahahugoshortcode-s7-hbhb">Listening &lt;i class="twa twa-ear-light-skin-tone">&lt;/i>&lt;/h2>
+&lt;p>I love listening to podcasts! I have listed to &lt;strong>72 days&lt;/strong> worth of podcasts since 2016 and I have saved &lt;strong>6.83 days&lt;/strong> of my time by using the skip, variable speed, and trim silence features according to the app I use. These are the podcasts I&amp;rsquo;m currently listening to:&lt;/p>
+&lt;ul>
+&lt;li>Cortex&lt;/li>
+&lt;li>The Unmade Podcast&lt;/li>
+&lt;li>The Adventure Zone&lt;/li>
+&lt;li>Cast Party&lt;/li>
+&lt;li>Triforce!&lt;/li>
+&lt;li>The Daily&lt;/li>
+&lt;/ul>
+&lt;h2 id="watching-hahahugoshortcode-s8-hbhb">Watching &lt;i class="twa twa-eyes">&lt;/i>&lt;/h2>
+&lt;ul>
+&lt;li>Russion Doll&lt;/li>
+&lt;li>The Walking Dead (again)&lt;/li>
+&lt;li>Grey&amp;rsquo;s Anatomy&lt;/li>
+&lt;li>Survivor &lt;del>1&lt;/del> 2 3 4 5 6 7 8 9 10 11 12 13 14 15 &lt;del>16&lt;/del> &lt;del>17&lt;/del> 18 19 20 &lt;del>21&lt;/del> &lt;del>22&lt;/del> 23 24 &lt;del>25&lt;/del> 26 &lt;del>27&lt;/del> 28 &lt;del>29&lt;/del> &lt;del>30&lt;/del> 31 &lt;del>32&lt;/del> 33 &lt;del>34&lt;/del> 35 36 &lt;del>37&lt;/del> 38 39 40 &lt;del>41&lt;/del> &lt;del>42&lt;/del> 43&lt;/li>
+&lt;/ul>
+&lt;h2 id="playing-hahahugoshortcode-s9-hbhb">Playing &lt;i class="twa twa-video-game">&lt;/i>&lt;/h2>
+&lt;ul>
+&lt;li>Dungeons &amp;amp; Dragons&lt;/li>
+&lt;/ul></description></item><item><title>Quick Hugo Deploy with GitHub Actions</title><link>http://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</link><pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</guid><description>&lt;p>Once you have your &lt;a href="https://gohugo.io">Hugo&lt;/a> project setup, all you need to do is push the following GitHub Action to deploy! &lt;i class="twa twa-rocket">&lt;/i>&lt;/p>
 &lt;pre tabindex="0">&lt;code>name: Build
 on:
 push:
@@ -89,73 +124,7 @@ Description of your strong start.
 ## Magic Items
 - Name/Description
 -
-&lt;/code>&lt;/pre></description></item><item><title>Now</title><link>http://www.djpeacher.com/now/</link><pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/now/</guid><description>&lt;p>This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com/about">you should make one&lt;/a>, too.&lt;/p>
-&lt;h2 id="life-hahahugoshortcode-s0-hbhb">Life &lt;i class="twa twa-sun">&lt;/i>&lt;/h2>
-&lt;p>I live in Austin, TX with my fiancée and our 4 cats (Cisco, Sammy, Milo, &amp;amp; Remy)! My fiancée and I have been together for 6 years and we are finally getting married this December! &lt;i class="twa twa-ring">&lt;/i>&lt;/p>
-&lt;p>In other news, my sister gave birth to a healthy baby boy, and I am now an uncle! I can&amp;rsquo;t wait for us to be the cool aunt and uncle when he grows up! &lt;i class="twa twa-baby-light-skin-tone">&lt;/i>&lt;/p>
-&lt;h2 id="work-hahahugoshortcode-s3-hbhb">Work &lt;i class="twa twa-briefcase">&lt;/i>&lt;/h2>
-&lt;p>I recently accepted an offer with &lt;a href="https://www.texastribune.org">The Texas Tribune&lt;/a> as a Full-Stack Engineer! I&amp;rsquo;m very excited to join the team and contribute to the development of their CMS and related tools to keep Texans informed! &lt;i class="twa twa-man-technologist-light-skin-tone">&lt;/i>&lt;/p>
-&lt;h2 id="learning-hahahugoshortcode-s5-hbhb">Learning &lt;i class="twa twa-brain">&lt;/i>&lt;/h2>
-&lt;p>I&amp;rsquo;m currently working through all the &lt;a href="https://codewithmosh.com">Code With Mosh&lt;/a> courses I find interesting. I find Mosh&amp;rsquo;s courses to be extremely thorough and well produced. Some of these courses aren&amp;rsquo;t anything new to me, but I figured it never hurts to refresh your memory and maybe fill in some gaps.&lt;/p>
-&lt;ul>
-&lt;li>Mastering React&lt;/li>
-&lt;li>The Ultimate React Native Series&lt;/li>
-&lt;li>The Ultimate Redux Course&lt;/li>
-&lt;li>The Ultimate Design Pattern Series&lt;/li>
-&lt;li>The Ultimate Data Structures &amp;amp; Algorithms Bundle&lt;/li>
-&lt;li>The Ultimate TypeScript Course&lt;/li>
-&lt;li>&lt;del>The Ultimate HTML5 &amp;amp; CSS3 Series&lt;/del>&lt;/li>
-&lt;li>&lt;del>Complete SQL Mastery&lt;/del>&lt;/li>
-&lt;li>&lt;del>Complete Python Mastery&lt;/del>&lt;/li>
-&lt;li>&lt;del>The Complete Node.js Course&lt;/del>&lt;/li>
-&lt;li>&lt;del>The Ultimate Docker Course&lt;/del>&lt;/li>
-&lt;li>&lt;del>The Ultimate Git Course&lt;/del>&lt;/li>
-&lt;li>&lt;del>The Ultimate Django Series&lt;/del>&lt;/li>
-&lt;li>&lt;del>The Ultimate JavaScript Mastery Series&lt;/del>&lt;/li>
-&lt;/ul>
-&lt;h2 id="creating-hahahugoshortcode-s6-hbhb">Creating &lt;i class="twa twa-hammer">&lt;/i>&lt;/h2>
-&lt;p>Right now I am tinkering with how this looks and how I am going to use it. For looks, I&amp;rsquo;m adapting &lt;a href="https://simplecss.org">Simple.css&lt;/a> into a &lt;a href="https://gohugo.io">Hugo&lt;/a> theme which you can view the source of on &lt;a href="https://github.com/djpeacher/simple-hugo">GitHub&lt;/a>. As for how I&amp;rsquo;m going to use this site, that is still developing, but I want to write more so I added &lt;a href="http://www.djpeacher.com/posts">/posts&lt;/a> to help me with that.&lt;/p>
-&lt;h2 id="reading-hahahugoshortcode-s7-hbhb">Reading &lt;i class="twa twa-open-book">&lt;/i>&lt;/h2>
-&lt;p>I&amp;rsquo;m having a little trouble finding the time to read, but when I do, I&amp;rsquo;m currently making my way through these books:&lt;/p>
-&lt;ul>
-&lt;li>Immune by Philipp Dettmer&lt;/li>
-&lt;li>Dune by Frank Herbert&lt;/li>
-&lt;li>The Forest of Doom by Ian Livingstone&lt;/li>
-&lt;li>Candlekeep Mysteries by Wizards of the Coast&lt;/li>
-&lt;/ul>
-&lt;h2 id="listening-hahahugoshortcode-s8-hbhb">Listening &lt;i class="twa twa-ear-light-skin-tone">&lt;/i>&lt;/h2>
-&lt;p>I love listening to podcasts! I have listed to &lt;strong>70 days&lt;/strong> worth of podcasts since 2016 and I have saved &lt;strong>6.75 days&lt;/strong> of my time by using the skip, variable speed, and trim silence features according to the app I use. These are the podcasts I&amp;rsquo;m currently listening to:&lt;/p>
-&lt;ul>
-&lt;li>Cortex&lt;/li>
-&lt;li>The Unmade Podcast&lt;/li>
-&lt;li>The Adventure Zone&lt;/li>
-&lt;li>Cast Party&lt;/li>
-&lt;li>Triforce!&lt;/li>
-&lt;li>The Daily&lt;/li>
-&lt;/ul>
-&lt;h2 id="watching-hahahugoshortcode-s9-hbhb">Watching &lt;i class="twa twa-eyes">&lt;/i>&lt;/h2>
-&lt;ul>
-&lt;li>Picard&lt;/li>
-&lt;li>Better Call Saul&lt;/li>
-&lt;li>Grey&amp;rsquo;s Anatomy&lt;/li>
-&lt;li>The Walking Dead (again)&lt;/li>
-&lt;li>Attack on Titan: The Final Season&lt;/li>
-&lt;li>Stranger Things&lt;/li>
-&lt;li>The Boys&lt;/li>
-&lt;li>Glee&lt;/li>
-&lt;li>Supernatural&lt;/li>
-&lt;li>Russion Doll&lt;/li>
-&lt;li>Money Heist&lt;/li>
-&lt;li>Umbrella Acadamy&lt;/li>
-&lt;li>Ms. Marvel&lt;/li>
-&lt;li>Survivor &lt;del>1&lt;/del> 2 3 4 5 6 7 8 9 10 11 12 13 14 15 &lt;del>16&lt;/del> &lt;del>17&lt;/del> 18 19 20 &lt;del>21&lt;/del> &lt;del>22&lt;/del> 23 24 &lt;del>25&lt;/del> 26 &lt;del>27&lt;/del> 28 &lt;del>29&lt;/del> &lt;del>30&lt;/del> 31 &lt;del>32&lt;/del> 33 &lt;del>34&lt;/del> 35 36 &lt;del>37&lt;/del> 38 39 40 &lt;del>41&lt;/del> &lt;del>42&lt;/del>&lt;/li>
-&lt;/ul>
-&lt;h2 id="playing-hahahugoshortcode-s10-hbhb">Playing &lt;i class="twa twa-video-game">&lt;/i>&lt;/h2>
-&lt;ul>
-&lt;li>Halo Infinite&lt;/li>
-&lt;li>Stray&lt;/li>
-&lt;li>Dungeons &amp;amp; Dragons&lt;/li>
-&lt;/ul></description></item><item><title>Python Version Manager 101 (pyenv)</title><link>http://www.djpeacher.com/posts/pyenv/</link><pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/pyenv/</guid><description>&lt;p>When you boot up a new machine, it will usually come preinstalled with a version of Python. You can verify this by running the following:&lt;/p>
+&lt;/code>&lt;/pre></description></item><item><title>Python Version Manager 101 (pyenv)</title><link>http://www.djpeacher.com/posts/pyenv/</link><pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/pyenv/</guid><description>&lt;p>When you boot up a new machine, it will usually come preinstalled with a version of Python. You can verify this by running the following:&lt;/p>
 &lt;pre tabindex="0">&lt;code># This shows the version installed.
 $ python -V
 Python 2.7.18
@@ -474,8 +443,8 @@ isError: error,
 &lt;/ul></description></item><item><title>About</title><link>http://www.djpeacher.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/about/</guid><description>
 &lt;p>
 My name is Jonathan Peacher and I'm a Software Engineer. This is my little corner of the internet where you can
-find out what I'm doing &lt;a href="http://www.djpeacher.com/now">now&lt;/a>, view my &lt;a href="http://www.djpeacher.com/code">code&lt;/a>, read my &lt;a href="http://www.djpeacher.com/posts">posts&lt;/a>,
-review my &lt;a href="http://www.djpeacher.com/resume">resume&lt;/a>, and get in &lt;a href="contact">contact&lt;/a>!
+find out what I'm doing &lt;a href="http://www.djpeacher.com/now">now&lt;/a>, view my &lt;a href="http://www.djpeacher.com/code">code&lt;/a>, read my &lt;a href="http://www.djpeacher.com/">posts&lt;/a>,
+review my &lt;a href="http://www.djpeacher.com/resume">resume&lt;/a>, and get in &lt;a href="https://twitter.com/_djpeacher">contact&lt;/a>!
 &lt;/p>
 &lt;p>
 This site is hosted on &lt;a href="https://github.com/djpeacher/djpeacher.com" target="_blank">GitHub&lt;/a> and built by
@@ -513,20 +482,7 @@ target="_blank">Simple.css&lt;/a>.
 &lt;i class="twa twa-lg twa-locked">&lt;/i>&lt;br />
 &lt;a href="https://password-protected-links.djpeacher.com/" target="_blank">&lt;b>password-protected-links&lt;/b>&lt;/a>
 &lt;br />Lock any link with a password!
-&lt;/p></description></item><item><title>Contact Me</title><link>http://www.djpeacher.com/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/contact/</guid><description>&lt;table>
-&lt;tr>
-&lt;td>email&lt;/td>
-&lt;td>&lt;a href="mailto:me@djpeacher.com">me@djpeacher.com&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>twitter&lt;/td>
-&lt;td>&lt;a href="https://twitter.com/_djpeacher" target="_blank">@_djpeacher&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>github&lt;/td>
-&lt;td>&lt;a href="https://github.com/djpeacher" target="_blank">@djpeacher&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;/table></description></item><item><title>Resume</title><link>http://www.djpeacher.com/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/resume/</guid><description>&lt;style>
+&lt;/p></description></item><item><title>Resume</title><link>http://www.djpeacher.com/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/resume/</guid><description>&lt;style>
 summary {
 font-weight: normal;
 }
