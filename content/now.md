@@ -1,7 +1,7 @@
 ---
 title: Now
 description: What am I up to right now?
-lastmod: 2022-08-01
+lastmod: 2022-10-06
 ---
 
 This is a [now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.
@@ -18,39 +18,19 @@ I recently accepted an offer with [The Texas Tribune](https://www.texastribune.o
 
 ## Learning {{< twa brain >}}
 
-I'm currently working through all the [Code With Mosh](https://codewithmosh.com) courses I find interesting. I find Mosh's courses to be extremely thorough and well produced. Some of these courses aren't anything new to me, but I figured it never hurts to refresh your memory and maybe fill in some gaps.
-
-- Mastering React
-- The Ultimate React Native Series
-- The Ultimate Redux Course
-- The Ultimate Design Pattern Series
-- The Ultimate Data Structures & Algorithms Bundle
-- The Ultimate TypeScript Course
-- ~~The Ultimate HTML5 & CSS3 Series~~
-- ~~Complete SQL Mastery~~
-- ~~Complete Python Mastery~~
-- ~~The Complete Node.js Course~~
-- ~~The Ultimate Docker Course~~
-- ~~The Ultimate Git Course~~
-- ~~The Ultimate Django Series~~
-- ~~The Ultimate JavaScript Mastery Series~~
-
-## Creating {{< twa hammer >}}
-
-Right now I am tinkering with how this looks and how I am going to use it. For looks, I'm adapting [Simple.css](https://simplecss.org) into a [Hugo](https://gohugo.io) theme which you can view the source of on [GitHub](https://github.com/djpeacher/simple-hugo). As for how I'm going to use this site, that is still developing, but I want to write more so I added [/posts](/posts) to help me with that.
+Very excited to be attending [DjangoCon US 2022](https://2022.djangocon.us) with October! I really enjoyed attending for the first time back in 2019, and virtually in 2021, so I am looking forward to returning!
 
 ## Reading {{< twa open-book >}}
 
 I'm having a little trouble finding the time to read, but when I do, I'm currently making my way through these books:
 
 - Immune by Philipp Dettmer
-- Dune by Frank Herbert
-- The Forest of Doom by Ian Livingstone
+- Building a Second Brain by Tiago Forte
 - Candlekeep Mysteries by Wizards of the Coast
 
 ## Listening {{< twa ear-light-skin-tone >}}
 
-I love listening to podcasts! I have listed to **70 days** worth of podcasts since 2016 and I have saved **6.75 days** of my time by using the skip, variable speed, and trim silence features according to the app I use. These are the podcasts I'm currently listening to:
+I love listening to podcasts! I have listed to **72 days** worth of podcasts since 2016 and I have saved **6.83 days** of my time by using the skip, variable speed, and trim silence features according to the app I use. These are the podcasts I'm currently listening to:
 
 - Cortex
 - The Unmade Podcast
@@ -61,23 +41,11 @@ I love listening to podcasts! I have listed to **70 days** worth of podcasts sin
 
 ## Watching {{< twa eyes >}}
 
-- Picard
-- Better Call Saul
-- Grey's Anatomy
-- The Walking Dead (again)
-- Attack on Titan: The Final Season
-- Stranger Things
-- The Boys
-- Glee
-- Supernatural
 - Russion Doll
-- Money Heist
-- Umbrella Acadamy
-- Ms. Marvel
-- Survivor ~~1~~ 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ~~16~~ ~~17~~ 18 19 20 ~~21~~ ~~22~~ 23 24 ~~25~~ 26 ~~27~~ 28 ~~29~~ ~~30~~ 31 ~~32~~ 33 ~~34~~ 35 36 ~~37~~ 38 39 40 ~~41~~ ~~42~~
+- The Walking Dead (again)
+- Grey's Anatomy
+- Survivor ~~1~~ 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ~~16~~ ~~17~~ 18 19 20 ~~21~~ ~~22~~ 23 24 ~~25~~ 26 ~~27~~ 28 ~~29~~ ~~30~~ 31 ~~32~~ 33 ~~34~~ 35 36 ~~37~~ 38 39 40 ~~41~~ ~~42~~ 43
 
 ## Playing {{< twa video-game >}}
 
-- Halo Infinite
-- Stray
 - Dungeons & Dragons
