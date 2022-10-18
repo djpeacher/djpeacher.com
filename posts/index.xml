@@ -1,4 +1,191 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Jonathan Peacher</title><link>http://www.djpeacher.com/posts/</link><description>Recent content in Posts on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Thu, 18 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Quick Hugo Deploy with GitHub Actions</title><link>http://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</link><pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</guid><description>&lt;p>Once you have your &lt;a href="https://gohugo.io">Hugo&lt;/a> project setup, all you need to do is push the following GitHub Action to deploy! &lt;i class="twa twa-rocket">&lt;/i>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Jonathan Peacher</title><link>http://www.djpeacher.com/posts/</link><description>Recent content in Posts on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Mon, 17 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>DjangoCon US 2022: Day 1</title><link>http://www.djpeacher.com/posts/djangocon-us-22-day-1/</link><pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/djangocon-us-22-day-1/</guid><description>&lt;h2 id="the-django-admin-is-your-oyster-lets-extend-its-functionalityhttps2022djangoconustalksthe-django-admin-is-your-oyster-lets-its">&lt;a href="https://2022.djangocon.us/talks/the-django-admin-is-your-oyster-lets-its/">The Django Admin Is Your Oyster: Let’s Extend Its Functionality&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>Don&amp;rsquo;t make it easy for attackers to find your admin page&amp;hellip;don&amp;rsquo;t use &lt;code>/admin&lt;/code>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Override &lt;code>ModelAdmin.get_search_results&lt;/code> to speed up searching.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Remember to use &lt;code>prefetch_realted&lt;/code> and &lt;code>select_related&lt;/code> to reduce DB queries.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add optional checkboxes to change forms to kickoff extra functions when saved.&lt;/p>
+&lt;ul>
+&lt;li>You can also dynamically set help text for better UX.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>You can use multiple databases in a single admin.&lt;/p>
+&lt;pre tabindex="0">&lt;code># Migrate
+$ python manage.py --database=sandbox
+# settings.py
+DATABASES = {
+&amp;#39;default&amp;#39;: {...},
+&amp;#39;sandbox&amp;#39;: {...}
+}
+# utils.py
+class SandboxAdminModel(admin.ModelAdmin):
+using = &amp;#39;sandbox&amp;#39;
+def save_model(self, request, obj, form, change):
+obj.save(using=self.using)
+def delete_model(self, request, obj):
+obj.delete(using=self.using)
+def get_queryset(self, request):
+return super().get_queryset(request).using(self.using)
+# admin.py
+@admin.register(MySandboxModel)
+class MySandboxModelAdmin(SandboxModelAdmin):
+...
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>Extend &lt;code>change_form.html&lt;/code> to add help text for the whole model, not just fields.&lt;/p>
+&lt;pre tabindex="0">&lt;code># change_form.html
+{% extends &amp;#34;admin/change_form.html&amp;#34; %}
+{% block form_top %}
+{{ original.admin_help_text }}
+{% endblock %}
+# models.py
+class MyModel(models.Model):
+admin_help_text = &amp;#34;...&amp;#34;
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>Create custom actions for bulk changes.&lt;/p>
+&lt;pre tabindex="0">&lt;code># admin.py
+def increase_msrp_by_8_perc(modeladmin, request, queryset):
+...
+@admin.register(Car)
+class CarAdmin(admin.ModelAdmin):
+actions = [increase_msrp_by_8_perc]
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;/ul>
+&lt;h2 id="documenting-django-code-in-2022https2022djangoconustalksdocumenting-django-code-in-2022">&lt;a href="https://2022.djangocon.us/talks/documenting-django-code-in-2022/">Documenting Django Code in 2022&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://diataxis.fr">https://diataxis.fr&lt;/a>: A framework for authoring technical documentation.&lt;/li>
+&lt;/ul>
+&lt;h2 id="you-dont-need-containers-to-run-django-in-productionhttps2022djangoconustalksyou-don-t-need-containers-to-run-django">&lt;a href="https://2022.djangocon.us/talks/you-don-t-need-containers-to-run-django/">You Don&amp;rsquo;t Need Containers to Run Django in Production&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>When &lt;strong>should&lt;/strong> you use containers? When you have&amp;hellip;
+&lt;ul>
+&lt;li>Thousands of programmers.&lt;/li>
+&lt;li>Millions of users.&lt;/li>
+&lt;li>Billions in valuation.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>There is a lot of FOMO around containers. For example, reproducibility is a big selling point for containers, but generally, this benefit is rarely taken advantage of.&lt;/li>
+&lt;li>Some downsides of using containers are added &lt;a href="https://landscape.cncf.io">complexity&lt;/a> and cost.&lt;/li>
+&lt;li>What do we want in production?
+&lt;ul>
+&lt;li>Secure environment.&lt;/li>
+&lt;li>Protection against malicious users.&lt;/li>
+&lt;li>Don&amp;rsquo;t want to wake up in the middle of the night.&lt;/li>
+&lt;li>Seamless code updates.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Web Server (WSGI vs ASGI):
+&lt;ul>
+&lt;li>WSGI is 20 years old&amp;hellip;and it shows.
+&lt;ul>
+&lt;li>Limited concurrency.&lt;/li>
+&lt;li>Graphic: &lt;em>Showed that as clients scale with &lt;code>gunicorn&lt;/code>, response time gets worse. The graph represented a BEST case scenario.&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ASGI is 5 years old&amp;hellip;and it shows.
+&lt;ul>
+&lt;li>Unlimited concurrency (ignoring memory).&lt;/li>
+&lt;li>Graphic: &lt;em>Showed that as clients scale with &lt;code>uvicorn&lt;/code>, response time gets worse. The graph represented a WORST case scenario.&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Reverse Proxy (nginx):
+&lt;ul>
+&lt;li>Can help limit concurrency as needed.&lt;/li>
+&lt;li>nginx can handle 20 million RPM on a 8 core VM.&lt;/li>
+&lt;li>Caddy is a new/easier alternative, but nginx is tried and tested.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Process Monitor (SystemD)&lt;/li>
+&lt;li>Deployment (Git Deploy Config)&lt;/li>
+&lt;li>Bonus Tip: Use software that offers LTS.&lt;/li>
+&lt;/ul>
+&lt;h1 id="herding-your-database-queries-diagnosing-improving-and-guarding-performance-of-db-interactions-in-your-django-appshttps2022djangoconustalksherding-your-database-queries-diagnosing">&lt;a href="https://2022.djangocon.us/talks/herding-your-database-queries-diagnosing/">Herding your database queries: diagnosing, improving and guarding performance of DB interactions in your Django apps&lt;/a>&lt;/h1>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://engineering.pathai.com/herding-your-database-queries-in-django">Blog Post&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Tools like &lt;code>django-debug-toolbar&lt;/code> and &lt;code>django-silk&lt;/code> are great for diagnosing rogue queries, but there can be cases where these tools are not going to help directly (e.g. with a js frontend).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To solve this, they rolled their own &lt;a href="https://github.com/Path-AI/django-request-stats-example/blob/main/req_stats/middleware.py">custom middleware&lt;/a> to analyze queries per request and output the result to the terminal.&lt;/p>
+&lt;pre tabindex="0">&lt;code>Received request GET /library/books/, status 200, db_query_count=29, db_query_time_ms=136.421, duration_ms=192.56
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>After you optimize your queries, you can protect yourself from regression with unit tests by taking advantage of &lt;a href="https://pytest-django.readthedocs.io/en/latest/helpers.html#django-assert-max-num-queries">django_assert_max_num_queries&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can also use &lt;a href="https://coverage.readthedocs.io/en/6.4.3/contexts.html">coverage context&lt;/a> to check new endpoints that are created and don&amp;rsquo;t have unit tests.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="the-django-jigsaw-puzzle-aligning-all-the-pieceshttps2022djangoconustalksthe-django-jigsaw-puzzle-aligning-all">&lt;a href="https://2022.djangocon.us/talks/the-django-jigsaw-puzzle-aligning-all/">The Django Jigsaw Puzzle: Aligning All the Pieces&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>(other) MVC == MVT (django)
+&lt;ul>
+&lt;li>Model == Model&lt;/li>
+&lt;li>View == Template&lt;/li>
+&lt;li>Controller == View&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>The Django Admin is great, but if your &lt;code>admin.py&lt;/code> is growing past 20 lines, you might be relying on it too much.&lt;/li>
+&lt;li>&lt;code>django-extensions&lt;/code>: One of the things it does is auto import models in the django shell.&lt;/li>
+&lt;li>Don&amp;rsquo;t use &lt;code>/admin&lt;/code>!&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code> WSGI Server
+┌────────────────────────────────────────────────┐
+│ Middlware │
+│ ┌────────────────────────────────────────────┐ │
+│ │ Django app │ │
+HTTP request │ │ ┌────────────────────────────────────────┐ │ │
+─────────────► ┌──────────┐ ──► │ │ │ ┌────────┐ ┌─────┐ ┌──────┐ │ │ │ ┌─────────┐
+Browser │Web Server│ │ │ │ │URL conf│ ──► │ │ ─── │Models│ ───┼─┼─┼── │Databases│
+◄───────────── └──────────┘ ◄── │ │ │ └────────┘ │ │ └──────┘ │ │ │ └─────────┘
+HTTP response ▲ │ │ │ │Views│ │ │ │
+│ │ │ │ │ │ ┌─────────┐ │ │ │
+▼ │ │ │ │ │ ─── │Templates│ │ │ │
+┌──────┐ │ │ │ └─────┘ └─────────┘ │ │ │
+│ File │ │ │ └────────────────────────────────────────┘ │ │
+│System│ │ └────────────────────────────────────────────┘ │
+└──────┘ └────────────────────────────────────────────────┘
+&lt;/code>&lt;/pre>&lt;h2 id="nurturing-a-legacy-codebasehttps2022djangoconustalksnurturing-a-legacy-codebase">&lt;a href="https://2022.djangocon.us/talks/nurturing-a-legacy-codebase/">Nurturing a &amp;ldquo;Legacy&amp;rdquo; Codebase&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>What is a &amp;ldquo;legacy&amp;rdquo; codebase?
+&lt;ul>
+&lt;li>Code with, potentially forgotten, history.&lt;/li>
+&lt;li>Code that follow outdated conventions.&lt;/li>
+&lt;li>Usually still running in production.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Should you evolve or rebuild? Ask yourself&amp;hellip;
+&lt;ul>
+&lt;li>Does the code meet current requirements?&lt;/li>
+&lt;li>Are there frequent or sever production issues?&lt;/li>
+&lt;li>How healthy are the dependencies?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Lets say you choose &amp;ldquo;evolve,&amp;rdquo; what should you do?
+&lt;ul>
+&lt;li>Automated tests with good coverage.&lt;/li>
+&lt;li>Upgrade/Replace outdated dependencies.&lt;/li>
+&lt;li>Use a linter and/or &lt;code>black&lt;/code> for code formatting.&lt;/li>
+&lt;li>Use &lt;code>pre-commit&lt;/code> for cross-team consistency.&lt;/li>
+&lt;li>Make sure current devs understand the story of the code.&lt;/li>
+&lt;li>Help future devs by writing detailed commit messages along with an issue tracker.&lt;/li>
+&lt;li>Document!&lt;/li>
+&lt;li>Build a culture of leaving clues for the future!&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Quick Hugo Deploy with GitHub Actions</title><link>http://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</link><pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</guid><description>&lt;p>Once you have your &lt;a href="https://gohugo.io">Hugo&lt;/a> project setup, all you need to do is push the following GitHub Action to deploy! &lt;i class="twa twa-rocket">&lt;/i>&lt;/p>
 &lt;pre tabindex="0">&lt;code>name: Build
 on:
 push:
