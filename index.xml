@@ -1,4 +1,316 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Mon, 17 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>DjangoCon US 2022: Day 1</title><link>http://www.djpeacher.com/posts/djangocon-us-22-day-1/</link><pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/djangocon-us-22-day-1/</guid><description>&lt;h2 id="the-django-admin-is-your-oyster-lets-extend-its-functionalityhttps2022djangoconustalksthe-django-admin-is-your-oyster-lets-its">&lt;a href="https://2022.djangocon.us/talks/the-django-admin-is-your-oyster-lets-its/">The Django Admin Is Your Oyster: Let’s Extend Its Functionality&lt;/a>&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Wed, 19 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>DjangoCon US 2022: Day 3</title><link>http://www.djpeacher.com/posts/djangocon-us-22-day-3/</link><pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/djangocon-us-22-day-3/</guid><description>&lt;h2 id="async-django-the-practical-guide-youve-been-awaiting-forhttps2022djangoconustalksasync-django-the-practical-guide-you-ve">&lt;a href="https://2022.djangocon.us/talks/async-django-the-practical-guide-you-ve/">Async Django: The practical guide you&amp;rsquo;ve been awaiting for.&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>Async is exciting, but be aware that using async will make your application more complex.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>import asyncio&lt;/code>: Python&amp;rsquo;s implementation of an async runtime that Django uses.&lt;/p>
+&lt;pre tabindex="0">&lt;code>import asyncio
+async def foo():
+...
+await bar()
+async def main():
+tasks = [asyncio.create_task(foo()) for range(5)]
+# Important! Wait for all tasks to complete.
+await asyncio.gather(*tasks)
+asyncio.run(main())
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>Can you use this for background tasks?&lt;/p>
+&lt;ul>
+&lt;li>Kind off&amp;hellip;if it fails, there is no built-in statuses, retires, or error handling.&lt;/li>
+&lt;li>It depends&amp;hellip;on how you are running Django (WSGI or ASGI). With WSGI, hitting an async view spins up an event loop, but will disappear when then view exits (like the example above).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Aggregate Views (what you did before GraphQL):&lt;/p>
+&lt;pre tabindex="0">&lt;code>import httpx
+import asyncio
+async def aggregate_view(): # pseudo code
+async with httpx.AsyncClient() as client:
+response_a, response_b = asyncio.gather(
+client.get(view_a_url),
+client.get(view_b_url),
+)
+return JsonResponse({
+&amp;#39;response_a&amp;#39;: response_a.json(),
+&amp;#39;response_b&amp;#39;: response_b.json(),
+})
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>Chat App (four ways):&lt;/p>
+&lt;ul>
+&lt;li>Polling (HTMX): Simple, but doesn&amp;rsquo;t scale, isn&amp;rsquo;t responsive, and can lead to self DDOS.&lt;/li>
+&lt;li>Long Polling (HTMX + Channels): Responsiveness, but creates a lot connections.&lt;/li>
+&lt;li>Server-Sent Events (HTMX + Channels): Better, keeps the connection open.&lt;/li>
+&lt;li>WebSockets (HTMX + Channels): Also keeps the connection open, but allows two-way communication.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="why-large-django-projects-need-a-data-prefetching-layerhttps2022djangoconustalkswhy-large-django-projects-need-a-data">&lt;a href="https://2022.djangocon.us/talks/why-large-django-projects-need-a-data/">Why large Django projects need a data (prefetching) layer&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&amp;ldquo;DRY isn&amp;rsquo;t helpful if you need to be careful.&amp;rdquo;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Django REST Framework loves DRY, but has high change amplification as a side effect.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change Amplification: The expected number of places in the codebase that needs to be modified during an atomic change to the software.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>An example of this in DRF is needing to prefetch in serializers.&lt;/p>
+&lt;pre tabindex="0">&lt;code>class MovieSerializer(ModelSerializer):
+# data that requires prefetching
+# You have to remeber to prefetch for each view using MovieSerializer.
+class MovieListView(ListAPIView):
+queryset = Movie.objects.prefetch_related(&amp;#34;directors&amp;#34;)
+serializer_class = MovieSerializer
+class MovieDetailView(ListAPIView):
+queryset = Movie.objects.prefetch_related(&amp;#34;directors&amp;#34;)
+serializer_class = MovieSerializer
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>You could do one of two things to combat this:&lt;/p>
+&lt;ol>
+&lt;li>Use non-DRF serializers that are very &lt;strong>explicit&lt;/strong> about prefetching.&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>&lt;code>django-virtual-models&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;ol start="2">
+&lt;li>Or keep DRF, but:&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>Warn about missing prefetches for each serializer.&lt;/li>
+&lt;li>Automatically run necessary prefetches.&lt;/li>
+&lt;li>Automatically prevent unnecessary ones.&lt;/li>
+&lt;li>Keep serializer nesting support.&lt;/li>
+&lt;li>Keep &lt;code>SerializerMethodField&lt;/code> support.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>TLDR: Use tools to be &lt;strong>explicit&lt;/strong> about the data you expect from the DB. Otherwise you&amp;rsquo;ll suffer from performance regressions and your read logic will break frequently.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="a-pythonic-full-text-searchhttps2022djangoconustalksa-pythonic-full-text-search">&lt;a href="https://2022.djangocon.us/talks/a-pythonic-full-text-search/">A pythonic full-text search&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>PostgreSQL added full text search in 2008.&lt;/li>
+&lt;li>Django added &lt;a href="https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/search/">full text search&lt;/a> in 2016.&lt;/li>
+&lt;li>Paolo has a &lt;a href="https://www.paulox.net/2017/12/22/full-text-search-in-django-with-postgresql/">great article&lt;/a> outlining the various search features.&lt;/li>
+&lt;/ul>
+&lt;h2 id="home-on-the-range-with-django---getting-comfortable-with-ranges-and-range-fieldshttps2022djangoconustalkshome-on-the-range-with-django-getting">&lt;a href="https://2022.djangocon.us/talks/home-on-the-range-with-django-getting/">Home on the range with Django - getting comfortable with ranges and range fields&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Ranges are everywhere!&lt;/li>
+&lt;li>Support for &lt;a href="https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/fields/#range-fields">ranges&lt;/a> was added for PostgreSQL Django in 2015.&lt;/li>
+&lt;li>The typical approach is to us &amp;ldquo;start&amp;rdquo; and &amp;ldquo;stop&amp;rdquo; fields, but that gets complicated fast.
+&lt;ul>
+&lt;li>The DB doesn&amp;rsquo;t know these two fields are related.&lt;/li>
+&lt;li>You have to manually add bounding/validation/constraint logic.&lt;/li>
+&lt;li>Queries can get weird/complicated.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Ranges fix all this!
+&lt;ul>
+&lt;li>1 field that stores lower, upper, and boundary information.&lt;/li>
+&lt;li>Automatically validates/constrains values.&lt;/li>
+&lt;li>Easy/Intuitive queries.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Ranges (Math):
+&lt;ul>
+&lt;li>Ranges = Intervals, Inclusive = Closed, Exclusive = Open&lt;/li>
+&lt;li>(exclusive, exclusive) - (1, 3) - 2&lt;/li>
+&lt;li>[inclusive, exclusive) - [1, 3) - 1, 2 &lt;code>The default for Django ranges!&lt;/code>&lt;/li>
+&lt;li>(exclusive, inclusive] - (1, 3] - 2, 3&lt;/li>
+&lt;li>[inclusive, inclusive] - [1, 3] - 1, 2, 3&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>There are lots of very useful query filters!
+&lt;ul>
+&lt;li>&lt;code>__overlap&lt;/code>, &lt;code>__contains&lt;/code>, &lt;code>__adjacent_to&lt;/code>, &lt;code>__fully_lt/gt&lt;/code>, etc.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Django supports a number of different value types via &lt;code>pysycopg2.extra&lt;/code>.
+&lt;ul>
+&lt;li>You can also create custom types! Example: IP ranges!&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Pitfalls
+&lt;ul>
+&lt;li>Limited Django Admin support.&lt;/li>
+&lt;li>You have to use &lt;code>Cast&lt;/code> when using &lt;code>F()&lt;/code>.&lt;/li>
+&lt;li>You have to use &lt;code>Lower&lt;/code> and &lt;code>Upper&lt;/code> database functions to access values.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Resources
+&lt;ul>
+&lt;li>&lt;code>psycopg2.extras&lt;/code>&lt;/li>
+&lt;li>&lt;code>django-range-merge&lt;/code>&lt;/li>
+&lt;li>&lt;code>django-generate-series&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>DjangoCon US 2022: Day 2</title><link>http://www.djpeacher.com/posts/djangocon-us-22-day-2/</link><pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/djangocon-us-22-day-2/</guid><description>&lt;h2 id="keeping-track-of-architectural-ish-decisions-in-a-sustainable-wayhttps2022djangoconustalkskeeping-track-of-architectural-ish-in-a">&lt;a href="https://2022.djangocon.us/talks/keeping-track-of-architectural-ish-in-a/">Keeping track of architectural-ish decisions in a sustainable way&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>The Problem
+&lt;ul>
+&lt;li>&lt;strong>Is there a problem?&lt;/strong> Image a new coworker asks why a particular decision was made, but no one knows. We lose relevant information of the decision making process (e.g. context and alternatives considered).&lt;/li>
+&lt;li>&lt;strong>Why is this a problem?&lt;/strong> We cannot reliably reflect on our decisions, onboard new people, or evolve.&lt;/li>
+&lt;li>&lt;strong>What&amp;rsquo;s causing this?&lt;/strong> Perhaps our tools are not specifically designed to capture changes, nor why they changed.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Architectural Decisions: The thing we need to capture.
+&lt;ul>
+&lt;li>&lt;strong>Architectural Decisions (AD)&lt;/strong>: A software design choice&amp;hellip;that is architecturally significant. It&amp;rsquo;s an AD if you need to ask:
+&lt;ul>
+&lt;li>Should we meet to discuss this?&lt;/li>
+&lt;li>What framework should we use?&lt;/li>
+&lt;li>Could we use [shiny-new-thing] for this?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Architecturally Significant Requirement (ASR)&lt;/strong>: A requirement that has a measurable effect.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions">Architectural Decision Record&lt;/a> (ADR) [&lt;a href="https://18f.gsa.gov/2021/07/06/architecture_decision_records_helpful_now_invaluable_later/">also&lt;/a>]: The tool we can use to capture.
+&lt;ul>
+&lt;li>&lt;strong>What is an ADR?&lt;/strong> A short, practical to fill, text file describing a specific AD. Like a journal entry to future developers.&lt;/li>
+&lt;li>&lt;strong>Who is it for?&lt;/strong> Primarily for developers and technology staff.&lt;/li>
+&lt;li>&lt;strong>What&amp;rsquo;s in it?&lt;/strong>:
+&lt;ul>
+&lt;li>Context: Why did this need to happen? What need to be considered?&lt;/li>
+&lt;li>Options: What were the options? What were the pros/cons of each?&lt;/li>
+&lt;li>Consequences: What will happen as a result?&lt;/li>
+&lt;li>Status: Has the decision been implemented or superseded?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Where does it live?&lt;/strong> Close to code (benefits from peer reviewing and discoverability), wiki, or something else.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Takeaways:
+&lt;ul>
+&lt;li>Leads teams to consensus.&lt;/li>
+&lt;li>Prevents knowledge hoarding.&lt;/li>
+&lt;li>Gets new maintainers up to speed.&lt;/li>
+&lt;li>Not one person with critical knowledge.&lt;/li>
+&lt;li>Shows maintainers if a change they&amp;rsquo;d like to do has been considered previously.&lt;/li>
+&lt;li>Can be used as justification to stakeholders.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="django-migrations-pitfalls-and-solutionshttps2022djangoconustalksdjango-migrations-pitfalls-and-solutions">&lt;a href="https://2022.djangocon.us/talks/django-migrations-pitfalls-and-solutions/">Django Migrations: Pitfalls and Solutions&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Migrations and Branches
+&lt;ul>
+&lt;li>Rewinding migrations only works if the relevant migration files are in the codebase, regardless of applied migrations.&lt;/li>
+&lt;li>This can cause problems when switching branches with divergent migrations. Solutions:
+&lt;ul>
+&lt;li>Reverse migrations before switching branches.&lt;/li>
+&lt;li>Restore a backup from before you ran either branch&amp;rsquo;s migrations.&lt;/li>
+&lt;li>Use backward compatible migrations.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>A similar problem occurs when trying to merge two branches with divergent migrations. Solution:
+&lt;ul>
+&lt;li>&lt;code>python manage.py makemigration -merge&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Reversible Migrations
+&lt;ul>
+&lt;li>Migrations are not time travel&amp;hellip;database backups are!&lt;/li>
+&lt;li>Common rewind errors include, using &lt;code>RunPython&lt;/code> with no reverse function, removing a constraint if data has been added that violates that constraint, or deleting a field that is non-null and has no default.&lt;/li>
+&lt;li>You can improve reversibility by backing up your database, set fields as nullable for some time before deleting them, and using a reverse function with &lt;code>RunPython&lt;/code> (or at least use &lt;code>noop&lt;/code>).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Backwards Compatible Migrations
+&lt;ul>
+&lt;li>The Deployment Race Condition: When, during deployment, the codebase and database will be out of sync! This can cause errors on your site if a request comes in while they are out of sync.&lt;/li>
+&lt;li>Assuming you are adding to the database more often than removing, you can reduce the frequency of this issue by migrating the database first, then deploying your new code.&lt;/li>
+&lt;li>For all other cases, you should try to create backwards compatible migration, i.e. migrations that once applied still work with you old code before that it gets updated.&lt;/li>
+&lt;li>Some migrations trivially backwards compatible:
+&lt;ul>
+&lt;li>Ops with no DB schema change (RunPython, changing choices, squashing migrations, etc.)&lt;/li>
+&lt;li>Adding a nullable field.&lt;/li>
+&lt;li>Adding a model.&lt;/li>
+&lt;li>Removing/Relaxing a constraint.&lt;/li>
+&lt;li>Adding a constraint that all existing data/code already meets.&lt;/li>
+&lt;li>Removing a model that isn&amp;rsquo;t referenced.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Others, are not. For those, we want to try and get those to &amp;ldquo;look&amp;rdquo; like the above list.
+&lt;ul>
+&lt;li>You can make some migration noops by using legacy database names.
+&lt;ul>
+&lt;li>To rename a field, set &lt;code>db_column&lt;/code> to the old name, and django will not update the database.&lt;/li>
+&lt;li>To rename a model, set &lt;code>db_table&lt;/code> to old name, and django will not update the database.&lt;/li>
+&lt;li>You can even move models between apps an avoid schema changes by using &lt;code>db_table&lt;/code> and &lt;code>SperateDatabaseAndState&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>You can decompose some migrations into two deploys.
+&lt;ul>
+&lt;li>Adding a constraint: First deploy code that satisfies constraint, then deploy migration to update data.&lt;/li>
+&lt;li>Removing a model: First deploy code that remove all references, then deploy migration to remove the model.&lt;/li>
+&lt;li>Remove a field: First deploy code that deprecates the field using &lt;code>django-deprecate-fields&lt;/code> and remove all code references, then deploy migration to remove the field.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>For all other, more complicated, cases, use scheduled downtime (maintenance mode).
+&lt;ul>
+&lt;li>Split/Merge fields/models.&lt;/li>
+&lt;li>Change field types.&lt;/li>
+&lt;li>Do &amp;ldquo;true&amp;rdquo; field/model renames.&lt;/li>
+&lt;li>Compress multiple releases into one.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Failed Migrations
+&lt;ul>
+&lt;li>If your migrations fail, be aware that:
+&lt;ul>
+&lt;li>You should abort your deployment.&lt;/li>
+&lt;li>Each migration is atomic, but the group of them are not.&lt;/li>
+&lt;li>If your migrations are not backwards compatible, your users will be getting errors (unless you are in maintenance mode).&lt;/li>
+&lt;li>If your migrations are not backwards compatible, your database will be in an incompatible state, and you can&amp;rsquo;t use &lt;code>manage.py shell&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>To fix this:
+&lt;ul>
+&lt;li>Avoid this to begin with by testing against production data!&lt;/li>
+&lt;li>Correct data with &lt;code>manage.py shell&lt;/code>, assuming your migrations were backwards compatible.&lt;/li>
+&lt;li>Push the broken migration onto the server (because you should have aborted the deployment), and reverse them (assuming they were reversible).&lt;/li>
+&lt;li>Restore database to a backup.&lt;/li>
+&lt;li>&lt;code>manage.py dbshell&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="django-through-the-yearshttps2022djangoconustalksdjango-through-the-years">&lt;a href="https://2022.djangocon.us/talks/django-through-the-years/">Django Through the Years&lt;/a>&lt;/h2>
+&lt;p>Not much to say about this, other than it was a very fun history lesson! ❤️&lt;/p>
+&lt;h2 id="just-enough-ops-for-developershttps2022djangoconustalksjust-enough-ops-for-developers">&lt;a href="https://2022.djangocon.us/talks/just-enough-ops-for-developers/">Just enough ops for developers&lt;/a>&lt;/h2>
+&lt;p>My main takeaway here was the following &lt;a href="https://fastapi.tiangolo.com/async/">fastapi analogy&lt;/a>:&lt;/p>
+&lt;ul>
+&lt;li>CPU = Cook&lt;/li>
+&lt;li>Process = Cashier&lt;/li>
+&lt;li>Request = Customer&lt;/li>
+&lt;/ul>
+&lt;h2 id="your-first-deployment-shouldnt-be-so-hardhttps2022djangoconustalksyour-first-deployment-shouldn-t-be-so">&lt;a href="https://2022.djangocon.us/talks/your-first-deployment-shouldn-t-be-so/">Your First Deployment Shouldn&amp;rsquo;t Be So Hard!&lt;/a>&lt;/h2>
+&lt;p>Django is great, until you get to deployment, at which point there are a billion different ways to do it. This can be a barrier to entry for new developers and for experienced developers who need to prototype rapidly&amp;hellip;enter &lt;code>django-simple-deploy&lt;/code>.&lt;/p>
+&lt;p>Prerequisites:&lt;/p>
+&lt;ul>
+&lt;li>A simple Django project.&lt;/li>
+&lt;li>Use requirements.txt, Poetry, or Pipenv.&lt;/li>
+&lt;li>Use Git.&lt;/li>
+&lt;li>Have the target platform&amp;rsquo;s CLI installed with an active account.&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ pip install django-simple-deploy
+# Add simple deploy to INSTALLED APPS.
+$ manage.py simple_deploy --platform fly_io --automate-all
+# Profit!
+&lt;/code>&lt;/pre></description></item><item><title>DjangoCon US 2022: Day 1</title><link>http://www.djpeacher.com/posts/djangocon-us-22-day-1/</link><pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/djangocon-us-22-day-1/</guid><description>&lt;h2 id="the-django-admin-is-your-oyster-lets-extend-its-functionalityhttps2022djangoconustalksthe-django-admin-is-your-oyster-lets-its">&lt;a href="https://2022.djangocon.us/talks/the-django-admin-is-your-oyster-lets-its/">The Django Admin Is Your Oyster: Let’s Extend Its Functionality&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>
 &lt;p>Don&amp;rsquo;t make it easy for attackers to find your admin page&amp;hellip;don&amp;rsquo;t use &lt;code>/admin&lt;/code>.&lt;/p>
@@ -7,7 +319,7 @@
 &lt;p>Override &lt;code>ModelAdmin.get_search_results&lt;/code> to speed up searching.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Remember to use &lt;code>prefetch_realted&lt;/code> and &lt;code>select_related&lt;/code> to reduce DB queries.&lt;/p>
+&lt;p>Remember to use &lt;code>prefetch_related&lt;/code> and &lt;code>select_related&lt;/code> to reduce DB queries.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Add optional checkboxes to change forms to kickoff extra functions when saved.&lt;/p>
