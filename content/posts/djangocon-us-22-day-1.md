@@ -8,7 +8,7 @@ description: 'My notes from #djangocon 🦀 day 1.'
 
 - Don't make it easy for attackers to find your admin page...don't use `/admin`.
 - Override `ModelAdmin.get_search_results` to speed up searching.
-- Remember to use `prefetch_realted` and `select_related` to reduce DB queries.
+- Remember to use `prefetch_related` and `select_related` to reduce DB queries.
 - Add optional checkboxes to change forms to kickoff extra functions when saved.
   - You can also dynamically set help text for better UX.
 - You can use multiple databases in a single admin.
