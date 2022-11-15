@@ -1,7 +1,7 @@
 ---
 title: Now
 description: What am I up to right now?
-lastmod: 2022-10-06
+lastmod: 2022-11-15
 ---
 
 This is a [now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.
@@ -14,15 +14,17 @@ In other news, my sister gave birth to a healthy baby boy, and I am now an uncle
 
 ## Work {{< twa briefcase >}}
 
-I recently accepted an offer with [The Texas Tribune](https://www.texastribune.org) as a Full-Stack Engineer! I'm very excited to join the team and contribute to the development of their CMS and related tools to keep Texans informed! {{< twa man-technologist-light-skin-tone >}}
+I accepted an offer with [The Texas Tribune](https://www.texastribune.org) earlier this year as a Full-Stack Engineer! I'm very excited to be on the team and contribute to the development of their CMS and related tools to keep Texans informed! {{< twa man-technologist-light-skin-tone >}}
 
 ## Learning {{< twa brain >}}
 
-Very excited to be attending [DjangoCon US 2022](https://2022.djangocon.us) with October! I really enjoyed attending for the first time back in 2019, and virtually in 2021, so I am looking forward to returning!
+![](https://live.staticflickr.com/65535/52487681415_b39ba2f985_h.jpg)
+
+I attended [DjangoCon US 2022](https://2022.djangocon.us) this past October! It was great returning to San Diego{{< twa palm-tree >}}
 
 ## Reading {{< twa open-book >}}
 
-I'm having a little trouble finding the time to read, but when I do, I'm currently making my way through these books:
+I have trouble finding the time to read, but when I do, I'm currently making my way through these books:
 
 - Immune by Philipp Dettmer
 - Building a Second Brain by Tiago Forte
@@ -30,9 +32,10 @@ I'm having a little trouble finding the time to read, but when I do, I'm current
 
 ## Listening {{< twa ear-light-skin-tone >}}
 
-I love listening to podcasts! I have listed to **72 days** worth of podcasts since 2016 and I have saved **6.83 days** of my time by using the skip, variable speed, and trim silence features according to the app I use. These are the podcasts I'm currently listening to:
+I love listening to podcasts! I have listed to **73 days** worth of podcasts since 2016 and I have saved **6.83 days** of my time by using the skip, variable speed, and trim silence features according to the app I use. These are the podcasts I'm currently listening to:
 
 - Cortex
+- DjangoChat
 - The Unmade Podcast
 - The Adventure Zone
 - Cast Party
@@ -41,11 +44,12 @@ I love listening to podcasts! I have listed to **72 days** worth of podcasts sin
 
 ## Watching {{< twa eyes >}}
 
-- Russion Doll
+- Russian Doll
 - The Walking Dead (again)
-- Grey's Anatomy
+- Game of Thrones (again)
 - Survivor ~~1~~ 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ~~16~~ ~~17~~ 18 19 20 ~~21~~ ~~22~~ 23 24 ~~25~~ 26 ~~27~~ 28 ~~29~~ ~~30~~ 31 ~~32~~ 33 ~~34~~ 35 36 ~~37~~ 38 39 40 ~~41~~ ~~42~~ 43
 
 ## Playing {{< twa video-game >}}
 
+- Halo Infinite
 - Dungeons & Dragons
