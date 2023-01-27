@@ -14,12 +14,15 @@ params:
     accent: '#809fff'
 menu:
   main:
-    - name: Home
+    - name: Blog
       pageref: /
       weight: 1
+    - name: Mastodon
+      pageref: /mastodon
+      weight: 2
     - name: About
       pageref: /about
-      weight: 2
+      weight: 3
     - name: Now
       pageref: /now
-      weight: 3
+      weight: 4
