@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Wed, 04 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Alamo Drafthouse 2022</title><link>http://www.djpeacher.com/posts/alamo-drafthouse-2022/</link><pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/alamo-drafthouse-2022/</guid><description>&lt;div class="notice">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Sat, 28 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Multiple Monitors on Apple Silicon</title><link>http://www.djpeacher.com/posts/multiple-monitors-on-apple-silicon/</link><pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/multiple-monitors-on-apple-silicon/</guid><description>&lt;p>If you are reading this, you probably just discovered that your second monitor isn&amp;rsquo;t working when you connect it to your M1/M2 Mac. Surprise, those chips have only one video output and thus can only support one external monitor! Bummer&amp;hellip;&lt;/p>
+&lt;p>To get around this, and move on with your life, you can use &lt;a href="https://www.synaptics.com/products/displaylink-graphics">DisplayLink&lt;/a> to output extra monitors via USB! Normally, connecting to an external monitor looks something like this:
+&lt;script src="https://unpkg.com/mermaid/dist/mermaid.min.js">&lt;/script>
+&lt;script>
+let isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+let mermaidConfig = {
+theme: (isDark) ? 'dark' : 'default',
+};
+mermaid.initialize(mermaidConfig);
+&lt;/script>
+&lt;div class="mermaid">
+flowchart LR
+Machine -- video --> Monitor
+&lt;/div>&lt;/p>
+&lt;p>With DisplayLink, that video signal gets compressed and outputted via USB. This data is then decompressed by a &lt;strong>DisplayLink adaptor&lt;/strong> and outputted to the monitor as a video signal. That looks something like this:&lt;/p>
+&lt;script src="https://unpkg.com/mermaid/dist/mermaid.min.js">&lt;/script>
+&lt;script>
+let isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+let mermaidConfig = {
+theme: (isDark) ? 'dark' : 'default',
+};
+mermaid.initialize(mermaidConfig);
+&lt;/script>
+&lt;div class="mermaid">
+flowchart LR
+Machine -- video --> DLS[DL Software] -- compressed --> DLA[DL Adaptor] -- video --> Monitor
+&lt;/div>
+&lt;p>From my experience using it so far, it works pretty well! I have noticed some minor latency and flickering issues, but that is a small price to pay, I think, for gaining a second monitor.&lt;/p>
+&lt;p>So TLDR, to get a second monitor on M1/M2 Mac, you have to:&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="https://www.synaptics.com/products/displaylink-graphics/downloads">Install DisplayLink&lt;/a>.&lt;/li>
+&lt;li>&lt;a href="https://www.synaptics.com/products/displaylink-graphics/displaylink-products-list">Buy a DisplayLink adaptor&lt;/a> that is compatible with your monitor specs.&lt;/li>
+&lt;li>Plug and Display! &lt;i class="twa twa-rocket">&lt;/i>&lt;/li>
+&lt;/ol></description></item><item><title>Alamo Drafthouse 2022</title><link>http://www.djpeacher.com/posts/alamo-drafthouse-2022/</link><pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/alamo-drafthouse-2022/</guid><description>&lt;div class="notice">
 Please enjoy this list of every movie we saw at the Alamo Drafthouse in 2022.
 &lt;/div>
 &lt;ul>
