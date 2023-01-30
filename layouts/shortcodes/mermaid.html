@@ -1,0 +1,11 @@
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+<script>
+    let isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    let mermaidConfig = {
+        theme: (isDark) ? 'dark' : 'default',
+    };
+    mermaid.initialize(mermaidConfig);
+</script>
+<div class="mermaid">
+    {{.Inner}}
+</div>
