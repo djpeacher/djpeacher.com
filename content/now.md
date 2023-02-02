@@ -6,6 +6,8 @@ lastmod: 2022-12-19
 
 This is a [now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.
 
+[![](https://www.dockhunt.com/api/og?username=_djpeacher&avatar=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1589848033373655041%2FPKIaJaDo.jpg&icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2Farc.png&icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2FVisual%20Studio%20Code.png&icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2FThings.png&icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2FTerminal.png&v1.0.0)](https://www.dockhunt.com/users/_djpeacher)
+
 ## Life {{< twa sun >}}
 
 I live in Austin, TX with my fiancée and our 4 cats (Cisco, Sammy, Milo, & Remy)! My ~~fiancée~~ **wife** and I have been together for 6 years and we finally got getting married this past December! {{< twa ring >}}
@@ -42,6 +44,7 @@ I love listening to podcasts! I have listed to **74 days** worth of podcasts sin
 
 ## Watching {{< twa eyes >}}
 
+- The Last of Us
 - Fear the Walking Dead
 - The Walking Dead (again)
 - Game of Thrones (again)
