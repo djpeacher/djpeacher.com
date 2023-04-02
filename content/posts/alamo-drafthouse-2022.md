@@ -1,11 +1,9 @@
 ---
 title: 'Alamo Drafthouse 2022'
 date: 2023-01-04
+description: "Please enjoy this list of every movie we saw at the Alamo Drafthouse in 2022.
+"
 ---
-
-{{< notice >}}
-Please enjoy this list of every movie we saw at the Alamo Drafthouse in 2022.
-{{< /notice >}}
 
 - Puss in Boots: The Last Wish
 - Black Panther: Wakanda Forever
