@@ -10,11 +10,11 @@ This is a [now page](https://nownownow.com/about), and if you have your own site
 
 ## Life {{< twa sun >}}
 
-I live in Austin, TX with my fiancée and our 4 cats (Cisco, Sammy, Milo, & Remy)! My ~~fiancée~~ **wife** and I have been together for 6 years and we finally got getting married this past December! {{< twa ring >}}
+I live in Austin, TX with my ~~fiancée~~ **wife** and our 4 cats (Cisco, Sammy, Milo, & Remy)! My wife and I have been together for 6 years and we finally got married this past December! {{< twa ring >}}
 
 ## Work {{< twa briefcase >}}
 
-I accepted an offer with [The Texas Tribune](https://www.texastribune.org) earlier this year as a Full-Stack Engineer! I'm very excited to be on the team and contribute to the development of their CMS and related tools to keep Texans informed! {{< twa man-technologist-light-skin-tone >}}
+I accepted an offer with [The Texas Tribune](https://www.texastribune.org) early last year as a Full-Stack Engineer! I'm very excited to be on the team and contribute to the development of their CMS and related tools to keep Texans informed! {{< twa man-technologist-light-skin-tone >}}
 
 ## Learning {{< twa brain >}}
 
@@ -24,35 +24,28 @@ I attended [DjangoCon US 2022](https://2022.djangocon.us) this past October! It 
 
 ## Reading {{< twa open-book >}}
 
-I have trouble finding the time to read, but when I do, I'm currently making my way through these books:
-
-- Immune by Philipp Dettmer
-- Building a Second Brain by Tiago Forte
-- Candlekeep Mysteries by Wizards of the Coast
+I have trouble finding the time to read, but I bought a Kindle recently to help encourage myself to read more!
 
 ## Listening {{< twa ear-light-skin-tone >}}
 
-I love listening to podcasts! I have listed to **74 days** worth of podcasts since 2016 and I have saved **6.88 days** of my time by using the skip, variable speed, and trim silence features according to the app I use. These are the podcasts I'm currently listening to:
+I love listening to podcasts, and have listed to days worth of them since 2016! These are the podcasts I'm currently listening to:
 
 - Cortex
 - DjangoChat
 - The Unmade Podcast
-- The Adventure Zone
-- Cast Party
 - Triforce!
 - The Daily
+- On Fire with Jeff Probst
 
 ## Watching {{< twa eyes >}}
 
-- The Last of Us
-- Fear the Walking Dead
+- RuPaul's Drag Race
 - The Walking Dead (again)
-- Game of Thrones (again)
 - Survivor ~~1~~ 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ~~16~~ ~~17~~ 18 19 20 ~~21~~ ~~22~~ 23 24 ~~25~~ 26 ~~27~~ 28 ~~29~~ ~~30~~ 31 ~~32~~ 33 ~~34~~ 35 36 ~~37~~ 38 39 40 ~~41~~ ~~42~~ ~~43~~ 44
 
 ## Playing {{< twa video-game >}}
 
+- Civilization 6
+- Dominions 5
 - Halo Infinite
 - Dungeons & Dragons
-- The Last of Us: Part 1
-- Assassin's Creed: Valhalla
