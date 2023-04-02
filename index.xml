@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Mon, 30 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Multiple Monitors on Apple Silicon</title><link>http://www.djpeacher.com/posts/multiple-monitors-on-apple-silicon/</link><pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/multiple-monitors-on-apple-silicon/</guid><description>&lt;p>If you are reading this, you probably just discovered that your second monitor isn&amp;rsquo;t working when you connect it to your M1/M2 Mac. Surprise, those chips have only one video output and thus can only support one external monitor! Bummer&amp;hellip;&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>PyTexas 2023: Day 1</title><link>http://www.djpeacher.com/posts/pytexas-23-day-1/</link><pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/pytexas-23-day-1/</guid><description>&lt;h2 id="keynote-walking-the-linehttpswwwpytexasorgschedulekeynotesbrandon-rhodes">&lt;a href="https://www.pytexas.org/schedule/keynotes#brandon-rhodes">Keynote: Walking the Line&lt;/a>&lt;/h2>
+&lt;p>&lt;em>Amazing keynote, and I will definitely watch it again when it&amp;rsquo;s uploaded to YouTube!&lt;/em>&lt;/p>
+&lt;ul>
+&lt;li>Make small, incremental, and easy to understand changes.&lt;/li>
+&lt;li>Test often and fail quickly.&lt;/li>
+&lt;li>Orient yourself by checking an expected failure.&lt;/li>
+&lt;/ul>
+&lt;h2 id="a-tale-of-two-typingshttpswwwpytexasorgscheduletalksa-tale-of-two-typings">&lt;a href="https://www.pytexas.org/schedule/talks#a-tale-of-two-typings">A Tale of Two Typings&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Legacy code is simply code without &lt;del>tests&lt;/del> types.&lt;/li>
+&lt;li>Define your types, don&amp;rsquo;t just inline them.&lt;/li>
+&lt;/ul>
+&lt;h2 id="trust-fall-hidden-gems-in-mlflow-that-improve-model-credibilityhttpswwwpytexasorgscheduletalkstrust-fall-hidden-gems-in-mlflow-that-improve-model-credibility">&lt;a href="https://www.pytexas.org/schedule/talks#trust-fall-hidden-gems-in-mlflow-that-improve-model-credibility">Trust Fall: Hidden Gems in MLFlow that Improve Model Credibility&lt;/a>&lt;/h2>
+&lt;p>&lt;em>The talk focused on machine learning, but I think this can still apply outside of that.&lt;/em>&lt;/p>
+&lt;ul>
+&lt;li>Build trust through documentation and reproducibility.&lt;/li>
+&lt;/ul>
+&lt;h2 id="exploring-socio-technical-security-concerns-in-critical-open-source-python-repositorieshttpswwwpytexasorgscheduletalksexploring-socio-technical-security-concerns-in-critical-open-source-python-repositories">&lt;a href="https://www.pytexas.org/schedule/talks#exploring-socio-technical-security-concerns-in-critical-open-source-python-repositories">Exploring Socio-technical Security Concerns in Critical Open-source Python Repositories&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Catalyst: Someone intentionally introduced bad code into Linux for a research paper.&lt;/li>
+&lt;li>Pull requests power open source contributions.&lt;/li>
+&lt;li>FOSS needs to be careful what gets merged in.&lt;/li>
+&lt;/ul>
+&lt;h2 id="a-buildengineer-in-a-buildless-langhttpswwwpytexasorgscheduletalksa-buildengineer-in-a-buildless-lang">&lt;a href="https://www.pytexas.org/schedule/talks#a-buildengineer-in-a-buildless-lang">A BuildEngineer in a buildless lang&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Improve development by reducing stylistic diffs and increasing semantic diffs.&lt;/li>
+&lt;/ul>
+&lt;h2 id="recursion-for-beginners-a-beginners-guide-to-recursionhttpswwwpytexasorgscheduletalksrecursion-for-beginners-a-beginners-guide-to-recursion">&lt;a href="https://www.pytexas.org/schedule/talks#recursion-for-beginners-a-beginners-guide-to-recursion">Recursion for Beginners: A Beginner&amp;rsquo;s Guide to Recursion&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>All recursive solutions have an iterative solution.&lt;/li>
+&lt;li>Unless you are dealing with trees, avoid recursion.&lt;/li>
+&lt;/ul>
+&lt;h2 id="improving-code-without-losing-your-mindhttpswwwpytexasorgscheduletalksimproving-code-without-losing-your-mind">&lt;a href="https://www.pytexas.org/schedule/talks#improving-code-without-losing-your-mind">Improving code without losing your mind&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.alexewerlof.com/p/tech-debt-day/">https://blog.alexewerlof.com/p/tech-debt-day/&lt;/a>&lt;/li>
+&lt;li>We tend to focus on getting features out the door.&lt;/li>
+&lt;li>Like an artist, programmers should improve &amp;ndash; refactor &amp;ndash; their art.&lt;/li>
+&lt;li>Set aside time to improve &amp;ndash; refactor &amp;ndash; your code.&lt;/li>
+&lt;li>Make code understandable and obvious.&lt;/li>
+&lt;/ul>
+&lt;h2 id="lightning-talks">Lightning Talks&lt;/h2>
+&lt;ul>
+&lt;li>Make code obvious. Otherwise, make it familiar. Otherwise, make it well-documented. Start by making it obvious!&lt;/li>
+&lt;li>For demos/testing, you can &lt;code>pip install&lt;/code> packages directly inside of the Python Interpreter!&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span style="color:#f92672">import&lt;/span> pip
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&amp;gt;&lt;/span> pip&lt;span style="color:#f92672">.&lt;/span>main([&lt;span style="color:#e6db74">&amp;#34;install&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;django&amp;#34;&lt;/span>])
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Multiple Monitors on Apple Silicon</title><link>http://www.djpeacher.com/posts/multiple-monitors-on-apple-silicon/</link><pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/multiple-monitors-on-apple-silicon/</guid><description>&lt;p>If you are reading this, you probably just discovered that your second monitor isn&amp;rsquo;t working when you connect it to your M1/M2 Mac. Surprise, those chips have only one video output and thus can only support one external monitor! Bummer&amp;hellip;&lt;/p>
 &lt;p>To get around this, and move on with your life, you can use &lt;a href="https://www.synaptics.com/products/displaylink-graphics">DisplayLink&lt;/a> to output extra monitors via USB! Normally, connecting to an external monitor looks something like this:
 &lt;script src="https://unpkg.com/mermaid/dist/mermaid.min.js">&lt;/script>
 &lt;script>
@@ -31,10 +78,7 @@ Machine -- video --> DLS[DL Software] -- compressed --> DLA[DL Adaptor] -- video
 &lt;li>&lt;a href="https://www.synaptics.com/products/displaylink-graphics/downloads">Install DisplayLink&lt;/a>.&lt;/li>
 &lt;li>&lt;a href="https://www.synaptics.com/products/displaylink-graphics/displaylink-products-list">Buy a DisplayLink adaptor&lt;/a> that is compatible with your monitor specs.&lt;/li>
 &lt;li>Plug and Display! &lt;i class="twa twa-rocket">&lt;/i>&lt;/li>
-&lt;/ol></description></item><item><title>Alamo Drafthouse 2022</title><link>http://www.djpeacher.com/posts/alamo-drafthouse-2022/</link><pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/alamo-drafthouse-2022/</guid><description>&lt;div class="notice">
-Please enjoy this list of every movie we saw at the Alamo Drafthouse in 2022.
-&lt;/div>
-&lt;ul>
+&lt;/ol></description></item><item><title>Alamo Drafthouse 2022</title><link>http://www.djpeacher.com/posts/alamo-drafthouse-2022/</link><pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/alamo-drafthouse-2022/</guid><description>&lt;ul>
 &lt;li>Puss in Boots: The Last Wish&lt;/li>
 &lt;li>Black Panther: Wakanda Forever&lt;/li>
 &lt;li>The Whale&lt;/li>
@@ -68,45 +112,37 @@ Please enjoy this list of every movie we saw at the Alamo Drafthouse in 2022.
 &lt;li>Sonic 2&lt;/li>
 &lt;/ul></description></item><item><title>Now</title><link>http://www.djpeacher.com/now/</link><pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/now/</guid><description>&lt;p>This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com/about">you should make one&lt;/a>, too.&lt;/p>
 &lt;p>&lt;a href="https://www.dockhunt.com/users/_djpeacher">&lt;img src="https://www.dockhunt.com/api/og?username=_djpeacher&amp;amp;avatar=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1589848033373655041%2FPKIaJaDo.jpg&amp;amp;icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2Farc.png&amp;amp;icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2FVisual%20Studio%20Code.png&amp;amp;icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2FThings.png&amp;amp;icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2FTerminal.png&amp;amp;v1.0.0" alt="">&lt;/a>&lt;/p>
-&lt;h2 id="life-hahahugoshortcode-s0-hbhb">Life &lt;i class="twa twa-sun">&lt;/i>&lt;/h2>
-&lt;p>I live in Austin, TX with my fiancée and our 4 cats (Cisco, Sammy, Milo, &amp;amp; Remy)! My &lt;del>fiancée&lt;/del> &lt;strong>wife&lt;/strong> and I have been together for 6 years and we finally got getting married this past December! &lt;i class="twa twa-ring">&lt;/i>&lt;/p>
-&lt;h2 id="work-hahahugoshortcode-s2-hbhb">Work &lt;i class="twa twa-briefcase">&lt;/i>&lt;/h2>
-&lt;p>I accepted an offer with &lt;a href="https://www.texastribune.org">The Texas Tribune&lt;/a> earlier this year as a Full-Stack Engineer! I&amp;rsquo;m very excited to be on the team and contribute to the development of their CMS and related tools to keep Texans informed! &lt;i class="twa twa-man-technologist-light-skin-tone">&lt;/i>&lt;/p>
-&lt;h2 id="learning-hahahugoshortcode-s4-hbhb">Learning &lt;i class="twa twa-brain">&lt;/i>&lt;/h2>
+&lt;h2 id="life-hahahugoshortcodes0hbhb">Life &lt;i class="twa twa-sun">&lt;/i>&lt;/h2>
+&lt;p>I live in Austin, TX with my &lt;del>fiancée&lt;/del> &lt;strong>wife&lt;/strong> and our 4 cats (Cisco, Sammy, Milo, &amp;amp; Remy)! My wife and I have been together for 6 years and we finally got married this past December! &lt;i class="twa twa-ring">&lt;/i>&lt;/p>
+&lt;h2 id="work-hahahugoshortcodes2hbhb">Work &lt;i class="twa twa-briefcase">&lt;/i>&lt;/h2>
+&lt;p>I accepted an offer with &lt;a href="https://www.texastribune.org">The Texas Tribune&lt;/a> early last year as a Full-Stack Engineer! I&amp;rsquo;m very excited to be on the team and contribute to the development of their CMS and related tools to keep Texans informed! &lt;i class="twa twa-man-technologist-light-skin-tone">&lt;/i>&lt;/p>
+&lt;h2 id="learning-hahahugoshortcodes4hbhb">Learning &lt;i class="twa twa-brain">&lt;/i>&lt;/h2>
 &lt;p>&lt;img src="https://live.staticflickr.com/65535/52487681415_b39ba2f985_h.jpg" alt="">&lt;/p>
 &lt;p>I attended &lt;a href="https://2022.djangocon.us">DjangoCon US 2022&lt;/a> this past October! It was great returning to San Diego&lt;i class="twa twa-palm-tree">&lt;/i>&lt;/p>
-&lt;h2 id="reading-hahahugoshortcode-s6-hbhb">Reading &lt;i class="twa twa-open-book">&lt;/i>&lt;/h2>
-&lt;p>I have trouble finding the time to read, but when I do, I&amp;rsquo;m currently making my way through these books:&lt;/p>
-&lt;ul>
-&lt;li>Immune by Philipp Dettmer&lt;/li>
-&lt;li>Building a Second Brain by Tiago Forte&lt;/li>
-&lt;li>Candlekeep Mysteries by Wizards of the Coast&lt;/li>
-&lt;/ul>
-&lt;h2 id="listening-hahahugoshortcode-s7-hbhb">Listening &lt;i class="twa twa-ear-light-skin-tone">&lt;/i>&lt;/h2>
-&lt;p>I love listening to podcasts! I have listed to &lt;strong>74 days&lt;/strong> worth of podcasts since 2016 and I have saved &lt;strong>6.88 days&lt;/strong> of my time by using the skip, variable speed, and trim silence features according to the app I use. These are the podcasts I&amp;rsquo;m currently listening to:&lt;/p>
+&lt;h2 id="reading-hahahugoshortcodes6hbhb">Reading &lt;i class="twa twa-open-book">&lt;/i>&lt;/h2>
+&lt;p>I have trouble finding the time to read, but I bought a Kindle recently to help encourage myself to read more!&lt;/p>
+&lt;h2 id="listening-hahahugoshortcodes7hbhb">Listening &lt;i class="twa twa-ear-light-skin-tone">&lt;/i>&lt;/h2>
+&lt;p>I love listening to podcasts, and have listed to days worth of them since 2016! These are the podcasts I&amp;rsquo;m currently listening to:&lt;/p>
 &lt;ul>
 &lt;li>Cortex&lt;/li>
 &lt;li>DjangoChat&lt;/li>
 &lt;li>The Unmade Podcast&lt;/li>
-&lt;li>The Adventure Zone&lt;/li>
-&lt;li>Cast Party&lt;/li>
 &lt;li>Triforce!&lt;/li>
 &lt;li>The Daily&lt;/li>
+&lt;li>On Fire with Jeff Probst&lt;/li>
 &lt;/ul>
-&lt;h2 id="watching-hahahugoshortcode-s8-hbhb">Watching &lt;i class="twa twa-eyes">&lt;/i>&lt;/h2>
+&lt;h2 id="watching-hahahugoshortcodes8hbhb">Watching &lt;i class="twa twa-eyes">&lt;/i>&lt;/h2>
 &lt;ul>
-&lt;li>The Last of Us&lt;/li>
-&lt;li>Fear the Walking Dead&lt;/li>
+&lt;li>RuPaul&amp;rsquo;s Drag Race&lt;/li>
 &lt;li>The Walking Dead (again)&lt;/li>
-&lt;li>Game of Thrones (again)&lt;/li>
 &lt;li>Survivor &lt;del>1&lt;/del> 2 3 4 5 6 7 8 9 10 11 12 13 14 15 &lt;del>16&lt;/del> &lt;del>17&lt;/del> 18 19 20 &lt;del>21&lt;/del> &lt;del>22&lt;/del> 23 24 &lt;del>25&lt;/del> 26 &lt;del>27&lt;/del> 28 &lt;del>29&lt;/del> &lt;del>30&lt;/del> 31 &lt;del>32&lt;/del> 33 &lt;del>34&lt;/del> 35 36 &lt;del>37&lt;/del> 38 39 40 &lt;del>41&lt;/del> &lt;del>42&lt;/del> &lt;del>43&lt;/del> 44&lt;/li>
 &lt;/ul>
-&lt;h2 id="playing-hahahugoshortcode-s9-hbhb">Playing &lt;i class="twa twa-video-game">&lt;/i>&lt;/h2>
+&lt;h2 id="playing-hahahugoshortcodes9hbhb">Playing &lt;i class="twa twa-video-game">&lt;/i>&lt;/h2>
 &lt;ul>
+&lt;li>Civilization 6&lt;/li>
+&lt;li>Dominions 5&lt;/li>
 &lt;li>Halo Infinite&lt;/li>
 &lt;li>Dungeons &amp;amp; Dragons&lt;/li>
-&lt;li>The Last of Us: Part 1&lt;/li>
-&lt;li>Assassin&amp;rsquo;s Creed: Valhalla&lt;/li>
 &lt;/ul></description></item><item><title>DjangoCon US 2022: Day 3</title><link>http://www.djpeacher.com/posts/djangocon-us-22-day-3/</link><pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/djangocon-us-22-day-3/</guid><description>&lt;h2 id="async-django-the-practical-guide-youve-been-awaiting-forhttps2022djangoconustalksasync-django-the-practical-guide-you-ve">&lt;a href="https://2022.djangocon.us/talks/async-django-the-practical-guide-you-ve/">Async Django: The practical guide you&amp;rsquo;ve been awaiting for.&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>
@@ -648,21 +684,21 @@ folder: public
 &lt;li>&lt;a href="#choose-relevant-monsters">Choose relevant monsters&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#select-magic-item-rewards">Select magic item rewards&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="review-the-characters-hahahugoshortcode-s0-hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
+&lt;h3 id="review-the-characters-hahahugoshortcodes0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
 &lt;p>The first thing you need to do is write down the names, backgrounds, motivations, and desires of the characters. Use these notes to prime your brain and tie the characters to the rest of your game.&lt;/p>
-&lt;h3 id="create-a-strong-start-hahahugoshortcode-s1-hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
+&lt;h3 id="create-a-strong-start-hahahugoshortcodes1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
 &lt;p>Set the stage by asking yourself, what&amp;rsquo;s happening, what&amp;rsquo;s the point, and where&amp;rsquo;s the action? We are looking for an event, hook, and closest action in one, maybe two, sentences. When in doubt, start with combat.&lt;/p>
-&lt;h3 id="outline-potential-scenes-hahahugoshortcode-s2-hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-potential-scenes-hahahugoshortcodes2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
 &lt;p>Write down a short list of scenes that &lt;strong>might&lt;/strong> occur in your game. Only write down as much as you need to prime your brain. These scenes are not in any specific order and may not even occur.&lt;/p>
-&lt;h3 id="define-secrets-and-clues-hahahugoshortcode-s3-hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
+&lt;h3 id="define-secrets-and-clues-hahahugoshortcodes3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
 &lt;p>Write down ten secrets and clues the characters &lt;strong>might&lt;/strong> discover during your game. These secrets and clues bring your campaign to life and reveal small pieces of the story or history of the world. They should be abstract enough to allow you to improvise their discovery during the game.&lt;/p>
-&lt;h3 id="develop-fantastic-locations-hahahugoshortcode-s4-hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
+&lt;h3 id="develop-fantastic-locations-hahahugoshortcodes4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
 &lt;p>Develop one or two locations that the characters &lt;strong>might&lt;/strong> discover for every hour of play you expect to have. These locations need to have an evocative name, three fantastic aspects, and be described using age and size. It is also a good idea to tie some of these locations to the backgrounds of the characters.&lt;/p>
-&lt;h3 id="outline-important-npcs-hahahugoshortcode-s5-hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-important-npcs-hahahugoshortcodes5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
 &lt;p>Prepare a few NPCs that the characters &lt;strong>might&lt;/strong> discover and will drive the game session and the adventure. Improvise others during the game. NPC outlines should be brief and include a name, connection to the adventure, and a character archetype.&lt;/p>
-&lt;h3 id="choose-relevant-monsters-hahahugoshortcode-s6-hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
+&lt;h3 id="choose-relevant-monsters-hahahugoshortcodes6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
 &lt;p>Make a list of monsters the characters &lt;strong>might&lt;/strong> encounter that make sense for the story, situation, and location of your game. Don&amp;rsquo;t tie these monsters to any specific location or situation. Instead, improvise encounters based on the story and situation during the game. For boss fights, remember to account for character capabilities without negating those capabilities.&lt;/p>
-&lt;h3 id="select-magic-item-rewards-hahahugoshortcode-s7-hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
+&lt;h3 id="select-magic-item-rewards-hahahugoshortcodes7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
 &lt;p>Players love magic items! Regularly ask the players what kinds of items they&amp;rsquo;d like to discover. Use that information to make a list of magic items that the characters &lt;strong>might&lt;/strong> discover during your game. When it fits the story, drop an item into the game. You can also drop in random magic items for some variability. You can tie magic items to the story by connecting them to quests, secrets, or clues.&lt;/p>
 &lt;h2 id="adventuremd">adventure.md&lt;/h2>
 &lt;p>The Lazy Dungeon Master&amp;rsquo;s Checklist should easily fit on a single page. Here is a markdown template for your next session!&lt;/p>
