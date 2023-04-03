@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>PyTexas 2023: Day 1</title><link>http://www.djpeacher.com/posts/pytexas-23-day-1/</link><pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/pytexas-23-day-1/</guid><description>&lt;h2 id="keynote-walking-the-linehttpswwwpytexasorgschedulekeynotesbrandon-rhodes">&lt;a href="https://www.pytexas.org/schedule/keynotes#brandon-rhodes">Keynote: Walking the Line&lt;/a>&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Sun, 02 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>PyTexas 2023: Day 2</title><link>http://www.djpeacher.com/posts/pytexas-23-day-2/</link><pubDate>Sun, 02 Apr 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/pytexas-23-day-2/</guid><description>&lt;h2 id="keynote-full-stack-pythonhttpswwwpytexasorgschedulekeynotesandrew-pandy-knight">&lt;a href="https://www.pytexas.org/schedule/keynotes#andrew-pandy-knight">Keynote: Full-Stack Python&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Python is the &lt;del>second&lt;/del> best language for [doing] everything [together].&lt;/li>
+&lt;li>&lt;strong>Simple&lt;/strong> is better than &lt;strong>complex&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Python&lt;/strong> transforms us from &lt;strong>programmers&lt;/strong> into &lt;strong>problem solvers&lt;/strong>.&lt;/li>
+&lt;li>Aside from HTML/CSS, the entire stack can be built with Python!&lt;/li>
+&lt;li>HTMX 😍&lt;/li>
+&lt;/ul>
+&lt;h2 id="unlocking-the-power-of-health-data-an-introduction-to-fhir-and-pythonhttpswwwpytexasorgscheduletalksunlocking-the-power-of-health-data-an-introduction-to-fhir-and-python">&lt;a href="https://www.pytexas.org/schedule/talks#unlocking-the-power-of-health-data-an-introduction-to-fhir-and-python">Unlocking the Power of Health Data: An Introduction to FHIR and Python&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Healthcare coordination is a mess, with no interoperability.&lt;/li>
+&lt;li>Enter the Electronic Health Record, but it had low adoption because it was only a syntactic protocol.&lt;/li>
+&lt;li>Enter HL7FHIR which was syntactic, semantic, and even had an API scheme.&lt;/li>
+&lt;/ul>
+&lt;h2 id="having-fun-with-application-designhttpswwwpytexasorgscheduletalkshaving-fun-with-application-design">&lt;a href="https://www.pytexas.org/schedule/talks#having-fun-with-application-design">Having fun with application design&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Empathize&lt;/strong> &amp;ndash; Curiosity about your users.&lt;/li>
+&lt;li>&lt;strong>Define&lt;/strong> &amp;ndash; Understand a problem.&lt;/li>
+&lt;li>&lt;strong>Ideate&lt;/strong> &amp;ndash; Creativity in idea generation.&lt;/li>
+&lt;li>&lt;strong>Prototype&lt;/strong> &amp;ndash; Build the right thing.&lt;/li>
+&lt;li>&lt;strong>Test&lt;/strong> your assumptions.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-build-and-ship-more-secure-python-apps-with-sigstorehttpswwwpytexasorgscheduletalkshow-to-build-and-ship-more-secure-python-apps-with-sigstore">&lt;a href="https://www.pytexas.org/schedule/talks#how-to-build-and-ship-more-secure-python-apps-with-sigstore">How to Build and Ship More Secure Python Apps with Sigstore&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>You wouldn&amp;rsquo;t pickup and chew gum (FOSS) from a wall would you? Would you!?&lt;/li>
+&lt;li>Attacks on FOSS are increasing, and Sigstore hopes to fix this.&lt;/li>
+&lt;li>&lt;a href="https://ttl.sh/">ttl.sh&lt;/a>, an anonymous and ephemeral Docker image registry.&lt;/li>
+&lt;/ul>
+&lt;h2 id="holoviz-visualization-and-interactive-dashboards-in-pythonhttpswwwpytexasorgscheduletalksholoviz-visualization-and-interactive-dashboards-in-python">&lt;a href="https://www.pytexas.org/schedule/talks#holoviz-visualization-and-interactive-dashboards-in-python">HoloViz: Visualization and Interactive Dashboards in Python&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://holoviz.org/">HoloViz&lt;/a>, a framework for developing data visualization dashboards.&lt;/li>
+&lt;/ul>
+&lt;h2 id="put-your-pants-on-and-lint-all-your-python-codehttpswwwpytexasorgscheduletalksput-your-pants-on-and-lint-all-your-python-code">&lt;a href="https://www.pytexas.org/schedule/talks#put-your-pants-on-and-lint-all-your-python-code">Put your Pants on and lint all your Python code!&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.pantsbuild.org/">Pants&lt;/a>, a fast, scalable, user-friendly build and developer workflow.&lt;/li>
+&lt;li>&lt;a href="https://beta.ruff.rs/docs/">Ruff&lt;/a>, an extremely fast Python linter.&lt;/li>
+&lt;/ul>
+&lt;h2 id="using-python-for-digital-investigationshttpswwwpytexasorgscheduletalksusing-python-for-digital-investigations">&lt;a href="https://www.pytexas.org/schedule/talks#using-python-for-digital-investigations">Using Python for Digital Investigations&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Digital Investigations (open-source research), research that uses info that is publicly available.&lt;/li>
+&lt;li>Research sources include public geospatial, media, user-generated, and archive data.&lt;/li>
+&lt;li>Open-source research and software have similar names, different histories, and both use Python as their language of choice.&lt;/li>
+&lt;/ul>
+&lt;h2 id="lightning-talks">Lightning Talks&lt;/h2>
+&lt;ul>
+&lt;li>Schools, when compared to industry, focus on code instead of other import aspects like tests, documentation, and collaboration.&lt;/li>
+&lt;li>Book Recommendations
+&lt;ul>
+&lt;li>Being Geek: The Software Developer&amp;rsquo;s Career Handbook&lt;/li>
+&lt;li>A Philosophy of Software Design&lt;/li>
+&lt;li>Think Like a Programmer: An Introduction to Creative Problem Solving&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Single click to select by character, double click to select by word, triple click to select by line!&lt;/li>
+&lt;/ul></description></item><item><title>PyTexas 2023: Day 1</title><link>http://www.djpeacher.com/posts/pytexas-23-day-1/</link><pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/pytexas-23-day-1/</guid><description>&lt;h2 id="keynote-walking-the-linehttpswwwpytexasorgschedulekeynotesbrandon-rhodes">&lt;a href="https://www.pytexas.org/schedule/keynotes#brandon-rhodes">Keynote: Walking the Line&lt;/a>&lt;/h2>
 &lt;p>&lt;em>Amazing keynote, and I will definitely watch it again when it&amp;rsquo;s uploaded to YouTube!&lt;/em>&lt;/p>
 &lt;ul>
 &lt;li>Make small, incremental, and easy to understand changes.&lt;/li>
