@@ -6,7 +6,7 @@ description: Software Engineer • Coffee Enthusiast • Dungeon Master • Cat 
 copyright: All work licensed under CC BY-SA 4.0 unless otherwise stated.
 params:
   title: Jonathan Peacher
-  subtitle: Software Engineer • Coffee Enthusiast • Dungeon Master • Cat Dad<br><a href="https://twitter.com/_djpeacher">Twitter</a> • <a href="https://fosstodon.org/@djpeacher">Mastadon</a> • <a href="https://github.com/djpeacher">GitHub</a>
+  subtitle: Software Engineer • Coffee Enthusiast • Dungeon Master • Cat Dad
   light:
     accent: '#212121'
     accentBg: '#f5f5f5'
