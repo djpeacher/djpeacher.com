@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Sun, 02 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>PyTexas 2023: Day 2</title><link>http://www.djpeacher.com/posts/pytexas-23-day-2/</link><pubDate>Sun, 02 Apr 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/pytexas-23-day-2/</guid><description>&lt;h2 id="keynote-full-stack-pythonhttpswwwpytexasorgschedulekeynotesandrew-pandy-knight">&lt;a href="https://www.pytexas.org/schedule/keynotes#andrew-pandy-knight">Keynote: Full-Stack Python&lt;/a>&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Tue, 13 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Why My Dockerfile ARG Was Missing</title><link>http://www.djpeacher.com/posts/why-my-dockerfile-arg-was-missing/</link><pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/why-my-dockerfile-arg-was-missing/</guid><description>&lt;p>I was doing some cleanup in a Dockerfile today when I noticed one of the packages was not on the correct version. It was on the latest version despite the fact there was an &lt;code>ARG&lt;/code> pinning it&amp;hellip;or so I thought. After some sleuthing, I found this helpful &lt;a href="https://stackoverflow.com/a/56748289">Stack Overflow post&lt;/a> that explained and pointed me in the &lt;a href="https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact">right direction&lt;/a>.&lt;/p>
+&lt;p>Turns out&amp;hellip;&lt;/p>
+&lt;blockquote>
+&lt;p>&amp;ldquo;An &lt;code>ARG&lt;/code> declared before a &lt;code>FROM&lt;/code>&amp;hellip;can’t be used in any instruction after a &lt;code>FROM&lt;/code>.&amp;rdquo;&lt;/p>
+&lt;/blockquote>
+&lt;p>So the reason my package was installing the latest version was because the &lt;code>ARG&lt;/code> didn&amp;rsquo;t exist! Conveniently, it also didn&amp;rsquo;t error, which is why it went unnoticed 🙃&lt;/p>
+&lt;p>The solution? Move the &lt;code>ARG&lt;/code> down one line after the &lt;code>FROM&lt;/code>.&lt;/p>
+&lt;pre tabindex="0">&lt;code># Bad
+ARG VERSION=1.2.3
+FROM ...
+# Good
+FROM ...
+ARG VERSION=1.2.3
+&lt;/code>&lt;/pre></description></item><item><title>PyTexas 2023: Day 2</title><link>http://www.djpeacher.com/posts/pytexas-23-day-2/</link><pubDate>Sun, 02 Apr 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/pytexas-23-day-2/</guid><description>&lt;h2 id="keynote-full-stack-pythonhttpswwwpytexasorgschedulekeynotesandrew-pandy-knight">&lt;a href="https://www.pytexas.org/schedule/keynotes#andrew-pandy-knight">Keynote: Full-Stack Python&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Python is the &lt;del>second&lt;/del> best language for [doing] everything [together].&lt;/li>
 &lt;li>&lt;strong>Simple&lt;/strong> is better than &lt;strong>complex&lt;/strong>.&lt;/li>
