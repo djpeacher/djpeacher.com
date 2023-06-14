@@ -1,4 +1,4 @@
-baseURL: http://www.djpeacher.com/
+baseURL: https://www.djpeacher.com/
 languageCode: en-us
 title: Jonathan Peacher
 theme: simple-hugo
@@ -6,6 +6,8 @@ description: Software Engineer • Coffee Enthusiast • Dungeon Master • Cat 
 copyright: All work licensed under CC BY-SA 4.0 unless otherwise stated.
 params:
   title: Jonathan Peacher
+  replyEmail: reply@djpeacher.com
+  replyButton: Reply via email
   subtitle:
     Software Engineer • Coffee Enthusiast • Dungeon Master • Cat Dad<br><small><a href="https://twitter.com/_djpeacher">Twitter</a> • <a href="https://fosstodon.org/@djpeacher">Mastadon</a> •
     <a href="https://github.com/djpeacher">GitHub</a> • <a href="/posts/index.xml">RSS</a></small>
