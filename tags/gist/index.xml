@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>gist on Jonathan Peacher</title><link>http://www.djpeacher.com/tags/gist/</link><description>Recent content in gist on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/tags/gist/index.xml" rel="self" type="application/rss+xml"/><item><title>New Computer Who Dis?</title><link>http://www.djpeacher.com/posts/new-computer-who-dis/</link><pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/new-computer-who-dis/</guid><description>&lt;h2 id="install">Install&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>gist on Jonathan Peacher</title><link>https://www.djpeacher.com/tags/gist/</link><description>Recent content in gist on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/tags/gist/index.xml" rel="self" type="application/rss+xml"/><item><title>New Computer Who Dis?</title><link>https://www.djpeacher.com/posts/new-computer-who-dis/</link><pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/new-computer-who-dis/</guid><description>
+&lt;h2 id="install">Install&lt;/h2>
 &lt;p>&lt;strong>Command Line Tools&lt;/strong>&lt;/p>
 &lt;pre tabindex="0">&lt;code>xcode-select --install
 &lt;/code>&lt;/pre>&lt;p>&lt;strong>Oh My Zsh&lt;/strong>&lt;/p>
@@ -19,4 +20,4 @@
 &lt;li>&lt;a href="https://apps.apple.com/us/app/magnet/id441258766?mt=12">Magnet&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://apps.apple.com/us/app/bandwidth/id490461369?mt=12">Bandwidth+&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://apps.apple.com/us/app/progress-bar/id1441939775?mt=12">Progress&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20New%20Computer%20Who%20Dis%3f">Reply via email</a></description></item></channel></rss>

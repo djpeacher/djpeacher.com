@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>http://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Tue, 13 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Why My Dockerfile ARG Was Missing</title><link>http://www.djpeacher.com/posts/why-my-dockerfile-arg-was-missing/</link><pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/why-my-dockerfile-arg-was-missing/</guid><description>&lt;p>I was doing some cleanup in a Dockerfile today when I noticed one of the packages was not on the correct version. It was on the latest version despite the fact there was an &lt;code>ARG&lt;/code> pinning it&amp;hellip;or so I thought. After some sleuthing, I found this helpful &lt;a href="https://stackoverflow.com/a/56748289">Stack Overflow post&lt;/a> that explained and pointed me in the &lt;a href="https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact">right direction&lt;/a>.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>https://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Tue, 13 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Why My Dockerfile ARG Was Missing</title><link>https://www.djpeacher.com/posts/why-my-dockerfile-arg-was-missing/</link><pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/why-my-dockerfile-arg-was-missing/</guid><description>
+&lt;p>I was doing some cleanup in a Dockerfile today when I noticed one of the packages was not on the correct version. It was on the latest version despite the fact there was an &lt;code>ARG&lt;/code> pinning it&amp;hellip;or so I thought. After some sleuthing, I found this helpful &lt;a href="https://stackoverflow.com/a/56748289">Stack Overflow post&lt;/a> that explained and pointed me in the &lt;a href="https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact">right direction&lt;/a>.&lt;/p>
 &lt;p>Turns out&amp;hellip;&lt;/p>
 &lt;blockquote>
 &lt;p>&amp;ldquo;An &lt;code>ARG&lt;/code> declared before a &lt;code>FROM&lt;/code>&amp;hellip;can’t be used in any instruction after a &lt;code>FROM&lt;/code>.&amp;rdquo;&lt;/p>
@@ -11,7 +12,8 @@ FROM ...
 # Good
 FROM ...
 ARG VERSION=1.2.3
-&lt;/code>&lt;/pre></description></item><item><title>PyTexas 2023: Day 2</title><link>http://www.djpeacher.com/posts/pytexas-23-day-2/</link><pubDate>Sun, 02 Apr 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/pytexas-23-day-2/</guid><description>&lt;h2 id="keynote-full-stack-pythonhttpswwwpytexasorgschedulekeynotesandrew-pandy-knight">&lt;a href="https://www.pytexas.org/schedule/keynotes#andrew-pandy-knight">Keynote: Full-Stack Python&lt;/a>&lt;/h2>
+&lt;/code>&lt;/pre><a href="mailto: reply@djpeacher.com?subject=Re:%20Why%20My%20Dockerfile%20ARG%20Was%20Missing">Reply via email</a></description></item><item><title>PyTexas 2023: Day 2</title><link>https://www.djpeacher.com/posts/pytexas-23-day-2/</link><pubDate>Sun, 02 Apr 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/pytexas-23-day-2/</guid><description>
+&lt;h2 id="keynote-full-stack-pythonhttpswwwpytexasorgschedulekeynotesandrew-pandy-knight">&lt;a href="https://www.pytexas.org/schedule/keynotes#andrew-pandy-knight">Keynote: Full-Stack Python&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Python is the &lt;del>second&lt;/del> best language for [doing] everything [together].&lt;/li>
 &lt;li>&lt;strong>Simple&lt;/strong> is better than &lt;strong>complex&lt;/strong>.&lt;/li>
@@ -65,7 +67,8 @@ ARG VERSION=1.2.3
 &lt;/ul>
 &lt;/li>
 &lt;li>Single click to select by character, double click to select by word, triple click to select by line!&lt;/li>
-&lt;/ul></description></item><item><title>PyTexas 2023: Day 1</title><link>http://www.djpeacher.com/posts/pytexas-23-day-1/</link><pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/pytexas-23-day-1/</guid><description>&lt;h2 id="keynote-walking-the-linehttpswwwpytexasorgschedulekeynotesbrandon-rhodes">&lt;a href="https://www.pytexas.org/schedule/keynotes#brandon-rhodes">Keynote: Walking the Line&lt;/a>&lt;/h2>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20PyTexas%202023%3a%20Day%202">Reply via email</a></description></item><item><title>PyTexas 2023: Day 1</title><link>https://www.djpeacher.com/posts/pytexas-23-day-1/</link><pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/pytexas-23-day-1/</guid><description>
+&lt;h2 id="keynote-walking-the-linehttpswwwpytexasorgschedulekeynotesbrandon-rhodes">&lt;a href="https://www.pytexas.org/schedule/keynotes#brandon-rhodes">Keynote: Walking the Line&lt;/a>&lt;/h2>
 &lt;p>&lt;em>Amazing keynote, and I will definitely watch it again when it&amp;rsquo;s uploaded to YouTube!&lt;/em>&lt;/p>
 &lt;ul>
 &lt;li>Make small, incremental, and easy to understand changes.&lt;/li>
@@ -112,7 +115,8 @@ ARG VERSION=1.2.3
 &lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span style="color:#f92672">import&lt;/span> pip
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&amp;gt;&lt;/span> pip&lt;span style="color:#f92672">.&lt;/span>main([&lt;span style="color:#e6db74">&amp;#34;install&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;django&amp;#34;&lt;/span>])
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Multiple Monitors on Apple Silicon</title><link>http://www.djpeacher.com/posts/multiple-monitors-on-apple-silicon/</link><pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/multiple-monitors-on-apple-silicon/</guid><description>&lt;p>If you are reading this, you probably just discovered that your second monitor isn&amp;rsquo;t working when you connect it to your M1/M2 Mac. Surprise, those chips have only one video output and thus can only support one external monitor! Bummer&amp;hellip;&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div><a href="mailto: reply@djpeacher.com?subject=Re:%20PyTexas%202023%3a%20Day%201">Reply via email</a></description></item><item><title>Multiple Monitors on Apple Silicon</title><link>https://www.djpeacher.com/posts/multiple-monitors-on-apple-silicon/</link><pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/multiple-monitors-on-apple-silicon/</guid><description>
+&lt;p>If you are reading this, you probably just discovered that your second monitor isn&amp;rsquo;t working when you connect it to your M1/M2 Mac. Surprise, those chips have only one video output and thus can only support one external monitor! Bummer&amp;hellip;&lt;/p>
 &lt;p>To get around this, and move on with your life, you can use &lt;a href="https://www.synaptics.com/products/displaylink-graphics">DisplayLink&lt;/a> to output extra monitors via USB! Normally, connecting to an external monitor looks something like this:
 &lt;script src="https://unpkg.com/mermaid/dist/mermaid.min.js">&lt;/script>
 &lt;script>
@@ -145,7 +149,8 @@ Machine -- video --> DLS[DL Software] -- compressed --> DLA[DL Adaptor] -- video
 &lt;li>&lt;a href="https://www.synaptics.com/products/displaylink-graphics/downloads">Install DisplayLink&lt;/a>.&lt;/li>
 &lt;li>&lt;a href="https://www.synaptics.com/products/displaylink-graphics/displaylink-products-list">Buy a DisplayLink adaptor&lt;/a> that is compatible with your monitor specs.&lt;/li>
 &lt;li>Plug and Display! &lt;i class="twa twa-rocket">&lt;/i>&lt;/li>
-&lt;/ol></description></item><item><title>Alamo Drafthouse 2022</title><link>http://www.djpeacher.com/posts/alamo-drafthouse-2022/</link><pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/alamo-drafthouse-2022/</guid><description>&lt;ul>
+&lt;/ol><a href="mailto: reply@djpeacher.com?subject=Re:%20Multiple%20Monitors%20on%20Apple%20Silicon">Reply via email</a></description></item><item><title>Alamo Drafthouse 2022</title><link>https://www.djpeacher.com/posts/alamo-drafthouse-2022/</link><pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/alamo-drafthouse-2022/</guid><description>
+&lt;ul>
 &lt;li>Puss in Boots: The Last Wish&lt;/li>
 &lt;li>Black Panther: Wakanda Forever&lt;/li>
 &lt;li>The Whale&lt;/li>
@@ -177,7 +182,8 @@ Machine -- video --> DLS[DL Software] -- compressed --> DLA[DL Adaptor] -- video
 &lt;li>Men&lt;/li>
 &lt;li>Doctor Strange: In the Multiverse of Madness&lt;/li>
 &lt;li>Sonic 2&lt;/li>
-&lt;/ul></description></item><item><title>Now</title><link>http://www.djpeacher.com/now/</link><pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/now/</guid><description>&lt;p>This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com/about">you should make one&lt;/a>, too!&lt;/p>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20Alamo%20Drafthouse%202022">Reply via email</a></description></item><item><title>Now</title><link>https://www.djpeacher.com/now/</link><pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/now/</guid><description>
+&lt;p>This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com/about">you should make one&lt;/a>, too!&lt;/p>
 &lt;p>&lt;a href="https://www.dockhunt.com/users/_djpeacher">&lt;img src="https://www.dockhunt.com/api/og?username=_djpeacher&amp;amp;avatar=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1589848033373655041%2FPKIaJaDo.jpg&amp;amp;icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2Farc.png&amp;amp;icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2FVisual%20Studio%20Code.png&amp;amp;icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2FThings.png&amp;amp;icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2FTerminal.png&amp;amp;v1.0.0" alt="">&lt;/a>&lt;/p>
 &lt;h2 id="life-hahahugoshortcodes0hbhb">Life &lt;i class="twa twa-sun">&lt;/i>&lt;/h2>
 &lt;p>I live in Austin, TX with my &lt;del>fiancée&lt;/del> &lt;strong>wife&lt;/strong> and our 4 cats (Cisco, Sammy, Milo, &amp;amp; Remy)! My wife and I have been together for 6 years and we finally got married this past December! &lt;i class="twa twa-ring">&lt;/i>&lt;/p>
@@ -210,7 +216,8 @@ Machine -- video --> DLS[DL Software] -- compressed --> DLA[DL Adaptor] -- video
 &lt;li>Dominions 5&lt;/li>
 &lt;li>Halo Infinite&lt;/li>
 &lt;li>Dungeons &amp;amp; Dragons&lt;/li>
-&lt;/ul></description></item><item><title>DjangoCon US 2022: Day 3</title><link>http://www.djpeacher.com/posts/djangocon-us-22-day-3/</link><pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/djangocon-us-22-day-3/</guid><description>&lt;h2 id="async-django-the-practical-guide-youve-been-awaiting-forhttps2022djangoconustalksasync-django-the-practical-guide-you-ve">&lt;a href="https://2022.djangocon.us/talks/async-django-the-practical-guide-you-ve/">Async Django: The practical guide you&amp;rsquo;ve been awaiting for.&lt;/a>&lt;/h2>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20Now">Reply via email</a></description></item><item><title>DjangoCon US 2022: Day 3</title><link>https://www.djpeacher.com/posts/djangocon-us-22-day-3/</link><pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/djangocon-us-22-day-3/</guid><description>
+&lt;h2 id="async-django-the-practical-guide-youve-been-awaiting-forhttps2022djangoconustalksasync-django-the-practical-guide-you-ve">&lt;a href="https://2022.djangocon.us/talks/async-django-the-practical-guide-you-ve/">Async Django: The practical guide you&amp;rsquo;ve been awaiting for.&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>
 &lt;p>Async is exciting, but be aware that using async will make your application more complex.&lt;/p>
@@ -362,7 +369,8 @@ serializer_class = MovieSerializer
 &lt;li>&lt;code>django-generate-series&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>DjangoCon US 2022: Day 2</title><link>http://www.djpeacher.com/posts/djangocon-us-22-day-2/</link><pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/djangocon-us-22-day-2/</guid><description>&lt;h2 id="keeping-track-of-architectural-ish-decisions-in-a-sustainable-wayhttps2022djangoconustalkskeeping-track-of-architectural-ish-in-a">&lt;a href="https://2022.djangocon.us/talks/keeping-track-of-architectural-ish-in-a/">Keeping track of architectural-ish decisions in a sustainable way&lt;/a>&lt;/h2>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20DjangoCon%20US%202022%3a%20Day%203">Reply via email</a></description></item><item><title>DjangoCon US 2022: Day 2</title><link>https://www.djpeacher.com/posts/djangocon-us-22-day-2/</link><pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/djangocon-us-22-day-2/</guid><description>
+&lt;h2 id="keeping-track-of-architectural-ish-decisions-in-a-sustainable-wayhttps2022djangoconustalkskeeping-track-of-architectural-ish-in-a">&lt;a href="https://2022.djangocon.us/talks/keeping-track-of-architectural-ish-in-a/">Keeping track of architectural-ish decisions in a sustainable way&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>The Problem
 &lt;ul>
@@ -522,7 +530,8 @@ serializer_class = MovieSerializer
 # Add simple deploy to INSTALLED APPS.
 $ manage.py simple_deploy --platform fly_io --automate-all
 # Profit!
-&lt;/code>&lt;/pre></description></item><item><title>DjangoCon US 2022: Day 1</title><link>http://www.djpeacher.com/posts/djangocon-us-22-day-1/</link><pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/djangocon-us-22-day-1/</guid><description>&lt;h2 id="the-django-admin-is-your-oyster-lets-extend-its-functionalityhttps2022djangoconustalksthe-django-admin-is-your-oyster-lets-its">&lt;a href="https://2022.djangocon.us/talks/the-django-admin-is-your-oyster-lets-its/">The Django Admin Is Your Oyster: Let’s Extend Its Functionality&lt;/a>&lt;/h2>
+&lt;/code>&lt;/pre><a href="mailto: reply@djpeacher.com?subject=Re:%20DjangoCon%20US%202022%3a%20Day%202">Reply via email</a></description></item><item><title>DjangoCon US 2022: Day 1</title><link>https://www.djpeacher.com/posts/djangocon-us-22-day-1/</link><pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/djangocon-us-22-day-1/</guid><description>
+&lt;h2 id="the-django-admin-is-your-oyster-lets-extend-its-functionalityhttps2022djangoconustalksthe-django-admin-is-your-oyster-lets-its">&lt;a href="https://2022.djangocon.us/talks/the-django-admin-is-your-oyster-lets-its/">The Django Admin Is Your Oyster: Let’s Extend Its Functionality&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>
 &lt;p>Don&amp;rsquo;t make it easy for attackers to find your admin page&amp;hellip;don&amp;rsquo;t use &lt;code>/admin&lt;/code>.&lt;/p>
@@ -709,7 +718,8 @@ HTTP response ▲ │ │ │ │Views│ │ │ │
 &lt;li>Build a culture of leaving clues for the future!&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>Quick Hugo Deploy with GitHub Actions</title><link>http://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</link><pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</guid><description>&lt;p>Once you have your &lt;a href="https://gohugo.io">Hugo&lt;/a> project setup, all you need to do is push the following GitHub Action to deploy! &lt;i class="twa twa-rocket">&lt;/i>&lt;/p>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20DjangoCon%20US%202022%3a%20Day%201">Reply via email</a></description></item><item><title>Quick Hugo Deploy with GitHub Actions</title><link>https://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</link><pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</guid><description>
+&lt;p>Once you have your &lt;a href="https://gohugo.io">Hugo&lt;/a> project setup, all you need to do is push the following GitHub Action to deploy! &lt;i class="twa twa-rocket">&lt;/i>&lt;/p>
 &lt;pre tabindex="0">&lt;code>name: Build
 on:
 push:
@@ -739,7 +749,8 @@ folder: public
 &lt;/ol>
 &lt;p>That&amp;rsquo;s it. After a few moments, your site should now be live at:&lt;/p>
 &lt;pre tabindex="0">&lt;code>https://&amp;lt;username&amp;gt;.github.io/&amp;lt;repository&amp;gt;/
-&lt;/code>&lt;/pre>&lt;p>If you want a custom domain for this site, you can &lt;a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages">configure a custom domain&lt;/a> with GitHub Pages.&lt;/p></description></item><item><title>How to Be a Lazy Dungeon Master</title><link>http://www.djpeacher.com/posts/how-to-be-a-lazy-dungeon-master/</link><pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/how-to-be-a-lazy-dungeon-master/</guid><description>&lt;h2 id="the-lazy-dungeon-masters-checklist">The Lazy Dungeon Master&amp;rsquo;s Checklist&lt;/h2>
+&lt;/code>&lt;/pre>&lt;p>If you want a custom domain for this site, you can &lt;a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages">configure a custom domain&lt;/a> with GitHub Pages.&lt;/p><a href="mailto: reply@djpeacher.com?subject=Re:%20Quick%20Hugo%20Deploy%20with%20GitHub%20Actions">Reply via email</a></description></item><item><title>How to Be a Lazy Dungeon Master</title><link>https://www.djpeacher.com/posts/how-to-be-a-lazy-dungeon-master/</link><pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/how-to-be-a-lazy-dungeon-master/</guid><description>
+&lt;h2 id="the-lazy-dungeon-masters-checklist">The Lazy Dungeon Master&amp;rsquo;s Checklist&lt;/h2>
 &lt;p>The steps it takes to prepare a typical game session can be boiled down into a simple checklist:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="#review-the-characters">Review the characters&lt;/a>&lt;/li>
@@ -800,7 +811,8 @@ Description of your strong start.
 ## Magic Items
 - Name/Description
 -
-&lt;/code>&lt;/pre></description></item><item><title>Python Version Manager 101 (pyenv)</title><link>http://www.djpeacher.com/posts/pyenv/</link><pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/pyenv/</guid><description>&lt;p>When you boot up a new machine, it will usually come preinstalled with a version of Python. You can verify this by running the following:&lt;/p>
+&lt;/code>&lt;/pre><a href="mailto: reply@djpeacher.com?subject=Re:%20How%20to%20Be%20a%20Lazy%20Dungeon%20Master">Reply via email</a></description></item><item><title>Python Version Manager 101 (pyenv)</title><link>https://www.djpeacher.com/posts/pyenv/</link><pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/pyenv/</guid><description>
+&lt;p>When you boot up a new machine, it will usually come preinstalled with a version of Python. You can verify this by running the following:&lt;/p>
 &lt;pre tabindex="0">&lt;code># This shows the version installed.
 $ python -V
 Python 2.7.18
@@ -933,7 +945,8 @@ $ pyenv local
 project
 &lt;/code>&lt;/pre>&lt;h2 id="conclusion">Conclusion&lt;/h2>
 &lt;p>I hope by reading this post you see how useful having a version manager like &lt;code>pyenv&lt;/code> can be and were able to get up and running quickly. I know I sure have!&lt;/p>
-&lt;p>If you have any feedback, click the button below. I&amp;rsquo;d love to hear from you!&lt;/p></description></item><item><title>Immune Part 1: Meet Your Immune System</title><link>http://www.djpeacher.com/posts/immune-part-1/</link><pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/immune-part-1/</guid><description>&lt;div class="notice">
+&lt;p>If you have any feedback, click the button below. I&amp;rsquo;d love to hear from you!&lt;/p><a href="mailto: reply@djpeacher.com?subject=Re:%20Python%20Version%20Manager%20101%20%28pyenv%29">Reply via email</a></description></item><item><title>Immune Part 1: Meet Your Immune System</title><link>https://www.djpeacher.com/posts/immune-part-1/</link><pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/immune-part-1/</guid><description>
+&lt;div class="notice">
 If you’d like to read the whole thing yourself and support the author, you can buy the book (not affiliated): &lt;a href="https://sites.prh.com/immune">https://sites.prh.com/immune&lt;/a>
 &lt;/div>
 &lt;h2 id="what-is-the-immune-system">What is the Immune System?&lt;/h2>
@@ -987,8 +1000,9 @@ dangerous they are. And finally it has the power to activate your second line of
 &lt;p>Your Adaptive Immune System, which needs a few years before it is ready to deploy efficiently. It is specific and can
 draw from an incredibly large library to fight every possible individual enemy that nature can throw at it, with
 powerful super weapons. But while it is powerful, one of its most important jobs is to make the Innate Immune System
-even stronger.&lt;/p></description></item><item><title>What Am I?</title><link>http://www.djpeacher.com/posts/what-am-i/</link><pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/what-am-i/</guid><description>&lt;p>I am someone who generally writes code using web-based technologies. What am I? This question has bugged me for years and I think I&amp;rsquo;ve finally come to a conclusion.&lt;/p>
-&lt;p>If you like spoilers, look at my &lt;a href="http://www.djpeacher.com/">home page&lt;/a> or the &lt;a href="#okay-so-what-am-i">conclusion&lt;/a> below. If not, here is my breakdown. Keep in mind that there exists many more titles than I mention below, but I am just trying to focus on my field. This is also just based on what I&amp;rsquo;ve been exposed to and I am happy to be proven wrong.&lt;/p>
+even stronger.&lt;/p><a href="mailto: reply@djpeacher.com?subject=Re:%20Immune%20Part%201%3a%20Meet%20Your%20Immune%20System">Reply via email</a></description></item><item><title>What Am I?</title><link>https://www.djpeacher.com/posts/what-am-i/</link><pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/what-am-i/</guid><description>
+&lt;p>I am someone who generally writes code using web-based technologies. What am I? This question has bugged me for years and I think I&amp;rsquo;ve finally come to a conclusion.&lt;/p>
+&lt;p>If you like spoilers, look at my &lt;a href="https://www.djpeacher.com/">home page&lt;/a> or the &lt;a href="#okay-so-what-am-i">conclusion&lt;/a> below. If not, here is my breakdown. Keep in mind that there exists many more titles than I mention below, but I am just trying to focus on my field. This is also just based on what I&amp;rsquo;ve been exposed to and I am happy to be proven wrong.&lt;/p>
 &lt;p>So what am I? Let&amp;rsquo;s start at the beginning&amp;hellip;&lt;/p>
 &lt;h2 id="programmercoder">Programmer/Coder&lt;/h2>
 &lt;p>I am 100% a programmer and a coder. Those two words essentially mean the same thing. I write programs with code.&lt;/p>
@@ -1042,7 +1056,8 @@ even stronger.&lt;/p></description></item><item><title>What Am I?</title><link>h
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=2GonoPx9DgU">The Difference Between A Software Engineer And A Software Developer&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=ys7V9JSTE5A">What does &amp;ldquo;Senior&amp;rdquo; Software Engineer mean?&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>New Computer Who Dis?</title><link>http://www.djpeacher.com/posts/new-computer-who-dis/</link><pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/new-computer-who-dis/</guid><description>&lt;h2 id="install">Install&lt;/h2>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20What%20Am%20I%3f">Reply via email</a></description></item><item><title>New Computer Who Dis?</title><link>https://www.djpeacher.com/posts/new-computer-who-dis/</link><pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/new-computer-who-dis/</guid><description>
+&lt;h2 id="install">Install&lt;/h2>
 &lt;p>&lt;strong>Command Line Tools&lt;/strong>&lt;/p>
 &lt;pre tabindex="0">&lt;code>xcode-select --install
 &lt;/code>&lt;/pre>&lt;p>&lt;strong>Oh My Zsh&lt;/strong>&lt;/p>
@@ -1063,7 +1078,8 @@ even stronger.&lt;/p></description></item><item><title>What Am I?</title><link>h
 &lt;li>&lt;a href="https://apps.apple.com/us/app/magnet/id441258766?mt=12">Magnet&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://apps.apple.com/us/app/bandwidth/id490461369?mt=12">Bandwidth+&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://apps.apple.com/us/app/progress-bar/id1441939775?mt=12">Progress&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>SWR 101 - React Hooks for Data Fetching</title><link>http://www.djpeacher.com/posts/swr-101/</link><pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/posts/swr-101/</guid><description>&lt;p>&lt;a href="https://swr.vercel.app">SWR&lt;/a> is a fast, lightweight, and reusable data fetching package for React that uses the &lt;a href="https://tools.ietf.org/html/rfc5861">&lt;code>stale-while-revalidate&lt;/code>&lt;/a> caching strategy. By using this package, you can simplify and enhance your project&amp;rsquo;s data fetching logic.&lt;/p>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20New%20Computer%20Who%20Dis%3f">Reply via email</a></description></item><item><title>SWR 101 - React Hooks for Data Fetching</title><link>https://www.djpeacher.com/posts/swr-101/</link><pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/swr-101/</guid><description>
+&lt;p>&lt;a href="https://swr.vercel.app">SWR&lt;/a> is a fast, lightweight, and reusable data fetching package for React that uses the &lt;a href="https://tools.ietf.org/html/rfc5861">&lt;code>stale-while-revalidate&lt;/code>&lt;/a> caching strategy. By using this package, you can simplify and enhance your project&amp;rsquo;s data fetching logic.&lt;/p>
 &lt;p>Normally, data is fetched in a top level component using &lt;code>useEffect&lt;/code> and passed down to its children using props. Additionally, logic must be added to handle errors and revalidation. This can lead to complicated and messy codebases, especially when data is needed throughout a large component tree. Enter, SWR.&lt;/p>
 &lt;pre tabindex="0">&lt;code>npm install swr
 &lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>import useSWR from &amp;#39;swr&amp;#39;;
@@ -1116,19 +1132,19 @@ isError: error,
 &lt;li>&lt;a href="https://swr.vercel.app/docs/mutation">Mutation&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://swr.vercel.app/docs/pagination">Pagination&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://swr.vercel.app/examples/basic">Examples&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>About</title><link>http://www.djpeacher.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/about/</guid><description>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20SWR%20101%20-%20React%20Hooks%20for%20Data%20Fetching">Reply via email</a></description></item><item><title>About</title><link>https://www.djpeacher.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/about/</guid><description>
 &lt;p>
 My name is Jonathan Peacher and I'm a Software Engineer. This is my little corner of the internet where you can
-find out what I'm doing &lt;a href="http://www.djpeacher.com/now">now&lt;/a>, view my &lt;a href="http://www.djpeacher.com/code">code&lt;/a>, read my &lt;a href="http://www.djpeacher.com/">posts&lt;/a>,
-review my &lt;a href="http://www.djpeacher.com/resume">resume&lt;/a>, and get in &lt;a href="https://twitter.com/_djpeacher">contact&lt;/a>!
+find out what I'm doing &lt;a href="https://www.djpeacher.com/now">now&lt;/a>, view my &lt;a href="https://www.djpeacher.com/code">code&lt;/a>, read my &lt;a href="https://www.djpeacher.com/">posts&lt;/a>,
+review my &lt;a href="https://www.djpeacher.com/resume">resume&lt;/a>, and get in &lt;a href="https://twitter.com/_djpeacher">contact&lt;/a>!
 &lt;/p>
 &lt;p>
 This site is hosted on &lt;a href="https://github.com/djpeacher/djpeacher.com" target="_blank">GitHub&lt;/a> and built by
 &lt;a href="https://gohugo.io/" target="_blank">Hugo&lt;/a> with the &lt;a href="https://github.com/djpeacher/simple-hugo"
 target="_blank">simple-hugo&lt;/a> theme I made using &lt;a href="https://simplecss.org/"
 target="_blank">Simple.css&lt;/a>.
-&lt;/p></description></item><item><title>Block</title><link>http://www.djpeacher.com/block/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/block/</guid><description>
-&lt;button class="replyButton" onclick="fathom.blockTrackingForMe();">Block Tracking&lt;/button></description></item><item><title>Mastodon</title><link>http://www.djpeacher.com/mastodon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/mastodon/</guid><description>
+&lt;/p><a href="mailto: reply@djpeacher.com?subject=Re:%20About">Reply via email</a></description></item><item><title>Block</title><link>https://www.djpeacher.com/block/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/block/</guid><description>
+&lt;button class="replyButton" onclick="fathom.blockTrackingForMe();">Block Tracking&lt;/button><a href="mailto: reply@djpeacher.com?subject=Re:%20Block">Reply via email</a></description></item><item><title>Mastodon</title><link>https://www.djpeacher.com/mastodon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/mastodon/</guid><description>
 &lt;div id="mastodon">&lt;/div>
 &lt;!-- Based on https://timpurdum.com/2022/11/19/mastodon-feed-in-jekyll.html -->
 &lt;script type="text/javascript">
@@ -1176,7 +1192,8 @@ const minutes = date.getMinutes().toString().padStart(2, '0');
 const formattedTimestamp = year + month + day + " @ " + hours + ":" + minutes;
 return formattedTimestamp
 }
-&lt;/script></description></item><item><title>Resume</title><link>http://www.djpeacher.com/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://www.djpeacher.com/resume/</guid><description>&lt;style>
+&lt;/script><a href="mailto: reply@djpeacher.com?subject=Re:%20Mastodon">Reply via email</a></description></item><item><title>Resume</title><link>https://www.djpeacher.com/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/resume/</guid><description>
+&lt;style>
 summary {
 font-weight: normal;
 }
@@ -1319,33 +1336,33 @@ a utility to add passwords to URLs.
 &lt;br>
 &lt;hr>
 &lt;h2>Courses&lt;/h2>
-&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-complete-python-mastery.pdf' target="_blank">Complete Python
+&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-complete-python-mastery.pdf' target="_blank">Complete Python
 Mastery&lt;/a>&lt;/p>
-&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-complete-sql-mastery.pdf' target="_blank">Complete SQL Mastery&lt;/a>&lt;/p>
-&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-complete-node-js-course.pdf' target="_blank">The Complete Node.js
+&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-complete-sql-mastery.pdf' target="_blank">Complete SQL Mastery&lt;/a>&lt;/p>
+&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-complete-node-js-course.pdf' target="_blank">The Complete Node.js
 Course&lt;/a>&lt;/p>
-&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-django-series-part-1.pdf' target="_blank">The Ultimate
+&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-django-series-part-1.pdf' target="_blank">The Ultimate
 Django Series - Part 1&lt;/a>&lt;/p>
-&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-django-series-part-2.pdf' target="_blank">The Ultimate
+&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-django-series-part-2.pdf' target="_blank">The Ultimate
 Django Series - Part 2&lt;/a>&lt;/p>
-&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-django-series-part-3.pdf' target="_blank">The Ultimate
+&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-django-series-part-3.pdf' target="_blank">The Ultimate
 Django Series - Part 3&lt;/a>&lt;/p>
-&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-docker-course.pdf' target="_blank">The Ultimate Docker
+&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-docker-course.pdf' target="_blank">The Ultimate Docker
 Course&lt;/a>&lt;/p>
-&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-git-course.pdf' target="_blank">The Ultimate Git
+&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-git-course.pdf' target="_blank">The Ultimate Git
 Course&lt;/a>&lt;/p>
-&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-and-css3-series-part-1.pdf' target="_blank">The
+&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-and-css3-series-part-1.pdf' target="_blank">The
 Ultimate HTML5 &amp; CSS3 Series: Part 1&lt;/a>&lt;/p>
-&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-javascript-mastery-series-part-1.pdf' target="_blank">The
+&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-javascript-mastery-series-part-1.pdf' target="_blank">The
 Ultimate JavaScript Mastery Series - Part 1&lt;/a>&lt;/p>
-&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-javascript-mastery-series-part-2.pdf' target="_blank">The
+&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-javascript-mastery-series-part-2.pdf' target="_blank">The
 Ultimate JavaScript Mastery Series - Part 2&lt;/a>&lt;/p>
-&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-css3-series-part-1.pdf' target="_blank">The
+&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-css3-series-part-1.pdf' target="_blank">The
 The Ultimate HTML5 &amp; CSS3 Series: Part 1&lt;/a>&lt;/p>
-&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-css3-series-part-2.pdf' target="_blank">The
+&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-css3-series-part-2.pdf' target="_blank">The
 The Ultimate HTML5 &amp; CSS3 Series: Part 2&lt;/a>&lt;/p>
-&lt;p>&lt;a href='http://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-css3-series-part-3.pdf' target="_blank">The
+&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-css3-series-part-3.pdf' target="_blank">The
 The Ultimate HTML5 &amp; CSS3 Series: Part 3&lt;/a>&lt;/p>
 &lt;h2>Conferences&lt;/h2>
 &lt;p>Streamed &lt;a href="https://2021.djangocon.us" target="_blank">DjangoCon 2021&lt;/a>&lt;/p>
-&lt;p>Attended &lt;a href="https://2019.djangocon.us" target="_blank">DjangoCon 2019&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>Attended &lt;a href="https://2019.djangocon.us" target="_blank">DjangoCon 2019&lt;/a>&lt;/p><a href="mailto: reply@djpeacher.com?subject=Re:%20Resume">Reply via email</a></description></item></channel></rss>
