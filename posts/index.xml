@@ -1,4 +1,142 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Jonathan Peacher</title><link>https://www.djpeacher.com/posts/</link><description>Recent content in Posts on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Tue, 13 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Why My Dockerfile ARG Was Missing</title><link>https://www.djpeacher.com/posts/why-my-dockerfile-arg-was-missing/</link><pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/why-my-dockerfile-arg-was-missing/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Jonathan Peacher</title><link>https://www.djpeacher.com/posts/</link><description>Recent content in Posts on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy Django with DigitalOcean App Platform</title><link>https://www.djpeacher.com/posts/deploy-django-with-digitalocean-app-platform/</link><pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/deploy-django-with-digitalocean-app-platform/</guid><description>
+&lt;p>I&amp;rsquo;ve tried a variety of different ways to deploy Django projects over the last five years, and they all seem a bit overcomplicated. I would very much like to focus less on the infrastructure part of web development, and more on making cool stuff, particularly with Django. To that end, I&amp;rsquo;ve been looking for a simple&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> and cheap&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup> way to throw a Django projects onto the internet, and I think DigitalOcean&amp;rsquo;s &lt;a href="https://www.digitalocean.com/products/app-platform">App Platform&lt;/a> is the best I&amp;rsquo;ve found so far.&lt;/p>
+&lt;p>The rest of this post is based&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup> on &lt;a href="https://docs.digitalocean.com/tutorials/app-deploy-django-app/">DigitalOcean&amp;rsquo;s tutorial&lt;/a>, but stripped down for anyone who just wants a TLDR on how to chuck a Django project&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup> onto the interwebs!&lt;/p>
+&lt;h2 id="step-1-install-python-packages">Step 1: Install Python Packages&lt;/h2>
+&lt;pre tabindex="0">&lt;code>pip install django gunicorn psycopg2-binary dj-database-url
+pip freeze &amp;gt; requirements.txt
+&lt;/code>&lt;/pre>&lt;h2 id="step-2-update-settingspy">Step 2: Update &lt;code>settings.py&lt;/code>&lt;/h2>
+&lt;pre tabindex="0">&lt;code>import os
+import sys
+import dj_database_url
+SECRET_KEY = os.getenv(&amp;#34;DJANGO_SECRET_KEY&amp;#34;, &amp;#39;django-insecure-xyz&amp;#39;)
+ALLOWED_HOSTS = os.getenv(&amp;#34;DJANGO_ALLOWED_HOSTS&amp;#34;, &amp;#34;127.0.0.1,localhost&amp;#34;).split(&amp;#34;,&amp;#34;)
+ADMIN_URL = os.getenv(&amp;#34;ADMIN_URL&amp;#34;, &amp;#34;admin/&amp;#34;)
+SECURE_HSTS_SECONDS = 31536000
+if DEBUG is True:
+DATABASES = {
+&amp;#34;default&amp;#34;: {
+&amp;#34;ENGINE&amp;#34;: &amp;#34;django.db.backends.sqlite3&amp;#34;,
+&amp;#34;NAME&amp;#34;: os.path.join(BASE_DIR, &amp;#34;db.sqlite3&amp;#34;),
+}
+}
+elif len(sys.argv) &amp;gt; 0 and sys.argv[1] != &amp;#39;collectstatic&amp;#39;:
+if os.getenv(&amp;#34;DATABASE_URL&amp;#34;, None) is None:
+raise Exception(&amp;#34;DATABASE_URL environment variable not defined&amp;#34;)
+DATABASES = {
+&amp;#34;default&amp;#34;: dj_database_url.parse(os.environ.get(&amp;#34;DATABASE_URL&amp;#34;)),
+}
+STATIC_URL = &amp;#34;/static/&amp;#34;
+STATIC_ROOT = os.path.join(BASE_DIR, &amp;#34;staticfiles&amp;#34;)
+&lt;/code>&lt;/pre>&lt;h2 id="step-3-deploy-on-app-platform">Step 3: Deploy on App Platform&lt;/h2>
+&lt;p>Navigate to the &lt;a href="https://cloud.digitalocean.com/apps">App Platform&lt;/a>&lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup>.&lt;/p>
+&lt;h3 id="create-app">Create App&lt;/h3>
+&lt;ol>
+&lt;li>Create App → Select Repo → Select Branch&lt;/li>
+&lt;li>Check &amp;ldquo;Autodeploy&amp;rdquo;&lt;/li>
+&lt;/ol>
+&lt;h3 id="resources">Resources&lt;/h3>
+&lt;h4 id="web-service">Web Service&lt;/h4>
+&lt;ol>
+&lt;li>Edit Plan → Select &amp;ldquo;Basic&amp;rdquo; → Select &amp;ldquo;$5.00/mo &amp;ndash; Basic&amp;rdquo; → Back&lt;/li>
+&lt;li>Edit Web Service → Edit Run Command → Save&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>gunicorn --worker-tmp-dir /dev/shm &amp;lt;YOUR_PROJECT_NAME&amp;gt;.wsgi
+&lt;/code>&lt;/pre>&lt;h4 id="database">Database&lt;/h4>
+&lt;ol>
+&lt;li>Add Resource → Database → Add&lt;/li>
+&lt;li>Create and Attach&lt;/li>
+&lt;/ol>
+&lt;h4 id="static-site">Static Site&lt;/h4>
+&lt;ol>
+&lt;li>Add Resource → Detect from Source Code → Add&lt;/li>
+&lt;li>Select Provider → Select Repo/Branch → Check &amp;ldquo;Autodeploy&amp;rdquo; → Next&lt;/li>
+&lt;li>Edit new Web Service&lt;/li>
+&lt;li>Rename to &lt;code>&amp;lt;PROJECT&amp;gt;-static&lt;/code> → Save&lt;/li>
+&lt;li>Update &amp;ldquo;Resource Type&amp;rdquo; to &amp;ldquo;Static Site&amp;rdquo; → Save&lt;/li>
+&lt;li>Update &amp;ldquo;Output Directory&amp;rdquo; to &lt;code>staticfiles&lt;/code> → Save&lt;/li>
+&lt;li>Update &amp;ldquo;HTTP Request Routes&amp;rdquo; to &lt;code>/static&lt;/code> → Save&lt;/li>
+&lt;/ol>
+&lt;h3 id="environment-variables">Environment Variables&lt;/h3>
+&lt;ol>
+&lt;li>Edit Web Service resource&lt;/li>
+&lt;li>Add the following environment variables:&lt;/li>
+&lt;/ol>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Key&lt;/th>
+&lt;th>Value&lt;/th>
+&lt;th style="text-align:center">Encrypt&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>DATABASE_URL&lt;/td>
+&lt;td>${db.DATABASE_URL}&lt;/td>
+&lt;td style="text-align:center">N&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>DJANGO_ALLOWED_HOSTS&lt;/td>
+&lt;td>${APP_DOMAIN}&lt;/td>
+&lt;td style="text-align:center">N&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>DEBUG&lt;/td>
+&lt;td>False&lt;/td>
+&lt;td style="text-align:center">N&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ADMIN_URL&lt;/td>
+&lt;td>your-secret-admin/&lt;/td>
+&lt;td style="text-align:center">N&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>DJANGO_SECRET_KEY&lt;/td>
+&lt;td>your-secret-key&lt;/td>
+&lt;td style="text-align:center">Y&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ol start="3">
+&lt;li>Save&lt;/li>
+&lt;/ol>
+&lt;h3 id="info">Info&lt;/h3>
+&lt;ol>
+&lt;li>Rename project, if desired → Save&lt;/li>
+&lt;/ol>
+&lt;h3 id="review">Review&lt;/h3>
+&lt;ol>
+&lt;li>Click &amp;ldquo;Create Resources&amp;rdquo;&lt;/li>
+&lt;/ol>
+&lt;h3 id="post-deploy">Post Deploy&lt;/h3>
+&lt;ol>
+&lt;li>Navigate to &amp;ldquo;Console&amp;rdquo; tab&lt;/li>
+&lt;li>Run the following commands:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>python manage.py migrate
+python manage.py createsuperuser
+&lt;/code>&lt;/pre>&lt;hr>
+&lt;p>That it, your Django project should now be live! 🚀 Hopefully I laid that out as simply as possible, but feel free to checkout out &lt;a href="https://docs.digitalocean.com/tutorials/app-deploy-django-app/">DigitalOcean&amp;rsquo;s tutorial&lt;/a> if you&amp;rsquo;d like more detail.&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>I wish it could be simpler, but this is the best I got so far.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>Basic plans start around $12/mo.&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3">
+&lt;p>I made a few improvements like adding &lt;code>ADMIN_URL&lt;/code> and &lt;code>SECURE_HSTS_SECONDS&lt;/code> to achieve a 100% score on &lt;a href="https://djcheckup.com/">djcheckup.com&lt;/a>.&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:4">
+&lt;p>Assumption: You have a &lt;em>simple&lt;/em> Django project.&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:5">
+&lt;p>Assumption: You have committed the project to a git repo and have a DigitalOcean account.&amp;#160;&lt;a href="#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div><a href="mailto: reply@djpeacher.com?subject=Re:%20Deploy%20Django%20with%20DigitalOcean%20App%20Platform">Reply via email</a></description></item><item><title>Why My Dockerfile ARG Was Missing</title><link>https://www.djpeacher.com/posts/why-my-dockerfile-arg-was-missing/</link><pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/why-my-dockerfile-arg-was-missing/</guid><description>
 &lt;p>I was doing some cleanup in a Dockerfile today when I noticed one of the packages was not on the correct version. It was on the latest version despite the fact there was an &lt;code>ARG&lt;/code> pinning it&amp;hellip;or so I thought. After some sleuthing, I found this helpful &lt;a href="https://stackoverflow.com/a/56748289">Stack Overflow post&lt;/a> that explained and pointed me in the &lt;a href="https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact">right direction&lt;/a>.&lt;/p>
 &lt;p>Turns out&amp;hellip;&lt;/p>
 &lt;blockquote>
