@@ -88,13 +88,46 @@ gunicorn --worker-tmp-dir /dev/shm <YOUR_PROJECT_NAME>.wsgi
 1. Edit Web Service resource
 2. Add the following environment variables:
 
-| Key                  | Value              | Encrypt |
-| -------------------- | ------------------ | :-----: |
-| DATABASE_URL         | ${db.DATABASE_URL} |    N    |
-| DJANGO_ALLOWED_HOSTS | ${APP_DOMAIN}      |    N    |
-| DEBUG                | False              |    N    |
-| ADMIN_URL            | your-secret-admin/ |    N    |
-| DJANGO_SECRET_KEY    | your-secret-key    |    Y    |
+{{< html >}}
+<div style="overflow-x:auto;">
+    <table style="margin: 0;">
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+                <th style="text-align:center">Encrypt</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>DATABASE_URL</td>
+                <td>${db.DATABASE_URL}</td>
+                <td style="text-align:center">N</td>
+            </tr>
+            <tr>
+                <td>DJANGO_ALLOWED_HOSTS</td>
+                <td>${APP_DOMAIN}</td>
+                <td style="text-align:center">N</td>
+            </tr>
+            <tr>
+                <td>DEBUG</td>
+                <td>False</td>
+                <td style="text-align:center">N</td>
+            </tr>
+            <tr>
+                <td>ADMIN_URL</td>
+                <td>your-secret-admin/</td>
+                <td style="text-align:center">N</td>
+            </tr>
+            <tr>
+                <td>DJANGO_SECRET_KEY</td>
+                <td>your-secret-key</td>
+                <td style="text-align:center">Y</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{{< /html >}}
 
 3. Save
 
