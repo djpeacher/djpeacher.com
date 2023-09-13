@@ -61,7 +61,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, &amp;#34;staticfiles&amp;#34;)
 &lt;li>Edit Web Service resource&lt;/li>
 &lt;li>Add the following environment variables:&lt;/li>
 &lt;/ol>
-&lt;table>
+&lt;div style="overflow-x:auto;">
+&lt;table style="margin: 0;">
 &lt;thead>
 &lt;tr>
 &lt;th>Key&lt;/th>
@@ -97,6 +98,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, &amp;#34;staticfiles&amp;#34;)
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
+&lt;/div>
 &lt;ol start="3">
 &lt;li>Save&lt;/li>
 &lt;/ol>
