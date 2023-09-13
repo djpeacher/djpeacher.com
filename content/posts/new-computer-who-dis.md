@@ -2,7 +2,6 @@
 title: New Computer Who Dis?
 description: A note to my future self whenever I need to setup or reset a computer. This will be an evolving post and will be updated as I run into things.
 date: 2022-02-21
-tags: ['gist']
 ---
 
 ## Install
