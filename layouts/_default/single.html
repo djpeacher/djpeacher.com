@@ -1,0 +1,17 @@
+{{ define "main" }}
+    <a href="/" style="text-decoration: none;">Jonathan Peacher</a>
+    {{ $isPost := eq .Type "posts" }}
+    {{ if .Title }}<h1 style="margin-bottom: 0.5rem;">{{ .Title | safeHTML }}</h1>{{ end }}
+    {{ if .PublishDate }}
+        {{ partial "date.html" .PublishDate }}
+    {{ end }}
+    {{ if .Lastmod }}
+        {{ if ne .PublishDate .Lastmod }}
+            {{ partial "date.html" .Lastmod }}
+        {{ end }}
+    {{ end }}
+    {{ .Content }}
+    {{ if and $isPost .Site.Params.ReplyEmail }}
+        <a class="button replyButton" href="mailto: {{ .Site.Params.ReplyEmail }}?subject=RE: {{ .Title }}">{{ .Site.Params.ReplyButton | default  "Reply via email" }}</a>
+    {{ end }}
+{{ end }}
