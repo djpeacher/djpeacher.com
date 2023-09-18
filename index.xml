@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>https://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Thu, 22 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy Django with DigitalOcean App Platform</title><link>https://www.djpeacher.com/posts/deploy-django-with-digitalocean-app-platform/</link><pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/deploy-django-with-digitalocean-app-platform/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>https://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Thu, 22 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Now</title><link>https://www.djpeacher.com/now/</link><pubDate>Mon, 18 Sep 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/now/</guid><description>
+&lt;p>This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com/about">you should make one&lt;/a>, too!&lt;/p>
+&lt;p>I&amp;rsquo;m living in Austin, TX with my wife and four cats. I&amp;rsquo;m working for The Texas Tribune as a full-stack software engineer. I&amp;rsquo;m working my way through Candlekeep Mysteries as the DM for our group. My wife and I are playing a lot of Baldur&amp;rsquo;s Gate 3 🎲&lt;/p><a href="mailto: reply@djpeacher.com?subject=Re:%20Now">Reply via email</a></description></item><item><title>Deploy Django with DigitalOcean App Platform</title><link>https://www.djpeacher.com/posts/deploy-django-with-digitalocean-app-platform/</link><pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/deploy-django-with-digitalocean-app-platform/</guid><description>
 &lt;p>I&amp;rsquo;ve tried a variety of different ways to deploy Django projects over the last five years, and they all seem a bit overcomplicated. I would very much like to focus less on the infrastructure part of web development, and more on making cool stuff, particularly with Django. To that end, I&amp;rsquo;ve been looking for a simple&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> and cheap&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup> way to throw a Django projects onto the internet, and I think DigitalOcean&amp;rsquo;s &lt;a href="https://www.digitalocean.com/products/app-platform">App Platform&lt;/a> is the best I&amp;rsquo;ve found so far.&lt;/p>
 &lt;p>The rest of this post is based&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup> on &lt;a href="https://docs.digitalocean.com/tutorials/app-deploy-django-app/">DigitalOcean&amp;rsquo;s tutorial&lt;/a>, but stripped down for anyone who just wants a TLDR on how to chuck a Django project&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup> onto the interwebs!&lt;/p>
 &lt;h2 id="step-1-install-python-packages">Step 1: Install Python Packages&lt;/h2>
@@ -322,41 +324,7 @@ Machine -- video --> DLS[DL Software] -- compressed --> DLA[DL Adaptor] -- video
 &lt;li>Men&lt;/li>
 &lt;li>Doctor Strange: In the Multiverse of Madness&lt;/li>
 &lt;li>Sonic 2&lt;/li>
-&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20Alamo%20Drafthouse%202022">Reply via email</a></description></item><item><title>Now</title><link>https://www.djpeacher.com/now/</link><pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/now/</guid><description>
-&lt;p>This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com/about">you should make one&lt;/a>, too!&lt;/p>
-&lt;p>&lt;a href="https://www.dockhunt.com/users/_djpeacher">&lt;img src="https://www.dockhunt.com/api/og?username=_djpeacher&amp;amp;avatar=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1589848033373655041%2FPKIaJaDo.jpg&amp;amp;icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2Farc.png&amp;amp;icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2FVisual%20Studio%20Code.png&amp;amp;icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2FThings.png&amp;amp;icon=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2FTerminal.png&amp;amp;v1.0.0" alt="">&lt;/a>&lt;/p>
-&lt;h2 id="life-hahahugoshortcode5s0hbhb">Life &lt;i class="twa twa-sun">&lt;/i>&lt;/h2>
-&lt;p>I live in Austin, TX with my &lt;del>fiancée&lt;/del> &lt;strong>wife&lt;/strong> and our 4 cats (Cisco, Sammy, Milo, &amp;amp; Remy)! My wife and I have been together for 6 years and we finally got married this past December! &lt;i class="twa twa-ring">&lt;/i>&lt;/p>
-&lt;h2 id="work-hahahugoshortcode5s2hbhb">Work &lt;i class="twa twa-briefcase">&lt;/i>&lt;/h2>
-&lt;p>I accepted an offer with &lt;a href="https://www.texastribune.org">The Texas Tribune&lt;/a> early last year as a Full-Stack Engineer! I&amp;rsquo;m very excited to be on the team and contribute to the development of their CMS and related tools to keep Texans informed! &lt;i class="twa twa-man-technologist-light-skin-tone">&lt;/i>&lt;/p>
-&lt;h2 id="learning-hahahugoshortcode5s4hbhb">Learning &lt;i class="twa twa-brain">&lt;/i>&lt;/h2>
-&lt;p>&lt;img src="https://live.staticflickr.com/65535/52487681415_b39ba2f985_h.jpg" alt="">&lt;/p>
-&lt;p>I attended &lt;a href="https://2022.djangocon.us">DjangoCon US 2022&lt;/a> this past October! It was great returning to San Diego&lt;i class="twa twa-palm-tree">&lt;/i>&lt;/p>
-&lt;h2 id="reading-hahahugoshortcode5s6hbhb">Reading &lt;i class="twa twa-open-book">&lt;/i>&lt;/h2>
-&lt;p>I have trouble finding the time to read, but I bought a Kindle recently to help encourage myself to read more!&lt;/p>
-&lt;h2 id="listening-hahahugoshortcode5s7hbhb">Listening &lt;i class="twa twa-ear-light-skin-tone">&lt;/i>&lt;/h2>
-&lt;p>I love listening to podcasts, and have listed to days worth of them since 2016! These are the podcasts I&amp;rsquo;m currently listening to:&lt;/p>
-&lt;ul>
-&lt;li>Cortex&lt;/li>
-&lt;li>DjangoChat&lt;/li>
-&lt;li>The Unmade Podcast&lt;/li>
-&lt;li>Triforce!&lt;/li>
-&lt;li>The Daily&lt;/li>
-&lt;li>On Fire with Jeff Probst&lt;/li>
-&lt;/ul>
-&lt;h2 id="watching-hahahugoshortcode5s8hbhb">Watching &lt;i class="twa twa-eyes">&lt;/i>&lt;/h2>
-&lt;ul>
-&lt;li>RuPaul&amp;rsquo;s Drag Race&lt;/li>
-&lt;li>The Walking Dead (again)&lt;/li>
-&lt;li>Survivor &lt;del>1&lt;/del> 2 3 4 5 6 7 8 9 10 11 12 13 14 15 &lt;del>16&lt;/del> &lt;del>17&lt;/del> 18 19 20 &lt;del>21&lt;/del> &lt;del>22&lt;/del> 23 24 &lt;del>25&lt;/del> 26 &lt;del>27&lt;/del> 28 &lt;del>29&lt;/del> &lt;del>30&lt;/del> 31 &lt;del>32&lt;/del> 33 &lt;del>34&lt;/del> 35 36 &lt;del>37&lt;/del> 38 39 40 &lt;del>41&lt;/del> &lt;del>42&lt;/del> &lt;del>43&lt;/del> 44&lt;/li>
-&lt;/ul>
-&lt;h2 id="playing-hahahugoshortcode5s9hbhb">Playing &lt;i class="twa twa-video-game">&lt;/i>&lt;/h2>
-&lt;ul>
-&lt;li>Civilization 6&lt;/li>
-&lt;li>Dominions 5&lt;/li>
-&lt;li>Halo Infinite&lt;/li>
-&lt;li>Dungeons &amp;amp; Dragons&lt;/li>
-&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20Now">Reply via email</a></description></item><item><title>DjangoCon US 2022: Day 3</title><link>https://www.djpeacher.com/posts/djangocon-us-22-day-3/</link><pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/djangocon-us-22-day-3/</guid><description>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20Alamo%20Drafthouse%202022">Reply via email</a></description></item><item><title>DjangoCon US 2022: Day 3</title><link>https://www.djpeacher.com/posts/djangocon-us-22-day-3/</link><pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/djangocon-us-22-day-3/</guid><description>
 &lt;h2 id="async-django-the-practical-guide-youve-been-awaiting-forhttps2022djangoconustalksasync-django-the-practical-guide-you-ve">&lt;a href="https://2022.djangocon.us/talks/async-django-the-practical-guide-you-ve/">Async Django: The practical guide you&amp;rsquo;ve been awaiting for.&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>
