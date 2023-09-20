@@ -1,4 +1,707 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Jonathan Peacher</title><link>https://www.djpeacher.com/posts/</link><description>Recent content in Posts on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Thu, 22 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy Django with DigitalOcean App Platform</title><link>https://www.djpeacher.com/posts/deploy-django-with-digitalocean-app-platform/</link><pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/deploy-django-with-digitalocean-app-platform/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Jonathan Peacher</title><link>https://www.djpeacher.com/posts/</link><description>Recent content in Posts on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Wed, 20 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Italy</title><link>https://www.djpeacher.com/posts/italy/</link><pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/italy/</guid><description>
+&lt;p>If there&amp;rsquo;s one thing I learned, it&amp;rsquo;s that the history of Italy is layered &amp;hellip; just like lasagna 🍝&lt;/p>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy001.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy002.jpg" loading="lazy" />
+&lt;figcaption>
+1/1000s, f/1.6, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy003.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy004.jpg" loading="lazy" />
+&lt;figcaption>
+1/800s, f/1.6, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy005.jpg" loading="lazy" />
+&lt;figcaption>
+1/500s, f/1.6, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy006.jpg" loading="lazy" />
+&lt;figcaption>
+1/2000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy007.jpg" loading="lazy" />
+&lt;figcaption>
+1/800s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy008.jpg" loading="lazy" />
+&lt;figcaption>
+1/50s, f/1.4, ISO 320, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy009.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy010.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy011.jpg" loading="lazy" />
+&lt;figcaption>
+1/1600s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy012.jpg" loading="lazy" />
+&lt;figcaption>
+1/50s, f/1.6, ISO 160, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy013.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy014.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy015.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy016.jpg" loading="lazy" />
+&lt;figcaption>
+1/3200s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy017.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy018.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy019.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy020.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy021.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy022.jpg" loading="lazy" />
+&lt;figcaption>
+1/500s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy023.jpg" loading="lazy" />
+&lt;figcaption>
+1/1000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy024.jpg" loading="lazy" />
+&lt;figcaption>
+1/640s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy025.jpg" loading="lazy" />
+&lt;figcaption>
+1/60s, f/16, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy026.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy027.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy028.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy029.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy030.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy031.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy032.jpg" loading="lazy" />
+&lt;figcaption>
+1/800s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy033.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy034.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy035.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy036.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy037.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy038.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy039.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy040.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy041.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy042.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy043.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy044.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy045.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy046.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy047.jpg" loading="lazy" />
+&lt;figcaption>
+1/320s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy048.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy049.jpg" loading="lazy" />
+&lt;figcaption>
+1/1600s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy050.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy051.jpg" loading="lazy" />
+&lt;figcaption>
+1/1000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy052.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy053.jpg" loading="lazy" />
+&lt;figcaption>
+1/800s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy054.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy055.jpg" loading="lazy" />
+&lt;figcaption>
+1/1250s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy056.jpg" loading="lazy" />
+&lt;figcaption>
+1/1000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy057.jpg" loading="lazy" />
+&lt;figcaption>
+1/800s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy058.jpg" loading="lazy" />
+&lt;figcaption>
+1/250s, f/1.6, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy059.jpg" loading="lazy" />
+&lt;figcaption>
+1/800s, f/1.6, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy060.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy061.jpg" loading="lazy" />
+&lt;figcaption>
+1/800s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy062.jpg" loading="lazy" />
+&lt;figcaption>
+1/200s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy063.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy064.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy065.jpg" loading="lazy" />
+&lt;figcaption>
+1/1600s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy066.jpg" loading="lazy" />
+&lt;figcaption>
+1/2500s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy067.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy068.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy069.jpg" loading="lazy" />
+&lt;figcaption>
+1/2500s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy070.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy071.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy072.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy073.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy074.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy075.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy076.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy077.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy078.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy079.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy080.jpg" loading="lazy" />
+&lt;figcaption>
+1/640s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy081.jpg" loading="lazy" />
+&lt;figcaption>
+1/800s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy082.jpg" loading="lazy" />
+&lt;figcaption>
+1/3200s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy083.jpg" loading="lazy" />
+&lt;figcaption>
+1/3200s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy084.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy085.jpg" loading="lazy" />
+&lt;figcaption>
+1/800s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy086.jpg" loading="lazy" />
+&lt;figcaption>
+1/2000s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy087.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy088.jpg" loading="lazy" />
+&lt;figcaption>
+1/3200s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy089.jpg" loading="lazy" />
+&lt;figcaption>
+1/1600s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy090.jpg" loading="lazy" />
+&lt;figcaption>
+1/500s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy091.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy092.jpg" loading="lazy" />
+&lt;figcaption>
+1/1000s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy093.jpg" loading="lazy" />
+&lt;figcaption>
+1/640s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy094.jpg" loading="lazy" />
+&lt;figcaption>
+1/640s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy095.jpg" loading="lazy" />
+&lt;figcaption>
+1/400s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy096.jpg" loading="lazy" />
+&lt;figcaption>
+1/400s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy097.jpg" loading="lazy" />
+&lt;figcaption>
+1/400s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy098.jpg" loading="lazy" />
+&lt;figcaption>
+1/320s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy099.jpg" loading="lazy" />
+&lt;figcaption>
+1/1000s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy100.jpg" loading="lazy" />
+&lt;figcaption>
+1/800s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy101.jpg" loading="lazy" />
+&lt;figcaption>
+1/400s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy102.jpg" loading="lazy" />
+&lt;figcaption>
+1/1000s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy103.jpg" loading="lazy" />
+&lt;figcaption>
+1/640s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy104.jpg" loading="lazy" />
+&lt;figcaption>
+1/3200s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy105.jpg" loading="lazy" />
+&lt;figcaption>
+1/2000s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy106.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy107.jpg" loading="lazy" />
+&lt;figcaption>
+1/500s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy108.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy109.jpg" loading="lazy" />
+&lt;figcaption>
+1/2500s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy110.jpg" loading="lazy" />
+&lt;figcaption>
+1/2500s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy111.jpg" loading="lazy" />
+&lt;figcaption>
+1/500s, f/5, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy112.jpg" loading="lazy" />
+&lt;figcaption>
+1/640s, f/5, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy113.jpg" loading="lazy" />
+&lt;figcaption>
+1/500s, f/5, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy114.jpg" loading="lazy" />
+&lt;figcaption>
+1/2500s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy115.jpg" loading="lazy" />
+&lt;figcaption>
+1/3200s, f/1.4, ISO 50, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy116.jpg" loading="lazy" />
+&lt;figcaption>
+1/1250s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img alt="Italy" src="https://www.djpeacher.com/posts/italy/italy117.jpg" loading="lazy" />
+&lt;figcaption>
+1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
+&lt;/figcaption>
+&lt;/figure><a href="mailto: reply@djpeacher.com?subject=Re:%20Italy">Reply via email</a></description></item><item><title>Deploy Django with DigitalOcean App Platform</title><link>https://www.djpeacher.com/posts/deploy-django-with-digitalocean-app-platform/</link><pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/deploy-django-with-digitalocean-app-platform/</guid><description>
 &lt;p>I&amp;rsquo;ve tried a variety of different ways to deploy Django projects over the last five years, and they all seem a bit overcomplicated. I would very much like to focus less on the infrastructure part of web development, and more on making cool stuff, particularly with Django. To that end, I&amp;rsquo;ve been looking for a simple&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> and cheap&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup> way to throw a Django projects onto the internet, and I think DigitalOcean&amp;rsquo;s &lt;a href="https://www.digitalocean.com/products/app-platform">App Platform&lt;/a> is the best I&amp;rsquo;ve found so far.&lt;/p>
 &lt;p>The rest of this post is based&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup> on &lt;a href="https://docs.digitalocean.com/tutorials/app-deploy-django-app/">DigitalOcean&amp;rsquo;s tutorial&lt;/a>, but stripped down for anyone who just wants a TLDR on how to chuck a Django project&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup> onto the interwebs!&lt;/p>
 &lt;h2 id="step-1-install-python-packages">Step 1: Install Python Packages&lt;/h2>
