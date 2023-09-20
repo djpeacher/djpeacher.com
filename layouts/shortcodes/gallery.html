@@ -1,0 +1,12 @@
+{{ $title := .Page.Title }}
+{{ range .Page.Resources.ByType "image" }}
+    {{ $image := . }}
+    {{ with .Exif }}
+        <figure>
+            <img alt="{{ $title }}" src="{{ $image.RelPermalink }}" loading="lazy" />
+            <figcaption>
+                {{ .Tags.ExposureTime }}s, f/{{ .Tags.FNumber }}, ISO {{ .Tags.ISOSpeedRatings }}, {{ .Tags.FocalLength }}mm, {{ .Tags.Make | humanize }} {{ .Tags.Model }}
+            </figcaption>
+        </figure>
+    {{ end }}
+{{ end }}
