@@ -4,7 +4,11 @@
     {{ if .Title }}<h1 style="margin-bottom: 0.5rem;">{{ .Title | safeHTML }}</h1>{{ end }}
     <div style="margin-bottom: 1.5rem;">
     {{ if .PublishDate }}
-        {{ partial "date.html" .PublishDate }}
+        {{ if .Lastmod }}
+            <s>{{ partial "date.html" .PublishDate }}</s>
+        {{ else }}
+            {{ partial "date.html" .PublishDate }}
+        {{ end }}
     {{ end }}
     {{ if .Lastmod }}
         {{ if ne .PublishDate .Lastmod }}
