@@ -1,4 +1,920 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>https://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Evening things</title><link>https://www.djpeacher.com/posts/evening-things/</link><pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/evening-things/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>https://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>DjangoCon US 2023</title><link>https://www.djpeacher.com/posts/djangocon-us-2023/</link><pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/djangocon-us-2023/</guid><description>
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#day-1">Day 1&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#orientation-and-welcome">Orientation and Welcome&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#contributing-to-django-or-how-i-learned-to-stop-worrying-and-just-try-to-fix-an-orm-bug">Contributing to Django or how I learned to stop worrying and just try to fix an ORM Bug&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#html-ivating-your-django-web-apps-experience-with-htmx-alpinejs-and-streaming-html">HTML-ivating your Django web app&amp;rsquo;s experience with HTMX, AlpineJS, and streaming HTML&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#lightning-talks---day-1">Lightning Talks - Day 1&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#using-database-triggers-to-reliably-track-model-history">Using database triggers to reliably track model history&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#beyond-the-basics-of-migrations">Beyond the Basics of Migrations&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#custom-model-managers-and-querysets-graduating-from-django-beginner-to-orm-master">Custom Model Managers and QuerySets: Graduating from Django Beginner to ORM Master&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#passkeys-on-django">Passkeys on Django&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#building-powerful-apis-with-django-django-rest-framework-and-openapi">Building Powerful APIs with Django, Django Rest Framework, and OpenAPI&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#hosting-and-devops-for-django">Hosting and DevOps for Django&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#-modern-editing-experience-for-your-django-models-with-wagtail-">✨ Modern editing experience for your Django models with Wagtail 🐦&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#day-2">Day 2&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#postgres-performance-from-slow-to-pro">Postgres Performance: From Slow to Pro&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#empathetic-testing-developing-with-compassion-and-humility">Empathetic testing: Developing with compassion and humility&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#lightning-talks---day-2">Lightning Talks - Day 2&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#dont-buy-the-ai-hype">Don&amp;rsquo;t Buy the &amp;ldquo;A.I.&amp;rdquo; Hype&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#theres-more-to-open-source-than-code">There&amp;rsquo;s More to Open Source than Code&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#managing-content-with-django">Managing Content with Django&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#an-approach-to-lightweight-tenancy-management-using-django-rest-framework">An approach to lightweight tenancy management using Django Rest Framework&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#what-django-deployment-is-really-about">What Django Deployment is Really About&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#introduction-to-github-actions-understanding-key-terms-and-building-your-first-github-action">Introduction to GitHub Actions: Understanding Key Terms and Building Your First GitHub Action&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#day-3">Day 3&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#keynote-testing-modern-web-apps-like-a-champion">Keynote: Testing Modern Web Apps Like a Champion&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#django-migrations-friend-or-foe-optimize-your-django-migrations-for-faster-testing">Django migrations, friend or foe? Optimize your Django migrations for faster testing&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#inside-out-my-journey-of-understanding-inclusion">Inside Out: My Journey of Understanding Inclusion&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#lightning-talks---day-3">Lightning Talks - Day 3&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#best-practices-for-making-a-wagtail-site-as-accessible-as-possible">Best Practices for Making a Wagtail Site as Accessible as Possible&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#one-database-table-one-model-many-behaviours-proxy-model">One database table, one model, many behaviours: Proxy model&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#back-to-the-future-of-hypermedia-in-django">Back to the Future of Hypermedia in Django&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#djangos-accessibility-track-record">Django’s accessibility track record&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#panel-discussion-who-put-me-in-charge-moving-beyond-day-to-day-coding-in-django">Panel Discussion: Who put me in charge? Moving beyond day-to-day coding in Django&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;h2 id="day-1">Day 1&lt;/h2>
+&lt;h3 id="orientation-and-welcome">Orientation and Welcome&lt;/h3>
+&lt;blockquote>
+&lt;p>&amp;ldquo;I am going to say some words here I don&amp;rsquo;t fully understand&amp;rdquo; &amp;ndash; &lt;a href="https://hachyderm.io/@lacey">@lacey&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="contributing-to-django-or-how-i-learned-to-stop-worrying-and-just-try-to-fix-an-orm-bug">Contributing to Django or how I learned to stop worrying and just try to fix an ORM Bug&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=1BFjg9XtptM&amp;amp;ab_channel=DjangoConUS">Your Web Framework Needs You! &amp;ndash; Carlton Gibson&lt;/a>&lt;/li>
+&lt;li>Ticket Strategy: Something old and straightforward&lt;/li>
+&lt;li>Steps:
+&lt;ol>
+&lt;li>Replicate the bug&lt;/li>
+&lt;li>Read some docs&lt;/li>
+&lt;li>Write some code&lt;/li>
+&lt;li>Test the code&lt;/li>
+&lt;li>Write down (&lt;a href="https://www.youtube.com/watch?v=GLkRK2rJGB0&amp;amp;ab_channel=DjangoConUS">publicly&lt;/a>) what you learned&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="html-ivating-your-django-web-apps-experience-with-htmx-alpinejs-and-streaming-html">HTML-ivating your Django web app&amp;rsquo;s experience with HTMX, AlpineJS, and streaming HTML&lt;/h3>
+&lt;p>SPA&amp;rsquo;s are popular because they can provide dynamic user experiences with no reloading. This comes at the cost of larger file sizes making pages take longer to load, and higher complexity making the codebase harder to maintain.&lt;/p>
+&lt;p>We can achieve the same dynamic experiences with tools like HTMX and AlpineJS, while also reducing load times and complexity.&lt;/p>
+&lt;p>✅ These tools provide the features an elevated user experiences (normally via SPAs):&lt;/p>
+&lt;ul>
+&lt;li>(HTMX) Remove whole-page refreshes for every interaction&lt;/li>
+&lt;li>(HTMX) Use small payloads from the server to update the interface&lt;/li>
+&lt;li>(AlpineJS) Update HTML as a result of changes in data&lt;/li>
+&lt;li>(AlpineJS) Empower rich on-page interactions&lt;/li>
+&lt;li>(HTMX/AlpineJS) Be fast&lt;/li>
+&lt;/ul>
+&lt;p>✅ These tools provide faster pages loads by literally being small:&lt;/p>
+&lt;ul>
+&lt;li>Around 30KB&lt;/li>
+&lt;/ul>
+&lt;p>✅ These tools provide easy to maintain HTML attributes control behavior:&lt;/p>
+&lt;ul>
+&lt;li>Locality&lt;/li>
+&lt;li>Remove your JS build system&lt;/li>
+&lt;li>Write mostly Python and HTML&lt;/li>
+&lt;li>Easier maintenance&lt;/li>
+&lt;li>Faster iteration cycles&lt;/li>
+&lt;/ul>
+&lt;h3 id="lightning-talks---day-1">Lightning Talks - Day 1&lt;/h3>
+&lt;ul>
+&lt;li>April 8, 2024 Total Solar Eclipse
+&lt;ul>
+&lt;li>Last in the continental US until 2044/2045&lt;/li>
+&lt;li>By glasses/filters early (ISO 12312-2 certified)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://alldjango.com/stickers">Django Stickers&lt;/a>! 🦄&lt;/li>
+&lt;/ul>
+&lt;h3 id="using-database-triggers-to-reliably-track-model-history">Using database triggers to reliably track model history&lt;/h3>
+&lt;blockquote>
+&lt;p>&lt;a href="https://github.com/Opus10/django-pghistory">django-pghistory&lt;/a> tracks changes to your Django models using Postgres triggers, providing:&lt;/p>
+&lt;ul>
+&lt;li>Reliable history tracking everywhere with no changes to your application code.&lt;/li>
+&lt;li>Structured history models that mirror the fields of your models.&lt;/li>
+&lt;li>Grouping of history with additional context attached, such as the logged-in user.&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;pre tabindex="0">&lt;code>import pghistory
+@pghistory.track()
+class TrackedModel(models.Model):
+int_field = models.IntegerField()
+text_field = models.TextField()
+&lt;/code>&lt;/pre>&lt;h3 id="beyond-the-basics-of-migrations">Beyond the Basics of Migrations&lt;/h3>
+&lt;ul>
+&lt;li>DON&amp;rsquo;T reinvent the wheel: if Django&amp;rsquo;s autogenerated migrations work, use that&lt;/li>
+&lt;li>DO rename custom migration files for clarity&lt;/li>
+&lt;li>DO always use the reverse parameter when using RunPython or RunSQL&lt;/li>
+&lt;li>DO make sure your coworkers know if you customized a migration so they can review it properly&lt;/li>
+&lt;li>DON&amp;rsquo;T use migrations for repeat actions&lt;/li>
+&lt;li>Efficiency matters on large tables (especially with CI/CD)&lt;/li>
+&lt;/ul>
+&lt;h3 id="custom-model-managers-and-querysets-graduating-from-django-beginner-to-orm-master">Custom Model Managers and QuerySets: Graduating from Django Beginner to ORM Master&lt;/h3>
+&lt;ul>
+&lt;li>What are Managers? An interface through which database query operations are provided to Django models.
+&lt;ul>
+&lt;li>Model methods = row level operations&lt;/li>
+&lt;li>Manager methods = table level operations&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>How do you define Managers?
+&lt;pre tabindex="0">&lt;code>objects = CustomManager() # basic usage
+objects = CustomQuerySet.as_manager() # bread and butter usage
+objects = Custommanager.from_queryset(CustomerQuerySet()) # advanced usage
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Manager or QuerySet?
+&lt;ul>
+&lt;li>QuerySets = Chainable, Filters, Annotations/Aggregations, Reading&lt;/li>
+&lt;li>Manager = Not Chainable, Creating, Updating, Deleting&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Why use custom Managers?
+&lt;ul>
+&lt;li>Readability&lt;/li>
+&lt;li>Encapsulation&lt;/li>
+&lt;li>Testing!!!&lt;/li>
+&lt;li>Built-in service layer&lt;/li>
+&lt;li>Gateway to learning the ORM&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Common Patterns
+&lt;ul>
+&lt;li>&lt;code>.for_CONTEXT(ctx)&lt;/code>
+&lt;ul>
+&lt;li>Manager or QuerySet&lt;/li>
+&lt;li>Filter based on some context&lt;/li>
+&lt;li>Ex: &lt;code>.for_user(user)&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>.is_CONDITION(cond?) .not_CONDITION(cond?) .exclude_CONDITION(cond?)&lt;/code>
+&lt;ul>
+&lt;li>Manager or QuerySet&lt;/li>
+&lt;li>Filter based on some condition&lt;/li>
+&lt;li>Ex: &lt;code>.is_leasable() .is_leased_for_year(year)&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>.create_MODEL() .create_MODEL_for_CONTEXT(ctx)&lt;/code>
+&lt;ul>
+&lt;li>Manager&lt;/li>
+&lt;li>Create a model with side effects&lt;/li>
+&lt;li>Ex: &lt;code>.create_user_for_club(club)&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>.within_RANGE()&lt;/code>
+&lt;ul>
+&lt;li>Manager or QuerySet&lt;/li>
+&lt;li>Filter based on numerical/date range&lt;/li>
+&lt;li>Ex: &lt;code>.within_start_date(days)&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>.greater_than_VALUE() .less_than_VALUE()&lt;/code>
+&lt;ul>
+&lt;li>Manager or QuerySet&lt;/li>
+&lt;li>Filter based on numerical/date value&lt;/li>
+&lt;li>Ex: &lt;code>greater_than_days(days)&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>.set_FIELD() .toggle_FIELD()&lt;/code>
+&lt;ul>
+&lt;li>Manager or QuerySet&lt;/li>
+&lt;li>Update a field across entire QuerySet&lt;/li>
+&lt;li>Ex: &lt;code>.set_active() .toggle_status()&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>.with_ANNOTATION()&lt;/code>
+&lt;ul>
+&lt;li>Manager or QuerySet&lt;/li>
+&lt;li>Add additional info not available on Model&lt;/li>
+&lt;li>Ex: &lt;code>.with_adjusted_income()&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="passkeys-on-django">Passkeys on Django&lt;/h3>
+&lt;p>See &lt;a href="https://github.com/mkalioby/django-passkeys">django-passkeys&lt;/a>.&lt;/p>
+&lt;h3 id="building-powerful-apis-with-django-django-rest-framework-and-openapi">Building Powerful APIs with Django, Django Rest Framework, and OpenAPI&lt;/h3>
+&lt;ul>
+&lt;li>Status codes
+&lt;ul>
+&lt;li>1xx: Informational &amp;mdash;&amp;gt; in progress&lt;/li>
+&lt;li>2xx: Successful &amp;mdash;&amp;gt; done&lt;/li>
+&lt;li>3xx: Redirection &amp;mdash;&amp;gt; naahh, ain&amp;rsquo;t nobody got time for that.&lt;/li>
+&lt;li>4xx: Client error &amp;mdash;&amp;gt; its definitely you, not me&lt;/li>
+&lt;li>5xx: Server error &amp;mdash;&amp;gt; okay, its me not you&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>API first approach
+&lt;ul>
+&lt;li>Separation of concerns&lt;/li>
+&lt;li>Flexibility and scalability&lt;/li>
+&lt;li>Collaboration and parallel development&lt;/li>
+&lt;li>Clear and consistent interfaces&lt;/li>
+&lt;li>Documentation and contract-driven development&lt;/li>
+&lt;li>Future-proofing&lt;/li>
+&lt;li>Integration and Third-party support&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Cache all the things!&lt;/li>
+&lt;/ul>
+&lt;h3 id="hosting-and-devops-for-django">Hosting and DevOps for Django&lt;/h3>
+&lt;ul>
+&lt;li>Goals
+&lt;ol>
+&lt;li>(Hosting) Setup is resilient to individual server failures&lt;/li>
+&lt;li>(Hosting) Resources can be scaled in response to load&lt;/li>
+&lt;li>(Deployment) Code can be tested before being deployed to production&lt;/li>
+&lt;li>(Deployment) Deployments are automated&lt;/li>
+&lt;li>(Data/Secrets) Data and secrets are secured and backed-up&lt;/li>
+&lt;li>(Monitoring) Errors are easy to notice and diagnose&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Hosting
+&lt;ul>
+&lt;li>What are the options?
+&lt;ul>
+&lt;li>&lt;del>Bare servers (EC2)&lt;/del>&lt;/li>
+&lt;li>Platform as a Service (EB)&lt;/li>
+&lt;li>Managed Container Service (ECS)&lt;/li>
+&lt;li>Kubernetes (EKS)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Why these three?
+&lt;ul>
+&lt;li>These technologies work one level up from servers/containers&lt;/li>
+&lt;li>The unit of work is an instance of an application&lt;/li>
+&lt;li>Dead servers can be automatically replaced&lt;/li>
+&lt;li>Resources can be scaled manually or automatically&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Which one to pick?
+&lt;ul>
+&lt;li>&lt;strong>Platform as a Service&lt;/strong> is a sensible default and a great starting place&lt;/li>
+&lt;li>&lt;strong>Managed Container Services&lt;/strong> make sense if you have many services or heavy non-web workloads&lt;/li>
+&lt;li>&lt;strong>Kubernetes&lt;/strong> is for multi-cloud or on-prem deployment. Kubernetes can run all your infrastructure, but then you must reinvent a lot of things (esp. load balancers, databases, and block storage)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>What about inbound traffic?
+&lt;ul>
+&lt;li>Load Balancers (ALB)
+&lt;ul>
+&lt;li>Allow multiple application servers without single point of failure&lt;/li>
+&lt;li>Allows autoscaling servers (on CPU usage or custom metric)&lt;/li>
+&lt;li>Protects from some kinds of DDOS (adding Nginx/Apache can help)&lt;/li>
+&lt;li>Can share one load balancer between multiple environments&lt;/li>
+&lt;li>Bonus: handles HTTPS and HTTP redirects&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>What about static files?
+&lt;ul>
+&lt;li>Okay: unicorn + whitenoise&lt;/li>
+&lt;li>Better: Reverse Proxy (Apache or Nginx)&lt;/li>
+&lt;li>Best: CDN (CloudFront or CloudFlair)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>What about background tasks?
+&lt;ul>
+&lt;li>AWS Elastic Beanstalk Workers (weak at on-demand)&lt;/li>
+&lt;li>AWS Lambda + SOS (15-minute limit)&lt;/li>
+&lt;li>Celery (complex setup)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Deployment
+&lt;ul>
+&lt;li>Steps
+&lt;ol>
+&lt;li>Create new running copy of application (code, dependencies, static assets)&lt;/li>
+&lt;li>Do peripheral infrastructure changes (migrate, hard part) See &lt;a href="https://www.youtube.com/watch?v=5ErDx3oi1lI&amp;amp;ab_channel=DjangoConUS">Django Migrations: Pitfalls and Solutions&lt;/a>&lt;/li>
+&lt;li>Put new running copy of application into rotation&lt;/li>
+&lt;li>Remove old running copies&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Environments
+&lt;ul>
+&lt;li>Dev Code &amp;amp; Fake Data: Local &amp;amp; Staging&lt;/li>
+&lt;li>Dev Code &amp;amp; Real Data: Prod-Copy&lt;/li>
+&lt;li>Prod Code &amp;amp; Fake Data: Demo/Training&lt;/li>
+&lt;li>Prod Code &amp;amp; Real Data: Production&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Use infrastructure-as-code: Terraform&lt;/li>
+&lt;li>CI/CD: GitHub Actions&lt;/li>
+&lt;li>System Updates: Covered by PaaS. Don&amp;rsquo;t forget Docker.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Data/Secrets
+&lt;ul>
+&lt;li>Managed Databases
+&lt;ul>
+&lt;li>Database and OS version upgrades&lt;/li>
+&lt;li>Automated backups and managed backup restoration&lt;/li>
+&lt;li>Storage autoscaling&lt;/li>
+&lt;li>Encryption at rest&lt;/li>
+&lt;li>Managed read replicas and failover for prod. Environments (&amp;ldquo;multi-az&amp;rdquo;)
+&lt;ul>
+&lt;li>Reduces data loss from 24 hours, to seconds&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Static Files (S3)
+&lt;ul>
+&lt;li>Turn on encryption at rest&lt;/li>
+&lt;li>Turn on versioning&lt;/li>
+&lt;li>Use django-storages&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Secrets
+&lt;ul>
+&lt;li>Use a secrets manager&lt;/li>
+&lt;li>Use django-environ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Monitoring
+&lt;ul>
+&lt;li>Sentry (error monitoring)&lt;/li>
+&lt;li>UptimeRobot (uptime monitoring tool)&lt;/li>
+&lt;li>DataDog (profiling tool plus error monitoring)&lt;/li>
+&lt;li>NewRelic (profiling tool)&lt;/li>
+&lt;li>CloudWatch (AWS-native infrastructure monitoring tool)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="-modern-editing-experience-for-your-django-models-with-wagtail-">✨ Modern editing experience for your Django models with Wagtail 🐦&lt;/h3>
+&lt;blockquote>
+&lt;p>A typical Wagtail project would have your user-facing website structure be defined by the tree structure of the Page model. However, if you have an existing Django project with your own defined Django views, and you don’t want to use Wagtail’s Page model, you can still get plenty of benefits from Wagtail [by integrating the various model mixins into your existing models]!&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="day-2">Day 2&lt;/h2>
+&lt;h3 id="postgres-performance-from-slow-to-pro">Postgres Performance: From Slow to Pro&lt;/h3>
+&lt;ul>
+&lt;li>Use database cache (&lt;strong>shared buffer&lt;/strong>)
+&lt;ul>
+&lt;li>Check cache hit ratio (you want ~98%) to know if you need to increase this&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Upgrading versions can increase speed&lt;/li>
+&lt;li>&lt;a href="https://pgtune.leopard.in.ua/">PGTune&lt;/a> is a good tool for recommended settings!&lt;/li>
+&lt;li>Performance tips
+&lt;ol>
+&lt;li>Stop run away queries, set a statement timeout&lt;/li>
+&lt;li>Set up &lt;code>pg_stat_statements&lt;/code> and know your slowest queries. If they&amp;rsquo;re important, fix them&lt;/li>
+&lt;li>Add indexes (but not too many) for your longest running and/or your most frequent queries&lt;/li>
+&lt;li>Check your cache hit ratio&lt;/li>
+&lt;li>Tune memory or add memory as needed
+&lt;ul>
+&lt;li>make sure your connections have enough memory&lt;/li>
+&lt;li>make sure you have enough connections, look at &lt;code>pgbouncer&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="empathetic-testing-developing-with-compassion-and-humility">Empathetic testing: Developing with compassion and humility&lt;/h3>
+&lt;ul>
+&lt;li>Write tests with a focus on refactorability, outcomes, and uses&amp;hellip;rather than defending implementation choices
+&lt;ul>
+&lt;li>Does this test enable, or prevent future changes?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Seek alternatives to patch/mock (Ex: &lt;code>pip install responses freezegun&lt;/code>)&lt;/li>
+&lt;li>This is an &amp;ldquo;act of kindness&amp;rdquo; for future developers and creates an enjoyable work experience&lt;/li>
+&lt;/ul>
+&lt;h3 id="lightning-talks---day-2">Lightning Talks - Day 2&lt;/h3>
+&lt;ul>
+&lt;li>BUILDING THINGS WHEN YOU HAVE A CLUTTERED MIND
+&lt;ol>
+&lt;li>CONCENTRATION, EVEN IN AN &amp;ldquo;IDEAL&amp;rdquo; ENVIRONMENT
+&lt;ul>
+&lt;li>It might be entirely different for you. Experiment.&lt;/li>
+&lt;li>Self-help &amp;amp; productivity bloggers do not have all the answers for what works for YOU&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>I AM NOT ACCOMPLISHING ENOUGH - OTHERS ARE *AHEAD* OF ME IN LIFE
+&lt;ul>
+&lt;li>You are more than your level of productivity&lt;/li>
+&lt;li>Life is not a race with a specified timeline&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>SHAME ABOUT HALF-FINISHED OR ABANDONED PROJECTS
+&lt;ul>
+&lt;li>Forgive yourself&lt;/li>
+&lt;li>Life isn&amp;rsquo;t about the # of things you can accomplish&lt;/li>
+&lt;li>You are more than your level of productivity&lt;/li>
+&lt;li>Not every project needs to be finished&lt;/li>
+&lt;li>The journey and experience are valuable&lt;/li>
+&lt;li>And, you can almost always go back to that idea or project in the future&amp;hellip;&lt;/li>
+&lt;li>Take notes. If you don&amp;rsquo;t write it down, it is not real.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="dont-buy-the-ai-hype">Don&amp;rsquo;t Buy the &amp;ldquo;A.I.&amp;rdquo; Hype&lt;/h3>
+&lt;blockquote>
+&lt;p>&amp;ldquo;These models do not hallucinate. They make stuff up because a programmer using a random generation function decided they should&amp;hellip;By saying they hallucinate, we are removing the responsibility of the programmer and the model trainer to be ethical.&amp;rdquo;&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&amp;ldquo;[In] the most recent version of ChatGPT, in the release notes, one of the bullet points was: Less likely to make up facts&amp;hellip;You cannot make up a fact. A fact is the truth. A fact is. You do not make up a fact. That sentence is an impossibility and shows the irresponsibility going on right now that they actually let that get out in the release notes.&amp;rdquo;&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="theres-more-to-open-source-than-code">There&amp;rsquo;s More to Open Source than Code&lt;/h3>
+&lt;ul>
+&lt;li>Non-code contributions: Any contributions that don&amp;rsquo;t involve code!
+&lt;ul>
+&lt;li>Documentation&lt;/li>
+&lt;li>Blogging&lt;/li>
+&lt;li>Trying stuff out&lt;/li>
+&lt;li>Issue triage&lt;/li>
+&lt;li>Code reviews&lt;/li>
+&lt;li>Answering/Asking questions&lt;/li>
+&lt;li>Volunteering at events&lt;/li>
+&lt;li>Localizing&lt;/li>
+&lt;li>Organizing events&lt;/li>
+&lt;li>Hosting/facilitating hackathons&lt;/li>
+&lt;li>Creating assets&lt;/li>
+&lt;li>Giving talks&lt;/li>
+&lt;li>Video content&lt;/li>
+&lt;li>Social media&lt;/li>
+&lt;li>Content curation&lt;/li>
+&lt;li>Moderation&lt;/li>
+&lt;li>Mentorship&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Why?
+&lt;ul>
+&lt;li>Getting out of the comfort zone&lt;/li>
+&lt;li>Helping a project thrive&lt;/li>
+&lt;li>Improving onboarding&lt;/li>
+&lt;li>Meeting people&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>As a code contributor, what can I do to facilitate these?
+&lt;ul>
+&lt;li>Establish a safe, inclusive, effective community&lt;/li>
+&lt;li>Tag issues&lt;/li>
+&lt;li>Advocate for the community&lt;/li>
+&lt;li>Include non-code contributions in &lt;code>CONTRIBUTORS.md&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="managing-content-with-django">Managing Content with Django&lt;/h3>
+&lt;ul>
+&lt;li>Wagtail
+&lt;ul>
+&lt;li>Feature rich: media management, workflow tools, polished user experience, commenting, search&lt;/li>
+&lt;li>All encompassing experience. Most objects can be edited in Wagtail.&lt;/li>
+&lt;li>Page-focused&lt;/li>
+&lt;li>Growing community, lots of momentum&lt;/li>
+&lt;li>Some batteries are hard to remove&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>django CMS
+&lt;ul>
+&lt;li>Minimalist approach, plugins recommended. &amp;ldquo;Django Admin + an editor&amp;rdquo;&lt;/li>
+&lt;li>Component-first, easy to make new ones (called &amp;ldquo;plugins&amp;rdquo;)&lt;/li>
+&lt;li>Heavy on frontend editing&lt;/li>
+&lt;li>Smaller community, slower momentum&lt;/li>
+&lt;li>Great multilingual support&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Conclusions
+&lt;ul>
+&lt;li>Wagtail is all encompassing, getting better about gaps with Django&lt;/li>
+&lt;li>Wagtail has the better UX most of the time&lt;/li>
+&lt;li>Wagtail is simpler, which is a pro/con&lt;/li>
+&lt;li>django CMS is great at being a small piece of a larger puzzle&lt;/li>
+&lt;li>django CMS puts more emphasis on content type and structure&lt;/li>
+&lt;li>django CMS frontend editing is slick for quick changes&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="an-approach-to-lightweight-tenancy-management-using-django-rest-framework">An approach to lightweight tenancy management using Django Rest Framework&lt;/h3>
+&lt;ul>
+&lt;li>Single Tenant: When each tenant has it&amp;rsquo;s own application/db.&lt;/li>
+&lt;li>&lt;strong>Multitenant&lt;/strong>: When each tenant shares a single application/db.
+&lt;ul>
+&lt;li>&lt;code>drf-nested-routers&lt;/code> to nest resources under each tenant.&lt;/li>
+&lt;li>&lt;code>drf-access-policy&lt;/code> to provide role based permissions.&lt;/li>
+&lt;li>You can create a &lt;code>TenantAwareManger&lt;/code> to protect against leaking data on custom queries.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="what-django-deployment-is-really-about">What Django Deployment is Really About&lt;/h3>
+&lt;ul>
+&lt;li>Four main concerns
+&lt;ul>
+&lt;li>Static Files
+&lt;ul>
+&lt;li>&lt;code>manage.py runserver&lt;/code> handled this during development, but&amp;hellip;&lt;/li>
+&lt;li>Once you deploy, the production web server needs to handle this (django is too slow).&lt;/li>
+&lt;li>Once you&amp;rsquo;ve set &lt;code>STATIC_ROOT&lt;/code>, you have to run &lt;code>manage.py collectstatic&lt;/code>.&lt;/li>
+&lt;li>What about Whitenoise?
+&lt;ul>
+&lt;li>Middleware that intercepts and skips slow django request for static files.&lt;/li>
+&lt;li>Great when you can&amp;rsquo;t directly configure your web server.&lt;/li>
+&lt;li>Excels when serving from a CDN (handles headers).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Database
+&lt;ul>
+&lt;li>Your local and production database setups will most likely be different.&lt;/li>
+&lt;li>Generally, if you&amp;rsquo;re using a cloud provider, you&amp;rsquo;ll be connecting to a remote, managed, database.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>WSGI Server
+&lt;ul>
+&lt;li>The thing that actually runs your Django code.&lt;/li>
+&lt;li>&lt;code>manage.py runserver&lt;/code> handled this during development, but&amp;hellip;&lt;/li>
+&lt;li>In production, you need to pick a production WSGI Server (gunicorn/uwsgi).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Web Server
+&lt;ul>
+&lt;li>Apache/nginx&lt;/li>
+&lt;li>VPS: Manual&lt;/li>
+&lt;li>PaaS: Managed&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Bonus:
+&lt;ul>
+&lt;li>Run &lt;code>manage.py check --deploy&lt;/code>&lt;/li>
+&lt;li>Check out &lt;code>django-simple-deploy&lt;/code>&lt;/li>
+&lt;li>Check out &lt;code>django-production&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="introduction-to-github-actions-understanding-key-terms-and-building-your-first-github-action">Introduction to GitHub Actions: Understanding Key Terms and Building Your First GitHub Action&lt;/h3>
+&lt;blockquote>
+&lt;p>You configure a GitHub Actions &lt;strong>workflow&lt;/strong> to be triggered when an &lt;strong>event&lt;/strong> occurs that then runs a series of &lt;strong>jobs&lt;/strong> on a &lt;strong>runner&lt;/strong> that include one or more &lt;strong>steps&lt;/strong> that call a script(s) or &lt;strong>action&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="day-3">Day 3&lt;/h2>
+&lt;h3 id="keynote-testing-modern-web-apps-like-a-champion">Keynote: Testing Modern Web Apps Like a Champion&lt;/h3>
+&lt;ul>
+&lt;li>Follow up to &lt;a href="https://www.youtube.com/watch?v=ka5KRLUn47s&amp;amp;ab_channel=PyTexas">PyTexas Keynote - &amp;ldquo;Full-Stack Python&amp;rdquo;&lt;/a>&lt;/li>
+&lt;li>Testing challenges: Tests are slow, brittle, flaky, don&amp;rsquo;t make sense, don&amp;rsquo;t make money, require changing context.&lt;/li>
+&lt;li>Modern testing goals
+&lt;ol>
+&lt;li>Focus on building &lt;strong>fast feedback&lt;/strong> loops rather than certain types of tests.&lt;/li>
+&lt;li>Make test development as &lt;strong>fast and painless&lt;/strong> as possible.&lt;/li>
+&lt;li>Choose test tooling that naturally &lt;strong>complements dev workflows&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Writing good tests (Arrange-Act-Assert Pattern)
+&lt;ol>
+&lt;li>Arrange things in the system&lt;/li>
+&lt;li>Act on the target behavior&lt;/li>
+&lt;li>Assert expected outcomes&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;code>pytest&lt;/code>&lt;/li>
+&lt;li>Web test automation tool comparison
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Selenium&lt;/th>
+&lt;th>Cypress&lt;/th>
+&lt;th>Playwright&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Popular among testers&lt;/td>
+&lt;td>Popular among developers&lt;/td>
+&lt;td>So hot right now&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>C#, Java, JavaScript, Ruby, Python&lt;/td>
+&lt;td>JavaScript only&lt;/td>
+&lt;td>C#, Java, JavaScript, Python&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>All major full browsers&lt;/td>
+&lt;td>Chrome, Edge, Firefox, Electron&lt;/td>
+&lt;td>Chromium+, Firefox, WebKit&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>WebDriver protocol&lt;/td>
+&lt;td>In-browser lavaScript&lt;/td>
+&lt;td>Debug protocols&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Just a tool - requires a framework&lt;/td>
+&lt;td>Full, modern framework&lt;/td>
+&lt;td>Full. modern framework&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Can be slow/flaky if waiting is poor&lt;/td>
+&lt;td>Visual execution but can be slow&lt;/td>
+&lt;td>Typically the fastest execution&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Open source, standards, &amp;amp; gov&lt;/td>
+&lt;td>Open source from Cypress&lt;/td>
+&lt;td>Open source from Microsoft&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/li>
+&lt;li>TLDR
+&lt;ol>
+&lt;li>Write &lt;strong>unit tests&lt;/strong> to catch problem directly in the code.&lt;/li>
+&lt;li>Write &lt;strong>component tests&lt;/strong> if you have a component library.&lt;/li>
+&lt;li>Write &lt;strong>API tests&lt;/strong> to grind through variations.&lt;/li>
+&lt;li>Write &lt;strong>UI tests&lt;/strong> to cover user-centric behaviors.&lt;/li>
+&lt;li>Do &lt;strong>performance and load testing&lt;/strong> to make sure the app works well.&lt;/li>
+&lt;li>Run tests &lt;strong>continuously&lt;/strong> as part of standard development workflows.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="django-migrations-friend-or-foe-optimize-your-django-migrations-for-faster-testing">Django migrations, friend or foe? Optimize your Django migrations for faster testing&lt;/h3>
+&lt;ul>
+&lt;li>Once you&amp;rsquo;ve built up many migration, creating your test database will start slowing down.&lt;/li>
+&lt;li>You can use &lt;code>--keepdb&lt;/code> when running tests to preserve the test database between runs, but this can be hard to take advantage of in CI/CD.&lt;/li>
+&lt;li>You could use &lt;code>squashmigrations&lt;/code>, but turns out the database building performance is more or less the same.&lt;/li>
+&lt;li>The best solution (for local and ci/cd) is to completely rebuild your migrations.&lt;/li>
+&lt;/ul>
+&lt;h3 id="inside-out-my-journey-of-understanding-inclusion">Inside Out: My Journey of Understanding Inclusion&lt;/h3>
+&lt;ul>
+&lt;li>Unconscious bias
+&lt;ul>
+&lt;li>Ex: The arborist was shocked that a woman mows my lawn&lt;/li>
+&lt;li>Ex: The clerk assumed I&amp;rsquo;m not operating the jigsaw&lt;/li>
+&lt;li>Sometimes concepts are &lt;strong>locked down&lt;/strong> in our minds (Some since upbringing!)&lt;/li>
+&lt;li>An individual is honestly &lt;strong>unaware&lt;/strong> of a prejudice&lt;/li>
+&lt;li>It&amp;rsquo;s a &lt;strong>twofold effort&lt;/strong>: to notice it, and then to shape it&lt;/li>
+&lt;li>Source of &lt;strong>bias&lt;/strong> can be stereotypes, preconceived notions, past experiences, or even gut instinct
+&lt;ul>
+&lt;li>Appearance (age, [dis]abilities, gender, race, body size, etc)&lt;/li>
+&lt;li>Data (title, education, language, name, religion, etc)&lt;/li>
+&lt;li>Opinion (attribution, confirmation, conformity, contrast)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>We can &lt;strong>reflect&lt;/strong> on our own unconscious biases to improve the Django community as a whole&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Double bind
+&lt;ul>
+&lt;li>Conflicting expectations or stereotypes&lt;/li>
+&lt;li>Challenging to meet both &lt;strong>career advancement&lt;/strong> and &lt;strong>likability&lt;/strong> criteria&lt;/li>
+&lt;li>Women sometimes have to choose between being liked but not respected, or being respected but not liked&lt;/li>
+&lt;li>Double bind paradoxes
+&lt;ul>
+&lt;li>Maintaining distance yet being approachable&lt;/li>
+&lt;li>Advocating for oneself yet serving others&lt;/li>
+&lt;li>Authoritative yet participative&lt;/li>
+&lt;li>Demanding yet caring&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Culture aspects
+&lt;ul>
+&lt;li>What is normal in your culture, may not be in others&lt;/li>
+&lt;li>We can further explore how cultural factors influences:
+&lt;ul>
+&lt;li>being a good person&lt;/li>
+&lt;li>being a good communicator&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Book: The Culture Map
+&lt;ul>
+&lt;li>Communication context
+&lt;ul>
+&lt;li>Some cultures use high-context (&lt;strong>indirect&lt;/strong>, contextual)&lt;/li>
+&lt;li>Some cultures use low-context (&lt;strong>direct&lt;/strong>, explicit)&lt;/li>
+&lt;li>What&amp;rsquo;s desired in one style can be seen as negative in the other
+&lt;ul>
+&lt;li>High context could be seen as &lt;strong>not trustworthy or lier&lt;/strong>&lt;/li>
+&lt;li>Low context could be seen as &lt;strong>condescending or patronizing&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Implicit does not (usually) work across cultures&lt;/li>
+&lt;li>Perhaps is better to err on the side of verbose
+&lt;ul>
+&lt;li>Less room for misinterpretation&lt;/li>
+&lt;li>Less effort to parse from the recipient&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Also important to make explicit why we are being explicit!&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Being Convincing
+&lt;ul>
+&lt;li>A.K.A Persuasive, in a good way!&lt;/li>
+&lt;li>Some cultures use principle-first (&lt;strong>Why&lt;/strong>, deductive reasoning)&lt;/li>
+&lt;li>Some cultures use application-first (&lt;strong>How&lt;/strong>, inductive reasoning)&lt;/li>
+&lt;li>We can find a balance, and provide both&lt;/li>
+&lt;li>Use TLDRs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Language challenges
+&lt;ul>
+&lt;li>Language [in]flexibility
+&lt;ul>
+&lt;li>It&amp;rsquo;s easy (at least possible!) to speak neutrally in English&lt;/li>
+&lt;li>It&amp;rsquo;s not in other languages, like in Spanish, French, Hindi, or Arabic&lt;/li>
+&lt;li>Ex: In Spanish, everyone is supposed to use the masculine form to describe a group of people, but in reality the masculine form is used to describe doctors, engineers, managers, etc., while the feminine form is used to describe nurses, secretaries, teachers, etc.&lt;/li>
+&lt;li>Aspirational conditioning starting from childhood&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Inclusive naming in tech
+&lt;ul>
+&lt;li>Gender (&amp;ldquo;man-in-the-middle&amp;rdquo;)&lt;/li>
+&lt;li>Disabilities (&amp;ldquo;crippled&amp;rdquo;)&lt;/li>
+&lt;li>Neurodiversities (&amp;ldquo;dumb&amp;rdquo;, &amp;ldquo;crazy&amp;rdquo;, &amp;ldquo;sanity-check&amp;rdquo;)&lt;/li>
+&lt;li>Groups that historically have suffered oppression (&amp;ldquo;master&amp;rdquo;, &amp;ldquo;slave&amp;rdquo;)&lt;/li>
+&lt;li>Denoting negative connotations (&amp;ldquo;whitelist&amp;rdquo;, &amp;ldquo;blacklist&amp;rdquo;)&lt;/li>
+&lt;li>Violent (&amp;ldquo;abort&amp;rdquo;, &amp;ldquo;kill&amp;rdquo;)&lt;/li>
+&lt;li>Check your code/project/docs if you can!&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Inclusive context
+&lt;ul>
+&lt;li>&amp;ldquo;Next spring&amp;rdquo;/&amp;ldquo;summer&amp;rdquo; applies to only half of the world!&lt;/li>
+&lt;li>Abbreviations/acronyms are used for the sake of brevity or practicality but could impact new contributors
+&lt;ul>
+&lt;li>CRUD, MTI, DDL, DTL, DDT, etc.&lt;/li>
+&lt;li>Useful, but spell it out the first time it&amp;rsquo;s introduced.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Allies
+&lt;ul>
+&lt;li>&lt;strong>Supportive Advocate&lt;/strong>: Actively supports marginalized groups and role models for inclusive policies/practices&lt;/li>
+&lt;li>&lt;strong>Empathetic&lt;/strong>: Understands diverse experiences and challenges, and listens without judgment&lt;/li>
+&lt;li>&lt;strong>Confronts Bias&lt;/strong>: Challenges discrimination using their privilege and influence, and amplify underrepresented voices&lt;/li>
+&lt;li>&lt;strong>Self-Educates&lt;/strong>: Learns about diversity and inclusion and continuously improves as an ally&lt;/li>
+&lt;li>&lt;strong>Not self-appointed&lt;/strong>: Recognized as such by the minorities&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Conclusions
+&lt;ul>
+&lt;li>&lt;strong>Varied Factors&lt;/strong>: it&amp;rsquo;s a balancing act, but it&amp;rsquo;s worth the effort&lt;/li>
+&lt;li>&lt;strong>No Magic Formula&lt;/strong>: no guaranteed recipe or procedure exists&lt;/li>
+&lt;li>&lt;strong>Acknowledge Challenges&lt;/strong>: the first step toward resolution&lt;/li>
+&lt;li>&lt;strong>Reflect and Act&lt;/strong>: introspect as individuals and as a group&lt;/li>
+&lt;li>&lt;strong>Pursue Equity&lt;/strong>: evaluate opportunities for change and improve&lt;/li>
+&lt;li>&lt;strong>Provide support&lt;/strong>: allies are key in the process of change&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="lightning-talks---day-3">Lightning Talks - Day 3&lt;/h3>
+&lt;ul>
+&lt;li>Starting a business in 5 minutes
+&lt;ul>
+&lt;li>You will fail, but some things will succeed&amp;hellip;this is called &amp;ldquo;finding your niche&amp;rdquo;&lt;/li>
+&lt;li>It will be expensive, so keep it simple&lt;/li>
+&lt;li>Wait to hire your first employee&amp;hellip;until you have 3x their salary&lt;/li>
+&lt;li>Everything is people, and people needs systems&lt;/li>
+&lt;li>If you build it, they will not come&amp;hellip;get your first customer before launching&lt;/li>
+&lt;li>You can do it!&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Strategies for a long running side projects
+&lt;ul>
+&lt;li>Doc&amp;hellip;you&amp;hellip;men&amp;hellip;tay..shun&amp;hellip;&amp;hellip;Documentation!&lt;/li>
+&lt;li>Tests&amp;hellip;what the code should and should not do.&lt;/li>
+&lt;li>Issues&amp;hellip;write up your features as issues.
+&lt;ul>
+&lt;li>&lt;a href="https://simonwillison.net/2022/Oct/29/the-perfect-commit/">The Perfect Commit&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Code comments&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>How to get into dev mentorship
+&lt;ul>
+&lt;li>The only true measure of success is the number of people you have helped times the effect of that help.&lt;/li>
+&lt;li>People in a position of privilege can open doors and make opportunities&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Humility: An unexpected treatment for imposter syndrome
+&lt;ul>
+&lt;li>Humility provides honest self-awareness and evaluation to contradict doubts.&lt;/li>
+&lt;li>Humility encourages others around you.&lt;/li>
+&lt;li>Humility is a discipline for everyone.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="best-practices-for-making-a-wagtail-site-as-accessible-as-possible">Best Practices for Making a Wagtail Site as Accessible as Possible&lt;/h3>
+&lt;ul>
+&lt;li>Accessibility is practice of ensuring our web content is able to be consumed by the widest possible spectrum of people.&lt;/li>
+&lt;li>This is a legal responsibility for many&amp;hellip;and a moral responsibility for all.&lt;/li>
+&lt;li>Wagtail has two main accessibility initiatives:
+&lt;ul>
+&lt;li>Accessibility of Wagtail itself&lt;/li>
+&lt;li>Accessibility of sites it produces (this talk)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Wagtail comes with an accessibility checks that allows editors to identity and correct accessibility issues themselves.&lt;/li>
+&lt;li>What is still up to developers
+&lt;ul>
+&lt;li>Semantic markup in templates&lt;/li>
+&lt;li>Configuring Wagtail&amp;rsquo;s accessibility checker
+&lt;ul>
+&lt;li>Default is to only show errors that an editor can address&lt;/li>
+&lt;li>Configure to show all errors to superusers&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Enforcing proper heading hierarchy
+&lt;ul>
+&lt;li>You could override blocks to validate&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Promoting good alt text
+&lt;ul>
+&lt;li>Wagtail doesn&amp;rsquo;t have alt-text on the image model because alt text should be contextual&lt;/li>
+&lt;li>You can create a custom block that ties an image to alt text&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Using ARIA labels, where appropriate&lt;/li>
+&lt;li>Helping editors help themselves
+&lt;ul>
+&lt;li>Use &lt;code>help_text&lt;/code>&lt;/li>
+&lt;li>Create a &lt;code>HelpPanel&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="one-database-table-one-model-many-behaviours-proxy-model">One database table, one model, many behaviours: Proxy model&lt;/h3>
+&lt;p>Proxy models allows you to create a new model based on an existing model without creating a new database table, can be used to modify the behavior of the original model.&lt;/p>
+&lt;h3 id="back-to-the-future-of-hypermedia-in-django">Back to the Future of Hypermedia in Django&lt;/h3>
+&lt;ul>
+&lt;li>REST: Representational State Transfer&lt;/li>
+&lt;li>HATEOAS: Hypermedia as the Engine of Application State
+&lt;ul>
+&lt;li>The server controls everything, the client just displays the result.&lt;/li>
+&lt;li>Better for accessibility and sustainability.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Not HATEOAS: JSON as the Engine of Application State
+&lt;ul>
+&lt;li>Great for complex interdependencies and/or offline apps, but overkill for general CRUD apps.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://www.pythonbynight.com/talks/back-future-hypermedia-django">Common patterns and resources&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="djangos-accessibility-track-record">Django’s accessibility track record&lt;/h3>
+&lt;ul>
+&lt;li>96.3% of the top 1,000,000 homepages have basic accessibility issues&lt;/li>
+&lt;li>~95% of a sample of 25,000 Django homepages have basic accessibility issues&lt;/li>
+&lt;li>&lt;a href="https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni/related">Accessibility Insights Extension&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="panel-discussion-who-put-me-in-charge-moving-beyond-day-to-day-coding-in-django">Panel Discussion: Who put me in charge? Moving beyond day-to-day coding in Django&lt;/h3>
+&lt;blockquote>
+&lt;p>&amp;ldquo;What&amp;rsquo;s important for you as a managers who is managing devs is to understand what they&amp;rsquo;re working on&amp;rdquo; &amp;ndash; Julia&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t know if it&amp;rsquo;s as much a skill [switching from contributor to manager] as it is like being genuinely interested in the people that work for you&amp;rdquo; &amp;ndash; Elizabeth&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&amp;ldquo;Sometimes&amp;hellip;I can sort of see a pothole coming, you know, either a technical pothole or maybe a political one or maybe a legal one or a financial one, and say ok, there&amp;rsquo;s a pothole coming up&amp;rdquo; &amp;ndash; Charles&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&amp;ldquo;Your input is not just being able to directly say &amp;lsquo;ok this project might be a problem.&amp;rsquo; It&amp;rsquo;s when you get other people to the point where they can see the project may be a problem.&amp;rdquo; &amp;ndash; Charles&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&amp;ldquo;You do lose a little bit of political sway [returning to an individual contributor].&amp;rdquo; &amp;ndash; Andrew&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&amp;ldquo;A good technical leader breaks a plan down to 3 month chunks.&amp;rdquo; &amp;ndash; Andrew&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&amp;ldquo;How do you identify some of those initial signals that you&amp;rsquo;re ready to take that step to [becoming a manager]?&amp;rdquo; &amp;ndash; Jay&lt;/p>
+&lt;p>&amp;ldquo;It&amp;rsquo;s similar to the question: when are you ready to have children?&amp;rdquo; &amp;ndash; Charles&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&amp;ldquo;Being really good at documentation has always benefitted me in my career and particularly in management.&amp;rdquo; &amp;ndash; Elizabeth&lt;/p>
+&lt;/blockquote><a href="mailto: reply@djpeacher.com?subject=Re:%20DjangoCon%20US%202023">Reply via email</a></description></item><item><title>Evening things</title><link>https://www.djpeacher.com/posts/evening-things/</link><pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/evening-things/</guid><description>
 &lt;p>One feature that has been missing from my favorite todo app, &lt;a href="https://culturedcode.com/things/">Things 3&lt;/a>, has been the ability to automatically move tasks to the &lt;em>Evening&lt;/em> section when they appear on the &lt;em>Today&lt;/em> page. With the power of shortcuts, we can fix this!&lt;/p>
 &lt;ol>
 &lt;li>&lt;a href="https://www.icloud.com/shortcuts/875aceaf10084b91945eb8150e5a40f2">Click here to download the shortcut&lt;/a>.&lt;/li>
@@ -1585,21 +2501,21 @@ folder: public
 &lt;li>&lt;a href="#choose-relevant-monsters">Choose relevant monsters&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#select-magic-item-rewards">Select magic item rewards&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="review-the-characters-hahahugoshortcode14s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
+&lt;h3 id="review-the-characters-hahahugoshortcode15s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
 &lt;p>The first thing you need to do is write down the names, backgrounds, motivations, and desires of the characters. Use these notes to prime your brain and tie the characters to the rest of your game.&lt;/p>
-&lt;h3 id="create-a-strong-start-hahahugoshortcode14s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
+&lt;h3 id="create-a-strong-start-hahahugoshortcode15s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
 &lt;p>Set the stage by asking yourself, what&amp;rsquo;s happening, what&amp;rsquo;s the point, and where&amp;rsquo;s the action? We are looking for an event, hook, and closest action in one, maybe two, sentences. When in doubt, start with combat.&lt;/p>
-&lt;h3 id="outline-potential-scenes-hahahugoshortcode14s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-potential-scenes-hahahugoshortcode15s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
 &lt;p>Write down a short list of scenes that &lt;strong>might&lt;/strong> occur in your game. Only write down as much as you need to prime your brain. These scenes are not in any specific order and may not even occur.&lt;/p>
-&lt;h3 id="define-secrets-and-clues-hahahugoshortcode14s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
+&lt;h3 id="define-secrets-and-clues-hahahugoshortcode15s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
 &lt;p>Write down ten secrets and clues the characters &lt;strong>might&lt;/strong> discover during your game. These secrets and clues bring your campaign to life and reveal small pieces of the story or history of the world. They should be abstract enough to allow you to improvise their discovery during the game.&lt;/p>
-&lt;h3 id="develop-fantastic-locations-hahahugoshortcode14s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
+&lt;h3 id="develop-fantastic-locations-hahahugoshortcode15s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
 &lt;p>Develop one or two locations that the characters &lt;strong>might&lt;/strong> discover for every hour of play you expect to have. These locations need to have an evocative name, three fantastic aspects, and be described using age and size. It is also a good idea to tie some of these locations to the backgrounds of the characters.&lt;/p>
-&lt;h3 id="outline-important-npcs-hahahugoshortcode14s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-important-npcs-hahahugoshortcode15s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
 &lt;p>Prepare a few NPCs that the characters &lt;strong>might&lt;/strong> discover and will drive the game session and the adventure. Improvise others during the game. NPC outlines should be brief and include a name, connection to the adventure, and a character archetype.&lt;/p>
-&lt;h3 id="choose-relevant-monsters-hahahugoshortcode14s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
+&lt;h3 id="choose-relevant-monsters-hahahugoshortcode15s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
 &lt;p>Make a list of monsters the characters &lt;strong>might&lt;/strong> encounter that make sense for the story, situation, and location of your game. Don&amp;rsquo;t tie these monsters to any specific location or situation. Instead, improvise encounters based on the story and situation during the game. For boss fights, remember to account for character capabilities without negating those capabilities.&lt;/p>
-&lt;h3 id="select-magic-item-rewards-hahahugoshortcode14s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
+&lt;h3 id="select-magic-item-rewards-hahahugoshortcode15s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
 &lt;p>Players love magic items! Regularly ask the players what kinds of items they&amp;rsquo;d like to discover. Use that information to make a list of magic items that the characters &lt;strong>might&lt;/strong> discover during your game. When it fits the story, drop an item into the game. You can also drop in random magic items for some variability. You can tie magic items to the story by connecting them to quests, secrets, or clues.&lt;/p>
 &lt;h2 id="adventuremd">adventure.md&lt;/h2>
 &lt;p>The Lazy Dungeon Master&amp;rsquo;s Checklist should easily fit on a single page. Here is a markdown template for your next session!&lt;/p>
