@@ -2,6 +2,7 @@
 title: 'Deploy Django with DigitalOcean App Platform'
 date: 2023-06-22
 tags: ['django-4.2']
+draft: true
 ---
 
 I've tried a variety of different ways to deploy Django projects over the last five years, and they all seem a bit overcomplicated. I would very much like to focus less on the infrastructure part of web development, and more on making cool stuff, particularly with Django. To that end, I've been looking for a simple[^1] and cheap[^2] way to throw a Django projects onto the internet, and I think DigitalOcean's [App Platform](https://www.digitalocean.com/products/app-platform) is the best I've found so far.
@@ -89,6 +90,7 @@ gunicorn --worker-tmp-dir /dev/shm <YOUR_PROJECT_NAME>.wsgi
 2. Add the following environment variables:
 
 {{< html >}}
+
 <div style="overflow-x:auto;">
     <table style="margin: 0;">
         <thead>
