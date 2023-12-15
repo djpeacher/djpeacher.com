@@ -1636,147 +1636,7 @@ objects = Custommanager.from_queryset(CustomerQuerySet()) # advanced usage
 &lt;figcaption>
 1/4000s, f/1.4, ISO 100, 30mm, Sony ZV-E10
 &lt;/figcaption>
-&lt;/figure><a href="mailto: reply@djpeacher.com?subject=Re:%20Italy">Reply via email</a></description></item><item><title>Deploy Django with DigitalOcean App Platform</title><link>https://www.djpeacher.com/posts/deploy-django-with-digitalocean-app-platform/</link><pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/deploy-django-with-digitalocean-app-platform/</guid><description>
-&lt;p>I&amp;rsquo;ve tried a variety of different ways to deploy Django projects over the last five years, and they all seem a bit overcomplicated. I would very much like to focus less on the infrastructure part of web development, and more on making cool stuff, particularly with Django. To that end, I&amp;rsquo;ve been looking for a simple&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> and cheap&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup> way to throw a Django projects onto the internet, and I think DigitalOcean&amp;rsquo;s &lt;a href="https://www.digitalocean.com/products/app-platform">App Platform&lt;/a> is the best I&amp;rsquo;ve found so far.&lt;/p>
-&lt;p>The rest of this post is based&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup> on &lt;a href="https://docs.digitalocean.com/tutorials/app-deploy-django-app/">DigitalOcean&amp;rsquo;s tutorial&lt;/a>, but stripped down for anyone who just wants a TLDR on how to chuck a Django project&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup> onto the interwebs!&lt;/p>
-&lt;h2 id="step-1-install-python-packages">Step 1: Install Python Packages&lt;/h2>
-&lt;pre tabindex="0">&lt;code>pip install django gunicorn psycopg2-binary dj-database-url
-pip freeze &amp;gt; requirements.txt
-&lt;/code>&lt;/pre>&lt;h2 id="step-2-update-settingspy">Step 2: Update &lt;code>settings.py&lt;/code>&lt;/h2>
-&lt;pre tabindex="0">&lt;code>import os
-import sys
-import dj_database_url
-SECRET_KEY = os.getenv(&amp;#34;DJANGO_SECRET_KEY&amp;#34;, &amp;#39;django-insecure-xyz&amp;#39;)
-ALLOWED_HOSTS = os.getenv(&amp;#34;DJANGO_ALLOWED_HOSTS&amp;#34;, &amp;#34;127.0.0.1,localhost&amp;#34;).split(&amp;#34;,&amp;#34;)
-ADMIN_URL = os.getenv(&amp;#34;ADMIN_URL&amp;#34;, &amp;#34;admin/&amp;#34;)
-SECURE_HSTS_SECONDS = 31536000
-if DEBUG is True:
-DATABASES = {
-&amp;#34;default&amp;#34;: {
-&amp;#34;ENGINE&amp;#34;: &amp;#34;django.db.backends.sqlite3&amp;#34;,
-&amp;#34;NAME&amp;#34;: os.path.join(BASE_DIR, &amp;#34;db.sqlite3&amp;#34;),
-}
-}
-elif len(sys.argv) &amp;gt; 0 and sys.argv[1] != &amp;#39;collectstatic&amp;#39;:
-if os.getenv(&amp;#34;DATABASE_URL&amp;#34;, None) is None:
-raise Exception(&amp;#34;DATABASE_URL environment variable not defined&amp;#34;)
-DATABASES = {
-&amp;#34;default&amp;#34;: dj_database_url.parse(os.environ.get(&amp;#34;DATABASE_URL&amp;#34;)),
-}
-STATIC_URL = &amp;#34;/static/&amp;#34;
-STATIC_ROOT = os.path.join(BASE_DIR, &amp;#34;staticfiles&amp;#34;)
-&lt;/code>&lt;/pre>&lt;h2 id="step-3-deploy-on-app-platform">Step 3: Deploy on App Platform&lt;/h2>
-&lt;p>Navigate to the &lt;a href="https://cloud.digitalocean.com/apps">App Platform&lt;/a>&lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup>.&lt;/p>
-&lt;h3 id="create-app">Create App&lt;/h3>
-&lt;ol>
-&lt;li>Create App → Select Repo → Select Branch&lt;/li>
-&lt;li>Check &amp;ldquo;Autodeploy&amp;rdquo;&lt;/li>
-&lt;/ol>
-&lt;h3 id="resources">Resources&lt;/h3>
-&lt;h4 id="web-service">Web Service&lt;/h4>
-&lt;ol>
-&lt;li>Edit Plan → Select &amp;ldquo;Basic&amp;rdquo; → Select &amp;ldquo;$5.00/mo &amp;ndash; Basic&amp;rdquo; → Back&lt;/li>
-&lt;li>Edit Web Service → Edit Run Command → Save&lt;/li>
-&lt;/ol>
-&lt;pre tabindex="0">&lt;code>gunicorn --worker-tmp-dir /dev/shm &amp;lt;YOUR_PROJECT_NAME&amp;gt;.wsgi
-&lt;/code>&lt;/pre>&lt;h4 id="database">Database&lt;/h4>
-&lt;ol>
-&lt;li>Add Resource → Database → Add&lt;/li>
-&lt;li>Create and Attach&lt;/li>
-&lt;/ol>
-&lt;h4 id="static-site">Static Site&lt;/h4>
-&lt;ol>
-&lt;li>Add Resource → Detect from Source Code → Add&lt;/li>
-&lt;li>Select Provider → Select Repo/Branch → Check &amp;ldquo;Autodeploy&amp;rdquo; → Next&lt;/li>
-&lt;li>Edit new Web Service&lt;/li>
-&lt;li>Rename to &lt;code>&amp;lt;PROJECT&amp;gt;-static&lt;/code> → Save&lt;/li>
-&lt;li>Update &amp;ldquo;Resource Type&amp;rdquo; to &amp;ldquo;Static Site&amp;rdquo; → Save&lt;/li>
-&lt;li>Update &amp;ldquo;Output Directory&amp;rdquo; to &lt;code>staticfiles&lt;/code> → Save&lt;/li>
-&lt;li>Update &amp;ldquo;HTTP Request Routes&amp;rdquo; to &lt;code>/static&lt;/code> → Save&lt;/li>
-&lt;/ol>
-&lt;h3 id="environment-variables">Environment Variables&lt;/h3>
-&lt;ol>
-&lt;li>Edit Web Service resource&lt;/li>
-&lt;li>Add the following environment variables:&lt;/li>
-&lt;/ol>
-&lt;div style="overflow-x:auto;">
-&lt;table style="margin: 0;">
-&lt;thead>
-&lt;tr>
-&lt;th>Key&lt;/th>
-&lt;th>Value&lt;/th>
-&lt;th style="text-align:center">Encrypt&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>DATABASE_URL&lt;/td>
-&lt;td>${db.DATABASE_URL}&lt;/td>
-&lt;td style="text-align:center">N&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>DJANGO_ALLOWED_HOSTS&lt;/td>
-&lt;td>${APP_DOMAIN}&lt;/td>
-&lt;td style="text-align:center">N&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>DEBUG&lt;/td>
-&lt;td>False&lt;/td>
-&lt;td style="text-align:center">N&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>ADMIN_URL&lt;/td>
-&lt;td>your-secret-admin/&lt;/td>
-&lt;td style="text-align:center">N&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>DJANGO_SECRET_KEY&lt;/td>
-&lt;td>your-secret-key&lt;/td>
-&lt;td style="text-align:center">Y&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;/div>
-&lt;ol start="3">
-&lt;li>Save&lt;/li>
-&lt;/ol>
-&lt;h3 id="info">Info&lt;/h3>
-&lt;ol>
-&lt;li>Rename project, if desired → Save&lt;/li>
-&lt;/ol>
-&lt;h3 id="review">Review&lt;/h3>
-&lt;ol>
-&lt;li>Click &amp;ldquo;Create Resources&amp;rdquo;&lt;/li>
-&lt;/ol>
-&lt;h3 id="post-deploy">Post Deploy&lt;/h3>
-&lt;ol>
-&lt;li>Navigate to &amp;ldquo;Console&amp;rdquo; tab&lt;/li>
-&lt;li>Run the following commands:&lt;/li>
-&lt;/ol>
-&lt;pre tabindex="0">&lt;code>python manage.py migrate
-python manage.py createsuperuser
-&lt;/code>&lt;/pre>&lt;hr>
-&lt;p>That it, your Django project should now be live! 🚀 Hopefully I laid that out as simply as possible, but feel free to checkout out &lt;a href="https://docs.digitalocean.com/tutorials/app-deploy-django-app/">DigitalOcean&amp;rsquo;s tutorial&lt;/a> if you&amp;rsquo;d like more detail.&lt;/p>
-&lt;div class="footnotes" role="doc-endnotes">
-&lt;hr>
-&lt;ol>
-&lt;li id="fn:1">
-&lt;p>I wish it could be simpler, but this is the best I got so far.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:2">
-&lt;p>Basic plans start around $12/mo.&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:3">
-&lt;p>I made a few improvements like adding &lt;code>ADMIN_URL&lt;/code> and &lt;code>SECURE_HSTS_SECONDS&lt;/code> to achieve a 100% score on &lt;a href="https://djcheckup.com/">djcheckup.com&lt;/a>.&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:4">
-&lt;p>Assumption: You have a &lt;em>simple&lt;/em> Django project.&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:5">
-&lt;p>Assumption: You have committed the project to a git repo and have a DigitalOcean account.&amp;#160;&lt;a href="#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/div><a href="mailto: reply@djpeacher.com?subject=Re:%20Deploy%20Django%20with%20DigitalOcean%20App%20Platform">Reply via email</a></description></item><item><title>Why My Dockerfile ARG Was Missing</title><link>https://www.djpeacher.com/posts/why-my-dockerfile-arg-was-missing/</link><pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/why-my-dockerfile-arg-was-missing/</guid><description>
+&lt;/figure><a href="mailto: reply@djpeacher.com?subject=Re:%20Italy">Reply via email</a></description></item><item><title>Why My Dockerfile ARG Was Missing</title><link>https://www.djpeacher.com/posts/why-my-dockerfile-arg-was-missing/</link><pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/why-my-dockerfile-arg-was-missing/</guid><description>
 &lt;p>I was doing some cleanup in a Dockerfile today when I noticed one of the packages was not on the correct version. It was on the latest version despite the fact there was an &lt;code>ARG&lt;/code> pinning it&amp;hellip;or so I thought. After some sleuthing, I found this helpful &lt;a href="https://stackoverflow.com/a/56748289">Stack Overflow post&lt;/a> that explained and pointed me in the &lt;a href="https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact">right direction&lt;/a>.&lt;/p>
 &lt;p>Turns out&amp;hellip;&lt;/p>
 &lt;blockquote>
@@ -1790,8 +1650,85 @@ FROM ...
 # Good
 FROM ...
 ARG VERSION=1.2.3
-&lt;/code>&lt;/pre><a href="mailto: reply@djpeacher.com?subject=Re:%20Why%20My%20Dockerfile%20ARG%20Was%20Missing">Reply via email</a></description></item><item><title>PyTexas 2023: Day 2</title><link>https://www.djpeacher.com/posts/pytexas-23-day-2/</link><pubDate>Sun, 02 Apr 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/pytexas-23-day-2/</guid><description>
-&lt;h2 id="keynote-full-stack-pythonhttpswwwpytexasorgschedulekeynotesandrew-pandy-knight">&lt;a href="https://www.pytexas.org/schedule/keynotes#andrew-pandy-knight">Keynote: Full-Stack Python&lt;/a>&lt;/h2>
+&lt;/code>&lt;/pre><a href="mailto: reply@djpeacher.com?subject=Re:%20Why%20My%20Dockerfile%20ARG%20Was%20Missing">Reply via email</a></description></item><item><title>PyTexas 2023</title><link>https://www.djpeacher.com/posts/pytexas-2023/</link><pubDate>Sun, 02 Apr 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/pytexas-2023/</guid><description>
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#day-1">Day 1&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#keynote-walking-the-line">Keynote: Walking the Line&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#a-tale-of-two-typings">A Tale of Two Typings&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#trust-fall-hidden-gems-in-mlflow-that-improve-model-credibility">Trust Fall: Hidden Gems in MLFlow that Improve Model Credibility&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#exploring-socio-technical-security-concerns-in-critical-open-source-python-repositories">Exploring Socio-technical Security Concerns in Critical Open-source Python Repositories&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#a-buildengineer-in-a-buildless-lang">A BuildEngineer in a buildless lang&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#recursion-for-beginners-a-beginners-guide-to-recursion">Recursion for Beginners: A Beginner&amp;rsquo;s Guide to Recursion&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#improving-code-without-losing-your-mind">Improving code without losing your mind&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#lightning-talks">Lightning Talks&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#day-2">Day 2&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#keynote-full-stack-python">Keynote: Full-Stack Python&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#unlocking-the-power-of-health-data-an-introduction-to-fhir-and-python">Unlocking the Power of Health Data: An Introduction to FHIR and Python&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#having-fun-with-application-design">Having fun with application design&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#how-to-build-and-ship-more-secure-python-apps-with-sigstore">How to Build and Ship More Secure Python Apps with Sigstore&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#holoviz-visualization-and-interactive-dashboards-in-python">HoloViz: Visualization and Interactive Dashboards in Python&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#put-your-pants-on-and-lint-all-your-python-code">Put your Pants on and lint all your Python code!&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#using-python-for-digital-investigations">Using Python for Digital Investigations&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#lightning-talks-1">Lightning Talks&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;h2 id="day-1">Day 1&lt;/h2>
+&lt;h3 id="keynote-walking-the-line">Keynote: Walking the Line&lt;/h3>
+&lt;p>&lt;em>Amazing keynote, and I will definitely watch it again when it&amp;rsquo;s uploaded to YouTube!&lt;/em>&lt;/p>
+&lt;ul>
+&lt;li>Make small, incremental, and easy to understand changes.&lt;/li>
+&lt;li>Test often and fail quickly.&lt;/li>
+&lt;li>Orient yourself by checking an expected failure.&lt;/li>
+&lt;/ul>
+&lt;h3 id="a-tale-of-two-typings">A Tale of Two Typings&lt;/h3>
+&lt;ul>
+&lt;li>Legacy code is simply code without &lt;del>tests&lt;/del> types.&lt;/li>
+&lt;li>Define your types, don&amp;rsquo;t just inline them.&lt;/li>
+&lt;/ul>
+&lt;h3 id="trust-fall-hidden-gems-in-mlflow-that-improve-model-credibility">Trust Fall: Hidden Gems in MLFlow that Improve Model Credibility&lt;/h3>
+&lt;p>&lt;em>The talk focused on machine learning, but I think this can still apply outside of that.&lt;/em>&lt;/p>
+&lt;ul>
+&lt;li>Build trust through documentation and reproducibility.&lt;/li>
+&lt;/ul>
+&lt;h3 id="exploring-socio-technical-security-concerns-in-critical-open-source-python-repositories">Exploring Socio-technical Security Concerns in Critical Open-source Python Repositories&lt;/h3>
+&lt;ul>
+&lt;li>Catalyst: Someone intentionally introduced bad code into Linux for a research paper.&lt;/li>
+&lt;li>Pull requests power open source contributions.&lt;/li>
+&lt;li>FOSS needs to be careful what gets merged in.&lt;/li>
+&lt;/ul>
+&lt;h3 id="a-buildengineer-in-a-buildless-lang">A BuildEngineer in a buildless lang&lt;/h3>
+&lt;ul>
+&lt;li>Improve development by reducing stylistic diffs and increasing semantic diffs.&lt;/li>
+&lt;/ul>
+&lt;h3 id="recursion-for-beginners-a-beginners-guide-to-recursion">Recursion for Beginners: A Beginner&amp;rsquo;s Guide to Recursion&lt;/h3>
+&lt;ul>
+&lt;li>All recursive solutions have an iterative solution.&lt;/li>
+&lt;li>Unless you are dealing with trees, avoid recursion.&lt;/li>
+&lt;/ul>
+&lt;h3 id="improving-code-without-losing-your-mind">Improving code without losing your mind&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.alexewerlof.com/p/tech-debt-day/">https://blog.alexewerlof.com/p/tech-debt-day/&lt;/a>&lt;/li>
+&lt;li>We tend to focus on getting features out the door.&lt;/li>
+&lt;li>Like an artist, programmers should improve &amp;ndash; refactor &amp;ndash; their art.&lt;/li>
+&lt;li>Set aside time to improve &amp;ndash; refactor &amp;ndash; your code.&lt;/li>
+&lt;li>Make code understandable and obvious.&lt;/li>
+&lt;/ul>
+&lt;h3 id="lightning-talks">Lightning Talks&lt;/h3>
+&lt;ul>
+&lt;li>Make code obvious. Otherwise, make it familiar. Otherwise, make it well-documented. Start by making it obvious!&lt;/li>
+&lt;li>For demos/testing, you can &lt;code>pip install&lt;/code> packages directly inside of the Python Interpreter!&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span style="color:#f92672">import&lt;/span> pip
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&amp;gt;&lt;/span> pip&lt;span style="color:#f92672">.&lt;/span>main([&lt;span style="color:#e6db74">&amp;#34;install&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;django&amp;#34;&lt;/span>])
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="day-2">Day 2&lt;/h2>
+&lt;h3 id="keynote-full-stack-python">Keynote: Full-Stack Python&lt;/h3>
 &lt;ul>
 &lt;li>Python is the &lt;del>second&lt;/del> best language for [doing] everything [together].&lt;/li>
 &lt;li>&lt;strong>Simple&lt;/strong> is better than &lt;strong>complex&lt;/strong>.&lt;/li>
@@ -1799,13 +1736,13 @@ ARG VERSION=1.2.3
 &lt;li>Aside from HTML/CSS, the entire stack can be built with Python!&lt;/li>
 &lt;li>HTMX 😍&lt;/li>
 &lt;/ul>
-&lt;h2 id="unlocking-the-power-of-health-data-an-introduction-to-fhir-and-pythonhttpswwwpytexasorgscheduletalksunlocking-the-power-of-health-data-an-introduction-to-fhir-and-python">&lt;a href="https://www.pytexas.org/schedule/talks#unlocking-the-power-of-health-data-an-introduction-to-fhir-and-python">Unlocking the Power of Health Data: An Introduction to FHIR and Python&lt;/a>&lt;/h2>
+&lt;h3 id="unlocking-the-power-of-health-data-an-introduction-to-fhir-and-python">Unlocking the Power of Health Data: An Introduction to FHIR and Python&lt;/h3>
 &lt;ul>
 &lt;li>Healthcare coordination is a mess, with no interoperability.&lt;/li>
 &lt;li>Enter the Electronic Health Record, but it had low adoption because it was only a syntactic protocol.&lt;/li>
 &lt;li>Enter HL7FHIR which was syntactic, semantic, and even had an API scheme.&lt;/li>
 &lt;/ul>
-&lt;h2 id="having-fun-with-application-designhttpswwwpytexasorgscheduletalkshaving-fun-with-application-design">&lt;a href="https://www.pytexas.org/schedule/talks#having-fun-with-application-design">Having fun with application design&lt;/a>&lt;/h2>
+&lt;h3 id="having-fun-with-application-design">Having fun with application design&lt;/h3>
 &lt;ul>
 &lt;li>&lt;strong>Empathize&lt;/strong> &amp;ndash; Curiosity about your users.&lt;/li>
 &lt;li>&lt;strong>Define&lt;/strong> &amp;ndash; Understand a problem.&lt;/li>
@@ -1813,28 +1750,28 @@ ARG VERSION=1.2.3
 &lt;li>&lt;strong>Prototype&lt;/strong> &amp;ndash; Build the right thing.&lt;/li>
 &lt;li>&lt;strong>Test&lt;/strong> your assumptions.&lt;/li>
 &lt;/ul>
-&lt;h2 id="how-to-build-and-ship-more-secure-python-apps-with-sigstorehttpswwwpytexasorgscheduletalkshow-to-build-and-ship-more-secure-python-apps-with-sigstore">&lt;a href="https://www.pytexas.org/schedule/talks#how-to-build-and-ship-more-secure-python-apps-with-sigstore">How to Build and Ship More Secure Python Apps with Sigstore&lt;/a>&lt;/h2>
+&lt;h3 id="how-to-build-and-ship-more-secure-python-apps-with-sigstore">How to Build and Ship More Secure Python Apps with Sigstore&lt;/h3>
 &lt;ul>
 &lt;li>You wouldn&amp;rsquo;t pickup and chew gum (FOSS) from a wall would you? Would you!?&lt;/li>
 &lt;li>Attacks on FOSS are increasing, and Sigstore hopes to fix this.&lt;/li>
 &lt;li>&lt;a href="https://ttl.sh/">ttl.sh&lt;/a>, an anonymous and ephemeral Docker image registry.&lt;/li>
 &lt;/ul>
-&lt;h2 id="holoviz-visualization-and-interactive-dashboards-in-pythonhttpswwwpytexasorgscheduletalksholoviz-visualization-and-interactive-dashboards-in-python">&lt;a href="https://www.pytexas.org/schedule/talks#holoviz-visualization-and-interactive-dashboards-in-python">HoloViz: Visualization and Interactive Dashboards in Python&lt;/a>&lt;/h2>
+&lt;h3 id="holoviz-visualization-and-interactive-dashboards-in-python">HoloViz: Visualization and Interactive Dashboards in Python&lt;/h3>
 &lt;ul>
 &lt;li>&lt;a href="https://holoviz.org/">HoloViz&lt;/a>, a framework for developing data visualization dashboards.&lt;/li>
 &lt;/ul>
-&lt;h2 id="put-your-pants-on-and-lint-all-your-python-codehttpswwwpytexasorgscheduletalksput-your-pants-on-and-lint-all-your-python-code">&lt;a href="https://www.pytexas.org/schedule/talks#put-your-pants-on-and-lint-all-your-python-code">Put your Pants on and lint all your Python code!&lt;/a>&lt;/h2>
+&lt;h3 id="put-your-pants-on-and-lint-all-your-python-code">Put your Pants on and lint all your Python code!&lt;/h3>
 &lt;ul>
 &lt;li>&lt;a href="https://www.pantsbuild.org/">Pants&lt;/a>, a fast, scalable, user-friendly build and developer workflow.&lt;/li>
 &lt;li>&lt;a href="https://beta.ruff.rs/docs/">Ruff&lt;/a>, an extremely fast Python linter.&lt;/li>
 &lt;/ul>
-&lt;h2 id="using-python-for-digital-investigationshttpswwwpytexasorgscheduletalksusing-python-for-digital-investigations">&lt;a href="https://www.pytexas.org/schedule/talks#using-python-for-digital-investigations">Using Python for Digital Investigations&lt;/a>&lt;/h2>
+&lt;h3 id="using-python-for-digital-investigations">Using Python for Digital Investigations&lt;/h3>
 &lt;ul>
 &lt;li>Digital Investigations (open-source research), research that uses info that is publicly available.&lt;/li>
 &lt;li>Research sources include public geospatial, media, user-generated, and archive data.&lt;/li>
 &lt;li>Open-source research and software have similar names, different histories, and both use Python as their language of choice.&lt;/li>
 &lt;/ul>
-&lt;h2 id="lightning-talks">Lightning Talks&lt;/h2>
+&lt;h3 id="lightning-talks-1">Lightning Talks&lt;/h3>
 &lt;ul>
 &lt;li>Schools, when compared to industry, focus on code instead of other import aspects like tests, documentation, and collaboration.&lt;/li>
 &lt;li>Book Recommendations
@@ -1845,55 +1782,7 @@ ARG VERSION=1.2.3
 &lt;/ul>
 &lt;/li>
 &lt;li>Single click to select by character, double click to select by word, triple click to select by line!&lt;/li>
-&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20PyTexas%202023%3a%20Day%202">Reply via email</a></description></item><item><title>PyTexas 2023: Day 1</title><link>https://www.djpeacher.com/posts/pytexas-23-day-1/</link><pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/pytexas-23-day-1/</guid><description>
-&lt;h2 id="keynote-walking-the-linehttpswwwpytexasorgschedulekeynotesbrandon-rhodes">&lt;a href="https://www.pytexas.org/schedule/keynotes#brandon-rhodes">Keynote: Walking the Line&lt;/a>&lt;/h2>
-&lt;p>&lt;em>Amazing keynote, and I will definitely watch it again when it&amp;rsquo;s uploaded to YouTube!&lt;/em>&lt;/p>
-&lt;ul>
-&lt;li>Make small, incremental, and easy to understand changes.&lt;/li>
-&lt;li>Test often and fail quickly.&lt;/li>
-&lt;li>Orient yourself by checking an expected failure.&lt;/li>
-&lt;/ul>
-&lt;h2 id="a-tale-of-two-typingshttpswwwpytexasorgscheduletalksa-tale-of-two-typings">&lt;a href="https://www.pytexas.org/schedule/talks#a-tale-of-two-typings">A Tale of Two Typings&lt;/a>&lt;/h2>
-&lt;ul>
-&lt;li>Legacy code is simply code without &lt;del>tests&lt;/del> types.&lt;/li>
-&lt;li>Define your types, don&amp;rsquo;t just inline them.&lt;/li>
-&lt;/ul>
-&lt;h2 id="trust-fall-hidden-gems-in-mlflow-that-improve-model-credibilityhttpswwwpytexasorgscheduletalkstrust-fall-hidden-gems-in-mlflow-that-improve-model-credibility">&lt;a href="https://www.pytexas.org/schedule/talks#trust-fall-hidden-gems-in-mlflow-that-improve-model-credibility">Trust Fall: Hidden Gems in MLFlow that Improve Model Credibility&lt;/a>&lt;/h2>
-&lt;p>&lt;em>The talk focused on machine learning, but I think this can still apply outside of that.&lt;/em>&lt;/p>
-&lt;ul>
-&lt;li>Build trust through documentation and reproducibility.&lt;/li>
-&lt;/ul>
-&lt;h2 id="exploring-socio-technical-security-concerns-in-critical-open-source-python-repositorieshttpswwwpytexasorgscheduletalksexploring-socio-technical-security-concerns-in-critical-open-source-python-repositories">&lt;a href="https://www.pytexas.org/schedule/talks#exploring-socio-technical-security-concerns-in-critical-open-source-python-repositories">Exploring Socio-technical Security Concerns in Critical Open-source Python Repositories&lt;/a>&lt;/h2>
-&lt;ul>
-&lt;li>Catalyst: Someone intentionally introduced bad code into Linux for a research paper.&lt;/li>
-&lt;li>Pull requests power open source contributions.&lt;/li>
-&lt;li>FOSS needs to be careful what gets merged in.&lt;/li>
-&lt;/ul>
-&lt;h2 id="a-buildengineer-in-a-buildless-langhttpswwwpytexasorgscheduletalksa-buildengineer-in-a-buildless-lang">&lt;a href="https://www.pytexas.org/schedule/talks#a-buildengineer-in-a-buildless-lang">A BuildEngineer in a buildless lang&lt;/a>&lt;/h2>
-&lt;ul>
-&lt;li>Improve development by reducing stylistic diffs and increasing semantic diffs.&lt;/li>
-&lt;/ul>
-&lt;h2 id="recursion-for-beginners-a-beginners-guide-to-recursionhttpswwwpytexasorgscheduletalksrecursion-for-beginners-a-beginners-guide-to-recursion">&lt;a href="https://www.pytexas.org/schedule/talks#recursion-for-beginners-a-beginners-guide-to-recursion">Recursion for Beginners: A Beginner&amp;rsquo;s Guide to Recursion&lt;/a>&lt;/h2>
-&lt;ul>
-&lt;li>All recursive solutions have an iterative solution.&lt;/li>
-&lt;li>Unless you are dealing with trees, avoid recursion.&lt;/li>
-&lt;/ul>
-&lt;h2 id="improving-code-without-losing-your-mindhttpswwwpytexasorgscheduletalksimproving-code-without-losing-your-mind">&lt;a href="https://www.pytexas.org/schedule/talks#improving-code-without-losing-your-mind">Improving code without losing your mind&lt;/a>&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://blog.alexewerlof.com/p/tech-debt-day/">https://blog.alexewerlof.com/p/tech-debt-day/&lt;/a>&lt;/li>
-&lt;li>We tend to focus on getting features out the door.&lt;/li>
-&lt;li>Like an artist, programmers should improve &amp;ndash; refactor &amp;ndash; their art.&lt;/li>
-&lt;li>Set aside time to improve &amp;ndash; refactor &amp;ndash; your code.&lt;/li>
-&lt;li>Make code understandable and obvious.&lt;/li>
-&lt;/ul>
-&lt;h2 id="lightning-talks">Lightning Talks&lt;/h2>
-&lt;ul>
-&lt;li>Make code obvious. Otherwise, make it familiar. Otherwise, make it well-documented. Start by making it obvious!&lt;/li>
-&lt;li>For demos/testing, you can &lt;code>pip install&lt;/code> packages directly inside of the Python Interpreter!&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span style="color:#f92672">import&lt;/span> pip
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&amp;gt;&lt;/span> pip&lt;span style="color:#f92672">.&lt;/span>main([&lt;span style="color:#e6db74">&amp;#34;install&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;django&amp;#34;&lt;/span>])
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div><a href="mailto: reply@djpeacher.com?subject=Re:%20PyTexas%202023%3a%20Day%201">Reply via email</a></description></item><item><title>Multiple Monitors on Apple Silicon</title><link>https://www.djpeacher.com/posts/multiple-monitors-on-apple-silicon/</link><pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/multiple-monitors-on-apple-silicon/</guid><description>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20PyTexas%202023">Reply via email</a></description></item><item><title>Multiple Monitors on Apple Silicon</title><link>https://www.djpeacher.com/posts/multiple-monitors-on-apple-silicon/</link><pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/multiple-monitors-on-apple-silicon/</guid><description>
 &lt;p>If you are reading this, you probably just discovered that your second monitor isn&amp;rsquo;t working when you connect it to your M1/M2 Mac. Surprise, those chips have only one video output and thus can only support one external monitor! Bummer&amp;hellip;&lt;/p>
 &lt;p>To get around this, and move on with your life, you can use &lt;a href="https://www.synaptics.com/products/displaylink-graphics">DisplayLink&lt;/a> to output extra monitors via USB! Normally, connecting to an external monitor looks something like this:
 &lt;script src="https://unpkg.com/mermaid/dist/mermaid.min.js">&lt;/script>
@@ -1960,161 +1849,229 @@ Machine -- video --> DLS[DL Software] -- compressed --> DLA[DL Adaptor] -- video
 &lt;li>Men&lt;/li>
 &lt;li>Doctor Strange: In the Multiverse of Madness&lt;/li>
 &lt;li>Sonic 2&lt;/li>
-&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20Alamo%20Drafthouse%202022">Reply via email</a></description></item><item><title>DjangoCon US 2022: Day 3</title><link>https://www.djpeacher.com/posts/djangocon-us-22-day-3/</link><pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/djangocon-us-22-day-3/</guid><description>
-&lt;h2 id="async-django-the-practical-guide-youve-been-awaiting-forhttps2022djangoconustalksasync-django-the-practical-guide-you-ve">&lt;a href="https://2022.djangocon.us/talks/async-django-the-practical-guide-you-ve/">Async Django: The practical guide you&amp;rsquo;ve been awaiting for.&lt;/a>&lt;/h2>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20Alamo%20Drafthouse%202022">Reply via email</a></description></item><item><title>DjangoCon US 2022</title><link>https://www.djpeacher.com/posts/djangocon-us-2022/</link><pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/djangocon-us-2022/</guid><description>
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#day-1">Day 1&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#the-django-admin-is-your-oyster-lets-extend-its-functionality">The Django Admin Is Your Oyster: Let’s Extend Its Functionality&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#documenting-django-code-in-2022">Documenting Django Code in 2022&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#you-dont-need-containers-to-run-django-in-production">You Don&amp;rsquo;t Need Containers to Run Django in Production&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#herding-your-database-queries-diagnosing-improving-and-guarding-performance-of-db-interactions-in-your-django-apps">Herding your database queries: diagnosing, improving and guarding performance of DB interactions in your Django apps&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#the-django-jigsaw-puzzle-aligning-all-the-pieces">The Django Jigsaw Puzzle: Aligning All the Pieces&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#nurturing-a-legacy-codebase">Nurturing a &amp;ldquo;Legacy&amp;rdquo; Codebase&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#day-2">Day 2&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#keeping-track-of-architectural-ish-decisions-in-a-sustainable-way">Keeping track of architectural-ish decisions in a sustainable way&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#django-migrations-pitfalls-and-solutions">Django Migrations: Pitfalls and Solutions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#django-through-the-years">Django Through the Years&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#just-enough-ops-for-developers">Just enough ops for developers&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#your-first-deployment-shouldnt-be-so-hard">Your First Deployment Shouldn&amp;rsquo;t Be So Hard!&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#day-3">Day 3&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#async-django-the-practical-guide-youve-been-awaiting-for">Async Django: The practical guide you&amp;rsquo;ve been awaiting for.&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#why-large-django-projects-need-a-data-prefetching-layer">Why large Django projects need a data (prefetching) layer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#a-pythonic-full-text-search">A pythonic full-text search&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#home-on-the-range-with-django---getting-comfortable-with-ranges-and-range-fields">Home on the range with Django - getting comfortable with ranges and range fields&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;h2 id="day-1">Day 1&lt;/h2>
+&lt;h3 id="the-django-admin-is-your-oyster-lets-extend-its-functionality">The Django Admin Is Your Oyster: Let’s Extend Its Functionality&lt;/h3>
 &lt;ul>
 &lt;li>
-&lt;p>Async is exciting, but be aware that using async will make your application more complex.&lt;/p>
+&lt;p>Don&amp;rsquo;t make it easy for attackers to find your admin page&amp;hellip;don&amp;rsquo;t use &lt;code>/admin&lt;/code>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;code>import asyncio&lt;/code>: Python&amp;rsquo;s implementation of an async runtime that Django uses.&lt;/p>
-&lt;pre tabindex="0">&lt;code>import asyncio
-async def foo():
+&lt;p>Override &lt;code>ModelAdmin.get_search_results&lt;/code> to speed up searching.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Remember to use &lt;code>prefetch_related&lt;/code> and &lt;code>select_related&lt;/code> to reduce DB queries.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add optional checkboxes to change forms to kickoff extra functions when saved.&lt;/p>
+&lt;ul>
+&lt;li>You can also dynamically set help text for better UX.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>You can use multiple databases in a single admin.&lt;/p>
+&lt;pre tabindex="0">&lt;code># Migrate
+$ python manage.py --database=sandbox
+# settings.py
+DATABASES = {
+&amp;#39;default&amp;#39;: {...},
+&amp;#39;sandbox&amp;#39;: {...}
+}
+# utils.py
+class SandboxAdminModel(admin.ModelAdmin):
+using = &amp;#39;sandbox&amp;#39;
+def save_model(self, request, obj, form, change):
+obj.save(using=self.using)
+def delete_model(self, request, obj):
+obj.delete(using=self.using)
+def get_queryset(self, request):
+return super().get_queryset(request).using(self.using)
+# admin.py
+@admin.register(MySandboxModel)
+class MySandboxModelAdmin(SandboxModelAdmin):
 ...
-await bar()
-async def main():
-tasks = [asyncio.create_task(foo()) for range(5)]
-# Important! Wait for all tasks to complete.
-await asyncio.gather(*tasks)
-asyncio.run(main())
 &lt;/code>&lt;/pre>&lt;/li>
 &lt;li>
-&lt;p>Can you use this for background tasks?&lt;/p>
-&lt;ul>
-&lt;li>Kind off&amp;hellip;if it fails, there is no built-in statuses, retires, or error handling.&lt;/li>
-&lt;li>It depends&amp;hellip;on how you are running Django (WSGI or ASGI). With WSGI, hitting an async view spins up an event loop, but will disappear when then view exits (like the example above).&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Aggregate Views (what you did before GraphQL):&lt;/p>
-&lt;pre tabindex="0">&lt;code>import httpx
-import asyncio
-async def aggregate_view(): # pseudo code
-async with httpx.AsyncClient() as client:
-response_a, response_b = asyncio.gather(
-client.get(view_a_url),
-client.get(view_b_url),
-)
-return JsonResponse({
-&amp;#39;response_a&amp;#39;: response_a.json(),
-&amp;#39;response_b&amp;#39;: response_b.json(),
-})
+&lt;p>Extend &lt;code>change_form.html&lt;/code> to add help text for the whole model, not just fields.&lt;/p>
+&lt;pre tabindex="0">&lt;code># change_form.html
+{% extends &amp;#34;admin/change_form.html&amp;#34; %}
+{% block form_top %}
+{{ original.admin_help_text }}
+{% endblock %}
+# models.py
+class MyModel(models.Model):
+admin_help_text = &amp;#34;...&amp;#34;
 &lt;/code>&lt;/pre>&lt;/li>
 &lt;li>
-&lt;p>Chat App (four ways):&lt;/p>
+&lt;p>Create custom actions for bulk changes.&lt;/p>
+&lt;pre tabindex="0">&lt;code># admin.py
+def increase_msrp_by_8_perc(modeladmin, request, queryset):
+...
+@admin.register(Car)
+class CarAdmin(admin.ModelAdmin):
+actions = [increase_msrp_by_8_perc]
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;/ul>
+&lt;h3 id="documenting-django-code-in-2022">Documenting Django Code in 2022&lt;/h3>
 &lt;ul>
-&lt;li>Polling (HTMX): Simple, but doesn&amp;rsquo;t scale, isn&amp;rsquo;t responsive, and can lead to self DDOS.&lt;/li>
-&lt;li>Long Polling (HTMX + Channels): Responsiveness, but creates a lot connections.&lt;/li>
-&lt;li>Server-Sent Events (HTMX + Channels): Better, keeps the connection open.&lt;/li>
-&lt;li>WebSockets (HTMX + Channels): Also keeps the connection open, but allows two-way communication.&lt;/li>
+&lt;li>&lt;a href="https://diataxis.fr">https://diataxis.fr&lt;/a>: A framework for authoring technical documentation.&lt;/li>
+&lt;/ul>
+&lt;h3 id="you-dont-need-containers-to-run-django-in-production">You Don&amp;rsquo;t Need Containers to Run Django in Production&lt;/h3>
+&lt;ul>
+&lt;li>When &lt;strong>should&lt;/strong> you use containers? When you have&amp;hellip;
+&lt;ul>
+&lt;li>Thousands of programmers.&lt;/li>
+&lt;li>Millions of users.&lt;/li>
+&lt;li>Billions in valuation.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>There is a lot of FOMO around containers. For example, reproducibility is a big selling point for containers, but generally, this benefit is rarely taken advantage of.&lt;/li>
+&lt;li>Some downsides of using containers are added &lt;a href="https://landscape.cncf.io">complexity&lt;/a> and cost.&lt;/li>
+&lt;li>What do we want in production?
+&lt;ul>
+&lt;li>Secure environment.&lt;/li>
+&lt;li>Protection against malicious users.&lt;/li>
+&lt;li>Don&amp;rsquo;t want to wake up in the middle of the night.&lt;/li>
+&lt;li>Seamless code updates.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Web Server (WSGI vs ASGI):
+&lt;ul>
+&lt;li>WSGI is 20 years old&amp;hellip;and it shows.
+&lt;ul>
+&lt;li>Limited concurrency.&lt;/li>
+&lt;li>Graphic: &lt;em>Showed that as clients scale with &lt;code>gunicorn&lt;/code>, response time gets worse. The graph represented a BEST case scenario.&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ASGI is 5 years old&amp;hellip;and it shows.
+&lt;ul>
+&lt;li>Unlimited concurrency (ignoring memory).&lt;/li>
+&lt;li>Graphic: &lt;em>Showed that as clients scale with &lt;code>uvicorn&lt;/code>, response time gets worse. The graph represented a WORST case scenario.&lt;/em>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h2 id="why-large-django-projects-need-a-data-prefetching-layerhttps2022djangoconustalkswhy-large-django-projects-need-a-data">&lt;a href="https://2022.djangocon.us/talks/why-large-django-projects-need-a-data/">Why large Django projects need a data (prefetching) layer&lt;/a>&lt;/h2>
+&lt;/li>
+&lt;li>Reverse Proxy (nginx):
+&lt;ul>
+&lt;li>Can help limit concurrency as needed.&lt;/li>
+&lt;li>nginx can handle 20 million RPM on a 8 core VM.&lt;/li>
+&lt;li>Caddy is a new/easier alternative, but nginx is tried and tested.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Process Monitor (SystemD)&lt;/li>
+&lt;li>Deployment (Git Deploy Config)&lt;/li>
+&lt;li>Bonus Tip: Use software that offers LTS.&lt;/li>
+&lt;/ul>
+&lt;h3 id="herding-your-database-queries-diagnosing-improving-and-guarding-performance-of-db-interactions-in-your-django-apps">Herding your database queries: diagnosing, improving and guarding performance of DB interactions in your Django apps&lt;/h3>
 &lt;ul>
 &lt;li>
-&lt;p>&amp;ldquo;DRY isn&amp;rsquo;t helpful if you need to be careful.&amp;rdquo;&lt;/p>
+&lt;p>&lt;a href="https://engineering.pathai.com/herding-your-database-queries-in-django">Blog Post&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Django REST Framework loves DRY, but has high change amplification as a side effect.&lt;/p>
+&lt;p>Tools like &lt;code>django-debug-toolbar&lt;/code> and &lt;code>django-silk&lt;/code> are great for diagnosing rogue queries, but there can be cases where these tools are not going to help directly (e.g. with a js frontend).&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Change Amplification: The expected number of places in the codebase that needs to be modified during an atomic change to the software.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>An example of this in DRF is needing to prefetch in serializers.&lt;/p>
-&lt;pre tabindex="0">&lt;code>class MovieSerializer(ModelSerializer):
-# data that requires prefetching
-# You have to remeber to prefetch for each view using MovieSerializer.
-class MovieListView(ListAPIView):
-queryset = Movie.objects.prefetch_related(&amp;#34;directors&amp;#34;)
-serializer_class = MovieSerializer
-class MovieDetailView(ListAPIView):
-queryset = Movie.objects.prefetch_related(&amp;#34;directors&amp;#34;)
-serializer_class = MovieSerializer
+&lt;p>To solve this, they rolled their own &lt;a href="https://github.com/Path-AI/django-request-stats-example/blob/main/req_stats/middleware.py">custom middleware&lt;/a> to analyze queries per request and output the result to the terminal.&lt;/p>
+&lt;pre tabindex="0">&lt;code>Received request GET /library/books/, status 200, db_query_count=29, db_query_time_ms=136.421, duration_ms=192.56
 &lt;/code>&lt;/pre>&lt;/li>
 &lt;li>
-&lt;p>You could do one of two things to combat this:&lt;/p>
-&lt;ol>
-&lt;li>Use non-DRF serializers that are very &lt;strong>explicit&lt;/strong> about prefetching.&lt;/li>
-&lt;/ol>
-&lt;ul>
-&lt;li>&lt;code>django-virtual-models&lt;/code>.&lt;/li>
-&lt;/ul>
-&lt;ol start="2">
-&lt;li>Or keep DRF, but:&lt;/li>
-&lt;/ol>
-&lt;ul>
-&lt;li>Warn about missing prefetches for each serializer.&lt;/li>
-&lt;li>Automatically run necessary prefetches.&lt;/li>
-&lt;li>Automatically prevent unnecessary ones.&lt;/li>
-&lt;li>Keep serializer nesting support.&lt;/li>
-&lt;li>Keep &lt;code>SerializerMethodField&lt;/code> support.&lt;/li>
-&lt;/ul>
+&lt;p>After you optimize your queries, you can protect yourself from regression with unit tests by taking advantage of &lt;a href="https://pytest-django.readthedocs.io/en/latest/helpers.html#django-assert-max-num-queries">django_assert_max_num_queries&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>TLDR: Use tools to be &lt;strong>explicit&lt;/strong> about the data you expect from the DB. Otherwise you&amp;rsquo;ll suffer from performance regressions and your read logic will break frequently.&lt;/p>
+&lt;p>You can also use &lt;a href="https://coverage.readthedocs.io/en/6.4.3/contexts.html">coverage context&lt;/a> to check new endpoints that are created and don&amp;rsquo;t have unit tests.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h2 id="a-pythonic-full-text-searchhttps2022djangoconustalksa-pythonic-full-text-search">&lt;a href="https://2022.djangocon.us/talks/a-pythonic-full-text-search/">A pythonic full-text search&lt;/a>&lt;/h2>
+&lt;h3 id="the-django-jigsaw-puzzle-aligning-all-the-pieces">The Django Jigsaw Puzzle: Aligning All the Pieces&lt;/h3>
 &lt;ul>
-&lt;li>PostgreSQL added full text search in 2008.&lt;/li>
-&lt;li>Django added &lt;a href="https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/search/">full text search&lt;/a> in 2016.&lt;/li>
-&lt;li>Paolo has a &lt;a href="https://www.paulox.net/2017/12/22/full-text-search-in-django-with-postgresql/">great article&lt;/a> outlining the various search features.&lt;/li>
-&lt;/ul>
-&lt;h2 id="home-on-the-range-with-django---getting-comfortable-with-ranges-and-range-fieldshttps2022djangoconustalkshome-on-the-range-with-django-getting">&lt;a href="https://2022.djangocon.us/talks/home-on-the-range-with-django-getting/">Home on the range with Django - getting comfortable with ranges and range fields&lt;/a>&lt;/h2>
+&lt;li>(other) MVC == MVT (django)
 &lt;ul>
-&lt;li>Ranges are everywhere!&lt;/li>
-&lt;li>Support for &lt;a href="https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/fields/#range-fields">ranges&lt;/a> was added for PostgreSQL Django in 2015.&lt;/li>
-&lt;li>The typical approach is to us &amp;ldquo;start&amp;rdquo; and &amp;ldquo;stop&amp;rdquo; fields, but that gets complicated fast.
-&lt;ul>
-&lt;li>The DB doesn&amp;rsquo;t know these two fields are related.&lt;/li>
-&lt;li>You have to manually add bounding/validation/constraint logic.&lt;/li>
-&lt;li>Queries can get weird/complicated.&lt;/li>
+&lt;li>Model == Model&lt;/li>
+&lt;li>View == Template&lt;/li>
+&lt;li>Controller == View&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Ranges fix all this!
+&lt;li>The Django Admin is great, but if your &lt;code>admin.py&lt;/code> is growing past 20 lines, you might be relying on it too much.&lt;/li>
+&lt;li>&lt;code>django-extensions&lt;/code>: One of the things it does is auto import models in the django shell.&lt;/li>
+&lt;li>Don&amp;rsquo;t use &lt;code>/admin&lt;/code>!&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code> WSGI Server
+┌────────────────────────────────────────────────┐
+│ Middlware │
+│ ┌────────────────────────────────────────────┐ │
+│ │ Django app │ │
+HTTP request │ │ ┌────────────────────────────────────────┐ │ │
+─────────────► ┌──────────┐ ──► │ │ │ ┌────────┐ ┌─────┐ ┌──────┐ │ │ │ ┌─────────┐
+Browser │Web Server│ │ │ │ │URL conf│ ──► │ │ ─── │Models│ ───┼─┼─┼── │Databases│
+◄───────────── └──────────┘ ◄── │ │ │ └────────┘ │ │ └──────┘ │ │ │ └─────────┘
+HTTP response ▲ │ │ │ │Views│ │ │ │
+│ │ │ │ │ │ ┌─────────┐ │ │ │
+▼ │ │ │ │ │ ─── │Templates│ │ │ │
+┌──────┐ │ │ │ └─────┘ └─────────┘ │ │ │
+│ File │ │ │ └────────────────────────────────────────┘ │ │
+│System│ │ └────────────────────────────────────────────┘ │
+└──────┘ └────────────────────────────────────────────────┘
+&lt;/code>&lt;/pre>&lt;h3 id="nurturing-a-legacy-codebase">Nurturing a &amp;ldquo;Legacy&amp;rdquo; Codebase&lt;/h3>
 &lt;ul>
-&lt;li>1 field that stores lower, upper, and boundary information.&lt;/li>
-&lt;li>Automatically validates/constrains values.&lt;/li>
-&lt;li>Easy/Intuitive queries.&lt;/li>
+&lt;li>What is a &amp;ldquo;legacy&amp;rdquo; codebase?
+&lt;ul>
+&lt;li>Code with, potentially forgotten, history.&lt;/li>
+&lt;li>Code that follow outdated conventions.&lt;/li>
+&lt;li>Usually still running in production.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Ranges (Math):
+&lt;li>Should you evolve or rebuild? Ask yourself&amp;hellip;
 &lt;ul>
-&lt;li>Ranges = Intervals, Inclusive = Closed, Exclusive = Open&lt;/li>
-&lt;li>(exclusive, exclusive) - (1, 3) - 2&lt;/li>
-&lt;li>[inclusive, exclusive) - [1, 3) - 1, 2 &lt;code>The default for Django ranges!&lt;/code>&lt;/li>
-&lt;li>(exclusive, inclusive] - (1, 3] - 2, 3&lt;/li>
-&lt;li>[inclusive, inclusive] - [1, 3] - 1, 2, 3&lt;/li>
+&lt;li>Does the code meet current requirements?&lt;/li>
+&lt;li>Are there frequent or sever production issues?&lt;/li>
+&lt;li>How healthy are the dependencies?&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>There are lots of very useful query filters!
+&lt;li>Lets say you choose &amp;ldquo;evolve,&amp;rdquo; what should you do?
 &lt;ul>
-&lt;li>&lt;code>__overlap&lt;/code>, &lt;code>__contains&lt;/code>, &lt;code>__adjacent_to&lt;/code>, &lt;code>__fully_lt/gt&lt;/code>, etc.&lt;/li>
+&lt;li>Automated tests with good coverage.&lt;/li>
+&lt;li>Upgrade/Replace outdated dependencies.&lt;/li>
+&lt;li>Use a linter and/or &lt;code>black&lt;/code> for code formatting.&lt;/li>
+&lt;li>Use &lt;code>pre-commit&lt;/code> for cross-team consistency.&lt;/li>
+&lt;li>Make sure current devs understand the story of the code.&lt;/li>
+&lt;li>Help future devs by writing detailed commit messages along with an issue tracker.&lt;/li>
+&lt;li>Document!&lt;/li>
+&lt;li>Build a culture of leaving clues for the future!&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Django supports a number of different value types via &lt;code>pysycopg2.extra&lt;/code>.
-&lt;ul>
-&lt;li>You can also create custom types! Example: IP ranges!&lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;li>Pitfalls
-&lt;ul>
-&lt;li>Limited Django Admin support.&lt;/li>
-&lt;li>You have to use &lt;code>Cast&lt;/code> when using &lt;code>F()&lt;/code>.&lt;/li>
-&lt;li>You have to use &lt;code>Lower&lt;/code> and &lt;code>Upper&lt;/code> database functions to access values.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Resources
-&lt;ul>
-&lt;li>&lt;code>psycopg2.extras&lt;/code>&lt;/li>
-&lt;li>&lt;code>django-range-merge&lt;/code>&lt;/li>
-&lt;li>&lt;code>django-generate-series&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20DjangoCon%20US%202022%3a%20Day%203">Reply via email</a></description></item><item><title>DjangoCon US 2022: Day 2</title><link>https://www.djpeacher.com/posts/djangocon-us-22-day-2/</link><pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/djangocon-us-22-day-2/</guid><description>
-&lt;h2 id="keeping-track-of-architectural-ish-decisions-in-a-sustainable-wayhttps2022djangoconustalkskeeping-track-of-architectural-ish-in-a">&lt;a href="https://2022.djangocon.us/talks/keeping-track-of-architectural-ish-in-a/">Keeping track of architectural-ish decisions in a sustainable way&lt;/a>&lt;/h2>
+&lt;h2 id="day-2">Day 2&lt;/h2>
+&lt;h3 id="keeping-track-of-architectural-ish-decisions-in-a-sustainable-way">Keeping track of architectural-ish decisions in a sustainable way&lt;/h3>
 &lt;ul>
 &lt;li>The Problem
 &lt;ul>
@@ -2161,7 +2118,7 @@ serializer_class = MovieSerializer
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h2 id="django-migrations-pitfalls-and-solutionshttps2022djangoconustalksdjango-migrations-pitfalls-and-solutions">&lt;a href="https://2022.djangocon.us/talks/django-migrations-pitfalls-and-solutions/">Django Migrations: Pitfalls and Solutions&lt;/a>&lt;/h2>
+&lt;h3 id="django-migrations-pitfalls-and-solutions">Django Migrations: Pitfalls and Solutions&lt;/h3>
 &lt;ul>
 &lt;li>Migrations and Branches
 &lt;ul>
@@ -2252,16 +2209,16 @@ serializer_class = MovieSerializer
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h2 id="django-through-the-yearshttps2022djangoconustalksdjango-through-the-years">&lt;a href="https://2022.djangocon.us/talks/django-through-the-years/">Django Through the Years&lt;/a>&lt;/h2>
+&lt;h3 id="django-through-the-years">Django Through the Years&lt;/h3>
 &lt;p>Not much to say about this, other than it was a very fun history lesson! ❤️&lt;/p>
-&lt;h2 id="just-enough-ops-for-developershttps2022djangoconustalksjust-enough-ops-for-developers">&lt;a href="https://2022.djangocon.us/talks/just-enough-ops-for-developers/">Just enough ops for developers&lt;/a>&lt;/h2>
+&lt;h3 id="just-enough-ops-for-developers">Just enough ops for developers&lt;/h3>
 &lt;p>My main takeaway here was the following &lt;a href="https://fastapi.tiangolo.com/async/">fastapi analogy&lt;/a>:&lt;/p>
 &lt;ul>
 &lt;li>CPU = Cook&lt;/li>
 &lt;li>Process = Cashier&lt;/li>
 &lt;li>Request = Customer&lt;/li>
 &lt;/ul>
-&lt;h2 id="your-first-deployment-shouldnt-be-so-hardhttps2022djangoconustalksyour-first-deployment-shouldn-t-be-so">&lt;a href="https://2022.djangocon.us/talks/your-first-deployment-shouldn-t-be-so/">Your First Deployment Shouldn&amp;rsquo;t Be So Hard!&lt;/a>&lt;/h2>
+&lt;h3 id="your-first-deployment-shouldnt-be-so-hard">Your First Deployment Shouldn&amp;rsquo;t Be So Hard!&lt;/h3>
 &lt;p>Django is great, until you get to deployment, at which point there are a billion different ways to do it. This can be a barrier to entry for new developers and for experienced developers who need to prototype rapidly&amp;hellip;enter &lt;code>django-simple-deploy&lt;/code>.&lt;/p>
 &lt;p>Prerequisites:&lt;/p>
 &lt;ul>
@@ -2274,195 +2231,160 @@ serializer_class = MovieSerializer
 # Add simple deploy to INSTALLED APPS.
 $ manage.py simple_deploy --platform fly_io --automate-all
 # Profit!
-&lt;/code>&lt;/pre><a href="mailto: reply@djpeacher.com?subject=Re:%20DjangoCon%20US%202022%3a%20Day%202">Reply via email</a></description></item><item><title>DjangoCon US 2022: Day 1</title><link>https://www.djpeacher.com/posts/djangocon-us-22-day-1/</link><pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/djangocon-us-22-day-1/</guid><description>
-&lt;h2 id="the-django-admin-is-your-oyster-lets-extend-its-functionalityhttps2022djangoconustalksthe-django-admin-is-your-oyster-lets-its">&lt;a href="https://2022.djangocon.us/talks/the-django-admin-is-your-oyster-lets-its/">The Django Admin Is Your Oyster: Let’s Extend Its Functionality&lt;/a>&lt;/h2>
+&lt;/code>&lt;/pre>&lt;h2 id="day-3">Day 3&lt;/h2>
+&lt;h3 id="async-django-the-practical-guide-youve-been-awaiting-for">Async Django: The practical guide you&amp;rsquo;ve been awaiting for.&lt;/h3>
 &lt;ul>
 &lt;li>
-&lt;p>Don&amp;rsquo;t make it easy for attackers to find your admin page&amp;hellip;don&amp;rsquo;t use &lt;code>/admin&lt;/code>.&lt;/p>
+&lt;p>Async is exciting, but be aware that using async will make your application more complex.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Override &lt;code>ModelAdmin.get_search_results&lt;/code> to speed up searching.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Remember to use &lt;code>prefetch_related&lt;/code> and &lt;code>select_related&lt;/code> to reduce DB queries.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Add optional checkboxes to change forms to kickoff extra functions when saved.&lt;/p>
-&lt;ul>
-&lt;li>You can also dynamically set help text for better UX.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>You can use multiple databases in a single admin.&lt;/p>
-&lt;pre tabindex="0">&lt;code># Migrate
-$ python manage.py --database=sandbox
-# settings.py
-DATABASES = {
-&amp;#39;default&amp;#39;: {...},
-&amp;#39;sandbox&amp;#39;: {...}
-}
-# utils.py
-class SandboxAdminModel(admin.ModelAdmin):
-using = &amp;#39;sandbox&amp;#39;
-def save_model(self, request, obj, form, change):
-obj.save(using=self.using)
-def delete_model(self, request, obj):
-obj.delete(using=self.using)
-def get_queryset(self, request):
-return super().get_queryset(request).using(self.using)
-# admin.py
-@admin.register(MySandboxModel)
-class MySandboxModelAdmin(SandboxModelAdmin):
+&lt;p>&lt;code>import asyncio&lt;/code>: Python&amp;rsquo;s implementation of an async runtime that Django uses.&lt;/p>
+&lt;pre tabindex="0">&lt;code>import asyncio
+async def foo():
 ...
+await bar()
+async def main():
+tasks = [asyncio.create_task(foo()) for range(5)]
+# Important! Wait for all tasks to complete.
+await asyncio.gather(*tasks)
+asyncio.run(main())
 &lt;/code>&lt;/pre>&lt;/li>
 &lt;li>
-&lt;p>Extend &lt;code>change_form.html&lt;/code> to add help text for the whole model, not just fields.&lt;/p>
-&lt;pre tabindex="0">&lt;code># change_form.html
-{% extends &amp;#34;admin/change_form.html&amp;#34; %}
-{% block form_top %}
-{{ original.admin_help_text }}
-{% endblock %}
-# models.py
-class MyModel(models.Model):
-admin_help_text = &amp;#34;...&amp;#34;
+&lt;p>Can you use this for background tasks?&lt;/p>
+&lt;ul>
+&lt;li>Kind off&amp;hellip;if it fails, there is no built-in statuses, retires, or error handling.&lt;/li>
+&lt;li>It depends&amp;hellip;on how you are running Django (WSGI or ASGI). With WSGI, hitting an async view spins up an event loop, but will disappear when then view exits (like the example above).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Aggregate Views (what you did before GraphQL):&lt;/p>
+&lt;pre tabindex="0">&lt;code>import httpx
+import asyncio
+async def aggregate_view(): # pseudo code
+async with httpx.AsyncClient() as client:
+response_a, response_b = asyncio.gather(
+client.get(view_a_url),
+client.get(view_b_url),
+)
+return JsonResponse({
+&amp;#39;response_a&amp;#39;: response_a.json(),
+&amp;#39;response_b&amp;#39;: response_b.json(),
+})
 &lt;/code>&lt;/pre>&lt;/li>
 &lt;li>
-&lt;p>Create custom actions for bulk changes.&lt;/p>
-&lt;pre tabindex="0">&lt;code># admin.py
-def increase_msrp_by_8_perc(modeladmin, request, queryset):
-...
-@admin.register(Car)
-class CarAdmin(admin.ModelAdmin):
-actions = [increase_msrp_by_8_perc]
-&lt;/code>&lt;/pre>&lt;/li>
-&lt;/ul>
-&lt;h2 id="documenting-django-code-in-2022https2022djangoconustalksdocumenting-django-code-in-2022">&lt;a href="https://2022.djangocon.us/talks/documenting-django-code-in-2022/">Documenting Django Code in 2022&lt;/a>&lt;/h2>
+&lt;p>Chat App (four ways):&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://diataxis.fr">https://diataxis.fr&lt;/a>: A framework for authoring technical documentation.&lt;/li>
-&lt;/ul>
-&lt;h2 id="you-dont-need-containers-to-run-django-in-productionhttps2022djangoconustalksyou-don-t-need-containers-to-run-django">&lt;a href="https://2022.djangocon.us/talks/you-don-t-need-containers-to-run-django/">You Don&amp;rsquo;t Need Containers to Run Django in Production&lt;/a>&lt;/h2>
-&lt;ul>
-&lt;li>When &lt;strong>should&lt;/strong> you use containers? When you have&amp;hellip;
-&lt;ul>
-&lt;li>Thousands of programmers.&lt;/li>
-&lt;li>Millions of users.&lt;/li>
-&lt;li>Billions in valuation.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>There is a lot of FOMO around containers. For example, reproducibility is a big selling point for containers, but generally, this benefit is rarely taken advantage of.&lt;/li>
-&lt;li>Some downsides of using containers are added &lt;a href="https://landscape.cncf.io">complexity&lt;/a> and cost.&lt;/li>
-&lt;li>What do we want in production?
-&lt;ul>
-&lt;li>Secure environment.&lt;/li>
-&lt;li>Protection against malicious users.&lt;/li>
-&lt;li>Don&amp;rsquo;t want to wake up in the middle of the night.&lt;/li>
-&lt;li>Seamless code updates.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Web Server (WSGI vs ASGI):
-&lt;ul>
-&lt;li>WSGI is 20 years old&amp;hellip;and it shows.
-&lt;ul>
-&lt;li>Limited concurrency.&lt;/li>
-&lt;li>Graphic: &lt;em>Showed that as clients scale with &lt;code>gunicorn&lt;/code>, response time gets worse. The graph represented a BEST case scenario.&lt;/em>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>ASGI is 5 years old&amp;hellip;and it shows.
-&lt;ul>
-&lt;li>Unlimited concurrency (ignoring memory).&lt;/li>
-&lt;li>Graphic: &lt;em>Showed that as clients scale with &lt;code>uvicorn&lt;/code>, response time gets worse. The graph represented a WORST case scenario.&lt;/em>&lt;/li>
+&lt;li>Polling (HTMX): Simple, but doesn&amp;rsquo;t scale, isn&amp;rsquo;t responsive, and can lead to self DDOS.&lt;/li>
+&lt;li>Long Polling (HTMX + Channels): Responsiveness, but creates a lot connections.&lt;/li>
+&lt;li>Server-Sent Events (HTMX + Channels): Better, keeps the connection open.&lt;/li>
+&lt;li>WebSockets (HTMX + Channels): Also keeps the connection open, but allows two-way communication.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;li>Reverse Proxy (nginx):
-&lt;ul>
-&lt;li>Can help limit concurrency as needed.&lt;/li>
-&lt;li>nginx can handle 20 million RPM on a 8 core VM.&lt;/li>
-&lt;li>Caddy is a new/easier alternative, but nginx is tried and tested.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Process Monitor (SystemD)&lt;/li>
-&lt;li>Deployment (Git Deploy Config)&lt;/li>
-&lt;li>Bonus Tip: Use software that offers LTS.&lt;/li>
-&lt;/ul>
-&lt;h1 id="herding-your-database-queries-diagnosing-improving-and-guarding-performance-of-db-interactions-in-your-django-appshttps2022djangoconustalksherding-your-database-queries-diagnosing">&lt;a href="https://2022.djangocon.us/talks/herding-your-database-queries-diagnosing/">Herding your database queries: diagnosing, improving and guarding performance of DB interactions in your Django apps&lt;/a>&lt;/h1>
+&lt;h3 id="why-large-django-projects-need-a-data-prefetching-layer">Why large Django projects need a data (prefetching) layer&lt;/h3>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;a href="https://engineering.pathai.com/herding-your-database-queries-in-django">Blog Post&lt;/a>&lt;/p>
+&lt;p>&amp;ldquo;DRY isn&amp;rsquo;t helpful if you need to be careful.&amp;rdquo;&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Tools like &lt;code>django-debug-toolbar&lt;/code> and &lt;code>django-silk&lt;/code> are great for diagnosing rogue queries, but there can be cases where these tools are not going to help directly (e.g. with a js frontend).&lt;/p>
+&lt;p>Django REST Framework loves DRY, but has high change amplification as a side effect.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To solve this, they rolled their own &lt;a href="https://github.com/Path-AI/django-request-stats-example/blob/main/req_stats/middleware.py">custom middleware&lt;/a> to analyze queries per request and output the result to the terminal.&lt;/p>
-&lt;pre tabindex="0">&lt;code>Received request GET /library/books/, status 200, db_query_count=29, db_query_time_ms=136.421, duration_ms=192.56
+&lt;p>Change Amplification: The expected number of places in the codebase that needs to be modified during an atomic change to the software.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>An example of this in DRF is needing to prefetch in serializers.&lt;/p>
+&lt;pre tabindex="0">&lt;code>class MovieSerializer(ModelSerializer):
+# data that requires prefetching
+# You have to remeber to prefetch for each view using MovieSerializer.
+class MovieListView(ListAPIView):
+queryset = Movie.objects.prefetch_related(&amp;#34;directors&amp;#34;)
+serializer_class = MovieSerializer
+class MovieDetailView(ListAPIView):
+queryset = Movie.objects.prefetch_related(&amp;#34;directors&amp;#34;)
+serializer_class = MovieSerializer
 &lt;/code>&lt;/pre>&lt;/li>
 &lt;li>
-&lt;p>After you optimize your queries, you can protect yourself from regression with unit tests by taking advantage of &lt;a href="https://pytest-django.readthedocs.io/en/latest/helpers.html#django-assert-max-num-queries">django_assert_max_num_queries&lt;/a>.&lt;/p>
+&lt;p>You could do one of two things to combat this:&lt;/p>
+&lt;ol>
+&lt;li>Use non-DRF serializers that are very &lt;strong>explicit&lt;/strong> about prefetching.&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>&lt;code>django-virtual-models&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;ol start="2">
+&lt;li>Or keep DRF, but:&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>Warn about missing prefetches for each serializer.&lt;/li>
+&lt;li>Automatically run necessary prefetches.&lt;/li>
+&lt;li>Automatically prevent unnecessary ones.&lt;/li>
+&lt;li>Keep serializer nesting support.&lt;/li>
+&lt;li>Keep &lt;code>SerializerMethodField&lt;/code> support.&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>You can also use &lt;a href="https://coverage.readthedocs.io/en/6.4.3/contexts.html">coverage context&lt;/a> to check new endpoints that are created and don&amp;rsquo;t have unit tests.&lt;/p>
+&lt;p>TLDR: Use tools to be &lt;strong>explicit&lt;/strong> about the data you expect from the DB. Otherwise you&amp;rsquo;ll suffer from performance regressions and your read logic will break frequently.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h2 id="the-django-jigsaw-puzzle-aligning-all-the-pieceshttps2022djangoconustalksthe-django-jigsaw-puzzle-aligning-all">&lt;a href="https://2022.djangocon.us/talks/the-django-jigsaw-puzzle-aligning-all/">The Django Jigsaw Puzzle: Aligning All the Pieces&lt;/a>&lt;/h2>
+&lt;h3 id="a-pythonic-full-text-search">A pythonic full-text search&lt;/h3>
 &lt;ul>
-&lt;li>(other) MVC == MVT (django)
+&lt;li>PostgreSQL added full text search in 2008.&lt;/li>
+&lt;li>Django added &lt;a href="https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/search/">full text search&lt;/a> in 2016.&lt;/li>
+&lt;li>Paolo has a &lt;a href="https://www.paulox.net/2017/12/22/full-text-search-in-django-with-postgresql/">great article&lt;/a> outlining the various search features.&lt;/li>
+&lt;/ul>
+&lt;h3 id="home-on-the-range-with-django---getting-comfortable-with-ranges-and-range-fields">Home on the range with Django - getting comfortable with ranges and range fields&lt;/h3>
 &lt;ul>
-&lt;li>Model == Model&lt;/li>
-&lt;li>View == Template&lt;/li>
-&lt;li>Controller == View&lt;/li>
+&lt;li>Ranges are everywhere!&lt;/li>
+&lt;li>Support for &lt;a href="https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/fields/#range-fields">ranges&lt;/a> was added for PostgreSQL Django in 2015.&lt;/li>
+&lt;li>The typical approach is to us &amp;ldquo;start&amp;rdquo; and &amp;ldquo;stop&amp;rdquo; fields, but that gets complicated fast.
+&lt;ul>
+&lt;li>The DB doesn&amp;rsquo;t know these two fields are related.&lt;/li>
+&lt;li>You have to manually add bounding/validation/constraint logic.&lt;/li>
+&lt;li>Queries can get weird/complicated.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>The Django Admin is great, but if your &lt;code>admin.py&lt;/code> is growing past 20 lines, you might be relying on it too much.&lt;/li>
-&lt;li>&lt;code>django-extensions&lt;/code>: One of the things it does is auto import models in the django shell.&lt;/li>
-&lt;li>Don&amp;rsquo;t use &lt;code>/admin&lt;/code>!&lt;/li>
-&lt;/ul>
-&lt;pre tabindex="0">&lt;code> WSGI Server
-┌────────────────────────────────────────────────┐
-│ Middlware │
-│ ┌────────────────────────────────────────────┐ │
-│ │ Django app │ │
-HTTP request │ │ ┌────────────────────────────────────────┐ │ │
-─────────────► ┌──────────┐ ──► │ │ │ ┌────────┐ ┌─────┐ ┌──────┐ │ │ │ ┌─────────┐
-Browser │Web Server│ │ │ │ │URL conf│ ──► │ │ ─── │Models│ ───┼─┼─┼── │Databases│
-◄───────────── └──────────┘ ◄── │ │ │ └────────┘ │ │ └──────┘ │ │ │ └─────────┘
-HTTP response ▲ │ │ │ │Views│ │ │ │
-│ │ │ │ │ │ ┌─────────┐ │ │ │
-▼ │ │ │ │ │ ─── │Templates│ │ │ │
-┌──────┐ │ │ │ └─────┘ └─────────┘ │ │ │
-│ File │ │ │ └────────────────────────────────────────┘ │ │
-│System│ │ └────────────────────────────────────────────┘ │
-└──────┘ └────────────────────────────────────────────────┘
-&lt;/code>&lt;/pre>&lt;h2 id="nurturing-a-legacy-codebasehttps2022djangoconustalksnurturing-a-legacy-codebase">&lt;a href="https://2022.djangocon.us/talks/nurturing-a-legacy-codebase/">Nurturing a &amp;ldquo;Legacy&amp;rdquo; Codebase&lt;/a>&lt;/h2>
+&lt;li>Ranges fix all this!
 &lt;ul>
-&lt;li>What is a &amp;ldquo;legacy&amp;rdquo; codebase?
-&lt;ul>
-&lt;li>Code with, potentially forgotten, history.&lt;/li>
-&lt;li>Code that follow outdated conventions.&lt;/li>
-&lt;li>Usually still running in production.&lt;/li>
+&lt;li>1 field that stores lower, upper, and boundary information.&lt;/li>
+&lt;li>Automatically validates/constrains values.&lt;/li>
+&lt;li>Easy/Intuitive queries.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Should you evolve or rebuild? Ask yourself&amp;hellip;
+&lt;li>Ranges (Math):
 &lt;ul>
-&lt;li>Does the code meet current requirements?&lt;/li>
-&lt;li>Are there frequent or sever production issues?&lt;/li>
-&lt;li>How healthy are the dependencies?&lt;/li>
+&lt;li>Ranges = Intervals, Inclusive = Closed, Exclusive = Open&lt;/li>
+&lt;li>(exclusive, exclusive) - (1, 3) - 2&lt;/li>
+&lt;li>[inclusive, exclusive) - [1, 3) - 1, 2 &lt;code>The default for Django ranges!&lt;/code>&lt;/li>
+&lt;li>(exclusive, inclusive] - (1, 3] - 2, 3&lt;/li>
+&lt;li>[inclusive, inclusive] - [1, 3] - 1, 2, 3&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Lets say you choose &amp;ldquo;evolve,&amp;rdquo; what should you do?
+&lt;li>There are lots of very useful query filters!
 &lt;ul>
-&lt;li>Automated tests with good coverage.&lt;/li>
-&lt;li>Upgrade/Replace outdated dependencies.&lt;/li>
-&lt;li>Use a linter and/or &lt;code>black&lt;/code> for code formatting.&lt;/li>
-&lt;li>Use &lt;code>pre-commit&lt;/code> for cross-team consistency.&lt;/li>
-&lt;li>Make sure current devs understand the story of the code.&lt;/li>
-&lt;li>Help future devs by writing detailed commit messages along with an issue tracker.&lt;/li>
-&lt;li>Document!&lt;/li>
-&lt;li>Build a culture of leaving clues for the future!&lt;/li>
+&lt;li>&lt;code>__overlap&lt;/code>, &lt;code>__contains&lt;/code>, &lt;code>__adjacent_to&lt;/code>, &lt;code>__fully_lt/gt&lt;/code>, etc.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20DjangoCon%20US%202022%3a%20Day%201">Reply via email</a></description></item><item><title>Quick Hugo Deploy with GitHub Actions</title><link>https://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</link><pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</guid><description>
+&lt;li>Django supports a number of different value types via &lt;code>pysycopg2.extra&lt;/code>.
+&lt;ul>
+&lt;li>You can also create custom types! Example: IP ranges!&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Pitfalls
+&lt;ul>
+&lt;li>Limited Django Admin support.&lt;/li>
+&lt;li>You have to use &lt;code>Cast&lt;/code> when using &lt;code>F()&lt;/code>.&lt;/li>
+&lt;li>You have to use &lt;code>Lower&lt;/code> and &lt;code>Upper&lt;/code> database functions to access values.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Resources
+&lt;ul>
+&lt;li>&lt;code>psycopg2.extras&lt;/code>&lt;/li>
+&lt;li>&lt;code>django-range-merge&lt;/code>&lt;/li>
+&lt;li>&lt;code>django-generate-series&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20DjangoCon%20US%202022">Reply via email</a></description></item><item><title>Quick Hugo Deploy with GitHub Actions</title><link>https://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</link><pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/quick-hugo-deploy-with-github-actions/</guid><description>
 &lt;p>Once you have your &lt;a href="https://gohugo.io">Hugo&lt;/a> project setup, all you need to do is push the following GitHub Action to deploy! &lt;i class="twa twa-rocket">&lt;/i>&lt;/p>
 &lt;pre tabindex="0">&lt;code>name: Build
 on:
@@ -2506,21 +2428,21 @@ folder: public
 &lt;li>&lt;a href="#choose-relevant-monsters">Choose relevant monsters&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#select-magic-item-rewards">Select magic item rewards&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="review-the-characters-hahahugoshortcode16s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
+&lt;h3 id="review-the-characters-hahahugoshortcode14s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
 &lt;p>The first thing you need to do is write down the names, backgrounds, motivations, and desires of the characters. Use these notes to prime your brain and tie the characters to the rest of your game.&lt;/p>
-&lt;h3 id="create-a-strong-start-hahahugoshortcode16s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
+&lt;h3 id="create-a-strong-start-hahahugoshortcode14s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
 &lt;p>Set the stage by asking yourself, what&amp;rsquo;s happening, what&amp;rsquo;s the point, and where&amp;rsquo;s the action? We are looking for an event, hook, and closest action in one, maybe two, sentences. When in doubt, start with combat.&lt;/p>
-&lt;h3 id="outline-potential-scenes-hahahugoshortcode16s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-potential-scenes-hahahugoshortcode14s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
 &lt;p>Write down a short list of scenes that &lt;strong>might&lt;/strong> occur in your game. Only write down as much as you need to prime your brain. These scenes are not in any specific order and may not even occur.&lt;/p>
-&lt;h3 id="define-secrets-and-clues-hahahugoshortcode16s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
+&lt;h3 id="define-secrets-and-clues-hahahugoshortcode14s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
 &lt;p>Write down ten secrets and clues the characters &lt;strong>might&lt;/strong> discover during your game. These secrets and clues bring your campaign to life and reveal small pieces of the story or history of the world. They should be abstract enough to allow you to improvise their discovery during the game.&lt;/p>
-&lt;h3 id="develop-fantastic-locations-hahahugoshortcode16s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
+&lt;h3 id="develop-fantastic-locations-hahahugoshortcode14s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
 &lt;p>Develop one or two locations that the characters &lt;strong>might&lt;/strong> discover for every hour of play you expect to have. These locations need to have an evocative name, three fantastic aspects, and be described using age and size. It is also a good idea to tie some of these locations to the backgrounds of the characters.&lt;/p>
-&lt;h3 id="outline-important-npcs-hahahugoshortcode16s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-important-npcs-hahahugoshortcode14s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
 &lt;p>Prepare a few NPCs that the characters &lt;strong>might&lt;/strong> discover and will drive the game session and the adventure. Improvise others during the game. NPC outlines should be brief and include a name, connection to the adventure, and a character archetype.&lt;/p>
-&lt;h3 id="choose-relevant-monsters-hahahugoshortcode16s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
+&lt;h3 id="choose-relevant-monsters-hahahugoshortcode14s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
 &lt;p>Make a list of monsters the characters &lt;strong>might&lt;/strong> encounter that make sense for the story, situation, and location of your game. Don&amp;rsquo;t tie these monsters to any specific location or situation. Instead, improvise encounters based on the story and situation during the game. For boss fights, remember to account for character capabilities without negating those capabilities.&lt;/p>
-&lt;h3 id="select-magic-item-rewards-hahahugoshortcode16s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
+&lt;h3 id="select-magic-item-rewards-hahahugoshortcode14s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
 &lt;p>Players love magic items! Regularly ask the players what kinds of items they&amp;rsquo;d like to discover. Use that information to make a list of magic items that the characters &lt;strong>might&lt;/strong> discover during your game. When it fits the story, drop an item into the game. You can also drop in random magic items for some variability. You can tie magic items to the story by connecting them to quests, secrets, or clues.&lt;/p>
 &lt;h2 id="adventuremd">adventure.md&lt;/h2>
 &lt;p>The Lazy Dungeon Master&amp;rsquo;s Checklist should easily fit on a single page. Here is a markdown template for your next session!&lt;/p>
