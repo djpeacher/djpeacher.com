@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>https://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Generating social share images with Hugo</title><link>https://www.djpeacher.com/posts/generating-social-share-images-with-hugo/</link><pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/generating-social-share-images-with-hugo/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>https://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Alamo Drafthouse 2023</title><link>https://www.djpeacher.com/posts/alamo-drafthouse-2023/</link><pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/alamo-drafthouse-2023/</guid><description>
+&lt;p>55 movies this year&amp;hellip;nearly double last!&lt;/p>
+&lt;ul>
+&lt;li>M3GAN&lt;/li>
+&lt;li>Mulholland Dr. (2001)&lt;/li>
+&lt;li>Skinamarink 🫣&lt;/li>
+&lt;li>Broker&lt;/li>
+&lt;li>Infinity Pool Uncut&lt;/li>
+&lt;li>Everything Everywhere All at Once (2022)&lt;/li>
+&lt;li>Knock at the Cabin&lt;/li>
+&lt;li>Ant-Man and the Wasp: Quantumania&lt;/li>
+&lt;li>Cocaine Bear&lt;/li>
+&lt;li>Scream VI&lt;/li>
+&lt;li>Dungeon &amp;amp; Dragons: Honor Among Thieves 🎲&lt;/li>
+&lt;li>The Super Mario Bros. Movie&lt;/li>
+&lt;li>Beau is Afraid&lt;/li>
+&lt;li>Suzume (Subtitled)&lt;/li>
+&lt;li>Renfield&lt;/li>
+&lt;li>Evil Dead Rise&lt;/li>
+&lt;li>Guardians of the Galaxy Vol. 3&lt;/li>
+&lt;li>Mother! (2017)&lt;/li>
+&lt;li>The Boogeyman&lt;/li>
+&lt;li>Transformers: Rise of the Beasts&lt;/li>
+&lt;li>Past Lives&lt;/li>
+&lt;li>The Flash&lt;/li>
+&lt;li>Spider-Man: Across the Spider-Verse&lt;/li>
+&lt;li>Asteroid City&lt;/li>
+&lt;li>Flux Gourmet (2022)&lt;/li>
+&lt;li>Joy Ride&lt;/li>
+&lt;li>No Hard Feelings&lt;/li>
+&lt;li>Insidious: The Red Door&lt;/li>
+&lt;li>Oppenheimer&lt;/li>
+&lt;li>Talk To Me&lt;/li>
+&lt;li>Barbie&lt;/li>
+&lt;li>Haunted Mansion (2023)&lt;/li>
+&lt;li>Teenage Mutant Ninja Turtles: Mutant Mayhem&lt;/li>
+&lt;li>Strays&lt;/li>
+&lt;li>Oldboy (2003)&lt;/li>
+&lt;li>Bottoms&lt;/li>
+&lt;li>A Haunting in Venice&lt;/li>
+&lt;li>The Nun II&lt;/li>
+&lt;li>Eyes Wide Shut (1999)&lt;/li>
+&lt;li>Saw X&lt;/li>
+&lt;li>Strange Way of Life (2023) + The Human Voice (2020)&lt;/li>
+&lt;li>The Creator&lt;/li>
+&lt;li>The Exorcist: Believer&lt;/li>
+&lt;li>When Evil Lurks&lt;/li>
+&lt;li>Cat Person&lt;/li>
+&lt;li>The Exorcist (1973)&lt;/li>
+&lt;li>Killers of the Flower Moon&lt;/li>
+&lt;li>Priscilla&lt;/li>
+&lt;li>The Hunger Games: The Ballad of Songbirds &amp;amp; Snakes&lt;/li>
+&lt;li>Saltburn&lt;/li>
+&lt;li>Elf (2003)&lt;/li>
+&lt;li>Napoleon (70mm)&lt;/li>
+&lt;li>Poor Things&lt;/li>
+&lt;li>Wonka&lt;/li>
+&lt;li>The Boy and the Heron (Dubbed)&lt;/li>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20Alamo%20Drafthouse%202023">Reply via email</a></description></item><item><title>Generating social share images with Hugo</title><link>https://www.djpeacher.com/posts/generating-social-share-images-with-hugo/</link><pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/generating-social-share-images-with-hugo/</guid><description>
 &lt;p>Aaro Luomanen, &lt;a href="https://aarol.dev/posts/hugo-og-image/">Generating OpenGraph images with Hugo&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>Have you ever shared a link somewhere and wondered where those little preview images of websites come from? Well if you didn’t know, they are called OpenGraph tags&amp;hellip;I managed to generate some sweet og:images using Hugo’s image manipulation tools.&lt;/p>
@@ -2446,21 +2504,21 @@ folder: public
 &lt;li>&lt;a href="#choose-relevant-monsters">Choose relevant monsters&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#select-magic-item-rewards">Select magic item rewards&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="review-the-characters-hahahugoshortcode15s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
+&lt;h3 id="review-the-characters-hahahugoshortcode16s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
 &lt;p>The first thing you need to do is write down the names, backgrounds, motivations, and desires of the characters. Use these notes to prime your brain and tie the characters to the rest of your game.&lt;/p>
-&lt;h3 id="create-a-strong-start-hahahugoshortcode15s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
+&lt;h3 id="create-a-strong-start-hahahugoshortcode16s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
 &lt;p>Set the stage by asking yourself, what&amp;rsquo;s happening, what&amp;rsquo;s the point, and where&amp;rsquo;s the action? We are looking for an event, hook, and closest action in one, maybe two, sentences. When in doubt, start with combat.&lt;/p>
-&lt;h3 id="outline-potential-scenes-hahahugoshortcode15s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-potential-scenes-hahahugoshortcode16s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
 &lt;p>Write down a short list of scenes that &lt;strong>might&lt;/strong> occur in your game. Only write down as much as you need to prime your brain. These scenes are not in any specific order and may not even occur.&lt;/p>
-&lt;h3 id="define-secrets-and-clues-hahahugoshortcode15s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
+&lt;h3 id="define-secrets-and-clues-hahahugoshortcode16s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
 &lt;p>Write down ten secrets and clues the characters &lt;strong>might&lt;/strong> discover during your game. These secrets and clues bring your campaign to life and reveal small pieces of the story or history of the world. They should be abstract enough to allow you to improvise their discovery during the game.&lt;/p>
-&lt;h3 id="develop-fantastic-locations-hahahugoshortcode15s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
+&lt;h3 id="develop-fantastic-locations-hahahugoshortcode16s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
 &lt;p>Develop one or two locations that the characters &lt;strong>might&lt;/strong> discover for every hour of play you expect to have. These locations need to have an evocative name, three fantastic aspects, and be described using age and size. It is also a good idea to tie some of these locations to the backgrounds of the characters.&lt;/p>
-&lt;h3 id="outline-important-npcs-hahahugoshortcode15s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-important-npcs-hahahugoshortcode16s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
 &lt;p>Prepare a few NPCs that the characters &lt;strong>might&lt;/strong> discover and will drive the game session and the adventure. Improvise others during the game. NPC outlines should be brief and include a name, connection to the adventure, and a character archetype.&lt;/p>
-&lt;h3 id="choose-relevant-monsters-hahahugoshortcode15s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
+&lt;h3 id="choose-relevant-monsters-hahahugoshortcode16s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
 &lt;p>Make a list of monsters the characters &lt;strong>might&lt;/strong> encounter that make sense for the story, situation, and location of your game. Don&amp;rsquo;t tie these monsters to any specific location or situation. Instead, improvise encounters based on the story and situation during the game. For boss fights, remember to account for character capabilities without negating those capabilities.&lt;/p>
-&lt;h3 id="select-magic-item-rewards-hahahugoshortcode15s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
+&lt;h3 id="select-magic-item-rewards-hahahugoshortcode16s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
 &lt;p>Players love magic items! Regularly ask the players what kinds of items they&amp;rsquo;d like to discover. Use that information to make a list of magic items that the characters &lt;strong>might&lt;/strong> discover during your game. When it fits the story, drop an item into the game. You can also drop in random magic items for some variability. You can tie magic items to the story by connecting them to quests, secrets, or clues.&lt;/p>
 &lt;h2 id="adventuremd">adventure.md&lt;/h2>
 &lt;p>The Lazy Dungeon Master&amp;rsquo;s Checklist should easily fit on a single page. Here is a markdown template for your next session!&lt;/p>
