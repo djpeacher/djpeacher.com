@@ -8,4 +8,4 @@ lastmod: 2023-12-20
 This is a [now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too!
 {{< /notice >}}
 
-I'm living in Austin, TX with my wife and four cats, and we recently celebrated our first wedding anniversary with a belated [trip to Italy](/posts/italy/)! I'm working for The Texas Tribune as a full-stack software engineer. I'm working my way through Candlekeep Mysteries as the DM for our group. My wife and I are playing a lot of Baldur's Gate 3 🎲
+I'm still living in Austin with my wife and four cats! We celebrated our first wedding anniversary with a belated [trip to Italy](/posts/italy/)! I'm working for The Texas Tribune as a full-stack software engineer. I discovered digital library cards and have been plowing through various audiobooks and ebooks! I'm DM'ing Candlekeep Mysteries for my wife and friends.
