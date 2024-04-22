@@ -1,4 +1,323 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Jonathan Peacher</title><link>https://www.djpeacher.com/posts/</link><description>Recent content in Posts on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Tue, 06 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Trying out the Vision Pro</title><link>https://www.djpeacher.com/posts/trying-out-the-vision-pro/</link><pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/trying-out-the-vision-pro/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Jonathan Peacher</title><link>https://www.djpeacher.com/posts/</link><description>Recent content in Posts on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Sun, 21 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>PyTexas 2024</title><link>https://www.djpeacher.com/posts/pytexas-2024/</link><pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/pytexas-2024/</guid><description>
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#day-1">Day 1&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#keynote-the-design-of-everyday-apis">Keynote: The Design of Everyday APIs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#python-code-vs-pythonic-code">Python Code vs Pythonic Code&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#containercraft-mastering-efficient-integration-testing">ContainerCraft: Mastering Efficient Integration Testing&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#anarchy-to-order---organizing-assorted-data-with-python-and-llms">Anarchy to Order - Organizing Assorted Data with Python and LLMs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#lessons-learned-maintaining-open-source-python-projects">Lessons Learned Maintaining Open-Source Python Projects&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#working-with-audio-in-python">Working with Audio in Python&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#rest-easy-with-jupyrest">Rest Easy with Jupyrest&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#iterate-iterate-iterate">Iterate, Iterate, Iterate!&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#voice-computing-with-python-in-jupyter-notebooks">Voice Computing with Python in Jupyter Notebooks&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#lightning-talks">Lightning Talks&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#day-2">Day 2&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#keynote-thriving-with-python">Keynote: Thriving with Python&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#20-goto-10-how-to-make-scrolling-ascii-art">20 GOTO 10: How to Make Scrolling ASCII Art&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#system-design-on-easy-mode">System Design on Easy Mode&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#building-efficient-containers-for-python-applications">Building Efficient Containers for Python Applications&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#always-use-sets">Always Use Sets&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#oh-the-methods-you-can-make-by-dunder-seuss">Oh the (Methods) You Can (Make): By Dunder Seuss&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#sanely-working-with-legacy-code">Sanely Working With Legacy Code&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#lightning-talks-1">Lightning Talks&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;h2 id="day-1">Day 1&lt;/h2>
+&lt;h3 id="keynote-the-design-of-everyday-apis">Keynote: The Design of Everyday APIs&lt;/h3>
+&lt;ul>
+&lt;li>The Design of Everyday Things - Don Norman&lt;/li>
+&lt;li>Good API design is &lt;strong>intuitive&lt;/strong>, &lt;strong>flexible&lt;/strong>, and &lt;strong>simple&lt;/strong>.&lt;/li>
+&lt;li>Intuitive:
+&lt;ul>
+&lt;li>Use domain nomenclature&lt;/li>
+&lt;li>Clumsy naming hints at clumsy abstractions&lt;/li>
+&lt;li>Provide symmetry&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Flexible:
+&lt;ul>
+&lt;li>Provide sane defaults&lt;/li>
+&lt;li>Minimize repetition&lt;/li>
+&lt;li>Be predictable and precise&lt;/li>
+&lt;li>Let users be lazy&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Simple:
+&lt;ul>
+&lt;li>Provide composable functions&lt;/li>
+&lt;li>Leverage language idioms&lt;/li>
+&lt;li>Provide convenience&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Provide a good README:
+&lt;pre tabindex="0">&lt;code># README
+## Installation
+## Get Started
+## Learn More
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;/ul>
+&lt;h3 id="python-code-vs-pythonic-code">Python Code vs Pythonic Code&lt;/h3>
+&lt;ul>
+&lt;li>Experts &amp;ldquo;recognize&amp;rdquo;, beginners &amp;ldquo;reason&amp;rdquo;&lt;/li>
+&lt;li>Python Power Moves
+&lt;ul>
+&lt;li>Decorators&lt;/li>
+&lt;li>Comprehensions&lt;/li>
+&lt;li>Generators&lt;/li>
+&lt;li>Slicing&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Why is python hard?
+&lt;ul>
+&lt;li>Python code != Pythonic code&lt;/li>
+&lt;li>Python code != &amp;lt;any other language&amp;rsquo;s concepts&amp;gt;&lt;/li>
+&lt;li>Python is (too) easy&lt;/li>
+&lt;li>What memory&lt;/li>
+&lt;li>Python needs &lt;em>lots&lt;/em> of testing&lt;/li>
+&lt;li>All about those libraries&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="containercraft-mastering-efficient-integration-testing">ContainerCraft: Mastering Efficient Integration Testing&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://testcontainers.com/">https://testcontainers.com/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="anarchy-to-order---organizing-assorted-data-with-python-and-llms">Anarchy to Order - Organizing Assorted Data with Python and LLMs&lt;/h3>
+&lt;ul>
+&lt;li>Links in a graph are not enough, we need to label those links to create a knowledge graph.&lt;/li>
+&lt;li>Graph databases (like &lt;a href="https://github.com/neo4j/neo4j">Neo4j&lt;/a>) does this!
+&lt;ul>
+&lt;li>No FKs, very flexible, label relationships&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="lessons-learned-maintaining-open-source-python-projects">Lessons Learned Maintaining Open-Source Python Projects&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>What is a maintainer?&lt;/strong> They keep projects operational and in an appropriate condition.&lt;/li>
+&lt;li>&lt;strong>What is not a maintainer?&lt;/strong> Someone who adds new features or fixes issues&amp;hellip;that would be a contributor.&lt;/li>
+&lt;li>&lt;strong>What does a maintainer do?&lt;/strong>
+&lt;ul>
+&lt;li>Ensures package and information about it is discoverable.&lt;/li>
+&lt;li>Ensures consumption and contribution is familiar.&lt;/li>
+&lt;li>Sets ground rules (hint: CODE_OF_CONDUCT.md).&lt;/li>
+&lt;li>Triages incoming bug reports (hint: use templates).&lt;/li>
+&lt;li>Grooms and rejects incoming feature requests (hint: think of long-term good rather than short term gain).&lt;/li>
+&lt;li>Reviews pull request (hint: require tests, changelogs, ruff code reformatting, and commit squashing when needed).&lt;/li>
+&lt;li>Cuts releases with a changelog (hint: think small and often. have version and deprecation policies).&lt;/li>
+&lt;li>Thanks contributors.&lt;/li>
+&lt;li>Ensures the projects architecture remains consistent.&lt;/li>
+&lt;li>Lets other people help (hint: CONTRIBUTING.md).&lt;/li>
+&lt;li>Ensure CI remains green and fast (hint: don&amp;rsquo;t forget to rebuild docs, add pull request warning).&lt;/li>
+&lt;li>Fosters community (hint: issue tracker, slack/discord, social, stack overflow).&lt;/li>
+&lt;li>Mentors and convert good contributors to co-maintainers.&lt;/li>
+&lt;li>Ensures they can keep doing it (hint: priorities mental and physical health, it&amp;rsquo;s okay to step away)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Why be a maintainer?&lt;/strong>
+&lt;ul>
+&lt;li>Looks good on your CV.&lt;/li>
+&lt;li>Gives opportunities to meet people.&lt;/li>
+&lt;li>Mentoring experience.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>How to be a maintainer?&lt;/strong>
+&lt;ul>
+&lt;li>Pick something you use actively use on a semi-regular basis.&lt;/li>
+&lt;li>Read the docs in detail.&lt;/li>
+&lt;li>Practice by trying to solve an issue and reach out to the current maintainer.&lt;/li>
+&lt;li>Know communication is deceptively hard, we all have different communication styles.
+&lt;ul>
+&lt;li>Be polite and patient, and give people the benefit of doubt.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="working-with-audio-in-python">Working with Audio in Python&lt;/h3>
+&lt;ul>
+&lt;li>Very cool lesson on how digital audio works.&lt;/li>
+&lt;li>&lt;a href="https://github.com/spotify/pedalboard">Pedalboard&lt;/a> provides useful abstractions around audio files.&lt;/li>
+&lt;li>Always process audio files as a stream to handle any size of input.&lt;/li>
+&lt;li>Use &lt;a href="https://github.com/numpy/numpy">numpy&lt;/a> for faster operations.&lt;/li>
+&lt;/ul>
+&lt;h3 id="rest-easy-with-jupyrest">Rest Easy with Jupyrest&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/microsoft/jupyrest">Jupyrest&lt;/a> turns jupyter notebooks into json APIs.&lt;/li>
+&lt;/ul>
+&lt;h3 id="iterate-iterate-iterate">Iterate, Iterate, Iterate!&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/more-itertools/more-itertools">more-itertools&lt;/a> 😍&lt;/li>
+&lt;/ul>
+&lt;h3 id="voice-computing-with-python-in-jupyter-notebooks">Voice Computing with Python in Jupyter Notebooks&lt;/h3>
+&lt;ul>
+&lt;li>You can write faster (and avoid RSI) by using your voice instead of typing.&lt;/li>
+&lt;li>You can be even faster by defining text replacement commands (e.g. &amp;ldquo;insert code block&amp;rdquo;).&lt;/li>
+&lt;/ul>
+&lt;h3 id="lightning-talks">Lightning Talks&lt;/h3>
+&lt;ul>
+&lt;li>You can make LLMs smarter by feeding it new data in the system prompt.&lt;/li>
+&lt;li>&lt;a href="https://www.recurse.com/social-rules">Recurse Center: Social Rules&lt;/a>
+&lt;ul>
+&lt;li>No well-actually’s&lt;/li>
+&lt;li>No feigned surprise&lt;/li>
+&lt;li>No backseat driving&lt;/li>
+&lt;li>No subtle -isms&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>How to give a talk:
+&lt;ol>
+&lt;li>Be Engaging&lt;/li>
+&lt;li>Be Loud&lt;/li>
+&lt;li>Be Big (60pt font)&lt;/li>
+&lt;li>Be Prepared&lt;/li>
+&lt;li>Be Considerate&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Tips for giving a good talk:
+&lt;ul>
+&lt;li>Tell a story&lt;/li>
+&lt;li>Find your signposts (break points)&lt;/li>
+&lt;li>Practice&lt;/li>
+&lt;li>The energy you give is energy you get&lt;/li>
+&lt;li>expect (and prepare for) the unexpected&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="day-2">Day 2&lt;/h2>
+&lt;h3 id="keynote-thriving-with-python">Keynote: Thriving with Python&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>How do we succeed in a polyglot world?&lt;/strong> Choose the best language for the job.&lt;/li>
+&lt;li>&lt;strong>How do we avoid the pitfalls?&lt;/strong>
+&lt;ul>
+&lt;li>Avoid chasing speed. All languages have tradeoffs.&lt;/li>
+&lt;li>Avoid swooning at shiny. All languages will eventually bloat.&lt;/li>
+&lt;li>Avoid hype and FOMO. Pretend it&amp;rsquo;s the news.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="20-goto-10-how-to-make-scrolling-ascii-art">20 GOTO 10: How to Make Scrolling ASCII Art&lt;/h3>
+&lt;blockquote>
+&lt;p>There will always be new forms of art.&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>What is &lt;a href="https://scrollart.org/">Scroll Art&lt;/a>?
+&lt;ul>
+&lt;li>ASCII art&lt;/li>
+&lt;li>Terminal/console output of monospace text&lt;/li>
+&lt;li>Previously printed text scrolls up (and only up)&lt;/li>
+&lt;li>You can&amp;rsquo;t erase the text you&amp;rsquo;ve printed&lt;/li>
+&lt;li>You can&amp;rsquo;t move the cursor to arbitrary XY coordinates&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Why?
+&lt;ul>
+&lt;li>Easy to understand. Input is text, output is text.&lt;/li>
+&lt;li>Any computer can run them.&lt;/li>
+&lt;li>Easily accessible. Can us any language.&lt;/li>
+&lt;li>Easy way to start learning/teaching code.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="system-design-on-easy-mode">System Design on Easy Mode&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Durable execution&lt;/strong> is a higher level of abstraction for writing functions that are guaranteed to complete running.&lt;/li>
+&lt;li>How? &lt;a href="https://temporal.io/">https://temporal.io/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="building-efficient-containers-for-python-applications">Building Efficient Containers for Python Applications&lt;/h3>
+&lt;ul>
+&lt;li>Docker + Python is initially straightforward, but tricky to optimize.&lt;/li>
+&lt;li>Why should I care?
+&lt;ul>
+&lt;li>Slower build times lead to decreased productivity and ability to fail fast.&lt;/li>
+&lt;li>Larger image sizes lead to more storage requirements and longer download times.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>How do we measure efficiency?
+&lt;ul>
+&lt;li>Image size&lt;/li>
+&lt;li>Build time (no cache)&lt;/li>
+&lt;li>Rebuild (no change)&lt;/li>
+&lt;li>Rebuild time (with code change)&lt;/li>
+&lt;li>Rebuild time (with dependency change)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Possible Optimizations:
+&lt;ul>
+&lt;li>Layer Ordering: Order matters. Ex. install deps before copying code.&lt;/li>
+&lt;li>Pin deps &amp;amp; Disable pip cache: Deps have deps, pin those too. You don&amp;rsquo;t need pip to cache inside an image.&lt;/li>
+&lt;li>Smaller Base Image: Removes build tools saving storage. Install only needed tools, install, and then remove tools.&lt;/li>
+&lt;li>Combining Layers: Chaining commands on same &lt;code>RUN&lt;/code> can save on storage.&lt;/li>
+&lt;li>Multi-stage Build: Using &lt;code>builder&lt;/code> stage to create venv to use in &lt;code>runner&lt;/code> stage saves space from discarded &lt;code>builder&lt;/code> stage.&lt;/li>
+&lt;li>Cache mount: Saving pip cache on your machine saves redownloads.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Other best practices:
+&lt;ul>
+&lt;li>Always use a Python-specific .dockerignore file&lt;/li>
+&lt;li>Separate Dev and Prod dependencies&lt;/li>
+&lt;li>Use the latest Debian/Ubuntu/Redhat distribution to base from&lt;/li>
+&lt;li>Try to avoid specifying the Python patch version in the base image&lt;/li>
+&lt;li>Use CPU specific vs GPU specific image&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="always-use-sets">Always Use Sets&lt;/h3>
+&lt;ul>
+&lt;li>Always use sets because they&amp;hellip;
+&lt;ul>
+&lt;li>clearly communicate expectations&lt;/li>
+&lt;li>prevents unexpected drift in behavior&lt;/li>
+&lt;li>allow us to write algorithms based on discrete math&lt;/li>
+&lt;li>add clarity to the code through set operations&lt;/li>
+&lt;li>are faster than lists or tuples - even when 10 items are changed&lt;/li>
+&lt;li>worthwhile even if you have to sort or combine later&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Except&amp;hellip;
+&lt;ul>
+&lt;li>when you are running out of memory&lt;/li>
+&lt;li>when you have a dict that is equally idiomatic&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="oh-the-methods-you-can-make-by-dunder-seuss">Oh the (Methods) You Can (Make): By Dunder Seuss&lt;/h3>
+&lt;ul>
+&lt;li>Very charming story time summary of the many&amp;hellip;many dunder methods! ❤️&lt;/li>
+&lt;/ul>
+&lt;h3 id="sanely-working-with-legacy-code">Sanely Working With Legacy Code&lt;/h3>
+&lt;ul>
+&lt;li>What is legacy code?
+&lt;ul>
+&lt;li>Code without documentation.&lt;/li>
+&lt;li>Code without tests.&lt;/li>
+&lt;li>Code with poorly written test that is hard to change.&lt;/li>
+&lt;li>Code which you are not familiar with and often not your idea.&lt;/li>
+&lt;li>Valuable code which you are not comfortable changing.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>The Plan
+&lt;ul>
+&lt;li>Begin with understanding the code we want to improve&lt;/li>
+&lt;li>Check that our understanding of the code matches what is expected&lt;/li>
+&lt;li>Add tests&lt;/li>
+&lt;li>Make changes&lt;/li>
+&lt;li>Communicate our changes to the code effective to others on our team&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="lightning-talks-1">Lightning Talks&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://flet.dev/">flet.dev&lt;/a>, multi-platform apps&lt;/li>
+&lt;li>Use &lt;code>watchfiles&lt;/code> to auto run dev commands on save (e.g. linting, testing, etc.)&lt;/li>
+&lt;li>Game Jam == Hackathon for games&lt;/li>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20PyTexas%202024">Reply via email</a></description></item><item><title>Trying out the Vision Pro</title><link>https://www.djpeacher.com/posts/trying-out-the-vision-pro/</link><pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/trying-out-the-vision-pro/</guid><description>
 &lt;p>Being the Apple nerd that I am, when I found out there was going to be demos of the Vision Pro, I had to sign up! It’s not everyday you get to try out a new Apple product.&lt;/p>
 &lt;p>Here are some of my first impressions:&lt;/p>
 &lt;p>&lt;em>Display&lt;/em>. I was a little disappointed with the display. Don’t get me wrong, it’s a really good display, but I was really hoping Apple would have come out swinging with something orders of magnitude better than the competition. I found the display too dim and pixelated, slow at times, and contained too much &lt;a href="https://en.wikipedia.org/wiki/Vignetting">vignetting&lt;/a> around the edges. I think the only thing that saved the display for me were the prescription eye inserts.&lt;/p>
@@ -2532,21 +2851,21 @@ folder: public
 &lt;li>&lt;a href="#choose-relevant-monsters">Choose relevant monsters&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#select-magic-item-rewards">Select magic item rewards&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="review-the-characters-hahahugoshortcode16s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
+&lt;h3 id="review-the-characters-hahahugoshortcode12s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
 &lt;p>The first thing you need to do is write down the names, backgrounds, motivations, and desires of the characters. Use these notes to prime your brain and tie the characters to the rest of your game.&lt;/p>
-&lt;h3 id="create-a-strong-start-hahahugoshortcode16s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
+&lt;h3 id="create-a-strong-start-hahahugoshortcode12s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
 &lt;p>Set the stage by asking yourself, what&amp;rsquo;s happening, what&amp;rsquo;s the point, and where&amp;rsquo;s the action? We are looking for an event, hook, and closest action in one, maybe two, sentences. When in doubt, start with combat.&lt;/p>
-&lt;h3 id="outline-potential-scenes-hahahugoshortcode16s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-potential-scenes-hahahugoshortcode12s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
 &lt;p>Write down a short list of scenes that &lt;strong>might&lt;/strong> occur in your game. Only write down as much as you need to prime your brain. These scenes are not in any specific order and may not even occur.&lt;/p>
-&lt;h3 id="define-secrets-and-clues-hahahugoshortcode16s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
+&lt;h3 id="define-secrets-and-clues-hahahugoshortcode12s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
 &lt;p>Write down ten secrets and clues the characters &lt;strong>might&lt;/strong> discover during your game. These secrets and clues bring your campaign to life and reveal small pieces of the story or history of the world. They should be abstract enough to allow you to improvise their discovery during the game.&lt;/p>
-&lt;h3 id="develop-fantastic-locations-hahahugoshortcode16s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
+&lt;h3 id="develop-fantastic-locations-hahahugoshortcode12s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
 &lt;p>Develop one or two locations that the characters &lt;strong>might&lt;/strong> discover for every hour of play you expect to have. These locations need to have an evocative name, three fantastic aspects, and be described using age and size. It is also a good idea to tie some of these locations to the backgrounds of the characters.&lt;/p>
-&lt;h3 id="outline-important-npcs-hahahugoshortcode16s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-important-npcs-hahahugoshortcode12s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
 &lt;p>Prepare a few NPCs that the characters &lt;strong>might&lt;/strong> discover and will drive the game session and the adventure. Improvise others during the game. NPC outlines should be brief and include a name, connection to the adventure, and a character archetype.&lt;/p>
-&lt;h3 id="choose-relevant-monsters-hahahugoshortcode16s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
+&lt;h3 id="choose-relevant-monsters-hahahugoshortcode12s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
 &lt;p>Make a list of monsters the characters &lt;strong>might&lt;/strong> encounter that make sense for the story, situation, and location of your game. Don&amp;rsquo;t tie these monsters to any specific location or situation. Instead, improvise encounters based on the story and situation during the game. For boss fights, remember to account for character capabilities without negating those capabilities.&lt;/p>
-&lt;h3 id="select-magic-item-rewards-hahahugoshortcode16s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
+&lt;h3 id="select-magic-item-rewards-hahahugoshortcode12s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
 &lt;p>Players love magic items! Regularly ask the players what kinds of items they&amp;rsquo;d like to discover. Use that information to make a list of magic items that the characters &lt;strong>might&lt;/strong> discover during your game. When it fits the story, drop an item into the game. You can also drop in random magic items for some variability. You can tie magic items to the story by connecting them to quests, secrets, or clues.&lt;/p>
 &lt;h2 id="adventuremd">adventure.md&lt;/h2>
 &lt;p>The Lazy Dungeon Master&amp;rsquo;s Checklist should easily fit on a single page. Here is a markdown template for your next session!&lt;/p>
