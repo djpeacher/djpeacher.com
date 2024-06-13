@@ -1,4 +1,64 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>https://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Fri, 24 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloudy with a chance of totality</title><link>https://www.djpeacher.com/posts/cloudy-with-a-chance-of-totality/</link><pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/cloudy-with-a-chance-of-totality/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>https://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Thu, 13 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>What caught my eye at WWDC 2024</title><link>https://www.djpeacher.com/posts/what-caught-my-eye-at-wwdc-2024/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/what-caught-my-eye-at-wwdc-2024/</guid><description>
+&lt;p>Well that was probably the most interesting WWDC in a while. Not saying it was great or perfect, but definitely a turning point. That intro was amazing though! Here&amp;rsquo;s what caught my eye along with my gut reaction:&lt;/p>
+&lt;h2 id="ios">iOS&lt;/h2>
+&lt;ul>
+&lt;li>Custom home screen icon placement - &lt;strong>&lt;em>Wow, finally.&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Custom home screen icon tints - &lt;strong>&lt;em>Hmm, not quite right.&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Ability to lock apps - &lt;strong>&lt;em>Nice, but also sherlocks this as a paid app feature.&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Ability to hide apps - &lt;strong>&lt;em>Sus stuff aside, hiding utility apps is a win.&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>iMessage RCS support - &lt;strong>&lt;em>Finally.&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>iMessage rich text - &lt;strong>&lt;em>Oh cool.&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>iMessage emoji tapbacks - &lt;strong>&lt;em>Finally. Yes. Perfect.&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>iMessage scheduled texts - &lt;strong>&lt;em>Finally. Yes. Perfect.&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>iMessage over satelite - &lt;strong>&lt;em>Oh cool.&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Airpods shake/nod for accept/decline - &lt;strong>&lt;em>Oh cool. That won&amp;rsquo;t misfire at all&amp;hellip;&lt;/em>&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h2 id="watchos">watchOS&lt;/h2>
+&lt;ul>
+&lt;li>Live activities - &lt;strong>&lt;em>Oh cool. Also cool that it reuses dynamic island activities.&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Vitals app - &lt;strong>&lt;em>Oh cool, hopefully useful.&lt;/em>&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h2 id="ipados">iPadOS&lt;/h2>
+&lt;ul>
+&lt;li>SharePlay drawing - &lt;strong>&lt;em>Oh cool. I need this on iOS!&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>SharePlay control - &lt;strong>&lt;em>Oh cool. I need this on iOS!&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Calculator app - &lt;strong>&lt;em>Wow, finally.&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Math notes with calculations, variables, and graphs - &lt;strong>&lt;em>Oh wow, yes! Amazing! Wish I had this in college.&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Smart script for cleaning hand writing, pasting, and spell checking - &lt;strong>&lt;em>Oh wow, yes! My hand writing is miserable.&lt;/em>&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h2 id="macos">macOS&lt;/h2>
+&lt;ul>
+&lt;li>iPhone Mirroring - &lt;strong>&lt;em>Oh wow, love it, now add this to SharePlay!&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>iPhone Notifications - &lt;strong>&lt;em>Oh wow, yes! I&amp;rsquo;ve wanted this before!&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Tile snapping - &lt;strong>&lt;em>Wow, finally.&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Passwords App - &lt;strong>&lt;em>Wow, finally.&lt;/em>&lt;/strong>
+&lt;ul>
+&lt;li>&lt;em>I don&amp;rsquo;t think this sherlocks existing password managers. I think the main win here is that this is going to get more people to actually use a password manger who would never before. I’m not switching anytime soon, but this is still a big win and step forward for online security generally.&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="visionos">visionOS&lt;/h2>
+&lt;ul>
+&lt;li>Widescreen mac mirroring - &lt;strong>&lt;em>Nice, I&amp;rsquo;m sure others will love this.&lt;/em>&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h2 id="tvos">tvOS&lt;/h2>
+&lt;ul>
+&lt;li>InSight - &lt;strong>&lt;em>Eh, cool I guess.&lt;/em>&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h2 id="apple-intelligence">Apple Intelligence&lt;/h2>
+&lt;ul>
+&lt;li>AI == Apple Intelligence - &lt;strong>&lt;em>Haha, of course they find a way to steal AI!&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Website summaries - &lt;strong>&lt;em>Nice!&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Priority notification - &lt;strong>&lt;em>Oh cool, this is going to be useful!&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Writing tools - &lt;strong>&lt;em>Cool, but this does mean more content will be generated.&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Image editing - &lt;strong>&lt;em>Love it!&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Image generations - &lt;strong>&lt;em>Cool tech&amp;hellip;bad ethics. Also creepy.&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Context aware and conversational Siri with more integrated actions - &lt;strong>&lt;em>YES! Gold star! What Siri was meant to be! Can&amp;rsquo;t wait!&lt;/em>&lt;/strong> ⭐️&lt;/li>
+&lt;li>Privacy cloud compute - &lt;strong>&lt;em>Good!&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Genmoji - &lt;strong>&lt;em>Haha, I love this!&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>Audio transcribing &lt;strong>&lt;em>Oh cool!&lt;/em>&lt;/strong>&lt;/li>
+&lt;li>ChatGPT - 🤮&lt;/li>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20What%20caught%20my%20eye%20at%20WWDC%202024">Reply via email</a></description></item><item><title>Cloudy with a chance of totality</title><link>https://www.djpeacher.com/posts/cloudy-with-a-chance-of-totality/</link><pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/cloudy-with-a-chance-of-totality/</guid><description>
 &lt;p>After watching &lt;a href="https://youtu.be/M3-WlpJFcKM?si=pI_PoiISA6j4Xpnz&amp;amp;t=22">the first lightning talk at DjangoCon US last year&lt;/a>, I was inspired to see and photograph the next eclipse&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>, and wouldn&amp;rsquo;t you know it, my house was just outside the path of totality, so I had to see it. Plus I was recently gifted some hand-me-down camera lenses and one of them happened to be 250mm. Just enough to get some good pictures!&lt;/p>
 &lt;p>Fast forward to the day of the eclipse. I had all my gear ready and when I checked the weather for the day&amp;hellip;cloudy with a chance of &lt;del>totality&lt;/del> rain. I didn&amp;rsquo;t let that stop me, however, and I was hopeful that the clouds would part. So I drove to my viewing spot in the path of totality and set up shop.&lt;/p>
 &lt;p>As predicted, it was very cloudy, and I struggled to find the right settings for the camera, but was able to dial it in just enough when the sun poked through the clouds. As the time drew near&amp;hellip;and then past&amp;hellip;I was worried I wasn&amp;rsquo;t going to see anything, but a few minutes later the clouds parted just enough for me to get some, I think, amazing amateur shots! It was really fun watching the moon make its way across the sun.&lt;/p>
