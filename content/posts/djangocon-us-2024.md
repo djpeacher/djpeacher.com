@@ -1,7 +1,7 @@
 ---
 title: "DjangoCon US 2024"
 description: ""
-date: 2024-09-23
+date: 2024-09-27
 tags: []
 categories: []
 ---
