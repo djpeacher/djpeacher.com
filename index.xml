@@ -1,4 +1,334 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>https://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Now</title><link>https://www.djpeacher.com/now/</link><pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/now/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>https://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Mon, 23 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>DjangoCon US 2024</title><link>https://www.djpeacher.com/posts/djangocon-us-2024/</link><pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/djangocon-us-2024/</guid><description>
+&lt;p>I wasn&amp;rsquo;t able to attend in person this year or take too many notes due to work, but I was able to enjoy a few great talks in between things! Here&amp;rsquo;s to next year! 🤞🏼&lt;/p>
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#day-1">Day 1&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#choosing-wisely-spa-vs-htmx-for-your-next-web-project">Choosing Wisely: SPA vs. HTMX for Your Next Web Project&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#error-culture">Error Culture&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#product-101-for-techies-and-tech-teams">Product 101 for Techies and Tech Teams&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#passkeys-your-password-free-future">Passkeys: Your password-free future&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#the-art-of-not-redirecting">The art of (not) redirecting&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#-django-the-web-framework-that-changed-my-life">❤️ Django: the web framework that changed my life&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#day-2">Day 2&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#keynote-how-to-be-a-developer-and-other-lies-we-tell-ourselves">Keynote: How To Be A Developer and Other Lies We Tell Ourselves&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#lightning-talks">Lightning Talks&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#-finding-20">❤️ Finding 2.0&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#you-got-that-nice-tech-salary-now-what">You got that nice tech salary, now what?&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#how-to-design-and-implement-extensible-software-with-plugins">How to design and implement extensible software with plugins&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#day-3">Day 3&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#-keynote-the-fellowship-of-the-pony">❤️ Keynote: The Fellowship of the Pony&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#-hidden-gems-of-django-5x">❤️ Hidden gems of Django 5.x&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#-a-brief-history-of-django">❤️ A Brief History of Django&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#django-user-model-past-present-and-future">Django User Model: Past, Present, and Future&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#api-maybe-bootstrapping-a-web-application-circa-2024">API Maybe: Bootstrapping a Web Application circa 2024&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;h2 id="day-1">Day 1&lt;/h2>
+&lt;h3 id="choosing-wisely-spa-vs-htmx-for-your-next-web-project">Choosing Wisely: SPA vs. HTMX for Your Next Web Project&lt;/h3>
+&lt;ul>
+&lt;li>Three options: Static HTML, Progressive Enhancements, SPA
+&lt;ul>
+&lt;li>← more server data, short user sessions&lt;/li>
+&lt;li>→ more client data, long user sessions&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Static HTML is fast and simple, but not very interactive.&lt;/li>
+&lt;li>SPAs are interactive, but expensive and complicated.&lt;/li>
+&lt;li>PEs provide the best of both worlds.&lt;/li>
+&lt;/ul>
+&lt;h3 id="error-culture">Error Culture&lt;/h3>
+&lt;blockquote>
+&lt;p>[Error culture] accepts error notifications and ignores them, encouraging a reactive firefighting culture, instead of a proactive culture of problem-solving.&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>Are you in error culture?
+&lt;ul>
+&lt;li>Is your deleted items filled with lots of emails from no-reply style email addresses that you didn&amp;rsquo;t even read&amp;hellip;you just deleted them?&lt;/li>
+&lt;li>Do you have a rule that just deletes emails?&lt;/li>
+&lt;li>Do you get alerts and have no idea why or what to do about them?&lt;/li>
+&lt;li>Are people rewarded for waiting until problems they knew about are big enough to alert everyone about and then resolve them?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Don&amp;rsquo;t take down a fence unless you know why it was put up. &amp;ndash; Chesterson&amp;rsquo;s Fence&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>Ask yourself these questions when managing alerts:
+&lt;ul>
+&lt;li>Is the alert important?&lt;/li>
+&lt;li>Is the alert actionable?&lt;/li>
+&lt;li>Who is the alert for?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Venn Diagram:
+&lt;ul>
+&lt;li>!Actionable + Important + Right People = Confusion&lt;/li>
+&lt;li>Actionable + !Important + Right People = Time Waste&lt;/li>
+&lt;li>Actionable + Important + !Right People = Frustration&lt;/li>
+&lt;li>Actionable + Important + Right People = Best Case&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="product-101-for-techies-and-tech-teams">Product 101 for Techies and Tech Teams&lt;/h3>
+&lt;ul>
+&lt;li>What your PM really wants:
+&lt;ul>
+&lt;li>A team that is interested in the strategy&lt;/li>
+&lt;li>Genuine interest in solving problems&lt;/li>
+&lt;li>Empathy with end users&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>PM responsibilities
+&lt;ul>
+&lt;li>Empower their team with strategic insights&lt;/li>
+&lt;li>Translate strategy into proposed actionables&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Team responsibilities
+&lt;ul>
+&lt;li>Take interest in the strategy&lt;/li>
+&lt;li>Pay attention to details and quality&lt;/li>
+&lt;li>Care for the user experience, from start to finish&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Becoming a product-minded engineer
+&lt;ul>
+&lt;li>Be interested in the business and its user base&lt;/li>
+&lt;li>Stay curious&lt;/li>
+&lt;li>Provide relevant input&lt;/li>
+&lt;li>Be an ally to your PM&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="passkeys-your-password-free-future">Passkeys: Your password-free future&lt;/h3>
+&lt;ul>
+&lt;li>django-allauth now supports passkeys!&lt;/li>
+&lt;/ul>
+&lt;p>The magical incatation! 🪄&lt;/p>
+&lt;pre tabindex="0">&lt;code># The main setup.
+MFA_SUPPORTED_TYPES = [&amp;#34;webauthn&amp;#34;]
+MFA_PASSKEY_LOGIN_ENABLED = True
+MFA_WEBAUTHN_ALLOW_INSECURE_ORIGIN = True
+MFA_PASSKEY_SIGNUP_ENABLED = True
+# Allow email recovery.
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = &amp;#34;mandatory&amp;#34;
+ACCOUNT_EMAIL_VERIFICATION_BY_CODE_ENABLED = True
+# Allow creation without username.
+ACCOUNT_AUTHENTICATION_METHOD = &amp;#34;email&amp;#34;
+ACCOUNT_USERNAME_REQUIRED = False
+&lt;/code>&lt;/pre>&lt;h3 id="the-art-of-not-redirecting">The art of (not) redirecting&lt;/h3>
+&lt;blockquote>
+&lt;p>Your URLs are a mirror to the soul of your code.&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>Naming is hard, so:
+&lt;ul>
+&lt;li>Design as best as you can.&lt;/li>
+&lt;li>Break as little as possible.&lt;/li>
+&lt;li>Avoid 404s at all costs.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Status codes that will help!
+&lt;pre tabindex="0">&lt;code>302_FOUND
+301_MOVED_PERMANENTLY
+307_TEMPORARY_REDIRECT
+308_PERMANENT_REDIRECT
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>The art of not redirecting (or how to design URLs):
+&lt;ul>
+&lt;li>&lt;strong>Readable&lt;/strong>: People will read them, some will even type them by memory.
+&lt;ul>
+&lt;li>❌ &lt;code>/u/d/1/c/~q/page&lt;/code>&lt;/li>
+&lt;li>✔️ &lt;code>/user/profile&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Predictable&lt;/strong>: People should be able to guess-navigate your site by rewriting
+URLs.
+&lt;ul>
+&lt;li>✔️ &lt;code>/user/profile/&lt;/code>&lt;/li>
+&lt;li>✔️ &lt;code>/user/settings/&lt;/code>&lt;/li>
+&lt;li>✔️ &lt;code>/user/security/&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Concise&lt;/strong>: Straight to the point, no redundancy.
+&lt;ul>
+&lt;li>❌ &lt;code>/user/user-settings/security-settings&lt;/code>&lt;/li>
+&lt;li>✔️ &lt;code>/user/settings/security&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Complete&lt;/strong>: Every part must lead to somewhere, or at least redirect to somewhere else.
+&lt;ul>
+&lt;li>✔️ &lt;code>/user/settings/security&lt;/code>&lt;/li>
+&lt;li>✔️ &lt;code>/user/settings&lt;/code>&lt;/li>
+&lt;li>✔️ &lt;code>/user&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Consistent&lt;/strong>: Single language, single style.
+&lt;ul>
+&lt;li>❌ &lt;code>/current_user/Seguridad/multi-factorAuth&lt;/code>&lt;/li>
+&lt;li>✔️ &lt;code>/current-user/security/multi-factor-auth&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Beautifu&lt;/strong>l: Well at least not ugly.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>The art of redirecting (or how to avoid 404s at all costs):
+&lt;ul>
+&lt;li>&lt;code>django.contrib.redirects&lt;/code>, but that only works for static routes.&lt;/li>
+&lt;li>For dynamic routes, they first used a middleware that mapped their old namespace to a new namespace.&lt;/li>
+&lt;li>This only works for a single mapping, but what if you want to change them again? They implemented &lt;code>path(..., old=[...])&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="-django-the-web-framework-that-changed-my-life">❤️ Django: the web framework that changed my life&lt;/h3>
+&lt;h2 id="day-2">Day 2&lt;/h2>
+&lt;h3 id="keynote-how-to-be-a-developer-and-other-lies-we-tell-ourselves">Keynote: How To Be A Developer and Other Lies We Tell Ourselves&lt;/h3>
+&lt;blockquote>
+&lt;p>To be a better developer is to be a better person to others.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="lightning-talks">Lightning Talks&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/django-commons">Django Commons&lt;/a>!&lt;/li>
+&lt;li>&lt;a href="https://vurt.org/articles/twelve-rules/">Twelve rules for job applications and interviews&lt;/a> by Daniele Procida&lt;/li>
+&lt;/ul>
+&lt;h3 id="-finding-20">❤️ Finding 2.0&lt;/h3>
+&lt;ul>
+&lt;li>The hesitation to call your project 2.0 is a lot like imposter syndrome.&lt;/li>
+&lt;li>How to find your 2.0:
+&lt;ul>
+&lt;li>&lt;strong>Intention&lt;/strong>. Intention to find your 2.0.&lt;/li>
+&lt;li>&lt;strong>Assessment&lt;/strong>. Where is your starting point.&lt;/li>
+&lt;li>&lt;strong>Vision&lt;/strong>. What is your destination.&lt;/li>
+&lt;li>&lt;strong>Acceptance&lt;/strong>. Prepare for breaking changes.&lt;/li>
+&lt;li>&lt;strong>Plan&lt;/strong>. Plan each version with a release date!&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>When to start?&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Now is better than never &amp;ndash; The Zen of Python&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>Change is coming. Change is inevitable. The question isn&amp;rsquo;t if we are going to change, but how. Because we&amp;rsquo;re either going to change by design or by disaster &amp;ndash; Annie Leonard&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>Don&amp;rsquo;t wait for disaster, 2.0 is not sacred.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="you-got-that-nice-tech-salary-now-what">You got that nice tech salary, now what?&lt;/h3>
+&lt;ul>
+&lt;li>You got that nice tech salary, now what?
+&lt;ul>
+&lt;li>Set financial goals&lt;/li>
+&lt;li>Determine savings needs (&lt;a href="https://nesteggly.com">nesteggly.com&lt;/a>)&lt;/li>
+&lt;li>Determine current expenses (last 3-6 months) (&lt;a href="https://ynab.com">ynab.com&lt;/a>)
+&lt;ul>
+&lt;li>Determine fixed, adjustable, and unexpected expenses.&lt;/li>
+&lt;li>Be aware of &amp;ldquo;Hedonic Treadmill&amp;rdquo;: A permanent increase in expenses for a temporary increase in pleasure.
+&lt;ul>
+&lt;li>Example: buying better coffee and not being able to go back&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Define a monthly budget&lt;/li>
+&lt;li>Check-in every 3-6 months&lt;/li>
+&lt;li>Max out your tax-advantaged accounts&lt;/li>
+&lt;li>Index funds&lt;/li>
+&lt;li>Term life insurance&lt;/li>
+&lt;li>Check out /r/personalfinance/wiki&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>But where do we put our money to grow?!
+&lt;ul>
+&lt;li>Not your savings account (but do have 3-6 months of expenses there!)&lt;/li>
+&lt;li>Use any employer match.&lt;/li>
+&lt;li>Max out tax-advantaged accounts
+&lt;ul>
+&lt;li>Roth/Traditional IRA&lt;/li>
+&lt;li>401k&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Purchase low-cost, broad market, index funds.
+&lt;ul>
+&lt;li>50% US stocks&lt;/li>
+&lt;li>30% International stocks&lt;/li>
+&lt;li>20% Bonds&lt;/li>
+&lt;li>Stocks = Higher reward, riskier&lt;/li>
+&lt;li>Bonds = Lower reward, less risky&lt;/li>
+&lt;li>Index funds track a collection of stocks index funds that outperform managed funds.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="how-to-design-and-implement-extensible-software-with-plugins">How to design and implement extensible software with plugins&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/pytest-dev/pluggy">pluggy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://djp.readthedocs.io/en/latest/">DJP: Django Plugins&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="day-3">Day 3&lt;/h2>
+&lt;h3 id="-keynote-the-fellowship-of-the-pony">❤️ Keynote: The Fellowship of the Pony&lt;/h3>
+&lt;h3 id="-hidden-gems-of-django-5x">❤️ Hidden gems of Django 5.x&lt;/h3>
+&lt;h3 id="-a-brief-history-of-django">❤️ A Brief History of Django&lt;/h3>
+&lt;h3 id="django-user-model-past-present-and-future">Django User Model: Past, Present, and Future&lt;/h3>
+&lt;blockquote>
+&lt;p>&amp;ldquo;We should push the user model back to being Django&amp;rsquo;s responsibility and address that leak.&amp;rdquo; &amp;ndash; Carlton Gibson&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>Universal Concerns
+&lt;ul>
+&lt;li>User Contract&lt;/li>
+&lt;li>Separation of authentication from authorization&lt;/li>
+&lt;li>Forms&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>django-allauth solves many of these problems.&lt;/li>
+&lt;li>My Current Approach
+&lt;ol>
+&lt;li>Custom user model&lt;/li>
+&lt;li>User profile model on &amp;lsquo;User&amp;rsquo;&lt;/li>
+&lt;li>Use &amp;lsquo;django-allauth&amp;rsquo; 3rd party package&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>Custom user model (empty) + django-allauth = my preference&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="api-maybe-bootstrapping-a-web-application-circa-2024">API Maybe: Bootstrapping a Web Application circa 2024&lt;/h3>
+&lt;blockquote>
+&lt;p>Lean into Django.&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>Django has always been the framework for perfectionists with deadlines. When those deadlines are financial, all the more so. Django is the perfect web framework for our post-zero percent interest rate world.&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>Locality of Behavior is a starting point not a destination&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>[Locality of behavior] is a tool, not an end in itself.&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>Tools to achieve locality of behavior:
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/carltongibson/neapolitan">Neapolitan&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/carltongibson/django-template-partials">django-template-partials&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://htmx.org/">HTMX&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://alpinejs.dev/">Alpine.js&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://tailwindcss.com/">Tailwind CSS&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20DjangoCon%20US%202024">Reply via email</a></description></item><item><title>Now</title><link>https://www.djpeacher.com/now/</link><pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/now/</guid><description>
 &lt;p class="notice">
 This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com/about">you should make one&lt;/a>, too!
 &lt;/p>
@@ -1129,46 +1459,46 @@ objects = Custommanager.from_queryset(CustomerQuerySet()) # advanced usage
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>Selenium&lt;/th>
-&lt;th>Cypress&lt;/th>
-&lt;th>Playwright&lt;/th>
+&lt;th style="text-align: left">Selenium&lt;/th>
+&lt;th style="text-align: left">Cypress&lt;/th>
+&lt;th style="text-align: left">Playwright&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Popular among testers&lt;/td>
-&lt;td>Popular among developers&lt;/td>
-&lt;td>So hot right now&lt;/td>
+&lt;td style="text-align: left">Popular among testers&lt;/td>
+&lt;td style="text-align: left">Popular among developers&lt;/td>
+&lt;td style="text-align: left">So hot right now&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>C#, Java, JavaScript, Ruby, Python&lt;/td>
-&lt;td>JavaScript only&lt;/td>
-&lt;td>C#, Java, JavaScript, Python&lt;/td>
+&lt;td style="text-align: left">C#, Java, JavaScript, Ruby, Python&lt;/td>
+&lt;td style="text-align: left">JavaScript only&lt;/td>
+&lt;td style="text-align: left">C#, Java, JavaScript, Python&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>All major full browsers&lt;/td>
-&lt;td>Chrome, Edge, Firefox, Electron&lt;/td>
-&lt;td>Chromium+, Firefox, WebKit&lt;/td>
+&lt;td style="text-align: left">All major full browsers&lt;/td>
+&lt;td style="text-align: left">Chrome, Edge, Firefox, Electron&lt;/td>
+&lt;td style="text-align: left">Chromium+, Firefox, WebKit&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>WebDriver protocol&lt;/td>
-&lt;td>In-browser lavaScript&lt;/td>
-&lt;td>Debug protocols&lt;/td>
+&lt;td style="text-align: left">WebDriver protocol&lt;/td>
+&lt;td style="text-align: left">In-browser lavaScript&lt;/td>
+&lt;td style="text-align: left">Debug protocols&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Just a tool - requires a framework&lt;/td>
-&lt;td>Full, modern framework&lt;/td>
-&lt;td>Full. modern framework&lt;/td>
+&lt;td style="text-align: left">Just a tool - requires a framework&lt;/td>
+&lt;td style="text-align: left">Full, modern framework&lt;/td>
+&lt;td style="text-align: left">Full. modern framework&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Can be slow/flaky if waiting is poor&lt;/td>
-&lt;td>Visual execution but can be slow&lt;/td>
-&lt;td>Typically the fastest execution&lt;/td>
+&lt;td style="text-align: left">Can be slow/flaky if waiting is poor&lt;/td>
+&lt;td style="text-align: left">Visual execution but can be slow&lt;/td>
+&lt;td style="text-align: left">Typically the fastest execution&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Open source, standards, &amp;amp; gov&lt;/td>
-&lt;td>Open source from Cypress&lt;/td>
-&lt;td>Open source from Microsoft&lt;/td>
+&lt;td style="text-align: left">Open source, standards, &amp;amp; gov&lt;/td>
+&lt;td style="text-align: left">Open source from Cypress&lt;/td>
+&lt;td style="text-align: left">Open source from Microsoft&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -2958,21 +3288,21 @@ folder: public
 &lt;li>&lt;a href="#choose-relevant-monsters">Choose relevant monsters&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#select-magic-item-rewards">Select magic item rewards&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="review-the-characters-hahahugoshortcode13s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
+&lt;h3 id="review-the-characters-hahahugoshortcode16s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
 &lt;p>The first thing you need to do is write down the names, backgrounds, motivations, and desires of the characters. Use these notes to prime your brain and tie the characters to the rest of your game.&lt;/p>
-&lt;h3 id="create-a-strong-start-hahahugoshortcode13s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
+&lt;h3 id="create-a-strong-start-hahahugoshortcode16s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
 &lt;p>Set the stage by asking yourself, what&amp;rsquo;s happening, what&amp;rsquo;s the point, and where&amp;rsquo;s the action? We are looking for an event, hook, and closest action in one, maybe two, sentences. When in doubt, start with combat.&lt;/p>
-&lt;h3 id="outline-potential-scenes-hahahugoshortcode13s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-potential-scenes-hahahugoshortcode16s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
 &lt;p>Write down a short list of scenes that &lt;strong>might&lt;/strong> occur in your game. Only write down as much as you need to prime your brain. These scenes are not in any specific order and may not even occur.&lt;/p>
-&lt;h3 id="define-secrets-and-clues-hahahugoshortcode13s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
+&lt;h3 id="define-secrets-and-clues-hahahugoshortcode16s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
 &lt;p>Write down ten secrets and clues the characters &lt;strong>might&lt;/strong> discover during your game. These secrets and clues bring your campaign to life and reveal small pieces of the story or history of the world. They should be abstract enough to allow you to improvise their discovery during the game.&lt;/p>
-&lt;h3 id="develop-fantastic-locations-hahahugoshortcode13s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
+&lt;h3 id="develop-fantastic-locations-hahahugoshortcode16s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
 &lt;p>Develop one or two locations that the characters &lt;strong>might&lt;/strong> discover for every hour of play you expect to have. These locations need to have an evocative name, three fantastic aspects, and be described using age and size. It is also a good idea to tie some of these locations to the backgrounds of the characters.&lt;/p>
-&lt;h3 id="outline-important-npcs-hahahugoshortcode13s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-important-npcs-hahahugoshortcode16s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
 &lt;p>Prepare a few NPCs that the characters &lt;strong>might&lt;/strong> discover and will drive the game session and the adventure. Improvise others during the game. NPC outlines should be brief and include a name, connection to the adventure, and a character archetype.&lt;/p>
-&lt;h3 id="choose-relevant-monsters-hahahugoshortcode13s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
+&lt;h3 id="choose-relevant-monsters-hahahugoshortcode16s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
 &lt;p>Make a list of monsters the characters &lt;strong>might&lt;/strong> encounter that make sense for the story, situation, and location of your game. Don&amp;rsquo;t tie these monsters to any specific location or situation. Instead, improvise encounters based on the story and situation during the game. For boss fights, remember to account for character capabilities without negating those capabilities.&lt;/p>
-&lt;h3 id="select-magic-item-rewards-hahahugoshortcode13s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
+&lt;h3 id="select-magic-item-rewards-hahahugoshortcode16s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
 &lt;p>Players love magic items! Regularly ask the players what kinds of items they&amp;rsquo;d like to discover. Use that information to make a list of magic items that the characters &lt;strong>might&lt;/strong> discover during your game. When it fits the story, drop an item into the game. You can also drop in random magic items for some variability. You can tie magic items to the story by connecting them to quests, secrets, or clues.&lt;/p>
 &lt;h2 id="adventuremd">adventure.md&lt;/h2>
 &lt;p>The Lazy Dungeon Master&amp;rsquo;s Checklist should easily fit on a single page. Here is a markdown template for your next session!&lt;/p>
