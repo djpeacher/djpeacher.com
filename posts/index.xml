@@ -1455,46 +1455,46 @@ objects = Custommanager.from_queryset(CustomerQuerySet()) # advanced usage
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Selenium&lt;/th>
-&lt;th style="text-align: left">Cypress&lt;/th>
-&lt;th style="text-align: left">Playwright&lt;/th>
+&lt;th>Selenium&lt;/th>
+&lt;th>Cypress&lt;/th>
+&lt;th>Playwright&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">Popular among testers&lt;/td>
-&lt;td style="text-align: left">Popular among developers&lt;/td>
-&lt;td style="text-align: left">So hot right now&lt;/td>
+&lt;td>Popular among testers&lt;/td>
+&lt;td>Popular among developers&lt;/td>
+&lt;td>So hot right now&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">C#, Java, JavaScript, Ruby, Python&lt;/td>
-&lt;td style="text-align: left">JavaScript only&lt;/td>
-&lt;td style="text-align: left">C#, Java, JavaScript, Python&lt;/td>
+&lt;td>C#, Java, JavaScript, Ruby, Python&lt;/td>
+&lt;td>JavaScript only&lt;/td>
+&lt;td>C#, Java, JavaScript, Python&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">All major full browsers&lt;/td>
-&lt;td style="text-align: left">Chrome, Edge, Firefox, Electron&lt;/td>
-&lt;td style="text-align: left">Chromium+, Firefox, WebKit&lt;/td>
+&lt;td>All major full browsers&lt;/td>
+&lt;td>Chrome, Edge, Firefox, Electron&lt;/td>
+&lt;td>Chromium+, Firefox, WebKit&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">WebDriver protocol&lt;/td>
-&lt;td style="text-align: left">In-browser lavaScript&lt;/td>
-&lt;td style="text-align: left">Debug protocols&lt;/td>
+&lt;td>WebDriver protocol&lt;/td>
+&lt;td>In-browser lavaScript&lt;/td>
+&lt;td>Debug protocols&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Just a tool - requires a framework&lt;/td>
-&lt;td style="text-align: left">Full, modern framework&lt;/td>
-&lt;td style="text-align: left">Full. modern framework&lt;/td>
+&lt;td>Just a tool - requires a framework&lt;/td>
+&lt;td>Full, modern framework&lt;/td>
+&lt;td>Full. modern framework&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Can be slow/flaky if waiting is poor&lt;/td>
-&lt;td style="text-align: left">Visual execution but can be slow&lt;/td>
-&lt;td style="text-align: left">Typically the fastest execution&lt;/td>
+&lt;td>Can be slow/flaky if waiting is poor&lt;/td>
+&lt;td>Visual execution but can be slow&lt;/td>
+&lt;td>Typically the fastest execution&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Open source, standards, &amp;amp; gov&lt;/td>
-&lt;td style="text-align: left">Open source from Cypress&lt;/td>
-&lt;td style="text-align: left">Open source from Microsoft&lt;/td>
+&lt;td>Open source, standards, &amp;amp; gov&lt;/td>
+&lt;td>Open source from Cypress&lt;/td>
+&lt;td>Open source from Microsoft&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -3284,21 +3284,21 @@ folder: public
 &lt;li>&lt;a href="#choose-relevant-monsters">Choose relevant monsters&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#select-magic-item-rewards">Select magic item rewards&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="review-the-characters-hahahugoshortcode14s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
+&lt;h3 id="review-the-characters-hahahugoshortcode11s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
 &lt;p>The first thing you need to do is write down the names, backgrounds, motivations, and desires of the characters. Use these notes to prime your brain and tie the characters to the rest of your game.&lt;/p>
-&lt;h3 id="create-a-strong-start-hahahugoshortcode14s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
+&lt;h3 id="create-a-strong-start-hahahugoshortcode11s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
 &lt;p>Set the stage by asking yourself, what&amp;rsquo;s happening, what&amp;rsquo;s the point, and where&amp;rsquo;s the action? We are looking for an event, hook, and closest action in one, maybe two, sentences. When in doubt, start with combat.&lt;/p>
-&lt;h3 id="outline-potential-scenes-hahahugoshortcode14s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-potential-scenes-hahahugoshortcode11s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
 &lt;p>Write down a short list of scenes that &lt;strong>might&lt;/strong> occur in your game. Only write down as much as you need to prime your brain. These scenes are not in any specific order and may not even occur.&lt;/p>
-&lt;h3 id="define-secrets-and-clues-hahahugoshortcode14s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
+&lt;h3 id="define-secrets-and-clues-hahahugoshortcode11s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
 &lt;p>Write down ten secrets and clues the characters &lt;strong>might&lt;/strong> discover during your game. These secrets and clues bring your campaign to life and reveal small pieces of the story or history of the world. They should be abstract enough to allow you to improvise their discovery during the game.&lt;/p>
-&lt;h3 id="develop-fantastic-locations-hahahugoshortcode14s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
+&lt;h3 id="develop-fantastic-locations-hahahugoshortcode11s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
 &lt;p>Develop one or two locations that the characters &lt;strong>might&lt;/strong> discover for every hour of play you expect to have. These locations need to have an evocative name, three fantastic aspects, and be described using age and size. It is also a good idea to tie some of these locations to the backgrounds of the characters.&lt;/p>
-&lt;h3 id="outline-important-npcs-hahahugoshortcode14s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-important-npcs-hahahugoshortcode11s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
 &lt;p>Prepare a few NPCs that the characters &lt;strong>might&lt;/strong> discover and will drive the game session and the adventure. Improvise others during the game. NPC outlines should be brief and include a name, connection to the adventure, and a character archetype.&lt;/p>
-&lt;h3 id="choose-relevant-monsters-hahahugoshortcode14s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
+&lt;h3 id="choose-relevant-monsters-hahahugoshortcode11s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
 &lt;p>Make a list of monsters the characters &lt;strong>might&lt;/strong> encounter that make sense for the story, situation, and location of your game. Don&amp;rsquo;t tie these monsters to any specific location or situation. Instead, improvise encounters based on the story and situation during the game. For boss fights, remember to account for character capabilities without negating those capabilities.&lt;/p>
-&lt;h3 id="select-magic-item-rewards-hahahugoshortcode14s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
+&lt;h3 id="select-magic-item-rewards-hahahugoshortcode11s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
 &lt;p>Players love magic items! Regularly ask the players what kinds of items they&amp;rsquo;d like to discover. Use that information to make a list of magic items that the characters &lt;strong>might&lt;/strong> discover during your game. When it fits the story, drop an item into the game. You can also drop in random magic items for some variability. You can tie magic items to the story by connecting them to quests, secrets, or clues.&lt;/p>
 &lt;h2 id="adventuremd">adventure.md&lt;/h2>
 &lt;p>The Lazy Dungeon Master&amp;rsquo;s Checklist should easily fit on a single page. Here is a markdown template for your next session!&lt;/p>
