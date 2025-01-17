@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>https://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Fri, 27 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>DjangoCon US 2024</title><link>https://www.djpeacher.com/posts/djangocon-us-2024/</link><pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/djangocon-us-2024/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>https://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Fri, 17 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Alamo Drafthouse 2024</title><link>https://www.djpeacher.com/posts/alamo-drafthouse-2024/</link><pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/alamo-drafthouse-2024/</guid><description>
+&lt;p>Wow, only 11 movies this year at the Alamo Drafthouse! Turns out having your first child heavily reduces the time you have to go see movies 😫 This will probably be my last Alamo Drafthouse post since we canceled our Season Pass&amp;hellip;for now.&lt;/p>
+&lt;ul>
+&lt;li>Mean Girls (2024)&lt;/li>
+&lt;li>The Zone of Interest&lt;/li>
+&lt;li>Anatomy of a Fall&lt;/li>
+&lt;li>Drive-Away Dolls&lt;/li>
+&lt;li>Dune: Part Two&lt;/li>
+&lt;li>Immaculate&lt;/li>
+&lt;li>Civil War&lt;/li>
+&lt;li>Kingdom of the Planet of the Apes&lt;/li>
+&lt;li>Babes&lt;/li>
+&lt;li>Inside Out 2&lt;/li>
+&lt;li>Bad Boy: Ride or Die&lt;/li>
+&lt;/ul>
+&lt;p>Here are the previous two years if you&amp;rsquo;re curious. Till next time Alamo 🍿&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.djpeacher.com/posts/alamo-drafthouse-2022/">Alamo Drafthouse 2022&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.djpeacher.com/posts/alamo-drafthouse-2023/">Alamo Drafthouse 2023&lt;/a>&lt;/li>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20Alamo%20Drafthouse%202024">Reply via email</a></description></item><item><title>DjangoCon US 2024</title><link>https://www.djpeacher.com/posts/djangocon-us-2024/</link><pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/djangocon-us-2024/</guid><description>
 &lt;p>I wasn&amp;rsquo;t able to attend in person this year or take too many notes due to work, but I was able to enjoy a few great talks in between things! Here&amp;rsquo;s to next year! 🤞🏼&lt;/p>
 &lt;nav id="TableOfContents">
 &lt;ul>
@@ -332,7 +351,7 @@ URLs.
 &lt;p class="notice">
 This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com/about">you should make one&lt;/a>, too!
 &lt;/p>
-&lt;p>Learning how to take care of a tiny human and be a father. Adjusting to the humidity. In a war with mosquitoes. Catching up on my feeds. Getting organized. Working at The Texas Tribune as a full-stack software engineer..&lt;/p><a href="mailto: reply@djpeacher.com?subject=Re:%20Now">Reply via email</a></description></item><item><title>What caught my eye at WWDC 2024</title><link>https://www.djpeacher.com/posts/what-caught-my-eye-at-wwdc-2024/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/what-caught-my-eye-at-wwdc-2024/</guid><description>
+&lt;p>Learning how to take care of a tiny human and be a father. Adjusting to the humidity. In a war with mosquitoes. Catching up on my feeds. Getting organized. Working at The Texas Tribune as a full-stack software engineer.&lt;/p><a href="mailto: reply@djpeacher.com?subject=Re:%20Now">Reply via email</a></description></item><item><title>What caught my eye at WWDC 2024</title><link>https://www.djpeacher.com/posts/what-caught-my-eye-at-wwdc-2024/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/what-caught-my-eye-at-wwdc-2024/</guid><description>
 &lt;p>Well that was probably the most interesting WWDC in a while. Not saying it was great or perfect, but definitely a turning point. That intro was amazing though! Here&amp;rsquo;s what caught my eye along with my gut reaction:&lt;/p>
 &lt;h2 id="ios">iOS&lt;/h2>
 &lt;ul>
@@ -3288,21 +3307,21 @@ folder: public
 &lt;li>&lt;a href="#choose-relevant-monsters">Choose relevant monsters&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#select-magic-item-rewards">Select magic item rewards&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="review-the-characters-hahahugoshortcode11s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
+&lt;h3 id="review-the-characters-hahahugoshortcode15s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
 &lt;p>The first thing you need to do is write down the names, backgrounds, motivations, and desires of the characters. Use these notes to prime your brain and tie the characters to the rest of your game.&lt;/p>
-&lt;h3 id="create-a-strong-start-hahahugoshortcode11s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
+&lt;h3 id="create-a-strong-start-hahahugoshortcode15s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
 &lt;p>Set the stage by asking yourself, what&amp;rsquo;s happening, what&amp;rsquo;s the point, and where&amp;rsquo;s the action? We are looking for an event, hook, and closest action in one, maybe two, sentences. When in doubt, start with combat.&lt;/p>
-&lt;h3 id="outline-potential-scenes-hahahugoshortcode11s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-potential-scenes-hahahugoshortcode15s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
 &lt;p>Write down a short list of scenes that &lt;strong>might&lt;/strong> occur in your game. Only write down as much as you need to prime your brain. These scenes are not in any specific order and may not even occur.&lt;/p>
-&lt;h3 id="define-secrets-and-clues-hahahugoshortcode11s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
+&lt;h3 id="define-secrets-and-clues-hahahugoshortcode15s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
 &lt;p>Write down ten secrets and clues the characters &lt;strong>might&lt;/strong> discover during your game. These secrets and clues bring your campaign to life and reveal small pieces of the story or history of the world. They should be abstract enough to allow you to improvise their discovery during the game.&lt;/p>
-&lt;h3 id="develop-fantastic-locations-hahahugoshortcode11s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
+&lt;h3 id="develop-fantastic-locations-hahahugoshortcode15s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
 &lt;p>Develop one or two locations that the characters &lt;strong>might&lt;/strong> discover for every hour of play you expect to have. These locations need to have an evocative name, three fantastic aspects, and be described using age and size. It is also a good idea to tie some of these locations to the backgrounds of the characters.&lt;/p>
-&lt;h3 id="outline-important-npcs-hahahugoshortcode11s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-important-npcs-hahahugoshortcode15s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
 &lt;p>Prepare a few NPCs that the characters &lt;strong>might&lt;/strong> discover and will drive the game session and the adventure. Improvise others during the game. NPC outlines should be brief and include a name, connection to the adventure, and a character archetype.&lt;/p>
-&lt;h3 id="choose-relevant-monsters-hahahugoshortcode11s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
+&lt;h3 id="choose-relevant-monsters-hahahugoshortcode15s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
 &lt;p>Make a list of monsters the characters &lt;strong>might&lt;/strong> encounter that make sense for the story, situation, and location of your game. Don&amp;rsquo;t tie these monsters to any specific location or situation. Instead, improvise encounters based on the story and situation during the game. For boss fights, remember to account for character capabilities without negating those capabilities.&lt;/p>
-&lt;h3 id="select-magic-item-rewards-hahahugoshortcode11s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
+&lt;h3 id="select-magic-item-rewards-hahahugoshortcode15s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
 &lt;p>Players love magic items! Regularly ask the players what kinds of items they&amp;rsquo;d like to discover. Use that information to make a list of magic items that the characters &lt;strong>might&lt;/strong> discover during your game. When it fits the story, drop an item into the game. You can also drop in random magic items for some variability. You can tie magic items to the story by connecting them to quests, secrets, or clues.&lt;/p>
 &lt;h2 id="adventuremd">adventure.md&lt;/h2>
 &lt;p>The Lazy Dungeon Master&amp;rsquo;s Checklist should easily fit on a single page. Here is a markdown template for your next session!&lt;/p>
