@@ -66,8 +66,7 @@
 &lt;/ul>
 &lt;h3 id="error-culture">Error Culture&lt;/h3>
 &lt;blockquote>
-&lt;p>[Error culture] accepts error notifications and ignores them, encouraging a reactive firefighting culture, instead of a proactive culture of problem-solving.&lt;/p>
-&lt;/blockquote>
+&lt;p>[Error culture] accepts error notifications and ignores them, encouraging a reactive firefighting culture, instead of a proactive culture of problem-solving.&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>Are you in error culture?
 &lt;ul>
@@ -79,8 +78,7 @@
 &lt;/li>
 &lt;/ul>
 &lt;blockquote>
-&lt;p>Don&amp;rsquo;t take down a fence unless you know why it was put up. &amp;ndash; Chesterson&amp;rsquo;s Fence&lt;/p>
-&lt;/blockquote>
+&lt;p>Don&amp;rsquo;t take down a fence unless you know why it was put up. &amp;ndash; Chesterson&amp;rsquo;s Fence&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>Ask yourself these questions when managing alerts:
 &lt;ul>
@@ -148,8 +146,7 @@ ACCOUNT_AUTHENTICATION_METHOD = &amp;#34;email&amp;#34;
 ACCOUNT_USERNAME_REQUIRED = False
 &lt;/code>&lt;/pre>&lt;h3 id="the-art-of-not-redirecting">The art of (not) redirecting&lt;/h3>
 &lt;blockquote>
-&lt;p>Your URLs are a mirror to the soul of your code.&lt;/p>
-&lt;/blockquote>
+&lt;p>Your URLs are a mirror to the soul of your code.&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>Naming is hard, so:
 &lt;ul>
@@ -214,8 +211,7 @@ URLs.
 &lt;h2 id="day-2">Day 2&lt;/h2>
 &lt;h3 id="keynote-how-to-be-a-developer-and-other-lies-we-tell-ourselves">Keynote: How To Be A Developer and Other Lies We Tell Ourselves&lt;/h3>
 &lt;blockquote>
-&lt;p>To be a better developer is to be a better person to others.&lt;/p>
-&lt;/blockquote>
+&lt;p>To be a better developer is to be a better person to others.&lt;/p>&lt;/blockquote>
 &lt;h3 id="lightning-talks">Lightning Talks&lt;/h3>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/django-commons">Django Commons&lt;/a>!&lt;/li>
@@ -236,14 +232,11 @@ URLs.
 &lt;li>When to start?&lt;/li>
 &lt;/ul>
 &lt;blockquote>
-&lt;p>Now is better than never &amp;ndash; The Zen of Python&lt;/p>
-&lt;/blockquote>
+&lt;p>Now is better than never &amp;ndash; The Zen of Python&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>Change is coming. Change is inevitable. The question isn&amp;rsquo;t if we are going to change, but how. Because we&amp;rsquo;re either going to change by design or by disaster &amp;ndash; Annie Leonard&lt;/p>
-&lt;/blockquote>
+&lt;p>Change is coming. Change is inevitable. The question isn&amp;rsquo;t if we are going to change, but how. Because we&amp;rsquo;re either going to change by design or by disaster &amp;ndash; Annie Leonard&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>Don&amp;rsquo;t wait for disaster, 2.0 is not sacred.&lt;/p>
-&lt;/blockquote>
+&lt;p>Don&amp;rsquo;t wait for disaster, 2.0 is not sacred.&lt;/p>&lt;/blockquote>
 &lt;h3 id="you-got-that-nice-tech-salary-now-what">You got that nice tech salary, now what?&lt;/h3>
 &lt;ul>
 &lt;li>You got that nice tech salary, now what?
@@ -302,8 +295,7 @@ URLs.
 &lt;h3 id="-a-brief-history-of-django">❤️ A Brief History of Django&lt;/h3>
 &lt;h3 id="django-user-model-past-present-and-future">Django User Model: Past, Present, and Future&lt;/h3>
 &lt;blockquote>
-&lt;p>&amp;ldquo;We should push the user model back to being Django&amp;rsquo;s responsibility and address that leak.&amp;rdquo; &amp;ndash; Carlton Gibson&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;We should push the user model back to being Django&amp;rsquo;s responsibility and address that leak.&amp;rdquo; &amp;ndash; Carlton Gibson&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>Universal Concerns
 &lt;ul>
@@ -326,17 +318,13 @@ URLs.
 &lt;/ul>
 &lt;h3 id="api-maybe-bootstrapping-a-web-application-circa-2024">API Maybe: Bootstrapping a Web Application circa 2024&lt;/h3>
 &lt;blockquote>
-&lt;p>Lean into Django.&lt;/p>
-&lt;/blockquote>
+&lt;p>Lean into Django.&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>Django has always been the framework for perfectionists with deadlines. When those deadlines are financial, all the more so. Django is the perfect web framework for our post-zero percent interest rate world.&lt;/p>
-&lt;/blockquote>
+&lt;p>Django has always been the framework for perfectionists with deadlines. When those deadlines are financial, all the more so. Django is the perfect web framework for our post-zero percent interest rate world.&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>Locality of Behavior is a starting point not a destination&lt;/p>
-&lt;/blockquote>
+&lt;p>Locality of Behavior is a starting point not a destination&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>[Locality of behavior] is a tool, not an end in itself.&lt;/p>
-&lt;/blockquote>
+&lt;p>[Locality of behavior] is a tool, not an end in itself.&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>Tools to achieve locality of behavior:
 &lt;ul>
@@ -347,11 +335,7 @@ URLs.
 &lt;li>&lt;a href="https://tailwindcss.com/">Tailwind CSS&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20DjangoCon%20US%202024">Reply via email</a></description></item><item><title>Now</title><link>https://www.djpeacher.com/now/</link><pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/now/</guid><description>
-&lt;p class="notice">
-This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com/about">you should make one&lt;/a>, too!
-&lt;/p>
-&lt;p>Learning how to take care of a tiny human and be a father. Adjusting to the humidity. In a war with mosquitoes. Catching up on my feeds. Getting organized. Working at The Texas Tribune as a full-stack software engineer.&lt;/p><a href="mailto: reply@djpeacher.com?subject=Re:%20Now">Reply via email</a></description></item><item><title>What caught my eye at WWDC 2024</title><link>https://www.djpeacher.com/posts/what-caught-my-eye-at-wwdc-2024/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/what-caught-my-eye-at-wwdc-2024/</guid><description>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20DjangoCon%20US%202024">Reply via email</a></description></item><item><title>What caught my eye at WWDC 2024</title><link>https://www.djpeacher.com/posts/what-caught-my-eye-at-wwdc-2024/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/what-caught-my-eye-at-wwdc-2024/</guid><description>
 &lt;p>Well that was probably the most interesting WWDC in a while. Not saying it was great or perfect, but definitely a turning point. That intro was amazing though! Here&amp;rsquo;s what caught my eye along with my gut reaction:&lt;/p>
 &lt;h2 id="ios">iOS&lt;/h2>
 &lt;ul>
@@ -660,8 +644,7 @@ This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you h
 &lt;/ul>
 &lt;h3 id="20-goto-10-how-to-make-scrolling-ascii-art">20 GOTO 10: How to Make Scrolling ASCII Art&lt;/h3>
 &lt;blockquote>
-&lt;p>There will always be new forms of art.&lt;/p>
-&lt;/blockquote>
+&lt;p>There will always be new forms of art.&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>What is &lt;a href="https://scrollart.org/">Scroll Art&lt;/a>?
 &lt;ul>
@@ -802,8 +785,7 @@ This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you h
 &lt;/div><a href="mailto: reply@djpeacher.com?subject=Re:%20Get%20a%20virtual%20library%20card">Reply via email</a></description></item><item><title>Store tupperware with their lids on</title><link>https://www.djpeacher.com/posts/store-tupperware-with-their-lids-on/</link><pubDate>Wed, 24 Jan 2024 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/store-tupperware-with-their-lids-on/</guid><description>
 &lt;p>Decluttering at the Speed of Life by Dana K. White&lt;/p>
 &lt;blockquote>
-&lt;p>Store food storage containers with their lids on&amp;hellip;I put lids on containers as I take them out of the dish-washer (or off the dish drainer when I hand wash) and stick them in the cabinet. They don’t nest, so no finagling is required. When I need a container, I grab it. All of it. No searching for a matching lid.&lt;/p>
-&lt;/blockquote>
+&lt;p>Store food storage containers with their lids on&amp;hellip;I put lids on containers as I take them out of the dish-washer (or off the dish drainer when I hand wash) and stick them in the cabinet. They don’t nest, so no finagling is required. When I need a container, I grab it. All of it. No searching for a matching lid.&lt;/p>&lt;/blockquote>
 &lt;p>Finally got around to listening to this book that was recommended by &lt;a href="https://mastodon.social/@webology/110437362488781280">Jeff Triplett on Mastodon&lt;/a>. This tupperware quote is my favorite, and most impactful! My wife and I have only been doing this for about a week and it&amp;rsquo;s already paying dividends.&lt;/p>
 &lt;p>This is the way.&lt;/p><a href="mailto: reply@djpeacher.com?subject=Re:%20Store%20tupperware%20with%20their%20lids%20on">Reply via email</a></description></item><item><title>Alamo Drafthouse 2023</title><link>https://www.djpeacher.com/posts/alamo-drafthouse-2023/</link><pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/alamo-drafthouse-2023/</guid><description>
 &lt;p>55 movies this year&amp;hellip;nearly double &lt;a href="https://www.djpeacher.com/posts//alamo-drafthouse-2022/">last year&lt;/a>!&lt;/p>
@@ -866,8 +848,7 @@ This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and if you h
 &lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20Alamo%20Drafthouse%202023">Reply via email</a></description></item><item><title>Generating social share images with Hugo</title><link>https://www.djpeacher.com/posts/generating-social-share-images-with-hugo/</link><pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/generating-social-share-images-with-hugo/</guid><description>
 &lt;p>Aaro Luomanen, &lt;a href="https://aarol.dev/posts/hugo-og-image/">Generating OpenGraph images with Hugo&lt;/a>&lt;/p>
 &lt;blockquote>
-&lt;p>Have you ever shared a link somewhere and wondered where those little preview images of websites come from? Well if you didn’t know, they are called OpenGraph tags&amp;hellip;I managed to generate some sweet og:images using Hugo’s image manipulation tools.&lt;/p>
-&lt;/blockquote>
+&lt;p>Have you ever shared a link somewhere and wondered where those little preview images of websites come from? Well if you didn’t know, they are called OpenGraph tags&amp;hellip;I managed to generate some sweet og:images using Hugo’s image manipulation tools.&lt;/p>&lt;/blockquote>
 &lt;p>I&amp;rsquo;ve been wanting to setup social share images for a while, but I figured it would be too complicated or time consuming to manage, so I never got around to it. That is, until I found Aaro&amp;rsquo;s blog post! Turns out it is super simple to have Hugo (what this site is built on) generate OpenGraph images for you!&lt;/p>
 &lt;p>Here is what you&amp;rsquo;d see if you shared this post on social media. It&amp;rsquo;s simple, but I like it. Thinking I might add tags to this in the future.&lt;/p>
 &lt;p>&lt;img src="https://www.djpeacher.com/posts/generating-social-share-images-with-hugo/og.png" alt="Simple social share image with a white background and black text. From top to bottom it shows, my name, the publish date, and the post title.">&lt;/p>
@@ -880,11 +861,9 @@ www.youtube.com/feeds/videos.xml?playlist_id=&amp;lt;ID&amp;gt;
 &lt;/code>&lt;/pre><a href="mailto: reply@djpeacher.com?subject=Re:%20YouTube%20RSS">Reply via email</a></description></item><item><title>How does this still work</title><link>https://www.djpeacher.com/posts/how-does-this-still-work/</link><pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/how-does-this-still-work/</guid><description>
 &lt;p>Currently listening to &lt;strong>Life in Code by Ellen Ullman&lt;/strong>, and I&amp;rsquo;m reminded how brittle our digital world is and wonder how it hasn&amp;rsquo;t fallen apart yet 🙃&lt;/p>
 &lt;blockquote>
-&lt;p>“We build our computers the way we build our cities—over time, without a plan, on top of ruins.”&lt;/p>
-&lt;/blockquote>
+&lt;p>“We build our computers the way we build our cities—over time, without a plan, on top of ruins.”&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>“Code and forget, code and forget: programming as a collective exercise in incremental forgetting.”&lt;/p>
-&lt;/blockquote><a href="mailto: reply@djpeacher.com?subject=Re:%20How%20does%20this%20still%20work">Reply via email</a></description></item><item><title>DjangoCon US 2023</title><link>https://www.djpeacher.com/posts/djangocon-us-2023/</link><pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/djangocon-us-2023/</guid><description>
+&lt;p>“Code and forget, code and forget: programming as a collective exercise in incremental forgetting.”&lt;/p>&lt;/blockquote><a href="mailto: reply@djpeacher.com?subject=Re:%20How%20does%20this%20still%20work">Reply via email</a></description></item><item><title>DjangoCon US 2023</title><link>https://www.djpeacher.com/posts/djangocon-us-2023/</link><pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/djangocon-us-2023/</guid><description>
 &lt;nav id="TableOfContents">
 &lt;ul>
 &lt;li>&lt;a href="#day-1">Day 1&lt;/a>
@@ -933,8 +912,7 @@ www.youtube.com/feeds/videos.xml?playlist_id=&amp;lt;ID&amp;gt;
 &lt;h2 id="day-1">Day 1&lt;/h2>
 &lt;h3 id="orientation-and-welcome">Orientation and Welcome&lt;/h3>
 &lt;blockquote>
-&lt;p>&amp;ldquo;I am going to say some words here I don&amp;rsquo;t fully understand&amp;rdquo; &amp;ndash; &lt;a href="https://hachyderm.io/@lacey">@lacey&lt;/a>&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;I am going to say some words here I don&amp;rsquo;t fully understand&amp;rdquo; &amp;ndash; &lt;a href="https://hachyderm.io/@lacey">@lacey&lt;/a>&lt;/p>&lt;/blockquote>
 &lt;h3 id="contributing-to-django-or-how-i-learned-to-stop-worrying-and-just-try-to-fix-an-orm-bug">Contributing to Django or how I learned to stop worrying and just try to fix an ORM Bug&lt;/h3>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=1BFjg9XtptM&amp;amp;ab_channel=DjangoConUS">Your Web Framework Needs You! &amp;ndash; Carlton Gibson&lt;/a>&lt;/li>
@@ -989,8 +967,7 @@ www.youtube.com/feeds/videos.xml?playlist_id=&amp;lt;ID&amp;gt;
 &lt;li>Reliable history tracking everywhere with no changes to your application code.&lt;/li>
 &lt;li>Structured history models that mirror the fields of your models.&lt;/li>
 &lt;li>Grouping of history with additional context attached, such as the logged-in user.&lt;/li>
-&lt;/ul>
-&lt;/blockquote>
+&lt;/ul>&lt;/blockquote>
 &lt;pre tabindex="0">&lt;code>import pghistory
 @pghistory.track()
 class TrackedModel(models.Model):
@@ -1246,8 +1223,7 @@ objects = Custommanager.from_queryset(CustomerQuerySet()) # advanced usage
 &lt;/ul>
 &lt;h3 id="-modern-editing-experience-for-your-django-models-with-wagtail-">✨ Modern editing experience for your Django models with Wagtail 🐦&lt;/h3>
 &lt;blockquote>
-&lt;p>A typical Wagtail project would have your user-facing website structure be defined by the tree structure of the Page model. However, if you have an existing Django project with your own defined Django views, and you don’t want to use Wagtail’s Page model, you can still get plenty of benefits from Wagtail [by integrating the various model mixins into your existing models]!&lt;/p>
-&lt;/blockquote>
+&lt;p>A typical Wagtail project would have your user-facing website structure be defined by the tree structure of the Page model. However, if you have an existing Django project with your own defined Django views, and you don’t want to use Wagtail’s Page model, you can still get plenty of benefits from Wagtail [by integrating the various model mixins into your existing models]!&lt;/p>&lt;/blockquote>
 &lt;h2 id="day-2">Day 2&lt;/h2>
 &lt;h3 id="postgres-performance-from-slow-to-pro">Postgres Performance: From Slow to Pro&lt;/h3>
 &lt;ul>
@@ -1315,11 +1291,9 @@ objects = Custommanager.from_queryset(CustomerQuerySet()) # advanced usage
 &lt;/ul>
 &lt;h3 id="dont-buy-the-ai-hype">Don&amp;rsquo;t Buy the &amp;ldquo;A.I.&amp;rdquo; Hype&lt;/h3>
 &lt;blockquote>
-&lt;p>&amp;ldquo;These models do not hallucinate. They make stuff up because a programmer using a random generation function decided they should&amp;hellip;By saying they hallucinate, we are removing the responsibility of the programmer and the model trainer to be ethical.&amp;rdquo;&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;These models do not hallucinate. They make stuff up because a programmer using a random generation function decided they should&amp;hellip;By saying they hallucinate, we are removing the responsibility of the programmer and the model trainer to be ethical.&amp;rdquo;&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>&amp;ldquo;[In] the most recent version of ChatGPT, in the release notes, one of the bullet points was: Less likely to make up facts&amp;hellip;You cannot make up a fact. A fact is the truth. A fact is. You do not make up a fact. That sentence is an impossibility and shows the irresponsibility going on right now that they actually let that get out in the release notes.&amp;rdquo;&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;[In] the most recent version of ChatGPT, in the release notes, one of the bullet points was: Less likely to make up facts&amp;hellip;You cannot make up a fact. A fact is the truth. A fact is. You do not make up a fact. That sentence is an impossibility and shows the irresponsibility going on right now that they actually let that get out in the release notes.&amp;rdquo;&lt;/p>&lt;/blockquote>
 &lt;h3 id="theres-more-to-open-source-than-code">There&amp;rsquo;s More to Open Source than Code&lt;/h3>
 &lt;ul>
 &lt;li>Non-code contributions: Any contributions that don&amp;rsquo;t involve code!
@@ -1452,8 +1426,7 @@ objects = Custommanager.from_queryset(CustomerQuerySet()) # advanced usage
 &lt;/ul>
 &lt;h3 id="introduction-to-github-actions-understanding-key-terms-and-building-your-first-github-action">Introduction to GitHub Actions: Understanding Key Terms and Building Your First GitHub Action&lt;/h3>
 &lt;blockquote>
-&lt;p>You configure a GitHub Actions &lt;strong>workflow&lt;/strong> to be triggered when an &lt;strong>event&lt;/strong> occurs that then runs a series of &lt;strong>jobs&lt;/strong> on a &lt;strong>runner&lt;/strong> that include one or more &lt;strong>steps&lt;/strong> that call a script(s) or &lt;strong>action&lt;/strong>&lt;/p>
-&lt;/blockquote>
+&lt;p>You configure a GitHub Actions &lt;strong>workflow&lt;/strong> to be triggered when an &lt;strong>event&lt;/strong> occurs that then runs a series of &lt;strong>jobs&lt;/strong> on a &lt;strong>runner&lt;/strong> that include one or more &lt;strong>steps&lt;/strong> that call a script(s) or &lt;strong>action&lt;/strong>&lt;/p>&lt;/blockquote>
 &lt;h2 id="day-3">Day 3&lt;/h2>
 &lt;h3 id="keynote-testing-modern-web-apps-like-a-champion">Keynote: Testing Modern Web Apps Like a Champion&lt;/h3>
 &lt;ul>
@@ -1777,30 +1750,22 @@ objects = Custommanager.from_queryset(CustomerQuerySet()) # advanced usage
 &lt;/ul>
 &lt;h3 id="panel-discussion-who-put-me-in-charge-moving-beyond-day-to-day-coding-in-django">Panel Discussion: Who put me in charge? Moving beyond day-to-day coding in Django&lt;/h3>
 &lt;blockquote>
-&lt;p>&amp;ldquo;What&amp;rsquo;s important for you as a managers who is managing devs is to understand what they&amp;rsquo;re working on&amp;rdquo; &amp;ndash; Julia&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;What&amp;rsquo;s important for you as a managers who is managing devs is to understand what they&amp;rsquo;re working on&amp;rdquo; &amp;ndash; Julia&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>&amp;ldquo;I don&amp;rsquo;t know if it&amp;rsquo;s as much a skill [switching from contributor to manager] as it is like being genuinely interested in the people that work for you&amp;rdquo; &amp;ndash; Elizabeth&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t know if it&amp;rsquo;s as much a skill [switching from contributor to manager] as it is like being genuinely interested in the people that work for you&amp;rdquo; &amp;ndash; Elizabeth&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>&amp;ldquo;Sometimes&amp;hellip;I can sort of see a pothole coming, you know, either a technical pothole or maybe a political one or maybe a legal one or a financial one, and say ok, there&amp;rsquo;s a pothole coming up&amp;rdquo; &amp;ndash; Charles&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;Sometimes&amp;hellip;I can sort of see a pothole coming, you know, either a technical pothole or maybe a political one or maybe a legal one or a financial one, and say ok, there&amp;rsquo;s a pothole coming up&amp;rdquo; &amp;ndash; Charles&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>&amp;ldquo;Your input is not just being able to directly say &amp;lsquo;ok this project might be a problem.&amp;rsquo; It&amp;rsquo;s when you get other people to the point where they can see the project may be a problem.&amp;rdquo; &amp;ndash; Charles&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;Your input is not just being able to directly say &amp;lsquo;ok this project might be a problem.&amp;rsquo; It&amp;rsquo;s when you get other people to the point where they can see the project may be a problem.&amp;rdquo; &amp;ndash; Charles&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>&amp;ldquo;You do lose a little bit of political sway [returning to an individual contributor].&amp;rdquo; &amp;ndash; Andrew&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;You do lose a little bit of political sway [returning to an individual contributor].&amp;rdquo; &amp;ndash; Andrew&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>&amp;ldquo;A good technical leader breaks a plan down to 3 month chunks.&amp;rdquo; &amp;ndash; Andrew&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;A good technical leader breaks a plan down to 3 month chunks.&amp;rdquo; &amp;ndash; Andrew&lt;/p>&lt;/blockquote>
 &lt;blockquote>
 &lt;p>&amp;ldquo;How do you identify some of those initial signals that you&amp;rsquo;re ready to take that step to [becoming a manager]?&amp;rdquo; &amp;ndash; Jay&lt;/p>
-&lt;p>&amp;ldquo;It&amp;rsquo;s similar to the question: when are you ready to have children?&amp;rdquo; &amp;ndash; Charles&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;It&amp;rsquo;s similar to the question: when are you ready to have children?&amp;rdquo; &amp;ndash; Charles&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>&amp;ldquo;Being really good at documentation has always benefitted me in my career and particularly in management.&amp;rdquo; &amp;ndash; Elizabeth&lt;/p>
-&lt;/blockquote><a href="mailto: reply@djpeacher.com?subject=Re:%20DjangoCon%20US%202023">Reply via email</a></description></item><item><title>Evening things</title><link>https://www.djpeacher.com/posts/evening-things/</link><pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/evening-things/</guid><description>
+&lt;p>&amp;ldquo;Being really good at documentation has always benefitted me in my career and particularly in management.&amp;rdquo; &amp;ndash; Elizabeth&lt;/p>&lt;/blockquote><a href="mailto: reply@djpeacher.com?subject=Re:%20DjangoCon%20US%202023">Reply via email</a></description></item><item><title>Evening things</title><link>https://www.djpeacher.com/posts/evening-things/</link><pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/evening-things/</guid><description>
 &lt;p>One feature that has been missing from my favorite todo app, &lt;a href="https://culturedcode.com/things/">Things 3&lt;/a>, has been the ability to automatically move tasks to the &lt;em>Evening&lt;/em> section when they appear on the &lt;em>Today&lt;/em> page. With the power of shortcuts, we can fix this!&lt;/p>
 &lt;ol>
 &lt;li>&lt;a href="https://www.icloud.com/shortcuts/875aceaf10084b91945eb8150e5a40f2">Click here to download the shortcut&lt;/a>.&lt;/li>
@@ -2519,8 +2484,7 @@ objects = Custommanager.from_queryset(CustomerQuerySet()) # advanced usage
 &lt;p>I was doing some cleanup in a Dockerfile today when I noticed one of the packages was not on the correct version. It was on the latest version despite the fact there was an &lt;code>ARG&lt;/code> pinning it&amp;hellip;or so I thought. After some sleuthing, I found this helpful &lt;a href="https://stackoverflow.com/a/56748289">Stack Overflow post&lt;/a> that explained and pointed me in the &lt;a href="https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact">right direction&lt;/a>.&lt;/p>
 &lt;p>Turns out&amp;hellip;&lt;/p>
 &lt;blockquote>
-&lt;p>&amp;ldquo;An &lt;code>ARG&lt;/code> declared before a &lt;code>FROM&lt;/code>&amp;hellip;can’t be used in any instruction after a &lt;code>FROM&lt;/code>.&amp;rdquo;&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;An &lt;code>ARG&lt;/code> declared before a &lt;code>FROM&lt;/code>&amp;hellip;can’t be used in any instruction after a &lt;code>FROM&lt;/code>.&amp;rdquo;&lt;/p>&lt;/blockquote>
 &lt;p>So the reason my package was installing the latest version was because the &lt;code>ARG&lt;/code> didn&amp;rsquo;t exist! Conveniently, it also didn&amp;rsquo;t error, which is why it went unnoticed 🙃&lt;/p>
 &lt;p>The solution? Move the &lt;code>ARG&lt;/code> down one line after the &lt;code>FROM&lt;/code>.&lt;/p>
 &lt;pre tabindex="0">&lt;code># Bad
@@ -3307,21 +3271,21 @@ folder: public
 &lt;li>&lt;a href="#choose-relevant-monsters">Choose relevant monsters&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#select-magic-item-rewards">Select magic item rewards&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="review-the-characters-hahahugoshortcode15s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
+&lt;h3 id="review-the-characters-hahahugoshortcode17s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
 &lt;p>The first thing you need to do is write down the names, backgrounds, motivations, and desires of the characters. Use these notes to prime your brain and tie the characters to the rest of your game.&lt;/p>
-&lt;h3 id="create-a-strong-start-hahahugoshortcode15s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
+&lt;h3 id="create-a-strong-start-hahahugoshortcode17s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
 &lt;p>Set the stage by asking yourself, what&amp;rsquo;s happening, what&amp;rsquo;s the point, and where&amp;rsquo;s the action? We are looking for an event, hook, and closest action in one, maybe two, sentences. When in doubt, start with combat.&lt;/p>
-&lt;h3 id="outline-potential-scenes-hahahugoshortcode15s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-potential-scenes-hahahugoshortcode17s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
 &lt;p>Write down a short list of scenes that &lt;strong>might&lt;/strong> occur in your game. Only write down as much as you need to prime your brain. These scenes are not in any specific order and may not even occur.&lt;/p>
-&lt;h3 id="define-secrets-and-clues-hahahugoshortcode15s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
+&lt;h3 id="define-secrets-and-clues-hahahugoshortcode17s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
 &lt;p>Write down ten secrets and clues the characters &lt;strong>might&lt;/strong> discover during your game. These secrets and clues bring your campaign to life and reveal small pieces of the story or history of the world. They should be abstract enough to allow you to improvise their discovery during the game.&lt;/p>
-&lt;h3 id="develop-fantastic-locations-hahahugoshortcode15s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
+&lt;h3 id="develop-fantastic-locations-hahahugoshortcode17s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
 &lt;p>Develop one or two locations that the characters &lt;strong>might&lt;/strong> discover for every hour of play you expect to have. These locations need to have an evocative name, three fantastic aspects, and be described using age and size. It is also a good idea to tie some of these locations to the backgrounds of the characters.&lt;/p>
-&lt;h3 id="outline-important-npcs-hahahugoshortcode15s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-important-npcs-hahahugoshortcode17s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
 &lt;p>Prepare a few NPCs that the characters &lt;strong>might&lt;/strong> discover and will drive the game session and the adventure. Improvise others during the game. NPC outlines should be brief and include a name, connection to the adventure, and a character archetype.&lt;/p>
-&lt;h3 id="choose-relevant-monsters-hahahugoshortcode15s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
+&lt;h3 id="choose-relevant-monsters-hahahugoshortcode17s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
 &lt;p>Make a list of monsters the characters &lt;strong>might&lt;/strong> encounter that make sense for the story, situation, and location of your game. Don&amp;rsquo;t tie these monsters to any specific location or situation. Instead, improvise encounters based on the story and situation during the game. For boss fights, remember to account for character capabilities without negating those capabilities.&lt;/p>
-&lt;h3 id="select-magic-item-rewards-hahahugoshortcode15s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
+&lt;h3 id="select-magic-item-rewards-hahahugoshortcode17s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
 &lt;p>Players love magic items! Regularly ask the players what kinds of items they&amp;rsquo;d like to discover. Use that information to make a list of magic items that the characters &lt;strong>might&lt;/strong> discover during your game. When it fits the story, drop an item into the game. You can also drop in random magic items for some variability. You can tie magic items to the story by connecting them to quests, secrets, or clues.&lt;/p>
 &lt;h2 id="adventuremd">adventure.md&lt;/h2>
 &lt;p>The Lazy Dungeon Master&amp;rsquo;s Checklist should easily fit on a single page. Here is a markdown template for your next session!&lt;/p>
@@ -3725,13 +3689,242 @@ const minutes = date.getMinutes().toString().padStart(2, '0');
 const formattedTimestamp = year + month + day + " @ " + hours + ":" + minutes;
 return formattedTimestamp
 }
-&lt;/script><a href="mailto: reply@djpeacher.com?subject=Re:%20Mastodon">Reply via email</a></description></item><item><title>Resume</title><link>https://www.djpeacher.com/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/resume/</guid><description>
+&lt;/script><a href="mailto: reply@djpeacher.com?subject=Re:%20Mastodon">Reply via email</a></description></item><item><title>Now</title><link>https://www.djpeacher.com/now/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/now/</guid><description>
+&lt;style>
+h2 {
+font-size: 1.8rem;
+border-left: 4px solid var(--text);;
+padding-left: 1rem;
+}
+&lt;/style>
+&lt;p>This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and this is what I&amp;rsquo;m currently up to:&lt;/p>
+&lt;h2 id="2503">2503&lt;/h2>
+&lt;p>Working my way through a few large projects at work. Having fun learning SwiftUI and actually releasing apps (&lt;a href="https://apps.apple.com/app/id6737578148">Luminary&lt;/a>, &lt;a href="https://apps.apple.com/us/app/crit-happens-dice-roller/id1550370579">Crit Happens&lt;/a>)! Super stoked to have my dice roller app &lt;a href="https://youtu.be/5emXJhpZjDY?t=503">spotlighted by Sly Flourish&lt;/a>! Exploring AI coding tools like &lt;a href="https://www.cursor.com/">Cursor&lt;/a> and honestly really impressed. Enjoying the speed boost of upgrading from an M1 to an M4 Mac. My wife and I were part of our best friends wedding party and we had a blast! Got sick afterwards which makes me sick for around 50% of 2025 so far&amp;hellip;&lt;/p>
+&lt;h2 id="2408">2408&lt;/h2>
+&lt;p>Learning how to take care of a tiny human and be a father. Adjusting to the humidity. In a war with mosquitoes. Catching up on my feeds. Getting organized.&lt;/p><a href="mailto: reply@djpeacher.com?subject=Re:%20Now">Reply via email</a></description></item><item><title>Projects</title><link>https://www.djpeacher.com/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/projects/</guid><description>
+&lt;style>
+.project-list {
+width: 100%;
+margin: 1rem 0;
+table-layout: fixed;
+}
+.project-list tr,
+.project-list td {
+padding: 0.25rem 0;
+border: none;
+background: none;
+vertical-align: top;
+}
+.project-list td:nth-child(1) {
+width: 15%;
+padding-right: 1rem;
+color: #666;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.project-list td:nth-child(2) {
+width: 25%;
+padding-right: 1rem;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.project-list td:nth-child(3) {
+width: 60%;
+}
+@media (max-width: 768px) {
+.project-list tr {
+display: block;
+margin-bottom: 1rem;
+}
+.project-list td {
+display: block;
+width: 100% !important;
+padding: 0.1rem 0;
+white-space: normal;
+overflow: visible;
+}
+.project-list td:nth-child(2) { font-weight: bold; }
+}
+&lt;/style>
+&lt;p>Here are some of the projects I've worked on.&lt;/p>
+&lt;table class="project-list">
+&lt;tr>
+&lt;td>2025 —&lt;/td>
+&lt;td>&lt;a href="https://apps.apple.com/us/app/crit-happens-dice-roller/id1550370579">Crit Happens&lt;/a>&lt;/td>
+&lt;td>A straightforward dice roller.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2024 —&lt;/td>
+&lt;td>&lt;a href="https://apps.apple.com/app/id6737578148">Luminary&lt;/a>&lt;/td>
+&lt;td>Sun position, made easy.&lt;/td>
+&lt;/tr>
+&lt;/table><a href="mailto: reply@djpeacher.com?subject=Re:%20Projects">Reply via email</a></description></item><item><title>Reading</title><link>https://www.djpeacher.com/reading/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/reading/</guid><description>
+&lt;style>
+.book-list {
+width: 100%;
+margin: 1rem 0;
+table-layout: fixed;
+}
+.book-list tr,
+.book-list td {
+padding: 0.25rem 0;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+border: none;
+background: none;
+}
+.book-list td:nth-child(1) { width: 40%; padding-right: 1rem; }
+.book-list td:nth-child(2) { width: 25%; padding-right: 1rem; }
+.book-list td:nth-child(3) { width: 20%; font-variant-numeric: tabular-nums; }
+.book-list td:nth-child(4) { width: 15%; }
+@media (max-width: 768px) {
+.book-list tr {
+display: block;
+margin-bottom: 1rem;
+}
+.book-list td {
+display: block;
+width: 100% !important;
+padding: 0.1rem 0;
+}
+.book-list td:nth-child(1) { font-weight: bold; }
+.book-list td:nth-child(2) { font-style: italic; }
+}
+.year-header {
+font-size: 1.5rem;
+font-weight: bold;
+margin: 2rem 0 1rem;
+}
+.rating, .date {
+color: #666;
+}
+&lt;/style>
+&lt;p>Ever since I aquired a &lt;a href="https://www.djpeacher.com/posts/get-a-virtual-library-card/">virtual library card&lt;/a>, I've been reading a lot more. Here is a list of books I've read.&lt;/p>
+&lt;div class="year-header">2025&lt;/div>
+&lt;table class="book-list">
+&lt;tr>
+&lt;td>Artificial Condition&lt;/td>
+&lt;td>Martha Wells&lt;/td>
+&lt;td class="date">250314&lt;/td>
+&lt;td class="rating">★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>All Systems Red&lt;/td>
+&lt;td>Martha Wells&lt;/td>
+&lt;td class="date">250310&lt;/td>
+&lt;td class="rating">★★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>A Court of Thorns and Roses&lt;/td>
+&lt;td>Sarah J. Maas&lt;/td>
+&lt;td class="date">250226&lt;/td>
+&lt;td class="rating">★★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>The Redemption of Time&lt;/td>
+&lt;td>Cixin Liu&lt;/td>
+&lt;td class="date">250208&lt;/td>
+&lt;td class="rating">★★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Death's End&lt;/td>
+&lt;td>Cixin Liu&lt;/td>
+&lt;td class="date">250122&lt;/td>
+&lt;td class="rating">★★★★★&lt;/td>
+&lt;/tr>
+&lt;/table>
+&lt;div class="year-header">2024&lt;/div>
+&lt;table class="book-list">
+&lt;tr>
+&lt;td>The Dark Forest&lt;/td>
+&lt;td>Cixin Liu&lt;/td>
+&lt;td class="date">241125&lt;/td>
+&lt;td class="rating">★★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>The Happy Sleeper&lt;/td>
+&lt;td>Turgeon &amp; Wright&lt;/td>
+&lt;td class="date">241104&lt;/td>
+&lt;td class="rating">★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>The Three-Body Problem&lt;/td>
+&lt;td>Cixin Liu&lt;/td>
+&lt;td class="date">240827&lt;/td>
+&lt;td class="rating">★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Moms on Call (0-6 Months)&lt;/td>
+&lt;td>Hunter &amp; Walker&lt;/td>
+&lt;td class="date">240528&lt;/td>
+&lt;td class="rating">★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Decluttering at the Speed of Life&lt;/td>
+&lt;td>Dana K. White&lt;/td>
+&lt;td class="date">240124&lt;/td>
+&lt;td class="rating">★★★&lt;/td>
+&lt;/tr>
+&lt;/table>
+&lt;div class="year-header">2023&lt;/div>
+&lt;table class="book-list">
+&lt;tr>
+&lt;td>Life in Code&lt;/td>
+&lt;td>Ellen Ullman&lt;/td>
+&lt;td class="date">231126&lt;/td>
+&lt;td class="rating">★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>The PARA Method&lt;/td>
+&lt;td>Tiago Forte&lt;/td>
+&lt;td class="date">230000&lt;/td>
+&lt;td class="rating">★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>The Family Firm&lt;/td>
+&lt;td>Emily Oster&lt;/td>
+&lt;td class="date">230000&lt;/td>
+&lt;td class="rating">★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cribsheet&lt;/td>
+&lt;td>Emily Oster&lt;/td>
+&lt;td class="date">230000&lt;/td>
+&lt;td class="rating">★★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Expecting Better&lt;/td>
+&lt;td>Emily Oster&lt;/td>
+&lt;td class="date">230000&lt;/td>
+&lt;td class="rating">★★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>What to Expect When You're Expecting&lt;/td>
+&lt;td>Heidi Murkoff&lt;/td>
+&lt;td class="date">230000&lt;/td>
+&lt;td class="rating">★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>What to Expect Before You're Expecting&lt;/td>
+&lt;td>Heidi Murkoff&lt;/td>
+&lt;td class="date">230000&lt;/td>
+&lt;td class="rating">★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Speed Reading&lt;/td>
+&lt;td>Kam Knight&lt;/td>
+&lt;td class="date">230000&lt;/td>
+&lt;td class="rating">★★★&lt;/td>
+&lt;/tr>
+&lt;/table><a href="mailto: reply@djpeacher.com?subject=Re:%20Reading">Reply via email</a></description></item><item><title>Resume</title><link>https://www.djpeacher.com/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/resume/</guid><description>
 &lt;style>
 summary {
 font-weight: normal;
 }
 &lt;/style>
-&lt;h2>Experience&lt;/h2>
 &lt;p>
 &lt;b class="medium">Software Engineer&lt;/b>&lt;br />&lt;i>The Texas Tribune&lt;/i>, May 2022 - Present
 &lt;/p>
@@ -3746,7 +3939,7 @@ participate in cybersecurity exercises in a safe environment.
 &lt;/p>
 &lt;details>
 &lt;summary>
-&lt;u>Lead Software Engineer&lt;/u> of &lt;a href="https://utakeit.tacc.utexas.edu" target="_blank">UTakeIt&lt;/a>, a
+&lt;a href="https://web.archive.org/web/20220527205801/https://utakeit.tacc.utexas.edu/" target="_blank">UTakeIt&lt;/a>, a
 professional development registration and management system for K12 CS educators.
 &lt;/summary>
 &lt;ul>
@@ -3759,7 +3952,7 @@ integrated and deployed using Jenkins.
 Intuitive e-commerce system that allows users to purchase one or many
 registrations and optional add-ons with a credit card, check, coupon, or
 purchase order and has been used to process hundreds of thousands of
-dollars. Hooks into the university’s payment processor for credit card
+dollars. Hooks into the university's payment processor for credit card
 transactions. Also used to collect preliminary data from registrants.
 &lt;/li>
 &lt;li>
@@ -3783,7 +3976,7 @@ is bundled by Webpack.
 &lt;/details>
 &lt;details>
 &lt;summary>
-&lt;u>Lead Software Engineer&lt;/u> of &lt;a href="https://cyberrange.tacc.utexas.edu" target="_blank">EPIC Cyber
+&lt;a href="https://web.archive.org/web/20241227110221/https://cyberrange.tacc.utexas.edu/" target="_blank">EPIC Cyber
 Range&lt;/a>, an on-demand virtual machine education tool for K12 cybersecurity classrooms.
 &lt;/summary>
 &lt;ul>
@@ -3812,7 +4005,7 @@ Users are authenticated with Google using django-allauth.
 &lt;/li>
 &lt;/ul>
 &lt;/details>
-&lt;details>
+&lt;!-- &lt;details>
 &lt;summary>
 &lt;u>Maintainer&lt;/u> of &lt;a href="https://texasccrsmdesignation.org" target="_blank">TEA CCRSM&lt;/a>, an application
 platform for Texas school to apply for a College and Career Readiness designation.
@@ -3833,69 +4026,8 @@ held virtually for over 300 attendees and exhibitors.
 World&lt;/u>&lt;/a>
 &lt;/li>
 &lt;/ul>
-&lt;/details>
-&lt;br>
-&lt;hr>
-&lt;h2>Education&lt;/h2>
+&lt;/details> -->
 &lt;p>
 &lt;b class="medium">Bachelor of Science and Arts in Computer Science&lt;/b>&lt;br />&lt;i>The University of Texas at
 Austin&lt;/i>, 2018
-&lt;/p>
-&lt;br>
-&lt;hr>
-&lt;h2>Projects&lt;/h2>
-&lt;p>
-&lt;i class="twa twa-game-die">&lt;/i> &lt;a href="https://critzone.app/" target="_blank">crit-zone&lt;/a>,
-an app to roll RPG dice online with friends.
-&lt;/p>
-&lt;p>
-&lt;i class="twa twa-green-square">&lt;/i> &lt;a href="https://not-wordle-just-github.djpeacher.com/"
-target="_blank">not-wordle-just-github&lt;/a>,
-a utility to generate a github wordle grid.
-&lt;/p>
-&lt;p>
-&lt;i class="twa twa-game-die">&lt;/i> &lt;a href="https://rpgdr.djpeacher.com/" target="_blank">rpg-dice-roller-api&lt;/a>,
-an API wrapper for rpg-dice-roller.
-&lt;/p>
-&lt;p>
-&lt;i class="twa twa-calendar">&lt;/i> &lt;a href="https://year-in-pixels.djpeacher.com/" target="_blank">year-in-pixels&lt;/a>,
-a tool to track your year with pixels.
-&lt;/p>
-&lt;p>
-&lt;i class="twa twa-locked">&lt;/i> &lt;a href="https://password-protected-links-ygcbs.ondigitalocean.app/lock"
-target="_blank">password-protected-links&lt;/a>,
-a utility to add passwords to URLs.
-&lt;/p>
-&lt;br>
-&lt;hr>
-&lt;h2>Courses&lt;/h2>
-&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-complete-python-mastery.pdf' target="_blank">Complete Python
-Mastery&lt;/a>&lt;/p>
-&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-complete-sql-mastery.pdf' target="_blank">Complete SQL Mastery&lt;/a>&lt;/p>
-&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-complete-node-js-course.pdf' target="_blank">The Complete Node.js
-Course&lt;/a>&lt;/p>
-&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-django-series-part-1.pdf' target="_blank">The Ultimate
-Django Series - Part 1&lt;/a>&lt;/p>
-&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-django-series-part-2.pdf' target="_blank">The Ultimate
-Django Series - Part 2&lt;/a>&lt;/p>
-&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-django-series-part-3.pdf' target="_blank">The Ultimate
-Django Series - Part 3&lt;/a>&lt;/p>
-&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-docker-course.pdf' target="_blank">The Ultimate Docker
-Course&lt;/a>&lt;/p>
-&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-git-course.pdf' target="_blank">The Ultimate Git
-Course&lt;/a>&lt;/p>
-&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-and-css3-series-part-1.pdf' target="_blank">The
-Ultimate HTML5 &amp; CSS3 Series: Part 1&lt;/a>&lt;/p>
-&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-javascript-mastery-series-part-1.pdf' target="_blank">The
-Ultimate JavaScript Mastery Series - Part 1&lt;/a>&lt;/p>
-&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-javascript-mastery-series-part-2.pdf' target="_blank">The
-Ultimate JavaScript Mastery Series - Part 2&lt;/a>&lt;/p>
-&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-css3-series-part-1.pdf' target="_blank">The
-The Ultimate HTML5 &amp; CSS3 Series: Part 1&lt;/a>&lt;/p>
-&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-css3-series-part-2.pdf' target="_blank">The
-The Ultimate HTML5 &amp; CSS3 Series: Part 2&lt;/a>&lt;/p>
-&lt;p>&lt;a href='https://www.djpeacher.com/files/certificate-of-completion-for-the-ultimate-html5-css3-series-part-3.pdf' target="_blank">The
-The Ultimate HTML5 &amp; CSS3 Series: Part 3&lt;/a>&lt;/p>
-&lt;h2>Conferences&lt;/h2>
-&lt;p>Streamed &lt;a href="https://2021.djangocon.us" target="_blank">DjangoCon 2021&lt;/a>&lt;/p>
-&lt;p>Attended &lt;a href="https://2019.djangocon.us" target="_blank">DjangoCon 2019&lt;/a>&lt;/p><a href="mailto: reply@djpeacher.com?subject=Re:%20Resume">Reply via email</a></description></item></channel></rss>
+&lt;/p><a href="mailto: reply@djpeacher.com?subject=Re:%20Resume">Reply via email</a></description></item></channel></rss>
