@@ -1,5 +1,7 @@
 {{ define "main" }}
-    <a href="/" style="text-decoration: none;">Jonathan Peacher</a>
+    <p>
+        <a href="/" style="font-weight: bold; text-decoration: none;">Jonathan Peacher</a>
+    </p>
     {{ $isPost := eq .Type "posts" }}
     {{ if .Title }}<h1 style="margin-bottom: 0.5rem;">{{ .Title | safeHTML }}</h1>{{ end }}
     <div style="margin-bottom: 1.5rem;">

@@ -1,11 +1,23 @@
 ---
 title: Now
-description: What am I up to right now?
-lastmod: 2024-08-08
 ---
 
-{{< notice >}}
-This is a [now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too!
-{{< /notice >}}
+{{< html >}}
+    <style>
+        h2 {
+            font-size: 1.8rem;
+            border-left: 4px solid var(--text);;
+            padding-left: 1rem;
+        }
+    </style>
+{{< /html >}}
 
-Learning how to take care of a tiny human and be a father. Adjusting to the humidity. In a war with mosquitoes. Catching up on my feeds. Getting organized. Working at The Texas Tribune as a full-stack software engineer.
+This is a [now page](https://nownownow.com/about), and this is what I'm currently up to:
+
+## 2503
+
+Working my way through a few large projects at work. Having fun learning SwiftUI and actually releasing apps ([Luminary](https://apps.apple.com/app/id6737578148), [Crit Happens](https://apps.apple.com/us/app/crit-happens-dice-roller/id1550370579))! Super stoked to have my dice roller app [spotlighted by Sly Flourish](https://youtu.be/5emXJhpZjDY?t=503)! Exploring AI coding tools like [Cursor](https://www.cursor.com/) and honestly really impressed. Enjoying the speed boost of upgrading from an M1 to an M4 Mac. My wife and I were part of our best friends wedding party and we had a blast! Got sick afterwards which makes me sick for around 50% of 2025 so far...
+
+## 2408
+
+Learning how to take care of a tiny human and be a father. Adjusting to the humidity. In a war with mosquitoes. Catching up on my feeds. Getting organized.
