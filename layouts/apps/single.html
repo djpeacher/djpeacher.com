@@ -1,0 +1,91 @@
+{{ define "main" }}
+    <style>
+        .app-landing {
+            margin: 4rem auto 0;
+        }
+        
+        .app-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .app-icon img {
+            width: 120px;
+            height: 120px;
+            border-radius: 25px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .app-title h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+        
+        .app-title h2 {
+            font-weight: normal;
+            margin-top: 0;
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+        
+        .app-download {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .app-store-button img {
+            height: 60px;
+        }
+
+        .app-legal {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .app-legal a {
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+        
+        .app-legal a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <p>
+        <a href="/" style="font-weight: bold; text-decoration: none;">Jonathan Peacher</a>
+    </p>
+    <div class="app-landing">
+        <div class="app-header">
+            {{ if .Params.icon }}
+                <div class="app-icon">
+                    <img src="{{ .Params.icon }}" alt="{{ .Title }} icon">
+                </div>
+            {{ end }}
+            
+            <div class="app-title">
+                <h1>{{ .Title }}</h1>
+                {{ if .Params.tagline }}<h2>{{ .Params.tagline }}</h2>{{ end }}
+            </div>
+        </div>
+        
+        {{ if .Params.appstore }}
+            <div class="app-download">
+                <a href="{{ .Params.appstore }}" class="app-store-button">
+                    <img src="/img/app-store-badge.svg" alt="Download on the App Store">
+                </a>
+            </div>
+        {{ end }}
+        
+        {{ .Content }}
+        
+        <div class="app-legal">
+            <a href="{{ .Params.privacy | default (printf "%s/privacy" .RelPermalink) }}">Privacy Policy</a>
+            <a href="{{ .Params.terms | default (printf "%s/terms" .RelPermalink) }}">Terms of Use</a>
+        </div>
+    </div>
+{{ end }} 
