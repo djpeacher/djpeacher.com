@@ -3838,6 +3838,18 @@ color: #666;
 &lt;div class="year-header">2025&lt;/div>
 &lt;table class="book-list">
 &lt;tr>
+&lt;td>Network Effect&lt;/td>
+&lt;td>Martha Wells&lt;/td>
+&lt;td class="date">250404&lt;/td>
+&lt;td class="rating">★★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>A Court of Mist and Fury&lt;/td>
+&lt;td>Sarah J. Maas&lt;/td>
+&lt;td class="date">250330&lt;/td>
+&lt;td class="rating">★★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;td>Exit Strategy&lt;/td>
 &lt;td>Martha Wells&lt;/td>
 &lt;td class="date">250323&lt;/td>
