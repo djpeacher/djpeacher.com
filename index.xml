@@ -1,4 +1,226 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>https://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Fri, 17 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Alamo Drafthouse 2024</title><link>https://www.djpeacher.com/posts/alamo-drafthouse-2024/</link><pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/alamo-drafthouse-2024/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonathan Peacher</title><link>https://www.djpeacher.com/</link><description>Recent content on Jonathan Peacher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright><lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://www.djpeacher.com/index.xml" rel="self" type="application/rss+xml"/><item><title>PyTexas 2025</title><link>https://www.djpeacher.com/posts/pytexas-2025/</link><pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/pytexas-2025/</guid><description>
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#day-1">Day 1&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#keynote-mariatta">Keynote: Mariatta&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#reducing-the-oops-factor-pipelines-for-securing-your-python-development-lifecycle-on-a-budget">Reducing the &amp;ldquo;Oops Factor&amp;rdquo;: Pipelines for Securing your Python Development Lifecycle on a budget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#the-pythonic-ideal-in-the-age-of-generative-ai">The Pythonic Ideal in The Age of Generative AI&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#generators-the-unsung-hero-of-async-programming">Generators: The Unsung Hero of Async Programming&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#demystifying-ai-agents-with-python-code">Demystifying AI Agents with Python Code&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#python-untethered-building-robust-embedded-systems">Python Untethered: Building Robust Embedded Systems&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#lighting-talks">Lighting Talks&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#day-2">Day 2&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#keynote-jay-miller">Keynote: Jay Miller&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#building-a-test-framework-from-scratch-or-not">Building a Test Framework From Scratch (Or Not)!&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#place-making-and-productivity-build-maintainable-broad-scale-tools-with-a-small-team">Place-making and Productivity: Build Maintainable Broad-scale Tools With a Small Team&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#verbs-not-nouns-writing-documentation-users-want-to-read">Verbs, Not Nouns: Writing Documentation Users Want to Read&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#lighting-talks-1">Lighting Talks&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;h2 id="day-1">Day 1&lt;/h2>
+&lt;h3 id="keynote-mariatta">Keynote: Mariatta&lt;/h3>
+&lt;p>❤️&lt;/p>
+&lt;h3 id="reducing-the-oops-factor-pipelines-for-securing-your-python-development-lifecycle-on-a-budget">Reducing the &amp;ldquo;Oops Factor&amp;rdquo;: Pipelines for Securing your Python Development Lifecycle on a budget&lt;/h3>
+&lt;ul>
+&lt;li>More projects are having security issues, especially now with AI and vibe coding.&lt;/li>
+&lt;li>A &amp;ldquo;swish cheese&amp;rdquo; approach to securing your codebase, most of which can be integrated into your CI pipeline.
+&lt;ul>
+&lt;li>Secret Detection: &lt;a href="https://github.com/gitleaks/gitleaks">gitleaks&lt;/a>&lt;/li>
+&lt;li>Dependency Scanning: &lt;a href="https://github.com/pypa/pip-audit">pip-audit&lt;/a>&lt;/li>
+&lt;li>SAST (Static Analytis Security Testing): &lt;a href="https://github.com/PyCQA/bandit">bandit&lt;/a>&lt;/li>
+&lt;li>DAST (Dynamic Analysis Security Testing): Dastardly / Tenable&lt;/li>
+&lt;li>YOU&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="the-pythonic-ideal-in-the-age-of-generative-ai">The Pythonic Ideal in The Age of Generative AI&lt;/h3>
+&lt;ul>
+&lt;li>AI ← LLM ← Coding Assistant&lt;/li>
+&lt;li>An experienced engineer is defined by their experiences, not by the duration of their role.&lt;/li>
+&lt;li>Pros/Cons of using a coding assistants:&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Coding assistant&lt;/th>
+&lt;th>Beginners&lt;/th>
+&lt;th>Experienced&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Write code fast&lt;/td>
+&lt;td>Con&lt;/td>
+&lt;td>Pro (for boilerplate)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Write code beyond skill level&lt;/td>
+&lt;td>Pro/Con&lt;/td>
+&lt;td>Pro/Con&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Explain code&lt;/td>
+&lt;td>Pro&lt;/td>
+&lt;td>Pro&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Find bugs&lt;/td>
+&lt;td>Pro/Con&lt;/td>
+&lt;td>Pro/Con&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Hallucinate&lt;/td>
+&lt;td>Con&lt;/td>
+&lt;td>Con&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Vibe coding&lt;/td>
+&lt;td>Con&lt;/td>
+&lt;td>Con&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Viable pair programmer&lt;/td>
+&lt;td>-&lt;/td>
+&lt;td>Pro&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Ethical issues&lt;/td>
+&lt;td>-&lt;/td>
+&lt;td>Con&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>If you are a beginner, write code first, then use AI to explore when stuck, but make sure to understand the generated code.&lt;/li>
+&lt;li>If you are experienced, let AI write the boring stuff (boilerplate, consistent code, etc.), and level up by prompting for code beyond your comfort zone (ask for options).&lt;/li>
+&lt;li>If you are a teacher, use AI from the start. Ask it to suggest alternatives to existing code.&lt;/li>
+&lt;li>Will AI replace you? Maybe. It will if you refuse to evolve with it.&lt;/li>
+&lt;li>Is pythonic code dead? Maybe. But be kind to future developers (including yourself).&lt;/li>
+&lt;li>Takeaways:
+&lt;ul>
+&lt;li>LLMs are just fancy autocomplete&lt;/li>
+&lt;li>If we over-rely on AI when first learning, we run the risk of not gaining the experience needed to grow.&lt;/li>
+&lt;li>AI is a tool, nothing more.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Advice:
+&lt;ul>
+&lt;li>Don&amp;rsquo;t panic&lt;/li>
+&lt;li>Learn your craft&lt;/li>
+&lt;li>Embrace AI&lt;/li>
+&lt;li>Teach the next generation&lt;/li>
+&lt;li>Keep it pythonic&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="generators-the-unsung-hero-of-async-programming">Generators: The Unsung Hero of Async Programming&lt;/h3>
+&lt;ul>
+&lt;li>The &lt;code>GeneratorExit&lt;/code> exception can be to cleanup generators.&lt;/li>
+&lt;li>You can send data back into a generator using &lt;code>.send(x)&lt;/code> and &lt;code>x = yield y&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="demystifying-ai-agents-with-python-code">Demystifying AI Agents with Python Code&lt;/h3>
+&lt;ul>
+&lt;li>What are AI agents?&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&amp;ldquo;agent = llm + memory + planning + tools + while loop&amp;rdquo; – Tweet&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>You can give the ChatGPT API memory by including the previous messages in subsequent API requests.&lt;/li>
+&lt;li>You can tell the ChatGPT API to use tools (functions), to do things like searching the web, that returns structured data.
+&lt;ul>
+&lt;li>You can use &lt;code>.signature()&lt;/code> to generate the function specs for these tools.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Tools like &lt;a href="https://github.com/crewAIInc/crewAI">crewAI&lt;/a> abstract all this away.&lt;/li>
+&lt;/ul>
+&lt;h3 id="python-untethered-building-robust-embedded-systems">Python Untethered: Building Robust Embedded Systems&lt;/h3>
+&lt;ul>
+&lt;li>What are embedded systems?&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&amp;ldquo;&amp;hellip;[an] embedded system is a device that contains a computer that the average person would not consider being a computer.&amp;rdquo; – Reddit&lt;/p>&lt;/blockquote>
+&lt;h3 id="lighting-talks">Lighting Talks&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>pip install interrogate&lt;/code> for docstring coverage.&lt;/li>
+&lt;/ul>
+&lt;h2 id="day-2">Day 2&lt;/h2>
+&lt;h3 id="keynote-jay-miller">Keynote: Jay Miller&lt;/h3>
+&lt;ul>
+&lt;li>Contributing to open source and community are similar.
+&lt;ul>
+&lt;li>You have an idea and want to share it with others.&lt;/li>
+&lt;li>When you give away your ideas, they only tend to get better.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&amp;ldquo;Creating a new open source package (and community) is like adopting a puppy.&amp;rdquo; - Pamela Fox&lt;/li>
+&lt;li>Let people know what help you need, and vice versa.&lt;/li>
+&lt;li>Autocorrect &amp;ldquo;LGTM&amp;rdquo; to &amp;ldquo;Looks good to me, thank you!&amp;rdquo; and don&amp;rsquo;t say &amp;ldquo;just x&amp;rdquo;.&lt;/li>
+&lt;li>There is always more that you could have done, but if you are doing something, it is helpful.&lt;/li>
+&lt;li>Respect everyone&amp;rsquo;s capacity.&lt;/li>
+&lt;li>Ambition + Inspration = Scope Creep&lt;/li>
+&lt;/ul>
+&lt;h3 id="building-a-test-framework-from-scratch-or-not">Building a Test Framework From Scratch (Or Not)!&lt;/h3>
+&lt;ul>
+&lt;li>What is a testing framework? A programming structure for coding automated test cases, executing them as a suite, and reporting their results.&lt;/li>
+&lt;li>Just use &lt;code>pytest&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="place-making-and-productivity-build-maintainable-broad-scale-tools-with-a-small-team">Place-making and Productivity: Build Maintainable Broad-scale Tools With a Small Team&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>pain = n_teams * size_team * n_tools * n_migrations * (1 + r_turnover)&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h3 id="verbs-not-nouns-writing-documentation-users-want-to-read">Verbs, Not Nouns: Writing Documentation Users Want to Read&lt;/h3>
+&lt;ul>
+&lt;li>Two types: Reference / Tutorial&lt;/li>
+&lt;li>Reference (Nowns): Comprehensive, focuses on the product, quick retrieval
+&lt;ul>
+&lt;li>e.g. man pages, api reference, code coments, readme files.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Tutorial (Verbs): Not comprehensive, focus on the user, and read beginning to end
+&lt;ul>
+&lt;li>e.g. tutorials, how-tos, walkthroughs, use cases&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Outline your doc first:
+&lt;ul>
+&lt;li>What do you want user to do?&lt;/li>
+&lt;li>Ask the users, if you can&lt;/li>
+&lt;li>Write down everything&lt;/li>
+&lt;li>Define discrete steps&lt;/li>
+&lt;li>Prioritize the use cases&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Advice
+&lt;ul>
+&lt;li>Look for the verbs&lt;/li>
+&lt;li>Focus on what the users want to do&lt;/li>
+&lt;li>Move the verbs up front&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="lighting-talks-1">Lighting Talks&lt;/h3>
+&lt;ul>
+&lt;li>LLMs are like APIs. You make a request, and they return data, but with &amp;ldquo;moods&amp;rdquo;.&lt;/li>
+&lt;li>Micromentor with SLQAR: Show up, listen, question, act, recharge.&lt;/li>
+&lt;li>How to say thanks to Python People:
+&lt;ul>
+&lt;li>Level 0: Actually say thanks&lt;/li>
+&lt;li>Level 1: Say thanks in public&lt;/li>
+&lt;li>Level 2: Show your support&lt;/li>
+&lt;li>Level 3: Contribute/volunteer&lt;/li>
+&lt;li>Level 4: Contribute money&lt;/li>
+&lt;li>Level 5: Nominate them for awards&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Be kind to your screen sharing partner. Just share the window or tab.&lt;/li>
+&lt;li>&amp;ldquo;Make friends, not connections&amp;rdquo; - Kojo&lt;/li>
+&lt;/ul><a href="mailto: reply@djpeacher.com?subject=Re:%20PyTexas%202025">Reply via email</a></description></item><item><title>Alamo Drafthouse 2024</title><link>https://www.djpeacher.com/posts/alamo-drafthouse-2024/</link><pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/posts/alamo-drafthouse-2024/</guid><description>
 &lt;p>Wow, only 11 movies this year at the Alamo Drafthouse! Turns out having your first child heavily reduces the time you have to go see movies 😫 This will probably be my last Alamo Drafthouse post since we canceled our Season Pass&amp;hellip;for now.&lt;/p>
 &lt;ul>
 &lt;li>Mean Girls (2024)&lt;/li>
@@ -3290,21 +3512,21 @@ folder: public
 &lt;li>&lt;a href="#choose-relevant-monsters">Choose relevant monsters&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#select-magic-item-rewards">Select magic item rewards&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="review-the-characters-hahahugoshortcode21s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
+&lt;h3 id="review-the-characters-hahahugoshortcode23s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
 &lt;p>The first thing you need to do is write down the names, backgrounds, motivations, and desires of the characters. Use these notes to prime your brain and tie the characters to the rest of your game.&lt;/p>
-&lt;h3 id="create-a-strong-start-hahahugoshortcode21s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
+&lt;h3 id="create-a-strong-start-hahahugoshortcode23s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
 &lt;p>Set the stage by asking yourself, what&amp;rsquo;s happening, what&amp;rsquo;s the point, and where&amp;rsquo;s the action? We are looking for an event, hook, and closest action in one, maybe two, sentences. When in doubt, start with combat.&lt;/p>
-&lt;h3 id="outline-potential-scenes-hahahugoshortcode21s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-potential-scenes-hahahugoshortcode23s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
 &lt;p>Write down a short list of scenes that &lt;strong>might&lt;/strong> occur in your game. Only write down as much as you need to prime your brain. These scenes are not in any specific order and may not even occur.&lt;/p>
-&lt;h3 id="define-secrets-and-clues-hahahugoshortcode21s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
+&lt;h3 id="define-secrets-and-clues-hahahugoshortcode23s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
 &lt;p>Write down ten secrets and clues the characters &lt;strong>might&lt;/strong> discover during your game. These secrets and clues bring your campaign to life and reveal small pieces of the story or history of the world. They should be abstract enough to allow you to improvise their discovery during the game.&lt;/p>
-&lt;h3 id="develop-fantastic-locations-hahahugoshortcode21s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
+&lt;h3 id="develop-fantastic-locations-hahahugoshortcode23s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
 &lt;p>Develop one or two locations that the characters &lt;strong>might&lt;/strong> discover for every hour of play you expect to have. These locations need to have an evocative name, three fantastic aspects, and be described using age and size. It is also a good idea to tie some of these locations to the backgrounds of the characters.&lt;/p>
-&lt;h3 id="outline-important-npcs-hahahugoshortcode21s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-important-npcs-hahahugoshortcode23s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
 &lt;p>Prepare a few NPCs that the characters &lt;strong>might&lt;/strong> discover and will drive the game session and the adventure. Improvise others during the game. NPC outlines should be brief and include a name, connection to the adventure, and a character archetype.&lt;/p>
-&lt;h3 id="choose-relevant-monsters-hahahugoshortcode21s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
+&lt;h3 id="choose-relevant-monsters-hahahugoshortcode23s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
 &lt;p>Make a list of monsters the characters &lt;strong>might&lt;/strong> encounter that make sense for the story, situation, and location of your game. Don&amp;rsquo;t tie these monsters to any specific location or situation. Instead, improvise encounters based on the story and situation during the game. For boss fights, remember to account for character capabilities without negating those capabilities.&lt;/p>
-&lt;h3 id="select-magic-item-rewards-hahahugoshortcode21s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
+&lt;h3 id="select-magic-item-rewards-hahahugoshortcode23s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
 &lt;p>Players love magic items! Regularly ask the players what kinds of items they&amp;rsquo;d like to discover. Use that information to make a list of magic items that the characters &lt;strong>might&lt;/strong> discover during your game. When it fits the story, drop an item into the game. You can also drop in random magic items for some variability. You can tie magic items to the story by connecting them to quests, secrets, or clues.&lt;/p>
 &lt;h2 id="adventuremd">adventure.md&lt;/h2>
 &lt;p>The Lazy Dungeon Master&amp;rsquo;s Checklist should easily fit on a single page. Here is a markdown template for your next session!&lt;/p>
