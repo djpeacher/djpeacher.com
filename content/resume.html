@@ -5,113 +5,74 @@ description: Jonathan Peacher
 <style>
     summary {
         font-weight: normal;
+        word-break: break-word;
+    }
+    h2 {
+        font-size: 1.8rem;
+        border-left: 4px solid var(--text);;
+        padding-left: 1rem;
+    }
+    ul > ul {
+        color: var(--text-light);
+        font-size: 1rem;
+    }
+    ul > ul > li > a {
+        color: var(--text-light) !important;
     }
 </style>
 
 <p>
     <b class="medium">Software Engineer</b><br /><i>The Texas Tribune</i>, May 2022 - Present
 </p>
+<p class="meta">
+    Developed multiple critical systems for The Texas Tribune's digital newsroom, including article syndication, content management, and reader engagement features. Built and maintained tools that support the nonprofit journalism mission, from tracking syndicated content impressions to automating data workflows between key business systems.
+</p>
+<ul>
+    <li><a href="https://www.texastribune.org/" target="_blank">The Texas Tribune</a>, a custom CMS for the nonprofit, nonpartisan, digital-first newsroom built with Django.</li>
+    <ul>
+        <li>Enhanced multiple aspects of articles including, but not limited to, bylines, social sharing, image focal points, membership calls to action, tagging, and more.</li>
+        <li>Developed an intuitive workflow for newsrooms to manually syndicate articles and maintained dozens of RSS feeds for partners to automatically syndicate articles.</li>
+        <li>Developed a system to display banners and modals across the site to promote events, newsletters, membership appeals, breaking news, and more.</li>
+        <li>Developed a <a href="https://www.texastribune.org/text/" target="_blank">text-only version</a> of the site for readers with limited bandwidth or experiencing an emergency (e.g. <a href="https://www.reddit.com/r/houston/comments/1dy7en0/heres_how_you_can_see_hurricane_beryl_updates/" target="_blank">Hurricane Beryl</a>).</li>
+        <li>Integrated Slack bots to inform staff of important events and tasks.</li>
+        <li>Reduced the overhead of the elected officials directory by converting its dynamic api into an periodically updated "static api".</li>
+        <li>Standardized Mailchimp newsletter templates based on brand guidelines.</li>
+        <li>Troubleshooted and suppressed multiple attacks to the site using Cloudflare.</li>
+    </ul>
+    <li><a href="https://ping.texastribune.org/ping.js">Ping</a>, a lightweight pixel tracker that records the millions of impressions syndicated content receives each year built with Google Cloud Platform.</li>
+    <li>ESP-CRM Connector, an automated workflow for syncing data from hundreds of thousands of Texans between an email service provider and customer relationship manager built with Python and Github Actions.</li>
+</ul>
+
 <p>
-    <b class="medium">Software Engineer</b><br /><i>Texas Advanced Computing Center</i>, Jan 2018 - May 2022
+    <b class="medium">Software Engineer</b><br /><i>The University of Texas at Austin</i>, Jan 2018 - May 2022
 </p>
 <p class="meta">
     Developed web applications utilized by over 9000 K12 admins, teachers, and students. Streamlined many
-    aspects of managing our registration platform, allowing staff members to focus on empowering K12 CS educators
-    instead of wrestling with systems. Built a cyber range portal from scratch that allows hundreds of students to
+    aspects of managing the organization's registration platform, allowing staff members to focus on empowering K12 CS educators
+    instead of wrestling with systems. Built a cyber range portal from scratch that allowed hundreds of students to
     participate in cybersecurity exercises in a safe environment.
 </p>
-<details>
-    <summary>
-        <a href="https://web.archive.org/web/20220527205801/https://utakeit.tacc.utexas.edu/" target="_blank">UTakeIt</a>, a
-        professional development registration and management system for K12 CS educators.
-    </summary>
-    <ul>
-        <li>Stack: Python, Django, Bootstrap, Celery, Docker, Apache, MySQL, Jenkins</li>
-        <li>
-            Containerized Django application using Docker and continuously
-            integrated and deployed using Jenkins.
-        </li>
-        <li>
-            Intuitive e-commerce system that allows users to purchase one or many
-            registrations and optional add-ons with a credit card, check, coupon, or
-            purchase order and has been used to process hundreds of thousands of
-            dollars. Hooks into the university's payment processor for credit card
-            transactions. Also used to collect preliminary data from registrants.
-        </li>
-        <li>
-            Powerful management system that allows staff members to effectively
-            track and manage 6,000+ users and their 10,000+ registrations across
-            375+ events, courses, and curricula.
-        </li>
-        <li>
-            Management system has the ability to manage many aspects of the site
-            including product listings, reviews, user activity, outgoing emails,
-            reports, financial records, Canvas integrations, announcements,
-            certificates, coupons, and many more. Celery is used to handle emails
-            and generating reports.
-        </li>
-        <li>
-            All dynamic interactions are handled with REST APIs and JavaScript which
-            is bundled by Webpack.
-        </li>
-        <li>Users are authenticated with university EIDs using Shibboleth.</li>
-    </ul>
-</details>
-<details>
-    <summary>
-        <a href="https://web.archive.org/web/20241227110221/https://cyberrange.tacc.utexas.edu/" target="_blank">EPIC Cyber
-            Range</a>, an on-demand virtual machine education tool for K12 cybersecurity classrooms.
-    </summary>
-    <ul>
-        <li>
-            Stack: Django, React, Material UI, Docker, Nginx, PostgreSQL, Jenkins
-        </li>
-        <li>
-            Containerized Django/React application using Docker and continuously integrated and deployed using Jenkins.
-        </li>
-        <li>
-            OpenStack virtual environments facilitate cybersecurity education and has been utilized by 800+ students
-            and teachers across dozens of organizations. These environments are hosted on the Hikari supercomputer
-            at the Texas Advanced Computing Center and managed via the web application using OpenStack API calls and
-            tracked with Django models.
-        </li>
-        <li>
-            Users are organized in a hierarchy of organizations, classrooms, exercises, and teams and are all
-            protected with object-level permissions based on user roles and ownership.
-        </li>
-        <li>
-            User interface is rendered with React and Material UI, routed with React Router, and interfaces with the
-            Django REST Framework using SWR.
-        </li>
-        <li>
-            Users are authenticated with Google using django-allauth.
-        </li>
-    </ul>
-</details>
-<!-- <details>
-    <summary>
-        <u>Maintainer</u> of <a href="https://texasccrsmdesignation.org" target="_blank">TEA CCRSM</a>, an application
-        platform for Texas school to apply for a College and Career Readiness designation.
-    </summary>
-    <ul>
-        <li>Stack: PHP, Laravel, MySQL</li>
-    </ul>
-</details>
-<details>
-    <summary>
-        <u>Builder & Tech Support</u> of <a href="https://utakeit.tacc.utexas.edu/weteach_cs-summit-2021/"
-           target="_blank">WeTeach_CS Summit 2021</a>, a professional development event for K12 CS educators that was
-        held virtually for over 300 attendees and exhibitors.
-    </summary>
-    <ul>
-        <li>
-            <a href="https://gather.town/app/4xY6fwuKV34IHx86/WeTeach_CS%20Summit%202021" target="_blank"><u>Virtual
-                    World</u></a>
-        </li>
-    </ul>
-</details> -->
+
+<ul>
+    <li><a href="https://web.archive.org/web/20220527205801/https://utakeit.tacc.utexas.edu/" target="_blank">UTakeIt</a>, a
+        professional development registration and management system for K12 CS educators built with Django.</li>
+        <ul>
+            <li>Developed an intuitive checkout and survey system for purchasing registrations and collecting registration data. Processed hundreds of thousands of dollars in registration fees across 10,000+ registrations for hundreds of professional development events, courses, and curricula.</li>
+            <li>Created a comprehensive administrative dashboard enabling staff to efficiently manage product listings, user activity, communications, financial records, Canvas LMS integrations, and automated certificate generation.</li>
+        </ul>
+    <li><a href="https://web.archive.org/web/20241227110221/https://cyberrange.tacc.utexas.edu/" target="_blank">EPIC Cyber
+        Range</a>, an on-demand virtual machine education tool for K12 cybersecurity classrooms built with Django and React.</li>
+        <ul>
+            <li>Developed a web application enabling 800+ students and teachers to safely participate in hands-on cybersecurity exercises using virtual machines hosted on university supercomputing infrastructure.</li>
+            <li>Architected a robust permissions system and database schema to manage complex relationships between users, organizations, classrooms, exercises, and teams while maintaining strict access controls.</li>
+        </ul>
+</ul>
 
 <p>
     <b class="medium">Bachelor of Science and Arts in Computer Science</b><br /><i>The University of Texas at
         Austin</i>, 2018
 </p>
+ 
+ <h2>Conferences</h2>
+ <p>DjangoCon US: 2019, 2021, <a href="/posts/djangocon-us-2022/">2022</a>, <a href="/posts/djangocon-us-2023/">2023</a>, <a href="/posts/djangocon-us-2024/">2024</a></p>
+ <p>PyTexas: <a href="/posts/pytexas-2023/">2023</a>, <a href="/posts/pytexas-2024/">2024</a>, <a href="/posts/pytexas-2025/">2025</a></p>
