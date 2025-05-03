@@ -3512,21 +3512,21 @@ folder: public
 &lt;li>&lt;a href="#choose-relevant-monsters">Choose relevant monsters&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#select-magic-item-rewards">Select magic item rewards&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="review-the-characters-hahahugoshortcode23s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
+&lt;h3 id="review-the-characters-hahahugoshortcode29s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
 &lt;p>The first thing you need to do is write down the names, backgrounds, motivations, and desires of the characters. Use these notes to prime your brain and tie the characters to the rest of your game.&lt;/p>
-&lt;h3 id="create-a-strong-start-hahahugoshortcode23s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
+&lt;h3 id="create-a-strong-start-hahahugoshortcode29s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
 &lt;p>Set the stage by asking yourself, what&amp;rsquo;s happening, what&amp;rsquo;s the point, and where&amp;rsquo;s the action? We are looking for an event, hook, and closest action in one, maybe two, sentences. When in doubt, start with combat.&lt;/p>
-&lt;h3 id="outline-potential-scenes-hahahugoshortcode23s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-potential-scenes-hahahugoshortcode29s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
 &lt;p>Write down a short list of scenes that &lt;strong>might&lt;/strong> occur in your game. Only write down as much as you need to prime your brain. These scenes are not in any specific order and may not even occur.&lt;/p>
-&lt;h3 id="define-secrets-and-clues-hahahugoshortcode23s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
+&lt;h3 id="define-secrets-and-clues-hahahugoshortcode29s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
 &lt;p>Write down ten secrets and clues the characters &lt;strong>might&lt;/strong> discover during your game. These secrets and clues bring your campaign to life and reveal small pieces of the story or history of the world. They should be abstract enough to allow you to improvise their discovery during the game.&lt;/p>
-&lt;h3 id="develop-fantastic-locations-hahahugoshortcode23s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
+&lt;h3 id="develop-fantastic-locations-hahahugoshortcode29s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
 &lt;p>Develop one or two locations that the characters &lt;strong>might&lt;/strong> discover for every hour of play you expect to have. These locations need to have an evocative name, three fantastic aspects, and be described using age and size. It is also a good idea to tie some of these locations to the backgrounds of the characters.&lt;/p>
-&lt;h3 id="outline-important-npcs-hahahugoshortcode23s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-important-npcs-hahahugoshortcode29s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
 &lt;p>Prepare a few NPCs that the characters &lt;strong>might&lt;/strong> discover and will drive the game session and the adventure. Improvise others during the game. NPC outlines should be brief and include a name, connection to the adventure, and a character archetype.&lt;/p>
-&lt;h3 id="choose-relevant-monsters-hahahugoshortcode23s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
+&lt;h3 id="choose-relevant-monsters-hahahugoshortcode29s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
 &lt;p>Make a list of monsters the characters &lt;strong>might&lt;/strong> encounter that make sense for the story, situation, and location of your game. Don&amp;rsquo;t tie these monsters to any specific location or situation. Instead, improvise encounters based on the story and situation during the game. For boss fights, remember to account for character capabilities without negating those capabilities.&lt;/p>
-&lt;h3 id="select-magic-item-rewards-hahahugoshortcode23s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
+&lt;h3 id="select-magic-item-rewards-hahahugoshortcode29s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
 &lt;p>Players love magic items! Regularly ask the players what kinds of items they&amp;rsquo;d like to discover. Use that information to make a list of magic items that the characters &lt;strong>might&lt;/strong> discover during your game. When it fits the story, drop an item into the game. You can also drop in random magic items for some variability. You can tie magic items to the story by connecting them to quests, secrets, or clues.&lt;/p>
 &lt;h2 id="adventuremd">adventure.md&lt;/h2>
 &lt;p>The Lazy Dungeon Master&amp;rsquo;s Checklist should easily fit on a single page. Here is a markdown template for your next session!&lt;/p>
@@ -3890,7 +3890,7 @@ isError: error,
 &lt;p>&amp;ldquo;Really cool, I&amp;rsquo;m using it on my phone. I like it a lot.&amp;rdquo;&lt;/p>
 &lt;p>— Mike &amp;ldquo;Sly Flourish&amp;rdquo; Shea&lt;/p>&lt;/blockquote>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/5emXJhpZjDY?autoplay=0&amp;amp;controls=1&amp;amp;end=632&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=504" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/5emXJhpZjDY?autoplay=0&amp;amp;controls=1&amp;amp;end=632&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=504" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
 &lt;/div><a href="mailto: reply@djpeacher.com?subject=Re:%20Crit%20Happens">Reply via email</a></description></item><item><title>Luminary</title><link>https://www.djpeacher.com/luminary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/luminary/</guid><description>
 &lt;p>&lt;img src="https://www.djpeacher.com/luminary/screenshot.jpg" alt="Luminary">&lt;/p>
 &lt;p>Say hello to Luminary, your personal sun tracker! Whether you’re chasing the perfect sunset, planning your next outdoor adventure, or just want to know where the sun is hiding, Luminary’s got you covered. Luminary works entirely offline, so you can access sun data anytime, anywhere. It’s dirt simple to get started—just launch the app and voilà!&lt;/p><a href="mailto: reply@djpeacher.com?subject=Re:%20Luminary">Reply via email</a></description></item><item><title>Mastodon</title><link>https://www.djpeacher.com/mastodon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/mastodon/</guid><description>
@@ -3951,8 +3951,10 @@ padding-left: 1rem;
 &lt;/style>
 &lt;p>This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and this is what I&amp;rsquo;m currently up to:&lt;/p>
 &lt;h2 id="2504">2504&lt;/h2>
-&lt;p>This past month has been an exercise in balancing competing API limits. One large work project complete, now on to the next, even larger project. Looking forward to attending PyTexas this month for the third year in a row! One silver lining of being woken up at 4am every day by a tiny human is that I&amp;rsquo;ve been getting a lot side project time in.&lt;/p>
+&lt;p>Starting to lose some of that new year momentum and feeling things start to fall through the cracks. Doing a lot of self-reflecting and trying to figure out what&amp;rsquo;s next. Trying to fix some broken phones I have laying around so I can offload some apps I compulsively open. Lots of friend and family time recently. Cut my hair for the first time since having a tiny human.&lt;/p>
 &lt;h2 id="2503">2503&lt;/h2>
+&lt;p>This month has been an exercise in balancing competing API limits. One large work project complete, now on to the next, even larger project. Looking forward to attending PyTexas for the third year in a row! One silver lining of being woken up at 4am every day by a tiny human is that I&amp;rsquo;ve been getting a lot side project time in.&lt;/p>
+&lt;h2 id="2502">2502&lt;/h2>
 &lt;p>Working my way through a few large projects at work. Having fun learning SwiftUI and actually releasing apps (&lt;a href="https://apps.apple.com/app/id6737578148">Luminary&lt;/a>, &lt;a href="https://apps.apple.com/us/app/crit-happens-dice-roller/id1550370579">Crit Happens&lt;/a>)! Super stoked to have my dice roller app &lt;a href="https://youtu.be/5emXJhpZjDY?t=503">spotlighted by Sly Flourish&lt;/a>! Exploring AI coding tools like &lt;a href="https://www.cursor.com/">Cursor&lt;/a> and honestly really impressed. Enjoying the speed boost of upgrading from an M1 to an M4 Mac. My wife and I were part of our best friends wedding party and we had a blast! Got sick afterwards which makes me sick for around 50% of 2025 so far&amp;hellip;&lt;/p>
 &lt;h2 id="2408">2408&lt;/h2>
 &lt;p>Learning how to take care of a tiny human and be a father. Adjusting to the humidity. In a war with mosquitoes. Catching up on my feeds. Getting organized.&lt;/p><a href="mailto: reply@djpeacher.com?subject=Re:%20Now">Reply via email</a></description></item><item><title>Projects</title><link>https://www.djpeacher.com/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.djpeacher.com/projects/</guid><description>
