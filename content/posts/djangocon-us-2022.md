@@ -184,7 +184,7 @@ Browser                │Web Server│     │ │ │ │URL conf│ ──►
     - What framework should we use?
     - Could we use [shiny-new-thing] for this?
   - **Architecturally Significant Requirement (ASR)**: A requirement that has a measurable effect.
-- [Architectural Decision Record](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions) (ADR) [[also](https://18f.gsa.gov/2021/07/06/architecture_decision_records_helpful_now_invaluable_later/)]: The tool we can use to capture.
+- [Architectural Decision Record](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions) (ADR) [[also](https://web.archive.org/web/20250222052925/https://18f.gsa.gov/2021/07/06/architecture_decision_records_helpful_now_invaluable_later/)]: The tool we can use to capture.
   - **What is an ADR?** A short, practical to fill, text file describing a specific AD. Like a journal entry to future developers.
   - **Who is it for?** Primarily for developers and technology staff.
   - **What's in it?**:
