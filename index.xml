@@ -3950,6 +3950,8 @@ padding-left: 1rem;
 }
 &lt;/style>
 &lt;p>This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and this is what I&amp;rsquo;m currently up to:&lt;/p>
+&lt;h2 id="2505">2505&lt;/h2>
+&lt;p>Trying to clear the decks and fight off entropy physically, virtually, and mentally. Working on a companion app for reading Fighting Fantasy books. Started properly delving into the Shadowdark and prepping for a potential campaign. Binged lots of shows, including Last of Us, Handmaids Tale, and Survivor.&lt;/p>
 &lt;h2 id="2504">2504&lt;/h2>
 &lt;p>Starting to lose some of that new year momentum and feeling things start to fall through the cracks. Doing a lot of self-reflecting and trying to figure out what&amp;rsquo;s next. Trying to fix some broken phones I have laying around so I can offload some apps I compulsively open. Lots of friend and family time recently. Cut my hair for the first time since having a tiny human.&lt;/p>
 &lt;h2 id="2503">2503&lt;/h2>
@@ -4062,6 +4064,24 @@ color: #666;
 &lt;div class="year-header">2025&lt;/div>
 &lt;table class="book-list">
 &lt;tr>
+&lt;td>A Court of Silver Flames&lt;/td>
+&lt;td>Sarah J. Maas&lt;/td>
+&lt;td class="date">250603&lt;/td>
+&lt;td class="rating">★★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>A Court of Frost and Starlight&lt;/td>
+&lt;td>Sarah J. Maas&lt;/td>
+&lt;td class="date">250515&lt;/td>
+&lt;td class="rating">★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>The Wandering Earth&lt;/td>
+&lt;td>Cixin Liu&lt;/td>
+&lt;td class="date">250511&lt;/td>
+&lt;td class="rating">★★★★★&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;td>Set Boundaries, Find Peace&lt;/td>
 &lt;td>Nedra Glover Tawwab&lt;/td>
 &lt;td class="date">250505&lt;/td>
@@ -4094,49 +4114,49 @@ color: #666;
 &lt;tr>
 &lt;td>A View from the Stars&lt;/td>
 &lt;td>Cixin Liu&lt;/td>
-&lt;td class="date">250406&lt;/td>
+&lt;td class="date">250408&lt;/td>
 &lt;td class="rating">★★★★&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Network Effect&lt;/td>
 &lt;td>Martha Wells&lt;/td>
-&lt;td class="date">250404&lt;/td>
+&lt;td class="date">250406&lt;/td>
 &lt;td class="rating">★★★★★&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>A Court of Mist and Fury&lt;/td>
 &lt;td>Sarah J. Maas&lt;/td>
-&lt;td class="date">250330&lt;/td>
+&lt;td class="date">250405&lt;/td>
 &lt;td class="rating">★★★★★&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Exit Strategy&lt;/td>
 &lt;td>Martha Wells&lt;/td>
-&lt;td class="date">250323&lt;/td>
+&lt;td class="date">250329&lt;/td>
 &lt;td class="rating">★★★★&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Rough Protocol&lt;/td>
 &lt;td>Martha Wells&lt;/td>
-&lt;td class="date">250317&lt;/td>
+&lt;td class="date">250319&lt;/td>
 &lt;td class="rating">★★★&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Artificial Condition&lt;/td>
 &lt;td>Martha Wells&lt;/td>
-&lt;td class="date">250314&lt;/td>
+&lt;td class="date">250315&lt;/td>
 &lt;td class="rating">★★★★&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>All Systems Red&lt;/td>
 &lt;td>Martha Wells&lt;/td>
-&lt;td class="date">250310&lt;/td>
+&lt;td class="date">250312&lt;/td>
 &lt;td class="rating">★★★★★&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>A Court of Thorns and Roses&lt;/td>
 &lt;td>Sarah J. Maas&lt;/td>
-&lt;td class="date">250226&lt;/td>
+&lt;td class="date">250305&lt;/td>
 &lt;td class="rating">★★★★★&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -4148,7 +4168,7 @@ color: #666;
 &lt;tr>
 &lt;td>Death's End&lt;/td>
 &lt;td>Cixin Liu&lt;/td>
-&lt;td class="date">250122&lt;/td>
+&lt;td class="date">250208&lt;/td>
 &lt;td class="rating">★★★★★&lt;/td>
 &lt;/tr>
 &lt;/table>
