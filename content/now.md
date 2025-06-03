@@ -14,6 +14,10 @@ title: Now
 
 This is a [now page](https://nownownow.com/about), and this is what I'm currently up to:
 
+## 2505
+
+Trying to clear the decks and fight off entropy physically, virtually, and mentally. Working on a companion app for reading Fighting Fantasy books. Started properly delving into the Shadowdark and prepping for a potential campaign. Binged lots of shows, including Last of Us, Handmaids Tale, and Survivor.
+
 ## 2504
 
 Starting to lose some of that new year momentum and feeling things start to fall through the cracks. Doing a lot of self-reflecting and trying to figure out what's next. Trying to fix some broken phones I have laying around so I can offload some apps I compulsively open. Lots of friend and family time recently. Cut my hair for the first time since having a tiny human.
