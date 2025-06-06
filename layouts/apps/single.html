@@ -68,7 +68,7 @@
             {{ end }}
             
             <div class="app-title">
-                <h1>{{ .Title }}</h1>
+                <h1><a href="{{ .Params.title_link }}" style="text-decoration: none;">{{ .Title }}</a></h1>
                 {{ if .Params.tagline }}<h2>{{ .Params.tagline }}</h2>{{ end }}
             </div>
         </div>
@@ -83,9 +83,11 @@
         
         {{ .Content }}
         
+        {{ if not .Params.hide_legal }}
         <div class="app-legal">
             <a href="{{ .Params.privacy | default (printf "%s/privacy" .RelPermalink) }}">Privacy Policy</a>
             <a href="{{ .Params.terms | default (printf "%s/terms" .RelPermalink) }}">Terms of Use</a>
         </div>
+        {{ end }}
     </div>
 {{ end }} 
