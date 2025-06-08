@@ -7,7 +7,7 @@ icon: /year-in-pixels/icon.svg
 hide_legal: true
 ---
 
-[![Year in Pixels](/year-in-pixels/screenshot.png)](https://year-in-pixels.djpeacher.com/)
+[![Year in Pixels](screenshot.png)](https://year-in-pixels.djpeacher.com/)
 
 Keep track of whatever you want in a year using pixels! Data is stored on your device, and can be imported and exported.
 

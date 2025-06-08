@@ -6,7 +6,7 @@ icon: /crit-happens/icon.png
 appstore: https://apps.apple.com/app/id1550370579
 ---
 
-![Crit Happens](/crit-happens/screenshot.jpg)
+![Crit Happens](screenshot.jpg)
 
 This humble dice roller is crafted for simplicity. Choose from the trusty dice of your trade, roll one or many, add modifiers as needed, roll multiple times, or even summon a die with an unconventional number of sides. Straightforward and reliable, just as any adventurer would need.
 
