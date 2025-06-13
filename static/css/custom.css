@@ -2,3 +2,11 @@
     margin-left: inherit;
     margin-right: inherit;
 }
+
+blockquote {
+    margin-inline: 0rem 0;
+  }
+  
+blockquote p {
+    margin-block: 0;
+}
