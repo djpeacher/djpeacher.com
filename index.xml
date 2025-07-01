@@ -3504,21 +3504,21 @@ folder: public
 &lt;li>&lt;a href="#choose-relevant-monsters">Choose relevant monsters&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#select-magic-item-rewards">Select magic item rewards&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="review-the-characters-hahahugoshortcode26s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
+&lt;h3 id="review-the-characters-hahahugoshortcode23s0hbhb">Review the characters &lt;i class="twa twa-thinking-face">&lt;/i>&lt;/h3>
 &lt;p>The first thing you need to do is write down the names, backgrounds, motivations, and desires of the characters. Use these notes to prime your brain and tie the characters to the rest of your game.&lt;/p>
-&lt;h3 id="create-a-strong-start-hahahugoshortcode26s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
+&lt;h3 id="create-a-strong-start-hahahugoshortcode23s1hbhb">Create a strong start &lt;i class="twa twa-flexed-biceps-light-skin-tone">&lt;/i>&lt;/h3>
 &lt;p>Set the stage by asking yourself, what&amp;rsquo;s happening, what&amp;rsquo;s the point, and where&amp;rsquo;s the action? We are looking for an event, hook, and closest action in one, maybe two, sentences. When in doubt, start with combat.&lt;/p>
-&lt;h3 id="outline-potential-scenes-hahahugoshortcode26s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-potential-scenes-hahahugoshortcode23s2hbhb">Outline potential scenes &lt;i class="twa twa-clapper-board">&lt;/i>&lt;/h3>
 &lt;p>Write down a short list of scenes that &lt;strong>might&lt;/strong> occur in your game. Only write down as much as you need to prime your brain. These scenes are not in any specific order and may not even occur.&lt;/p>
-&lt;h3 id="define-secrets-and-clues-hahahugoshortcode26s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
+&lt;h3 id="define-secrets-and-clues-hahahugoshortcode23s3hbhb">Define secrets and clues &lt;i class="twa twa-magnifying-glass-tilted-right">&lt;/i>&lt;/h3>
 &lt;p>Write down ten secrets and clues the characters &lt;strong>might&lt;/strong> discover during your game. These secrets and clues bring your campaign to life and reveal small pieces of the story or history of the world. They should be abstract enough to allow you to improvise their discovery during the game.&lt;/p>
-&lt;h3 id="develop-fantastic-locations-hahahugoshortcode26s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
+&lt;h3 id="develop-fantastic-locations-hahahugoshortcode23s4hbhb">Develop fantastic locations &lt;i class="twa twa-national-park">&lt;/i>&lt;/h3>
 &lt;p>Develop one or two locations that the characters &lt;strong>might&lt;/strong> discover for every hour of play you expect to have. These locations need to have an evocative name, three fantastic aspects, and be described using age and size. It is also a good idea to tie some of these locations to the backgrounds of the characters.&lt;/p>
-&lt;h3 id="outline-important-npcs-hahahugoshortcode26s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
+&lt;h3 id="outline-important-npcs-hahahugoshortcode23s5hbhb">Outline important NPCs &lt;i class="twa twa-robot">&lt;/i>&lt;/h3>
 &lt;p>Prepare a few NPCs that the characters &lt;strong>might&lt;/strong> discover and will drive the game session and the adventure. Improvise others during the game. NPC outlines should be brief and include a name, connection to the adventure, and a character archetype.&lt;/p>
-&lt;h3 id="choose-relevant-monsters-hahahugoshortcode26s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
+&lt;h3 id="choose-relevant-monsters-hahahugoshortcode23s6hbhb">Choose relevant monsters &lt;i class="twa twa-man-zombie">&lt;/i>&lt;/h3>
 &lt;p>Make a list of monsters the characters &lt;strong>might&lt;/strong> encounter that make sense for the story, situation, and location of your game. Don&amp;rsquo;t tie these monsters to any specific location or situation. Instead, improvise encounters based on the story and situation during the game. For boss fights, remember to account for character capabilities without negating those capabilities.&lt;/p>
-&lt;h3 id="select-magic-item-rewards-hahahugoshortcode26s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
+&lt;h3 id="select-magic-item-rewards-hahahugoshortcode23s7hbhb">Select magic item rewards &lt;i class="twa twa-magic-wand">&lt;/i>&lt;/h3>
 &lt;p>Players love magic items! Regularly ask the players what kinds of items they&amp;rsquo;d like to discover. Use that information to make a list of magic items that the characters &lt;strong>might&lt;/strong> discover during your game. When it fits the story, drop an item into the game. You can also drop in random magic items for some variability. You can tie magic items to the story by connecting them to quests, secrets, or clues.&lt;/p>
 &lt;h2 id="adventuremd">adventure.md&lt;/h2>
 &lt;p>The Lazy Dungeon Master&amp;rsquo;s Checklist should easily fit on a single page. Here is a markdown template for your next session!&lt;/p>
@@ -3942,6 +3942,8 @@ padding-left: 1rem;
 }
 &lt;/style>
 &lt;p>This is a &lt;a href="https://nownownow.com/about">now page&lt;/a>, and this is what I&amp;rsquo;m currently up to:&lt;/p>
+&lt;h2 id="2506">2506&lt;/h2>
+&lt;p>Starting to feel a bit more organized after &lt;a href="https://fosstodon.org/@djpeacher/114630351145702810">adding some LLM magic to my Things 3 setup&lt;/a>. I really needed that because I have too many ideas and things I want and need to do. I&amp;rsquo;m working on a secret personal project, for example, but I can&amp;rsquo;t get it across the finish line because I keep getting distracted with side quests. In other news, I celebrated my first Father&amp;rsquo;s Day and my heart is full.&lt;/p>
 &lt;h2 id="2505">2505&lt;/h2>
 &lt;p>Trying to clear the decks and fight off entropy physically, virtually, and mentally. Working on a companion app for reading Fighting Fantasy books. Started properly delving into the Shadowdark and prepping for a potential campaign. Binged lots of shows, including Last of Us, Handmaids Tale, and Survivor.&lt;/p>
 &lt;h2 id="2504">2504&lt;/h2>
