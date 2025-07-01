@@ -14,6 +14,10 @@ title: Now
 
 This is a [now page](https://nownownow.com/about), and this is what I'm currently up to:
 
+## 2506
+
+Starting to feel a bit more organized after [adding some LLM magic to my Things 3 setup](https://fosstodon.org/@djpeacher/114630351145702810). I really needed that because I have too many ideas and things I want and need to do. I'm working on a secret personal project, for example, but I can't get it across the finish line because I keep getting distracted with side quests. In other news, I celebrated my first Father's Day and my heart is full.
+
 ## 2505
 
 Trying to clear the decks and fight off entropy physically, virtually, and mentally. Working on a companion app for reading Fighting Fantasy books. Started properly delving into the Shadowdark and prepping for a potential campaign. Binged lots of shows, including Last of Us, Handmaids Tale, and Survivor.
