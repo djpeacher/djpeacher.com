@@ -4016,6 +4016,11 @@ overflow: visible;
 &lt;table class="project-list">
 &lt;tr>
 &lt;td>2025 —&lt;/td>
+&lt;td>&lt;a href="https://github.com/djpeacher/django-chronos">django-chronus&lt;/a>&lt;/td>
+&lt;td>Page load timing middleware.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2025 —&lt;/td>
 &lt;td>&lt;a href="https://www.djpeacher.com/crit-happens">Crit Happens&lt;/a>&lt;/td>
 &lt;td>A straightforward dice roller.&lt;/td>
 &lt;/tr>
