@@ -1,5 +1,8 @@
 baseURL: https://www.djpeacher.com/
-languageCode: en-us
+locale: en-us
+security:
+  allowContent:
+    - .*
 title: Jonathan Peacher
 theme: simple-hugo
 description: Software Engineer • Coffee Enthusiast • Dungeon Master • Cat Dad

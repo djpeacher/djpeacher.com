@@ -1,11 +1,11 @@
 {{ $title := .Page.Title }}
 {{ range .Page.Resources.ByType "image" }}
     {{ $image := . }}
-    {{ with .Exif }}
+    {{ with .Meta.Exif }}
         <figure>
             <img alt="{{ $title }}" src="{{ $image.RelPermalink }}" loading="lazy" />
             <figcaption>
-                {{ .Tags.ExposureTime }}s, f/{{ .Tags.FNumber }}, ISO {{ .Tags.ISOSpeedRatings }}, {{ .Tags.FocalLength }}mm, {{ .Tags.Make | humanize }} {{ .Tags.Model }}
+                {{ .ExposureTime }}s, f/{{ .FNumber.Float64 }}, ISO {{ .ISO }}, {{ .FocalLength }}mm, {{ .Make | humanize }} {{ .Model }}
             </figcaption>
         </figure>
     {{ end }}
